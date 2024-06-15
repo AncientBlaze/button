@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "jost";
+    src: url(./fonts/Jost/Jost/Jost-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(./fonts/DM_Sans/DMSans-VariableFont_opszwght.ttf)
+        format("truetype");
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(./fonts/DM_Sans/DMSans-VariableFont_opsz\wght.ttf)
+        format("truetype");
+}
+@font-face {
+    font-family: "Playfair Display";
+    src: url(./fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Satisfy";
+    src: url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+}
+@font-face {
+    font-family: "Shadows Into Light";
+    src: url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+}
+
+@layer base {
+    body::-webkit-scrollbar {
+        width: 10px;
+        height: 20px;
+    }
+
+    body::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: white;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(to bottom, #127342, #c1d42a);
+        border-radius: 100vh;
+        height: 100px;
+    }
+
+    -webkit-scrollbar-thumb:hover {
+        background: #c0a0b9;
+    }
+
+    .underlined {
+        display: inline-block;
+        padding-bottom: 2px;
+        background-image: linear-gradient(green 0 0);
+        background-position: left bottom;
+        background-size: 0% 1px;
+        background-repeat: no-repeat;
+        transition: background-size 300ms, background-position 20ms 0.3s;
+    }
+
+    .underlined:hover {
+        background-position: right bottom;
+        background-size: 100% 1px;
+    }
+    
+    .btn_ripple {
+        border: none;
+        outline: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: block;
+        background-color: #98A094;
+        color: #000;
+        display: grid;
+        place-items: center;
+        font-size: 18px;
+        cursor: pointer;
+    
+        animation-name: ripple;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+    }
+    
+    
+    @keyframes ripple {
+        0% {
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.267), 0 0 0 0 rgba(0, 0, 0, 0.267);
+        }
+
+        90% {
+            box-shadow: 0 0 0 10px #fff0, 0 0 0 20px #fff0;
+        }
+    
+        80% {
+            box-shadow: 0 0 0 20px rgba(0, 0, 0, 0), 0 0 0 40px #fff0;
+        }
+    
+        100% {
+            box-shadow: 0 0 0 0 #fff0, 0 0 0 0 #fff0;
+        }
+    }
+}
+
+@layer utilities {
+    .scrollbar::-webkit-scrollbar {
+        width: 20px;
+        height: 20px;
+    }
+
+    .scrollbar::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: #c0a0b9;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(to bottom, green, rgb(208, 255, 0));
+        border-radius: 100vh;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #c0a0b9;
+    }
+}
