@@ -17,8 +17,7 @@ import {
 } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { add } from "../../../../src/store/cartSlice";
-import { nanoid } from "@reduxjs/toolkit";
-import { products } from "./Ghee_data";
+import { products } from "../product_data";
 
 export default function GheePages({
     name,
@@ -983,7 +982,7 @@ export default function GheePages({
                                 to={`/collections/${item.catagory}/products/${item.id}`}
                             >
                                 <div>
-                                    <Card key={index} id={nanoid()} {...item} />
+                                    <Card key={index} {...item} />
                                 </div>
                             </Link>
                         ))}

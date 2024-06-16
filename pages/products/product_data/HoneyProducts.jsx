@@ -18,7 +18,8 @@ import {
 import { useDispatch } from "react-redux";
 import { add } from "../../../src/store/cartSlice";
 import { nanoid } from "@reduxjs/toolkit";
-import { products } from "./honey_images/honey_data";
+import { products } from "./product_data";
+
 
 export default function HoneyPages({
     name,
