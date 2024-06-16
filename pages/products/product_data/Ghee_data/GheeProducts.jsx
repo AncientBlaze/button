@@ -76,9 +76,15 @@ export default function GheePages({
 
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
-    const [selectedOption, setSelectedOption] = useState(price1);
-    const [selectedOption1, setSelectedOption1] = useState(previousPrice1);
-    const [selectedOption2, setSelectedOption2] = useState(save1);
+    const [selectedOption, setSelectedOption] = useState(
+        price ?? price1 ?? null,
+    );
+    const [selectedOption1, setSelectedOption1] = useState(
+        previousPrice ?? previousPrice1 ?? null,
+    );
+    const [selectedOption2, setSelectedOption2] = useState(
+        save ?? save1 ?? null,
+    );
 
     let sliderRef1 = useRef(null);
     let sliderRef2 = useRef(null);
@@ -459,8 +465,12 @@ export default function GheePages({
                                             addToCart({
                                                 title: Name,
                                                 ImageUrl: `${pic}`,
-                                                price: selectedOption1,
-                                                content: selectedOption,
+                                                price:
+                                                    selectedOption1,
+                                                content:
+                                                    count > 1
+                                                        ? selectedOption * count
+                                                        : selectedOption,
                                             });
                                             console.log(selectedOption1);
                                         }}

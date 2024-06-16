@@ -48,8 +48,7 @@ function Nav() {
         const copyText = "NFARM100";
         navigator.clipboard.writeText(copyText);
         toast.done("Copied the text: " + copyText, {
-            position: "top-center",
-            data :`${copyText}`,
+            position: "top-center"
             });
     };
     return (
