@@ -78,6 +78,8 @@ import {
     whiteSesame,
     yellowMustard,
 } from "../pages/products/product_data/cooking_data/oil_data.js";
+import GheePages from "../pages/products/product_data/Ghee_data/GheeProducts.jsx";
+import { a2SahiwaliGhee } from "../pages/products/product_data/Ghee_data/Ghee_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -1841,8 +1843,70 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             />
                         }
                     />
-                    <Route 
-                    path="collections/ghee/products/a2-sahiwali-ghee"/>
+                    <Route
+                        path="collections/ghee/products/a2-sahiwali-ghee"
+                        element={
+                            <GheePages
+                                name={
+                                    "Farm Naturelle 100% Pure Desi Sahiwal Cow Ghee | A2 Desi Sahiwal Ghee"
+                                }
+                                Name={"A2 Desi Sahiwal Ghee"}
+                                images={a2SahiwaliGhee}
+                                price={519}
+                                previousPrice={789}
+                                save={"35%"}
+                                price1={719}
+                                previousPrice1={909}
+                                save1={"21%"}
+                                price2={999}
+                                previousPrice2={1429}
+                                save2={"30%"}
+                                price3={1499}
+                                previousPrice3={1919}
+                                save3={"22%"}
+                                price5={1749}
+                                previousPrice5={2269}
+                                save5={"23%"}
+                                info1={"A2 Ghee, Crafted the Vedic Way"}
+                                info2={"Nature's Energy Tonic for All"}
+                                info3={"Boost Your Brainpower with A2 Ghee"}
+                                Tab1={
+                                    "Unveil the treasure trove of advantages with A2 Ghee. Experience enhanced cognitive function, bolstered heart health, and fortified bones. Revel in radiant skin, bid adieu to dark circles, and luxuriate in strong, lustrous hair. Ease digestion, manage weight, and sharpen your vision. Embrace graceful aging with this elixir of well-being, meticulously crafted from the pure A2 Gir Cow. Your path to vitality starts here."
+                                }
+                                Tab3={"A2 Desi Sahiwal Cow Ghee"}
+                                T1Text={"A2 Ghee, Crafted the Vedic Way :"}
+                                T1SubText={
+                                    "Experience the richness of 100% pure A2 Sahiwal Cow Desi Ghee, lovingly prepared using the traditional Vedic Bilona method. Let the age-old technique infuse every drop with authenticity, bringing you a wholesome taste of tradition. Indulge in the purity of ghee that reflects our commitment to quality and heritage."
+                                }
+                                T2Text={"Nature's Energy Tonic for All :"}
+                                T2SubText={
+                                    "An exceptional source of natural vitality, perfect for both vegetarians and non-vegetarians. Elevate your energy levels and nourish your body with this nutritive delight. Whether you follow a plant-based diet or not, indulge in the goodness that supports your well-being effortlessly."
+                                }
+                                T3Text={"Boost Your Brainpower with A2 Ghee :"}
+                                T3SubText={
+                                    "Enhance your brain's performance and memory with A2 Ghee. Elevate cognitive function effortlessly as this golden elixir supports brain health. Experience sharper thinking and better recall. Elevate your every day with the natural goodness of A2 Ghee, a true friend to your mind."
+                                }
+                                extraImage={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Sahiwal_Ghee-min.png?v=1697789857"
+                                }
+                                h4_1={"Vitamin-Rich Advantage"}
+                                p_1={
+                                    "Discover the delicious path to nourishment, effortlessly enhancing your wellness with every spoonful."
+                                }
+                                h4_2={"Your Partner in Balanced Weight"}
+                                p_2={
+                                    "Elevate your wellness routine with the goodness of A2 Ghee, working hand in hand with your efforts for a balanced you."
+                                }
+                                h4_3={"Clarity for Your Eyes"}
+                                p_3={"Packed with nutrients that support eye health, our ghee brings the beauty of life into focus."}
+                                h4_4={"Boost Your Brain"}
+                                p_4={"Elevate your brain's performance naturally."}
+                                BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_41162844-16ee-462c-99b0-97ee16e332a7.png?v=1698925515"}
+                                BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-1_402a0164-ef0d-49e1-91b9-dc557d7c6761.png?v=1698925515"}
+                                BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2_80881b31-b386-4208-b4ea-54eeb36b33f3.png?v=1698925608"}
+                            />
+                        }
+                    />
                     <Route />
                 </Routes>
             </Provider>

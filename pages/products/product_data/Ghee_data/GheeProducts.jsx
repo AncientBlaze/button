@@ -394,9 +394,13 @@ export default function GheePages({
                                     <option value={price3}>
                                         825ml(Glass Bottle)
                                     </option>
-                                    <option value={price4}>
-                                        500ml(Glass Bottle)
-                                    </option>
+                                    {price4 ? (
+                                        <option value={price4}>
+                                            500ml(Glass Bottle)
+                                        </option>
+                                    ) : (
+                                        <option hidden value={price4}></option>
+                                    )}
                                     {price5 ? (
                                         <option value={price5}>
                                             1000ml(Glass Bottle)
