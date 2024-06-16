@@ -1947,6 +1947,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 Tab1={
                                     "A2 Gir Cow ghee- a cherished Indian tradition. Elevate brain function, enhance memory, and fortify your heart. Foster robust bones and radiant skin, bidding adieu to dark circles. Strengthen hair, aid digestion, and manage weight effortlessly. Enhance vision, and gracefully slow the aging process."
                                 }
+                                Tab3={"A2 Gir Cow Ghee"}
                                 T1Text={"A2 Ghee, Crafted the Vedic Way :"}
                                 T1SubText={
                                     "Farm Naturelle A2 Gir Ghee, crafted from the revered Bilona Method, is a pure marvel. Delight in the richness of 100% Pure A2 Gir Cow Desi Ghee, lovingly prepared as per ancient Vedic tradition. Taste the heritage, embrace the nourishment – a cherished gift for your well-being."

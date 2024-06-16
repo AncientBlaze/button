@@ -7,6 +7,7 @@ import { useState } from "react";
 import IndexHeart from "../Modal/Wishlist";
 import Cart from "../Modal/Cart";
 import { useSelector } from "react-redux";
+import { toast } from "react-toastify";
 
 function Nav() {
     document.addEventListener("scroll", function () {
@@ -46,7 +47,11 @@ function Nav() {
     const Handler = () => {
         const copyText = "NFARM100";
         navigator.clipboard.writeText(copyText);
-        alert("Copied the text: " + copyText);
+        toast.done("Copied the text: " + copyText, {
+            position: "top-center",
+            data :`${copyText}`,
+            type: "dark",
+            });
     };
     return (
         <>
@@ -57,7 +62,8 @@ function Nav() {
                             Get an extra 5% discount on orders over ₹1000, up to
                             ₹100 - Use coupon NFARM100
                         </p>
-                        <img
+                        <img 
+                            className="cursor-pointer"
                             onClick={Handler}
                             src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ph_copy.svg?v=1695374232"
                             alt="copy"
