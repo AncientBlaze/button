@@ -50,7 +50,6 @@ function Nav() {
         toast.done("Copied the text: " + copyText, {
             position: "top-center",
             data :`${copyText}`,
-            type: "dark",
             });
     };
     return (
