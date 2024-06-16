@@ -1841,7 +1841,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             />
                         }
                     />
-                    <Route />
+                    <Route 
+                    path="collections/ghee/products/a2-sahiwali-ghee"/>
                     <Route />
                 </Routes>
             </Provider>

@@ -2,12 +2,11 @@ import { Link } from "react-router-dom";
 import Nav from "../src/components/header/Nav";
 import Footer from "../src/components/footer/Footer";
 import Card from "../src/components/CardComponent2";
-import { nanoid } from "@reduxjs/toolkit";
 
 function Ghee() {
     const products = [
         {
-            id: "ae019b10-1e48-4420-9f34-4dfdc8d54496",
+            id: "a2-sahiwali-ghee",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/2_6334cefd-be7f-46fd-a2ec-f4afb83e43f4_800x.jpg?v=1703749493",
             PlaceHolder:
@@ -18,7 +17,7 @@ function Ghee() {
             save: 34,
         },
         {
-            id: "bcda387b-802b-41d0-b254-5b7be7198e22",
+            id: "a2-desi-cow-ghee-from-grass-fed-gir-cows-vedic-bilona-method-curd-churned-golden-grainy-aromatic-keto-friendly-non-gmo-and-a-wooden-spoon",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/2_749637ab-9d9e-4be2-9213-5a284f8f231e_800x.jpg?v=1708001310",
             PlaceHolder:
@@ -42,7 +41,12 @@ function Ghee() {
                 </p>
                 <div className="w-full h-auto grid xl:grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 px-20 py-8 gap-10 justify-items-center">
                     {products.map((product) => (
-                        <Card key={product.title} {...product} id={nanoid()} />
+                        <Link
+                            key={product.title}
+                            to={`/collections/ghee/products/${product.id}`}
+                        >
+                        <Card key={product.title} {...product} />
+                        </Link>
                     ))}
                 </div>
             </div>

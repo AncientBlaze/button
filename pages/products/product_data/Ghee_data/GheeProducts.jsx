@@ -18,7 +18,7 @@ import {
 import { useDispatch } from "react-redux";
 import { add } from "../../../../src/store/cartSlice";
 import { nanoid } from "@reduxjs/toolkit";
-import { products } from "./oil_data";
+import { products } from "./Ghee_data";
 
 export default function GheePages({
     name,
@@ -619,7 +619,7 @@ export default function GheePages({
                                     <div className="w-full text-wrap">
                                         <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
                                             <img
-                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857505.png?v=1696832200"
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856910.svg?v=1699345544"
                                                 title=""
                                                 width="52px"
                                                 height="42px"
@@ -666,7 +666,7 @@ export default function GheePages({
                                     <div className="w-full text-wrap">
                                         <div className="text-[#006944] w-auto text-center flex flex-col justify-center items-center -my-5">
                                             <img
-                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857508.png?v=1696832109"
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856911.svg?v=1699345544"
                                                 title=""
                                                 width="50px"
                                                 height="50px"
@@ -697,7 +697,7 @@ export default function GheePages({
                                     <div className="w-full">
                                         <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
                                             <img
-                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856851_1.png?v=1696831956"
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856909.svg?v=1699345544"
                                                 title=""
                                                 width="42px"
                                                 height="auto"
@@ -729,7 +729,7 @@ export default function GheePages({
                             alt=""
                         />
                         <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-nowrap scale-75">
-                            Frying
+                            Apply on Rotis
                         </p>
                     </div>
                     <div className="w-[30%] h-48 bg-[#99C459] rounded-xl text-8xl relative">
@@ -742,7 +742,7 @@ export default function GheePages({
                             alt=""
                         />
                         <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75">
-                            Skin Care
+                            Cook Curries
                         </p>
                     </div>
                     <div className="w-[30%] h-48 bg-[#006944] rounded-xl text-8xl relative">
@@ -755,7 +755,7 @@ export default function GheePages({
                             alt=""
                         />
                         <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75">
-                            Hair Care
+                            Make Sweets
                         </p>
                     </div>
                 </div>
