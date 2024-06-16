@@ -1,8 +1,13 @@
+/* eslint-disable react/prop-types */
 import { IoIosHeartEmpty, IoIosHeart } from "react-icons/io";
 import PropTypes from "prop-types";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { add } from "../src/store/cartSlice";
+import { addToWishlist, remove } from "../src/store/wishSlice";
 
 const CardComponent2 = ({
+    id,
     ImageUrl,
     PlaceHolder,
     title,
@@ -11,9 +16,35 @@ const CardComponent2 = ({
     save,
     hidden = "",
 }) => {
+    const dispatch = useDispatch();
+
+    const addToCart = (product) => {
+        dispatch(add(product));
+    };
+
+    const addToWish = (product) => {
+        dispatch(addToWishlist(product));
+    };
+
+    const removeFromWish = (id) => {
+        dispatch(remove(id));
+    };
+
     const [isLiked, setIsLiked] = useState(false);
 
-    const handleLike = () => setIsLiked((prev) => !prev);
+    const handleLike = (e) => {
+        if (isLiked) {
+            e.preventDefault();
+            e.stopPropagation();
+            removeFromWish(id);
+            setIsLiked((prev) => !prev);
+        } else {
+            e.preventDefault();
+            e.stopPropagation();
+            addToWish({ id, title, ImageUrl, content });
+            setIsLiked((prev) => !prev);
+        }
+    };
 
     const likeIcon = isLiked ? (
         <IoIosHeart color="black" size={28} onClick={handleLike} />
@@ -54,15 +85,20 @@ const CardComponent2 = ({
                     <div className="line-through text-[#B0B0B0]">
                         Rs.{PreviousPrice}.00
                     </div>
-                    <div className="font-semibold text-sm">
-                        Rs.{content}.00
-                    </div>
+                    <div className="font-semibold text-sm">Rs.{content}.00</div>
                     <div className="text-xs h-auto px-2 py-1 border border-transparent rounded-md text-white font-semibold text-[16px] bg-red-600 group-hover:border group-hover:border-[#006944]">
                         Save {save}%
                     </div>
                 </div>
                 <div className="flex justify-center items-center">
-                    <button className={buttonClasses}>Add to Cart</button>
+                    <button
+                        className={buttonClasses}
+                        onClick={() =>
+                            addToCart({ id, title, ImageUrl, content })
+                        }
+                    >
+                        Add to Cart
+                    </button>
                 </div>
             </div>
         </div>

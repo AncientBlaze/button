@@ -429,7 +429,7 @@ export default function CookingPages({
                                             loading="lazy"
                                         />
                                     </button>
-                                    <div className="text-2xl text-[#006944] font-medium w-full h-full flex justify-center items-center border-l border-r border-black">
+                                    <div className="text-2xl font-medium w-full h-full flex justify-center items-center border-l border-r border-black">
                                         {count}
                                     </div>
                                     <button
@@ -599,14 +599,14 @@ export default function CookingPages({
                 </div>
             </div>
             <div>
-                <div className="h-[130vh] w-full">
+                <div className="h-[150vh] w-full">
                     <div className="w-full h-full text-center py-2 font-jost relative">
                         <p className="text-[gray] py-2">Benefits</p>
                         <p className="text-4xl font-medium text-[#006944]">
                             <span className="text-black">Benefits Of </span>
                             {Name}
                         </p>
-                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[40%] flex-col items-center justify-center">
+                        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/3 flex-col items-center justify-center">
                             <div className="w-full flex items-center rounded-[50%] bg-[#DEEEC0]">
                                 <img
                                     src={extraImage}
@@ -614,7 +614,7 @@ export default function CookingPages({
                                     loading="lazy"
                                 />
                             </div>
-                            <div className="absolute top-0 left-0 -translate-x-[82%] w-full flex flex-row-reverse h-auto text-sm">
+                            <div className="text-[#006944] absolute top-0 left-0 -translate-x-[82%] w-full flex flex-row-reverse h-auto text-sm">
                                 <div className="flex items-start gap-1">
                                     <div className="w-full text-wrap">
                                         <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
@@ -625,9 +625,7 @@ export default function CookingPages({
                                                 height="42px"
                                                 loading="lazy"
                                             />
-                                            <h4 className="text-2xl text-[#006944]">
-                                                {h4_1}
-                                            </h4>
+                                            <h4 className="text-2xl">{h4_1}</h4>
                                             <p>{p_1}</p>
                                         </div>
                                     </div>
@@ -639,7 +637,7 @@ export default function CookingPages({
                                     />
                                 </div>
                             </div>
-                            <div className="absolute top-0 right-0 translate-x-[83%] w-full flex flex-row-reverse h-auto">
+                            <div className="text-[#006944] absolute top-0 right-0 translate-x-[83%] w-full flex flex-row-reverse h-auto">
                                 <div className="flex items-start gap-1">
                                     <img
                                         src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28630_1.png?v=1696833635"
@@ -648,7 +646,7 @@ export default function CookingPages({
                                         height="auto"
                                         loading="lazy"
                                     />
-                                    <div className="w-full">
+                                    <div className="text-[#006944] w-full">
                                         <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
                                             <img
                                                 src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/weight.png?v=1696832154"
@@ -657,18 +655,16 @@ export default function CookingPages({
                                                 height="auto"
                                                 loading="lazy"
                                             />
-                                            <h4 className="text-2xl text-[#006944]">
-                                                {h4_2}
-                                            </h4>
+                                            <h4 className="text-2xl">{h4_2}</h4>
                                             <p>{p_2}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="absolute bottom-10 left-0 -translate-x-[92%] translate-y-32 w-full flex flex-reverse h-auto">
+                            <div className="text-[#006944] absolute bottom-28 left-0 -translate-x-[82%] translate-y-56 w-full flex flex-reverse h-auto">
                                 <div className="flex items-start gap-1">
                                     <div className="w-full text-wrap">
-                                        <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
+                                        <div className="text-[#006944] w-auto text-center flex flex-col justify-center items-center -my-5">
                                             <img
                                                 src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857508.png?v=1696832109"
                                                 title=""
@@ -676,9 +672,7 @@ export default function CookingPages({
                                                 height="50px"
                                                 loading="lazy"
                                             />
-                                            <h4 className="text-2xl text-[#006944]">
-                                                {h4_3}
-                                            </h4>
+                                            <h4 className="text-2xl">{h4_3}</h4>
                                             <p>{p_3}</p>
                                         </div>
                                     </div>
@@ -691,7 +685,7 @@ export default function CookingPages({
                                     />
                                 </div>
                             </div>
-                            <div className="absolute bottom-0 right-0 translate-x-[82%] translate-y-20 w-full flex flex-row-reverse h-auto">
+                            <div className="text-[#006944] absolute bottom-0 right-0 translate-x-[82%] translate-y-20 w-full flex flex-row-reverse h-auto">
                                 <div className="flex items-start gap-1">
                                     <img
                                         src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28631_1.png?v=1696833635"
@@ -709,9 +703,7 @@ export default function CookingPages({
                                                 height="auto"
                                                 loading="lazy"
                                             />
-                                            <h4 className="text-2xl text-[#006944]">
-                                                {h4_4}
-                                            </h4>
+                                            <h4 className="text-2xl">{h4_4}</h4>
                                             <p>{p_4}</p>
                                         </div>
                                     </div>
@@ -737,7 +729,7 @@ export default function CookingPages({
                             alt=""
                         />
                         <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-nowrap scale-75">
-                            Cooking
+                            Frying
                         </p>
                     </div>
                     <div className="w-[30%] h-48 bg-[#99C459] rounded-xl text-8xl relative">
@@ -749,7 +741,7 @@ export default function CookingPages({
                             src={BoxImg2}
                             alt=""
                         />
-                        <p className="text-white text-3xl font-semibold absolute top-1/2 left-0 transform scale-75">
+                        <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75">
                             Skin Care
                         </p>
                     </div>
@@ -762,7 +754,7 @@ export default function CookingPages({
                             src={BoxImg3}
                             alt=""
                         />
-                        <p className="text-white text-3xl font-semibold absolute top-0 left-0 transform translate-y-20 scale-75">
+                        <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75">
                             Hair Care
                         </p>
                     </div>
@@ -831,41 +823,58 @@ export default function CookingPages({
                     <div className="w-1/2 h-auto text-[#006944] rounded-xl text-center font-semibold font-jost">
                         {Name && <p className="text-3xl py-10">{Name}</p>}
                         <div className="w-full flex flex-col justify-center items-center font-light">
-                            <p className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Unprocessed & Raw
-                            </p>
+                            <div className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white relative">
+                                <p>
+                                    <img
+                                        className="absolute top-1/2 -translate-y-1/2 left-1"
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_8.png?v=1703150234"
+                                    />
+                                </p>
+                                Unrefined, Cold Pressed & Virgin
+                            </div>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_9.png?v=1703153821)] bg-[1%] bg-no-repeat text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                No-added flavors & colours
+                                Higher Nutritional Values
                             </p>
-                            <p className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Unheated
-                            </p>
+                            <div className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white relative">
+                                <p>
+                                    <img
+                                        className="absolute top-1/2 -translate-y-1/2 left-1"
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_8.png?v=1703150234"
+                                    />
+                                </p>
+                                Organic
+                            </div>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_9.png?v=1703153821)] bg-[1%] bg-no-repeat text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                No added Sugar{" "}
+                                Unprocessed
                             </p>
-                            <p className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Jungle bloom essence, Jim Corbett&#39;s floral
-                                embrace.
+                            <p className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white relative">
+                                <p>
+                                    <img
+                                        className="absolute top-1/2 -translate-y-1/2 left-1"
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_8.png?v=1703150234"
+                                    />
+                                </p>
+                                100% Natural
                             </p>
                         </div>
                     </div>
                     <div className="w-1/2 h-48 text-[#006944] rounded-xl text-center font-semibold font-jost">
-                        <p className="text-3xl py-10">Normal Honey</p>
+                        <p className="text-3xl py-10">Normal Oils</p>
                         <div className="w-full flex flex-col justify-center items-center font-light">
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Unprocessed & Raw
+                                Refined
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-white text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Added flavors & colours
+                                Less Nutritional Values
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Heated
+                                Non-Organic
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-white text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Added Sugar
+                                Processed
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Unethical Extraction
+                                Has Additives
                             </p>
                         </div>
                     </div>
@@ -957,9 +966,14 @@ export default function CookingPages({
                         ref={(slider) => (sliderRef3 = slider)}
                     >
                         {products.map((item, index) => (
-                            <div key={index}>
-                                <Card key={index} id={nanoid()} {...item} />
-                            </div>
+                            <Link
+                                key={index}
+                                to={`/collections/${item.catagory}/products/${item.id}`}
+                            >
+                                <div>
+                                    <Card key={index} id={nanoid()} {...item} />
+                                </div>
+                            </Link>
                         ))}
                     </Slider>
                 </div>

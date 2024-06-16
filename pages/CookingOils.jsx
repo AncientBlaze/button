@@ -28,6 +28,7 @@ const products = [
         save: 14,
     },
     {
+        id: "black-sesame-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9313_800x.jpg?v=1708001210",
         PlaceHolder:
@@ -38,6 +39,7 @@ const products = [
         save: 18,
     },
     {
+        id: "white-sesame-oil-classic",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9429_800x.jpg?v=1703849984",
         PlaceHolder:
@@ -59,18 +61,19 @@ const products = [
         save: 19,
         hidden: "hidden",
     },
+    // {
+    //     ImageUrl:
+    //         "https://farmnaturelle.com/cdn/shop/files/Rectangle9356_800x.jpg?v=1703849688",
+    //     PlaceHolder:
+    //         "https://farmnaturelle.com/cdn/shop/files/Rectangle9357_800x.jpg?v=1703849690",
+    //     title: "Extra Virgin Olive...",
+    //     content: 309,
+    //     PreviousPrice: 379,
+    //     save: 18,
+    //     hidden: "hidden",
+    // },
     {
-        ImageUrl:
-            "https://farmnaturelle.com/cdn/shop/files/Rectangle9356_800x.jpg?v=1703849688",
-        PlaceHolder:
-            "https://farmnaturelle.com/cdn/shop/files/Rectangle9357_800x.jpg?v=1703849690",
-        title: "Extra Virgin Olive...",
-        content: 309,
-        PreviousPrice: 379,
-        save: 18,
-        hidden: "hidden",
-    },
-    {
+        id: "black-mustard-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9304_5e288c25-7779-4d43-b049-30fa89946889_800x.jpg?v=1708001211",
         PlaceHolder:
@@ -81,6 +84,7 @@ const products = [
         save: 14,
     },
     {
+        id: "groundnut-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9331_800x.jpg?v=1708001211",
         PlaceHolder:
@@ -91,6 +95,7 @@ const products = [
         save: 17,
     },
     {
+        id: "organic-extra-virgin-coconut-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9369_800x.jpg?v=1703749125",
         PlaceHolder:

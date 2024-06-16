@@ -69,7 +69,15 @@ import {
     WildBerryFlora,
 } from "../pages/products/product_data/honey_images/honey_data.js";
 import CookingPages from "../pages/products/product_data/cooking_data/CookingProducts.jsx";
-import { yellowMustard } from "../pages/products/product_data/cooking_data/oil_data.js";
+import {
+    BlackMustard,
+    blackSesame,
+    CoconutOil,
+    GroundNuts,
+    sunflowerOil,
+    whiteSesame,
+    yellowMustard,
+} from "../pages/products/product_data/cooking_data/oil_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -1441,10 +1449,400 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 name={
                                     "100% Natural Cold Pressed & Wood Pressed Sunflower Oil | Finest Certified Organic Sunflower Oil"
                                 }
-                                Name={"Benefits Of Sunflower Oil"}
+                                Name={"Sunflower Oil"}
+                                images={sunflowerOil}
+                                info1={"Nourish with Nature’s Gift"}
+                                info2={"Pure Delight"}
+                                info3={"Abundance of Vitamin A & E"}
+                                price={290}
+                                previousPrice={339}
+                                save={"15% off"}
+                                price1={419}
+                                previousPrice1={499}
+                                save1={"16% off"}
+                                price2={819}
+                                previousPrice2={998}
+                                save2={"18% off"}
+                                price3={1995}
+                                previousPrice3={2495}
+                                save3={"20% off"}
+                                price4={350}
+                                previousPrice4={399}
+                                save4={"12% off"}
+                                Tab1={
+                                    "Experience the goodness of our 100% natural, cold pressed, unrefined, and organic sunflower oil. With over 80% monounsaturated fats, it's a culinary gem for a healthy heart. Packed with Vitamin E and omega-6 fats, it supports heart vitality. Plus, it aids digestion and gently eases the digestive process."
+                                }
+                                T1Text={"Nourish with Nature’s Gift: "}
+                                T1SubText={
+                                    "Get the goodness of 100% pure, unrefined, and organic sunflower oil. Carefully cold pressed to retain its natural essence and virgin purity, our oil brings the richness of nature to your kitchen."
+                                }
+                                T2Text={"Pure Delight: "}
+                                T2SubText={
+                                    "Delight in the light hues and gentle flavors that come from 100% natural, cold pressed, unrefined, and organic sources. Low in harmful Saturated Fatty Acids, our oils embrace high cooking temperatures while retaining their goodness"
+                                }
+                                T3Text={"Abundance of Vitamin A & E: "}
+                                T3SubText={
+                                    "Here’s the natural treasure of our cold pressed, unrefined, and organic food oils, brimming with the goodness of Vitamin A and Vitamin E. These essential vitamins play a vital role in promoting your well-being."
+                                }
+                                Tab3={"Sunflower Oil"}
+                                h4_1={"Soothes Your Stomach, Eases Digestion"}
+                                p_1={
+                                    "Our pure, cold pressed, and organic food oils are your digestive allies. Experience the goodness of nature as these oils gently support your stomach's well-being, making mealtimes a joy. Feel light, comfortable, and nourished after every meal, thanks to the natural power of these unrefined wonders."
+                                }
+                                h4_2={
+                                    "Ideal Choice for All Your Culinary Adventures"
+                                }
+                                p_2={
+                                    "Perfect for all your cooking and frying needs, our 100% natural, cold pressed, unrefined, and organic food oils bring out the best in your dishes. From sizzling stir-fries to hearty frying, our oils retain their pure goodness, enhancing flavors while preserving nutrients."
+                                }
+                                h4_3={"Glowing Skin Naturally"}
+                                p_3={
+                                    "Packed with Vitamin A and E, our cold pressed organic oils promote vibrant skin. Experience the magic of unrefined goodness, giving your skin the vitamins it craves for a healthy radiance."
+                                }
+                                h4_4={"Gentle Digestive Support"}
+                                p_4={
+                                    "Consuming sunflower oil eases digestive process, promotes gentle cleansing, and enhances gut comfort."
+                                }
+                                extraImage={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Sunflower_Oil.png?v=1703062547"
+                                }
+                                BoxImg1={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Organic_Virgin_Coconut_Oil-1_8bf16ec3-c9ab-45f5-bcb5-64a6444007c4.png?v=1703063377"
+                                }
+                                BoxImg2={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Organic_Virgin_Coconut_Oil-2_0564a06e-c8e0-45d5-b691-d57e5a65ff07.png?v=1703063377"
+                                }
+                                BoxImg3={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Organic_Virgin_Coconut_Oil_e92bc613-8cb2-48b6-9807-4a2557cd4b34.png?v=1703063377"
+                                }
                             />
                         }
                     />
+                    <Route
+                        path="collections/best-seller-cooking-oil/products/black-sesame-oil"
+                        element={
+                            <CookingPages
+                                name={
+                                    "Black Sesame Oil - Wooden Cold Pressed|Til/Gingelly Cooking Oil"
+                                }
+                                Name={"Black Sesame Oil"}
+                                price={368}
+                                previousPrice={449}
+                                save={"19% off"}
+                                price1={579}
+                                previousPrice1={699}
+                                save1={"17% off"}
+                                price2={1139}
+                                previousPrice2={1395}
+                                save2={"18% off"}
+                                price3={2765}
+                                previousPrice3={3575}
+                                save3={"23% off"}
+                                price4={439}
+                                previousPrice4={499}
+                                save4={"12% off"}
+                                price5={689}
+                                previousPrice5={789}
+                                save5={"13% off"}
+                                info1={"Nature's Goodness in a Bottle"}
+                                info2={"Nutrient-Packed Sesame Oil"}
+                                info3={"Transformative Care for Hair and Skin"}
+                                images={blackSesame}
+                                Tab1={
+                                    "Naturelle Black Sesame Oil’s bottle brings the goodness of 100% natural, cold-pressed, unrefined, and organic oil to you. Bursting with omega-6 fatty acids, antioxidants, vitamins, and dietary fiber, our oil seeds offer a wealth of health-promoting minerals. Sesame oil, enriched with Vitamin E and Vitamin B, nurtures skin, unveiling youthful radiance."
+                                }
+                                Tab3={"Black Sesame Oil"}
+                                T1Text={"Nature's Goodness in a Bottle: "}
+                                T1SubText={
+                                    "Taste the purity with our Organic Black Sesame Seed Oil. Crafted from the heart of black sesame seeds, this oil encapsulates nature's goodness. Cold pressed and unrefined, it's a true embodiment of purity. Embrace the unadulterated richness of this oil, straight from the seeds to your table."
+                                }
+                                T2Text={"Nutrient-Packed Sesame Oil: "}
+                                T2SubText={
+                                    "A nourishing choice, it stands tall as a healthier substitute to conventional vegetable oils. With its pure, cold-pressed, and unrefined nature, this organic oil brings you a world of wellness."
+                                }
+                                T3Text={
+                                    "Transformative Care for Hair and Skin: "
+                                }
+                                T3SubText={
+                                    "Bringing you the gift of nature with our unadulterated, cold pressed, and organic food oils. Elevate hair and skin wellness effortlessly. Unlock the secret to lustrous hair and vibrant skin. Embrace the beauty of 100% natural nourishment."
+                                }
+                                extraImage={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Black_Sesame_Oil.png?v=1703062546"
+                                }
+                                h4_1={"Find Mental Peace"}
+                                p_1={
+                                    "Farm Naturelle Black Sesame Oil is unrefined, cold pressed oils, derived from the heart of organic ingredients, offer a soothing touch to your well-being. Elevate mood, quell anxiety, and uplift spirits the natural way."
+                                }
+                                h4_2={"Top-notch Quality"}
+                                p_2={
+                                    "Experience the essence of pure nature with our 100% natural, cold-pressed, unrefined, and organic food oils. Crafted without additives, our oils are cold-pressed only, retaining their authentic aroma. Ideal for both culinary delights and soothing massages, they embody the goodness of nature."
+                                }
+                                h4_3={"Make the Healthier Choice"}
+                                p_3={
+                                    "Sesame Oil – your perfect switch from regular vegetable oils. Packed with natural benefits and untouched by refinement, our cold-pressed, unrefined Sesame Oil is a healthier alternative. Elevate your culinary journey with this 100% organic choice, supporting your well-being with every drop. Say yes to nourishment, yes to nature."
+                                }
+                                h4_4={"Care From Within"}
+                                p_4={
+                                    "Experience enhanced immunity and radiant dental health with our pure, cold pressed, unrefined organic oils. Elevate your body's defenses against diseases while giving your dental health a natural boost."
+                                }
+                                BoxImg1={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Black_Sesame_Oil_b1090f62-ca08-4394-b125-952878fef4bd.png?v=1703069309"
+                                }
+                                BoxImg2={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Black_Sesame_Oil-2.png?v=1703069309"
+                                }
+                                BoxImg3={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Black_Sesame_Oil-1.png?v=1703069309"
+                                }
+                            />
+                        }
+                    />
+                    <Route
+                        path="/collections/best-seller-cooking-oil/products/white-sesame-oil-classic"
+                        element={
+                            <CookingPages
+                                name={
+                                    "Buy 100% Pure Cold Pressed White Sesame Seed Cooking Oil"
+                                }
+                                Name={"White Sesame Oil"}
+                                images={whiteSesame}
+                                price={275}
+                                save={"16%"}
+                                previousPrice={329}
+                                price1={429}
+                                previousPrice1={489}
+                                save1={"12%"}
+                                price2={845}
+                                previousPrice2={975}
+                                save2={"13%"}
+                                price3={2060}
+                                previousPrice3={2435}
+                                save3={"15%"}
+                                price4={350}
+                                previousPrice4={395}
+                                save4={"11%"}
+                                price5={530}
+                                previousPrice5={695}
+                                save5={"24%"}
+                                info1={"Unrefined White Sesame Oil"}
+                                info2={"Nourishing Power of Sesame Oil"}
+                                info3={"Purity At Its Best"}
+                                Tab1={
+                                    "Enhance skin, hair, and heart health with Farm Naturelle White Sesame Oil. Nurture bones and little ones. Empower dental and digestive well-being. Tame inflammation, regulate BP, and more. Nature's goodness, cold-pressed, unrefined, and organic. Your healthiest companion for cooking and massaging, sans chemicals. A treasure trove of health, condensed into one remarkable oil."
+                                }
+                                T1Text={"Unrefined white sesame oil: "}
+                                T1SubText={
+                                    "This White Sesame Oil is crafted from 100% pure, natural, and virgin oil, extracted through cold pressing. Elevate your cooking with this organic treasure, carefully nurtured from white sesame seeds."
+                                }
+                                T2Text={"Nourishing Power of Sesame Oil: "}
+                                T2SubText={
+                                    "White Sesame Oil enhances your hair and skin, fortifies bones, and promotes a healthy heart. This pure, unrefined gift from nature stimulates lush hair and glowing skin, strengthens bones, and ensures a hearty heart."
+                                }
+                                T3Text={"Purity At Its Best: "}
+                                T3SubText={
+                                    "Taste the magic of our pure, cold pressed, unrefined organic oils. Elevate hair and skin wellness naturally. Rediscover your innate glow as these oils lavish your hair with strength and shine, and caress your skin with a velvety touch. Your journey to radiant beauty starts here—100% natural goodness, bottled with care."
+                                }
+                                extraImage={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/White_Sesame_Oil.png?v=1703062547"
+                                }
+                                h4_1={"Embrace Calmness"}
+                                p_1={
+                                    "Discover relief from anxiety and depression as you savor the essence of nature."
+                                }
+                                h4_2={"Promotes a Healthier Heart Rhythm"}
+                                p_2={
+                                    "Our pure, cold pressed, and organic food oils work in harmony with your body, gently supporting lower blood pressure levels."
+                                }
+                                h4_3={"Nourishment & Care in a Bottle"}
+                                p_3={
+                                    "Elevate your cooking and rejuvenate your senses with our 100% natural, unrefined, and organic oils—nature's gift to your well-being."
+                                }
+                                h4_4={"An Health All-Rounder"}
+                                p_4={
+                                    "Empower your body's defense against illnesses while nurturing your dental vitality."
+                                }
+                                BoxImg1={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/White_Sesame_Oil_23b663db-77d9-4158-94e8-26a773dff596.png?v=1703069541"
+                                }
+                                BoxImg2={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/White_Sesame_Oil-2.png?v=1703069541"
+                                }
+                                BoxImg3={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/White_Sesame_Oil-1.png?v=1703069541"
+                                }
+                            />
+                        }
+                    />
+                    <Route
+                        path="/collections/best-seller-cooking-oil/products/black-mustard-oil"
+                        element={
+                            <CookingPages
+                                name={
+                                    "Organic Cold Pressed Black Mustard Oil for Cooking | Good for heart health | Pure Oil For Roasting, Frying, Baking All type of Cuisines"
+                                }
+                                Name={"Black Mustard Oil"}
+                                images={BlackMustard}
+                                price={290}
+                                previousPrice={339}
+                                save={"15%"}
+                                price1={399}
+                                previousPrice1={499}
+                                save1={"20%"}
+                                price2={789}
+                                previousPrice2={998}
+                                save2={"21%"}
+                                price3={1945}
+                                previousPrice3={2495}
+                                save3={"22%"}
+                                price4={350}
+                                previousPrice4={399}
+                                save4={"12%"}
+                                price5={580}
+                                previousPrice5={695}
+                                save5={"17%"}
+                                Tab1={
+                                    "Farm Naturelle's Organic Mustard Oil is derived from handpicked Organic Black mustard seeds. With its deep yellow hue and mild tang, this cold-pressed wonder is brimming with heart-healthy unsaturated fats, Omega Alpha 3, Omega Alpha 6, Vitamin E, and antioxidants. Elevate your culinary creations effortlessly – its high smoke point makes it perfect for Indian dishes. Say yes to lower cholesterol, improved immunity, and skin radiance."
+                                }
+                                Tab3={"Mustard Oil"}
+                                T1Text={"Pure Goodness from Nature: "}
+                                T1SubText={
+                                    "Our Organic Black Mustard Oil is meticulously extracted from the finest Organic Black mustard seeds. Unlock the power of cold pressing and unrefined goodness, as this oil preserves the true natural essence. Elevate your cooking with this unadulterated, cold pressed, and organic."
+                                }
+                                T2Text={"Vibrant & Flavorful: "}
+                                T2SubText={
+                                    "A rich, deep yellow hue coupled with a delightful hint of pungency makes this oil the best choice. Crafted through cold pressing, this unrefined oil encapsulates the essence of nature. Elevate your dishes with a touch of this exquisite, organic oil that adds both color and zest to your culinary journey."
+                                }
+                                T3Text={"Make Healthy Choice for Heart: "}
+                                T3SubText={
+                                    "Nurturing your heart naturally, our cold-pressed, unrefined organic food oils work to reduce harmful cholesterol. Embrace the goodness of nature as these oils contribute to a heart-healthy lifestyle, keeping your ticker happy and strong."
+                                }
+                                extraImage={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Balck_Mustard_Oil.png?v=1703062546"
+                                }
+                                h4_1={"Keep Coronary Issues at Bay:"}
+                                p_1={
+                                    "This oil is your guide to natural shield against heart ailments."
+                                }
+                                h4_2={"Banish Fungi Naturally:"}
+                                p_2={
+                                    "Farm Naturelle cold pressed, unrefined organic Black Mustard Oil not only elevate your dishes but also safeguard your skin."
+                                }
+                                h4_3={"Empower Your Immunity Naturally:"}
+                                p_3={
+                                    "Elevate your immunity and bolster your ability to combat illnesses."
+                                }
+                                h4_4={
+                                    "Vitamin-E Enriched Oil for Timeless Glow:"
+                                }
+                                p_4={
+                                    "Nourish your skin naturally, unveiling a youthful glow and diminishing wrinkles."
+                                }
+                                info1={"Pure Goodness from Nature"}
+                                info2={"Vibrant & Flavorful"}
+                                info3={"Make Healthy Choice for Heart"}
+                                BoxImg1={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Black_Mustard_Oil.png?v=1703069772"
+                                }
+                                BoxImg2={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Black_Mustard_Oil-2.png?v=1703069772"
+                                }
+                                BoxImg3={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Black_Mustard_Oil-1.png?v=1703069772"
+                                }
+                            />
+                        }
+                    />
+                    <Route
+                        path="/collections/best-seller-cooking-oil/products/groundnut-oil"
+                        element={
+                            <CookingPages
+                                name={
+                                    "100% Pure Organic Kachi Ghani Cold Pressed Virgin Groundnut/Peanut Oil | Best Groundnut Oil For Cooking"
+                                }
+                                Name={"Groundnut Oil"}
+                                images={GroundNuts}
+                                price={290}
+                                previousPrice={339}
+                                save={"14%"}
+                                price1={439}
+                                previousPrice1={499}
+                                save1={"12%"}
+                                price2={869}
+                                previousPrice2={998}
+                                save2={"13%"}
+                                price3={2149}
+                                previousPrice3={2495}
+                                save3={"14%"}
+                                price4={350}
+                                previousPrice4={399}
+                                save4={"12%"}
+                                price5={580}
+                                previousPrice5={695}
+                                save5={"17%"}
+                                info1={"Pure Goodness for Your Kitchen"}
+                                info2={"Nutrient-Rich Peanut Oil"}
+                                info3={"Enhances Healthy Blood Flow"}
+                                Tab1={
+                                    "Unveil goodness in every drop of Virgin Groundnut Oil. It supports heart health, sharpens the mind, strengthens immunity, and nurtures skin. Packed with beneficial acids like Oleic, Stearic, Palmitic, and Linoleic, it's your key to overall wellness."
+                                }
+                                Tab3={"Groundnut Oil"}
+                                T1Text={"Pure Goodness for Your Kitchen:"}
+                                T1SubText={
+                                    " Carefully crafted from the finest organic groundnuts, this unrefined oil retains its natural goodness and nutrients. Elevate your culinary journey with this authentic oil, perfect for Indian dishes. Enjoy the richness of cold-pressed purity for a healthier, tastier, and more vibrant dining experience."
+                                }
+                                T2Text={"Nutrient-Rich Peanut Oil:"}
+                                T2SubText={
+                                    " Discover the wholesome goodness of peanut oil, enriched with a perfect blend of natural fatty acids. Elevate your well-being effortlessly as this nourishing oil supports your health in multiple ways."
+                                }
+                                T3Text={"Enhances Healthy Blood Flow:"}
+                                T3SubText={
+                                    " Improve blood circulation with our range of 100% natural, cold pressed, unrefined, and organic food oils. Nourish your body with oils that support optimal blood flow, promoting overall well-being."
+                                }
+                                extraImage={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Groundnut_Oil.png?v=1703062547"
+                                }
+                                h4_1={"Nurturing Hearts and Minds"}
+                                p_1={
+                                    "Farm Naturelle Groundnut Oil nourishes heart wellness, enhances brain power, and refines the nervous system."
+                                }
+                                h4_2={"Get a Wrinkle-Free Glow"}
+                                p_2={
+                                    "Discover the natural magic of Vitamin E as it helps keep your skin radiant, smooth, and free from wrinkles. Our cold-pressed, unrefined, and organic food oils are packed with this essential nutrient, giving your skin the care it deserves, the natural way."
+                                }
+                                h4_3={"Perfect Frying Partner"}
+                                p_3={
+                                    "Our 100% natural, cold pressed, unrefined, and organic food oil is your ideal companion for deep-frying. With its ability to handle high temperatures and a delightful nutty essence, it transforms your dishes into crispy perfection. Elevate your cooking adventures with this exceptional oil, ensuring every bite is a true delight."
+                                }
+                                h4_4={"Nourish Your Skin"}
+                                p_4={
+                                    "Experience radiant skin with our unadulterated, cold-pressed oils brimming with Vitamin-E. Unlock the secret to a glowing complexion and smoother skin. These oils, abundant in natural goodness, are your pathway to reducing wrinkles and enhancing skin's vitality."
+                                }
+                                BoxImg1={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Groundnut_Oil_dcd7848f-e28d-49db-8e88-6d83a13e5138.png?v=1703069419"
+                                }
+                                BoxImg2={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Groundnut_Oil-2.png?v=1703069419"
+                                }
+                                BoxImg3={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Groundnut_Oil-1.png?v=1703069419"
+                                }
+                            />
+                        }
+                    />
+                    <Route
+                        path="collections/best-seller-cooking-oil/products/organic-extra-virgin-coconut-oil"
+                        element={
+                            <CookingPages
+                                name={
+                                    "Organic Extra Virgin Cold Pressed Coconut Oil | 100% Pure Organic & Edible Cooking Oil"
+                                }
+                                Name={"Organic Extra Virgin Coconut Oil"}
+                                images={CoconutOil}
+                            />
+                        }
+                    />
+                    <Route />
+                    <Route />
                 </Routes>
             </Provider>
         </BrowserRouter>
