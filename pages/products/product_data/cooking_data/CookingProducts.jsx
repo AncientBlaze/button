@@ -450,9 +450,11 @@ export default function CookingPages({
                                 <div className="flex gap-2 py-3 justify-center items-center">
                                     <button
                                         onClick={() => {
+                                            const pic = images[0].img;
                                             addToCart({
                                                 title: Name,
-                                                ImageUrl: extraImage,
+                                                ImageUrl: `${pic}`,
+                                                price: selectedOption1,
                                                 content: selectedOption * count,
                                             });
                                         }}

@@ -51,10 +51,24 @@ function Cart({ handleClose }) {
                                     </div>
                                     <div className="h-20 flex items-end justify-center">
                                         <div className="w-full flex flex-col">
-                                            <p className="text-center pl-5 text-xl">
-                                                Rs.
-                                                {cartProduct.content * cartProduct.quantity}
-                                            </p>
+                                        <div className="w-full flex justify-between px-3">
+                                                {cartProduct.previousPrice ? (
+                                                    <p className="text-center text-lg">
+                                                        Rs.
+                                                        {cartProduct.content *
+                                                            cartProduct.quantity}
+                                                    </p>
+                                                ) : null}
+                                                {cartProduct.previousPrice ? (
+                                                    <p className="text-center text-lg line-through text-red-700">
+                                                        Rs.
+                                                        {Number(
+                                                            cartProduct.price,
+                                                        ) *
+                                                            cartProduct.quantity}
+                                                    </p>
+                                                ) : null}
+                                            </div>
                                             <div className="w-full flex justify-center items-center">
                                                 <RiDeleteBin5Line
                                                     className="cursor-pointer"

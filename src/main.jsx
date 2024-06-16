@@ -79,7 +79,10 @@ import {
     yellowMustard,
 } from "../pages/products/product_data/cooking_data/oil_data.js";
 import GheePages from "../pages/products/product_data/Ghee_data/GheeProducts.jsx";
-import { a2SahiwaliGhee } from "../pages/products/product_data/Ghee_data/Ghee_data.js";
+import {
+    a2SahiwaliGhee,
+    cowGhee,
+} from "../pages/products/product_data/Ghee_data/Ghee_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -1898,16 +1901,95 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                     "Elevate your wellness routine with the goodness of A2 Ghee, working hand in hand with your efforts for a balanced you."
                                 }
                                 h4_3={"Clarity for Your Eyes"}
-                                p_3={"Packed with nutrients that support eye health, our ghee brings the beauty of life into focus."}
+                                p_3={
+                                    "Packed with nutrients that support eye health, our ghee brings the beauty of life into focus."
+                                }
                                 h4_4={"Boost Your Brain"}
-                                p_4={"Elevate your brain's performance naturally."}
-                                BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_41162844-16ee-462c-99b0-97ee16e332a7.png?v=1698925515"}
-                                BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-1_402a0164-ef0d-49e1-91b9-dc557d7c6761.png?v=1698925515"}
-                                BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2_80881b31-b386-4208-b4ea-54eeb36b33f3.png?v=1698925608"}
+                                p_4={
+                                    "Elevate your brain's performance naturally."
+                                }
+                                BoxImg1={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_41162844-16ee-462c-99b0-97ee16e332a7.png?v=1698925515"
+                                }
+                                BoxImg2={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-1_402a0164-ef0d-49e1-91b9-dc557d7c6761.png?v=1698925515"
+                                }
+                                BoxImg3={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2_80881b31-b386-4208-b4ea-54eeb36b33f3.png?v=1698925608"
+                                }
                             />
                         }
                     />
-                    <Route />
+                    <Route
+                        path="collections/ghee/products/a2-desi-cow-ghee-from-grass-fed-gir-cows-vedic-bilona-method-curd-churned-golden-grainy-aromatic-keto-friendly-non-gmo-and-a-wooden-spoon"
+                        element={
+                            <GheePages
+                                name={
+                                    "Organic A2 Desi Cow Ghee | Vedic Bilona Method-Curd Churned-Golden | A2 Gir Cow Ghee"
+                                }
+                                Name={"A2 Desi Cow Ghee"}
+                                images={cowGhee}
+                                price1={818}
+                                previousPrice1={1035}
+                                save1={"21%"}
+                                price2={1149}
+                                previousPrice2={1625}
+                                save2={"29%"}
+                                price3={1719}
+                                previousPrice3={2405}
+                                save3={"29%"}
+                                price5={1999}
+                                previousPrice5={2865}
+                                save5={"30%"}
+                                info1={"A2 Ghee, Crafted the Vedic Way"}
+                                info2={"Nature's Energy Tonic for All"}
+                                info3={"Boost Your Brainpower with A2 Ghee"}
+                                Tab1={
+                                    "A2 Gir Cow ghee- a cherished Indian tradition. Elevate brain function, enhance memory, and fortify your heart. Foster robust bones and radiant skin, bidding adieu to dark circles. Strengthen hair, aid digestion, and manage weight effortlessly. Enhance vision, and gracefully slow the aging process."
+                                }
+                                T1Text={"A2 Ghee, Crafted the Vedic Way :"}
+                                T1SubText={
+                                    "Farm Naturelle A2 Gir Ghee, crafted from the revered Bilona Method, is a pure marvel. Delight in the richness of 100% Pure A2 Gir Cow Desi Ghee, lovingly prepared as per ancient Vedic tradition. Taste the heritage, embrace the nourishment – a cherished gift for your well-being."
+                                }
+                                T2Text={"Nature's Energy Tonic for All :"}
+                                T2SubText={
+                                    "Boost your vitality and stamina, whether you're a vegetarian or non-vegetarian. Farm Naturelle A2 Gir Ghee is your ideal source of energy, offering a delightful way to stay healthy and active."
+                                }
+                                T3Text={"Boost Your Brainpower with A2 Ghee :"}
+                                T3SubText={
+                                    "Elevate brain function effortlessly as this golden elixir nurtures cognitive abilities. Enhance memory retention for a sharper you. Experience the traditional touch that fuels your mental acumen and keeps your brain at its best. Your journey to a brighter mind starts with every spoonful of A2 Ghee."
+                                }
+                                extraImage={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Gir_Cow_Ghee-min.png?v=1697789840"
+                                }
+                                h4_1={"A2 Ghee's Vitamin-Rich Goodness"}
+                                p_1={
+                                    "Experience the embrace of good health as these nutrients work their magic, nurturing your body from within."
+                                }
+                                h4_2={"Healthy Weight Management Buddy"}
+                                p_2={
+                                    "Packed with essential nutrients, it helps boost metabolism and maintain a healthy digestive system."
+                                }
+                                h4_3={"Improve Your Vision"}
+                                p_3={
+                                    "Packed with vital nutrients, it's tailor-made to support the blossoming years."
+                                }
+                                h4_4={"Boost Your Brain Naturally"}
+                                p_4={
+                                    "Experience improved cognitive function as this wholesome ghee nurtures your brain cells."
+                                }
+                                BoxImg1={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_9a32e5b8-76db-41d7-a424-bebebe645f3a.png?v=1698925681"
+                                }
+                                BoxImg2={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-1_7830569b-80c0-4a90-b16d-5a4c127d34c4.png?v=1698925681"
+                                }
+                                BoxImg3={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2_acf6b68f-0ba1-4b1a-850e-270ce944fc7c.png?v=1698925681"
+                                }
+                            />
+                        }
+                    />
                 </Routes>
             </Provider>
         </BrowserRouter>

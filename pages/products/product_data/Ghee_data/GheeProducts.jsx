@@ -77,9 +77,13 @@ export default function GheePages({
 
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
-    const [selectedOption, setSelectedOption] = useState(price);
-    const [selectedOption1, setSelectedOption1] = useState(previousPrice);
-    const [selectedOption2, setSelectedOption2] = useState(save);
+    const [selectedOption, setSelectedOption] = useState(
+        price ? price : price1,
+    );
+    const [selectedOption1, setSelectedOption1] = useState(
+        previousPrice ? previousPrice : previousPrice1,
+    );
+    const [selectedOption2, setSelectedOption2] = useState(save ? save : save1);
 
     let sliderRef1 = useRef(null);
     let sliderRef2 = useRef(null);
@@ -382,38 +386,40 @@ export default function GheePages({
                                         setSelectedOption2(selected.discount);
                                     }}
                                 >
-                                    <option value={price}>
-                                        250ml(Glass Bottle)
-                                    </option>
-                                    <option value={price1}>
-                                        300ml(Glass Bottle)
-                                    </option>
-                                    <option value={price2}>
-                                        550ml(Glass Bottle)
-                                    </option>
-                                    <option value={price3}>
-                                        825ml(Glass Bottle)
-                                    </option>
-                                    {price4 ? (
+                                    {price && (
+                                        <option value={price}>
+                                            250ml(Glass Bottle)
+                                        </option>
+                                    )}
+                                    {price1 && (
+                                        <option value={price1}>
+                                            300ml(Glass Bottle)
+                                        </option>
+                                    )}
+                                    {price2 && (
+                                        <option value={price2}>
+                                            550ml(Glass Bottle)
+                                        </option>
+                                    )}
+                                    {price3 && (
+                                        <option value={price3}>
+                                            825ml(Glass Bottle)
+                                        </option>
+                                    )}
+                                    {price4 && (
                                         <option value={price4}>
                                             500ml(Glass Bottle)
                                         </option>
-                                    ) : (
-                                        <option hidden value={price4}></option>
                                     )}
-                                    {price5 ? (
+                                    {price5 && (
                                         <option value={price5}>
                                             1000ml(Glass Bottle)
                                         </option>
-                                    ) : (
-                                        <option hidden value={price5}></option>
                                     )}
-                                    {price6 ? (
+                                    {price6 && (
                                         <option value={price6}>
                                             2750g(Glass Bottle)
                                         </option>
-                                    ) : (
-                                        <option hidden value={price6}></option>
                                     )}
                                 </select>
                                 <div className="flex gap-2 justify-center items-center w-1/3 border border-[#006944] rounded-lg px-5">
@@ -454,9 +460,11 @@ export default function GheePages({
                                 <div className="flex gap-2 py-3 justify-center items-center">
                                     <button
                                         onClick={() => {
+                                            const pic = images[0].img;
                                             addToCart({
                                                 title: Name,
-                                                ImageUrl: images,
+                                                ImageUrl: `${pic}`,
+                                                price: selectedOption1,
                                                 content: selectedOption * count,
                                             });
                                         }}

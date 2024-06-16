@@ -14,13 +14,13 @@ import {
     FaPinterest,
     FaTwitter,
     FaEnvelope,
-    } from "react-icons/fa";
-    import { useDispatch } from "react-redux";
-    import { add } from "../../../src/store/cartSlice";
-    import { nanoid } from "@reduxjs/toolkit";
-    import { products } from "./honey_images/honey_data";
-    
-    export default function HoneyPages({
+} from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { add } from "../../../src/store/cartSlice";
+import { nanoid } from "@reduxjs/toolkit";
+import { products } from "./honey_images/honey_data";
+
+export default function HoneyPages({
     name,
     Name,
     price,
@@ -401,11 +401,12 @@ import {
                                         1450g(Glass Bottle)
                                     </option>
                                     {price6 ? (
-                                        <option value={price6}>2750g(Glass Bottle)</option>
+                                        <option value={price6}>
+                                            2750g(Glass Bottle)
+                                        </option>
                                     ) : (
                                         <option hidden value={price6}></option>
                                     )}
-
                                 </select>
                                 <div className="flex gap-2 justify-center items-center w-1/3 border border-[#006944] rounded-lg px-5">
                                     <button
@@ -445,10 +446,11 @@ import {
                                 <div className="flex gap-2 py-3 justify-center items-center">
                                     <button
                                         onClick={() => {
+                                            const pic = images[0].img;
                                             addToCart({
                                                 title: Name,
-                                                ImageUrl:
-                                                    extraImage,
+                                                ImageUrl: `${pic}`,
+                                                price: selectedOption1,
                                                 content: selectedOption * count,
                                             });
                                         }}
