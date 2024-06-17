@@ -77,13 +77,13 @@ export default function ApplePages({
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
     const [selectedOption, setSelectedOption] = useState(
-        price ?? price1 ?? null,
+        price ??  null,
     );
     const [selectedOption1, setSelectedOption1] = useState(
-        previousPrice ?? previousPrice1 ?? null,
+        previousPrice ?? null,
     );
     const [selectedOption2, setSelectedOption2] = useState(
-        save ?? save1 ?? null,
+        save ?? null,
     );
 
     let sliderRef1 = useRef(null);
@@ -347,7 +347,7 @@ export default function ApplePages({
                             <p>Size</p>
                             <div className="font-light text-sm flex gap-2">
                                 <select
-                                    className="border border-[#006944] py-2 text-left rounded-lg w-1/2 px-3 outline-none"
+                                    className="border border-[#006944] py-2 text-left rounded-lg w-1/2 px-3 outline-none hidden"
                                     onChange={(e) => {
                                         setSelectedOption(e.target.value);
                                         let options = {
