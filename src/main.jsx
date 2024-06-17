@@ -1848,6 +1848,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             />
                         }
                     />
+                    <Route />
                     <Route
                         path="collections/ghee/products/a2-sahiwali-ghee"
                         element={
@@ -2003,12 +2004,64 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 }
                                 Name={"ACV Cinnamon Honey Fenugreek"}
                                 images={CinnamonHoney}
-                                info1={"ACV Infused with Cinnamon and Fenugreek"}
+                                info1={
+                                    "ACV Infused with Cinnamon and Fenugreek"
+                                }
                                 info2={"Discover Nature’s Magic"}
-                                info3={"Nature's Secret for Shedding Extra Kilos"}
+                                info3={
+                                    "Nature's Secret for Shedding Extra Kilos"
+                                }
                                 price={525}
                                 previousPrice={675}
                                 save={"23%"}
+                                Tab1={
+                                    "Unlock a Healthier You with Organic ACV and Mother. Shed pounds, manage blood sugar, pressure, and cholesterol. Glow with radiant skin and whiter teeth. Boost immunity, fight diseases, and soothe heartburn and constipation. Improve digestion, cell repair, and inflammation. Drizzle as salad dressing. Embrace a cleaner home too."
+                                }
+                                T1Text={"ACV Cinnamon Honey Fenugreek:"}
+                                T1SubText={
+                                    "Discover the essence of pure goodness! Our Apple Cider Vinegar (ACV) with Mother, enriched with the aromatic duo of Cinnamon (Dal Chini) and Fenugreek (Methi Dana), is an authentic 100% natural delight."
+                                }
+                                T2Text={"Discover Nature’s Magic:"}
+                                T2SubText={
+                                    "Apple Cider Vinegar is suitable for all. It is a blessing for diabeties patients. Not only this, but it is also great for your taste buds. You can zest up salads with ACV and spark up health at the same time."
+                                }
+                                T3Text={
+                                    "Nature's Secret for Shedding Extra Kilos"
+                                }
+                                T3SubText={
+                                    "Farm Naturelle Apple Cider Vinegar can be your best buddy on your weight loss journey. The 'Mother' in ACV contains enzymes that boost metabolism and control cravings."
+                                }
+                                Tab3={
+                                    "organic apple juice, cinnamon & Fenugreek"
+                                }
+                                extraImage={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Cinnamon_Fenugreek_ACV.png?v=1703070537"
+                                }
+                                h4_1={"Natural guardian for your well-being"}
+                                p_1={
+                                    "Embrace balance with this simple addition to your routine. Your health, your way."
+                                }
+                                h4_2={"Repairs Cell & Controls Cholesterol"}
+                                p_2={
+                                    "Apple Cider Vinegar is know for nurturing cells, lowering cholesterol and soothing inflammation."
+                                }
+                                h4_3={"A natural path to wellness"}
+                                p_3={
+                                    "Unlock the potential for weight management while maintaining healthy blood sugar, pressure, and cholesterol levels."
+                                }
+                                h4_4={"A Robust Shield Against Illnesses:"}
+                                p_4={
+                                    "Embrace a healthier you with improved digestion as this elixir naturally nurtures your body."
+                                }
+                                BoxImg1={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856911_4b634f74-099b-4fab-8f6f-25f9dd77ce47.png?v=1703070991"
+                                }
+                                BoxImg2={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856912_a1bd282f-85c5-4187-97f3-f1776282d26c.png?v=1703070991"
+                                }
+                                BoxImg3={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856913_a46a30b2-d71c-4cc5-b385-ec89d5064ad9.png?v=1703070991"
+                                }
                             />
                         }
                     />

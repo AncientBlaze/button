@@ -76,15 +76,11 @@ export default function ApplePages({
 
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
-    const [selectedOption, setSelectedOption] = useState(
-        price ??  null,
-    );
+    const [selectedOption, setSelectedOption] = useState(price ?? null);
     const [selectedOption1, setSelectedOption1] = useState(
         previousPrice ?? null,
     );
-    const [selectedOption2, setSelectedOption2] = useState(
-        save ?? null,
-    );
+    const [selectedOption2, setSelectedOption2] = useState(save ?? null);
 
     let sliderRef1 = useRef(null);
     let sliderRef2 = useRef(null);
@@ -746,7 +742,7 @@ export default function ApplePages({
                             alt=""
                         />
                         <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-nowrap scale-75">
-                            Apply on Rotis
+                            Drizzle on Salads
                         </p>
                     </div>
                     <div className="w-[30%] h-48 bg-[#99C459] rounded-xl text-8xl relative">
@@ -759,7 +755,7 @@ export default function ApplePages({
                             alt=""
                         />
                         <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75">
-                            Cook Curries
+                            Use as teeth cleaner
                         </p>
                     </div>
                     <div className="w-[30%] h-48 bg-[#006944] rounded-xl text-8xl relative">
@@ -772,7 +768,7 @@ export default function ApplePages({
                             alt=""
                         />
                         <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75">
-                            Make Sweets
+                            Stir in water
                         </p>
                     </div>
                 </div>
