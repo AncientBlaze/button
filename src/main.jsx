@@ -83,8 +83,8 @@ import {
     a2SahiwaliGhee,
     cowGhee,
 } from "../pages/products/product_data/Ghee_data/Ghee_data.js";
-import ApplePages from "../pages/products/product_data/Apple_data/GheeProducts.jsx";
-import { CinnamonHoney } from "../pages/products/product_data/Apple_data/Apple_data.js";
+import ApplePages from "../pages/products/product_data/Apple_data/AppleProducts.jsx";
+import { CinnamonHoney, GingerTurmeric } from "../pages/products/product_data/Apple_data/Apple_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -2061,6 +2061,77 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 }
                                 BoxImg3={
                                     "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856913_a46a30b2-d71c-4cc5-b385-ec89d5064ad9.png?v=1703070991"
+                                }
+                            />
+                        }
+                    />
+
+<Route
+                        path="/collections/apple-cider-vinegar/products/acv-ginger-turmeric"
+                        element={
+                            <ApplePages
+                                name={
+                                    "Organic Apple Cider Vinegar with Mother and Apple Cider Infused Ginger and Turmeric"
+                                }
+                                Name={"ACV Ginger Turmeric"}
+                                images={GingerTurmeric}
+                                info1={
+                                    "Nature's Blend"
+                                }
+                                info2={"Natural Magic of Apple Cider Vinegar"}
+                                info3={
+                                    "Organic ACV with Mother Aids Weight Loss"
+                                }
+                                price={525}
+                                previousPrice={675}
+                                save={"23%"}
+                                Tab1={
+                                    "Taste the power of Organic ACV with Mother, your key to holistic well-being. This elixir aids weight loss, regulates blood sugar, pressure, and cholesterol. Reveal radiant skin and brighter smiles with its detoxifying teeth-whitening magic. Bolster your immunity, soothe heartburn, and enhance digestion. Rejuvenate cells, tame inflammation, and relish it as a zesty salad dressing. Embrace cleaner living, as ACV multitasks as your household's eco-friendly cleaner. Experience nature's goodness, bottled just for you."
+                                }
+                                T1Text={"Nature's Blend:"}
+                                T1SubText={
+                                    "Discover the essence of pure goodness! Our Apple Cider Vinegar (ACV) with Mother, enriched with the aromatic duo of Cinnamon (Dal Chini) and Fenugreek (Methi Dana), is an authentic 100% natural delight."
+                                }
+                                T2Text={"Natural Magic of Apple Cider Vinegar:"}
+                                T2SubText={
+                                    "Apple Cider Vinegar is suitable for all. It is a blessing for diabeties patients. Not only this, but it is also great for your taste buds. You can zest up salads with ACV and spark up health at the same time."
+                                }
+                                T3Text={
+                                    "Organic ACV with Mother Aids Weight Loss"
+                                }
+                                T3SubText={
+                                    "Farm Naturelle Apple Cider Vinegar can be your best buddy on your weight loss journey. The 'Mother' in ACV contains enzymes that boost metabolism and control cravings."
+                                }
+                                Tab3={
+                                    "organic apple juice, Ginger & Turmeric"
+                                }
+                                extraImage={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Ginger_Turmeric_Infused_ACV.png?v=1703070537"
+                                }
+                                h4_1={"Get Sugar & Blood Pressure Benefits"}
+                                p_1={
+                                    "Experience the goodness of nature's remedy in a single sip!"
+                                }
+                                h4_2={"Apple Cider Vinegar's Double Action"}
+                                p_2={
+                                    "Embrace the goodness in a single sip and let your body celebrate the journey to better well-being!"
+                                }
+                                h4_3={"Nature's Balance for Wellness"}
+                                p_3={
+                                    "Embrace the goodness of Apple Cider Vinegar to support your well-being effortlessly."
+                                }
+                                h4_4={"A Robust Shield Against Illnesses:"}
+                                p_4={
+                                    "Embrace a healthier you with improved digestion as this elixir naturally nurtures your body."
+                                }
+                                BoxImg1={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-1_f6397a36-5eb4-487a-bfd1-8921c7eba261.png?v=1698923987"
+                                }
+                                BoxImg2={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2_e5d6e7fe-2cce-4a81-ad13-8cbc8ae906e3.png?v=1698923985"
+                                }
+                                BoxImg3={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_e687c6e8-4d5d-4e2c-a8bc-734f02bf1ae5.png?v=1698923986"
                                 }
                             />
                         }

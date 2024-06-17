@@ -843,10 +843,10 @@ export default function ApplePages({
                                         src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_8.png?v=1703150234"
                                     />
                                 </p>
-                                Unrefined, Cold Pressed & Virgin
+                                Uses Organic Apples
                             </div>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_9.png?v=1703153821)] bg-[1%] bg-no-repeat text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Higher Nutritional Values
+                                No Additives
                             </p>
                             <div className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white relative">
                                 <p>
@@ -855,39 +855,21 @@ export default function ApplePages({
                                         src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_8.png?v=1703150234"
                                     />
                                 </p>
-                                Organic
+                                No Preservatives
                             </div>
-                            <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_9.png?v=1703153821)] bg-[1%] bg-no-repeat text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Unprocessed
-                            </p>
-                            <p className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white relative">
-                                <p>
-                                    <img
-                                        className="absolute top-1/2 -translate-y-1/2 left-1"
-                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_8.png?v=1703150234"
-                                    />
-                                </p>
-                                100% Natural
-                            </p>
                         </div>
                     </div>
                     <div className="w-1/2 h-48 text-[#006944] rounded-xl text-center font-semibold font-jost">
-                        <p className="text-3xl py-10">Normal Oils</p>
+                        <p className="text-3xl py-10">Apple Cider Vinegar</p>
                         <div className="w-full flex flex-col justify-center items-center font-light">
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Refined
+                                Uses Bad Quality Apple
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-white text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Less Nutritional Values
+                                Has Harmful Additives
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Non-Organic
-                            </p>
-                            <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-white text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Processed
-                            </p>
-                            <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Has Additives
+                                Has Preservatives
                             </p>
                         </div>
                     </div>

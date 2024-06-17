@@ -16,7 +16,8 @@ const products = [
         PreviousPrice: 675,
         save: 22,
     },
-    {
+    {   
+        id:"acv-ginger-turmeric",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_33e16e03-4d5c-41ba-8b9c-fc9feb96421c_800x.jpg?v=1708001285",
         PlaceHolder:
