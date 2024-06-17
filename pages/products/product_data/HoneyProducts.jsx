@@ -17,9 +17,7 @@ import {
 } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { add } from "../../../src/store/cartSlice";
-import { nanoid } from "@reduxjs/toolkit";
 import { products } from "./product_data";
-
 
 export default function HoneyPages({
     name,
@@ -946,9 +944,14 @@ export default function HoneyPages({
                         ref={(slider) => (sliderRef3 = slider)}
                     >
                         {products.map((item, index) => (
-                            <div key={index}>
-                                <Card key={index} id={nanoid()} {...item} />
-                            </div>
+                            <Link
+                                key={index}
+                                to={`/collections/${item.catagory}/products/${item.id}`}
+                            >
+                                <div>
+                                    <Card key={index} {...item} />
+                                </div>
+                            </Link>
                         ))}
                     </Slider>
                 </div>

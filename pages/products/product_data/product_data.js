@@ -67,7 +67,8 @@ export const products = [
         content: 369,
         save: 16,
     },
-    {
+    {   id:"sunflower-oil",
+        catagory: "best-seller-cooking-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9423_800x.jpg?v=1703749253",
         PlaceHolder:
