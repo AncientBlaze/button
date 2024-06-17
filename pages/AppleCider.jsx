@@ -5,7 +5,8 @@ import Card from "../src/components/CardComponent2";
 import { nanoid } from "@reduxjs/toolkit";
 
 const products = [
-    {
+    {   
+        id:"acv-cinnamon-honey-fenugreek",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_38e8be56-efc8-4584-bb40-a9998cd27a2f_800x.jpg?v=1703749530",
         PlaceHolder:
@@ -63,7 +64,9 @@ function Apple() {
                 </p>
                 <div className="w-full h-auto grid xl:grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 px-20 py-8 gap-10 justify-items-center">
                     {products.map((product, index) => (
+                        <Link to={`/collections/apple-cider-vinegar/products/${product.id}`} key={index}>
                         <Card key={index} id={nanoid()} {...product} />
+                        </Link>
                     ))}
                 </div>
             </div>

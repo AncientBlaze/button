@@ -465,8 +465,7 @@ export default function ApplePages({
                                             addToCart({
                                                 title: Name,
                                                 ImageUrl: `${pic}`,
-                                                price:
-                                                    selectedOption1,
+                                                price: selectedOption1,
                                                 content:
                                                     count > 1
                                                         ? selectedOption * count
@@ -637,7 +636,7 @@ export default function ApplePages({
                                     <div className="w-full text-wrap">
                                         <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
                                             <img
-                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856910.svg?v=1699345544"
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857505.png?v=1696832200"
                                                 title=""
                                                 width="52px"
                                                 height="42px"
@@ -684,7 +683,7 @@ export default function ApplePages({
                                     <div className="w-full text-wrap">
                                         <div className="text-[#006944] w-auto text-center flex flex-col justify-center items-center -my-5">
                                             <img
-                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856911.svg?v=1699345544"
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857508.png?v=1696832109"
                                                 title=""
                                                 width="50px"
                                                 height="50px"

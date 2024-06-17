@@ -83,6 +83,8 @@ import {
     a2SahiwaliGhee,
     cowGhee,
 } from "../pages/products/product_data/Ghee_data/Ghee_data.js";
+import ApplePages from "../pages/products/product_data/Apple_data/GheeProducts.jsx";
+import { CinnamonHoney } from "../pages/products/product_data/Apple_data/Apple_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -1988,6 +1990,20 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 BoxImg3={
                                     "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2_acf6b68f-0ba1-4b1a-850e-270ce944fc7c.png?v=1698925681"
                                 }
+                            />
+                        }
+                    />
+
+                    <Route
+                        path="/collections/apple-cider-vinegar/products/acv-cinnamon-honey-fenugreek"
+                        element={
+                            <ApplePages
+                                name={
+                                    "Organic Apple Cider Vinegar with Mother and Infused Cinnamon & Fenugreek"
+                                }
+                                Name={"ACV Cinnamon Honey Fenugreek"}
+                                images={CinnamonHoney}
+                                info1={"ACV Infused with Cinnamon and Fenugreek"}
                             />
                         }
                     />
