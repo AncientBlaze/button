@@ -7,7 +7,7 @@ function Footer() {
     return (
         <>
             <div className="flex-col">
-                <div className="footer h-[657px] w-full bg-[url(../Footer.webp)] overflow-hidden">
+                <div className="footer h-[calc(657px+env(safe-area-inset-bottom))]" style={{ backgroundImage: `url(https://farmnaturelle.com/cdn/shop/files/Group_14856848.png?v=1696491609)` }}>
                     <div className="py-20">
                         <h3 className="text-center font-jost font-medium text-[#006944] text-5xl">
                             Also Available On

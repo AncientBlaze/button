@@ -2006,6 +2006,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 info1={"ACV Infused with Cinnamon and Fenugreek"}
                                 info2={"Discover Nature’s Magic"}
                                 info3={"Nature's Secret for Shedding Extra Kilos"}
+                                price={525}
+                                previousPrice={675}
+                                save={"23%"}
                             />
                         }
                     />
