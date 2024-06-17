@@ -21,7 +21,8 @@ export const products = [
         PreviousPrice: 449,
         save: 18,
     },
-    {   id: "white-sesame-oil-classic",
+    {
+        id: "white-sesame-oil-classic",
         catagory: "best-seller-cooking-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9429_800x.jpg?v=1703849984",
@@ -47,6 +48,8 @@ export const products = [
         hidden: "hidden",
     },
     {
+        id:"black-mustard-oil",
+        catagory: "best-seller-cooking-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9304_5e288c25-7779-4d43-b049-30fa89946889_800x.jpg?v=1708001211",
         PlaceHolder:
@@ -56,7 +59,8 @@ export const products = [
         PreviousPrice: 339,
         save: 14,
     },
-    {   id: "tulsi-flora-honey",
+    {
+        id: "tulsi-flora-honey",
         catagory: "honey",
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/3_04c1d709-5e90-40b5-83fc-6ee87ba55563_800x.jpg?v=1708000860",
@@ -67,7 +71,8 @@ export const products = [
         content: 369,
         save: 16,
     },
-    {   id:"sunflower-oil",
+    {
+        id: "sunflower-oil",
         catagory: "best-seller-cooking-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9423_800x.jpg?v=1703749253",
