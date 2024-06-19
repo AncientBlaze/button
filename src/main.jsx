@@ -50,7 +50,7 @@ import Kidney from "../pages/products/Kidney.jsx";
 import WomanGlow from "../pages/products/WomanGlow.jsx";
 import StressBuster from "../pages/products/StressBuster.jsx";
 import PainRelief from "../pages/products/PainRelief.jsx";
-import HoneyPages from "../pages/products/product_data/HoneyProducts.jsx";
+import HoneyPages from "../pages/products/product_data/honey_data/HoneyProducts.jsx";
 import {
     AlciasHoney,
     AshwagandhaHoney,
@@ -67,7 +67,7 @@ import {
     TurmericInfused,
     VanaTulsi,
     WildBerryFlora,
-} from "../pages/products/product_data/honey_images/honey_data.js";
+} from "../pages/products/product_data/honey_data/honey_data.js";
 import CookingPages from "../pages/products/product_data/cooking_data/CookingProducts.jsx";
 import {
     BlackMustard,
@@ -1987,7 +1987,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 p_4={
                                     "Experience radiant skin with our unadulterated, cold-pressed oils brimming with Vitamin-E. Unlock the secret to a glowing complexion and smoother skin. These oils, abundant in natural goodness, are your pathway to reducing wrinkles and enhancing skin's vitality."
                                 }
-                                extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Organic_Virgin_Coconut_Oil-benefit.png?v=1703061837"}
+                                extraImage={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Organic_Virgin_Coconut_Oil-benefit.png?v=1703061837"
+                                }
                                 BoxImg1={
                                     "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Organic_Extra_Virgin_Coconut_Oil-2.png?v=1703063128"
                                 }
@@ -2409,6 +2411,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             />
                         }
                     />
+                    <Route path="collections/hill-turmeric/products/turmeric-with-black-pepper" 
+                    element={<ApplePages/>}/>
                 </Routes>
             </Provider>
         </BrowserRouter>

@@ -2,12 +2,12 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
-import Nav from "../../../src/components/header/Nav";
-import Footer from "../../../src/components/footer/Footer";
+import Nav from "../../../../src/components/header/Nav";
+import Footer from "../../../../src/components/footer/Footer";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import { LuChevronDown, LuChevronUp } from "react-icons/lu";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Card from "../../../assets/Card3";
+import Card from "../../../../assets/Card3";
 import { Link } from "react-router-dom";
 import {
     FaFacebookF,
@@ -16,8 +16,8 @@ import {
     FaEnvelope,
 } from "react-icons/fa";
 import { useDispatch } from "react-redux";
-import { add } from "../../../src/store/cartSlice";
-import { products } from "./product_data";
+import { add } from "../../../../src/store/cartSlice";
+import { products } from "../product_data";
 
 export default function HoneyPages({
     name,
