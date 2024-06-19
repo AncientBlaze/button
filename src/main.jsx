@@ -92,7 +92,7 @@ import {
     GingerTurmeric,
 } from "../pages/products/product_data/Apple_data/Apple_data.js";
 import HillPages from "../pages/products/product_data/Hill_data/HillPages.jsx";
-import { blackPepperTurmeric } from "../pages/products/product_data/Hill_data/Hill_data.js";
+import { blackPepperTurmeric, plainTurmeric, turmericMilkMasala } from "../pages/products/product_data/Hill_data/Hill_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -471,7 +471,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 Name={"Jungle Flora Honey"}
                                 images={JungleFlora}
                                 info1={"Sub Himalayan Delight"}
-                                info2={"Loaded with health benefits"}
+                                info2={"Golden Immunity Magic"}
                                 info3={"Pure, unheated & unprocessed"}
                                 price={369}
                                 previousPrice={459}
@@ -501,7 +501,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 T1SubText={
                                     "This raw honey is made from the nectar of multiple forest flowers in the Sub Himalayan Nainital region, making it a delicious treat."
                                 }
-                                T2Text={"Loaded with health benefits:"}
+                                T2Text={"Golden Immunity Magic:"}
                                 T2SubText={
                                     "Discover the ultimate all-purpose, antibiotic-free honey! Packed with vitamins and untouched by heat or processing, it's raw and pure, keeping its natural goodness intact. Unlock a world of health benefits!"
                                 }
@@ -985,7 +985,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 p_3={
                                     "Achieve a healthier weight and enhance your well-being with our honey"
                                 }
-                                h4_4={"Loaded with health benefits"}
+                                h4_4={"Golden Immunity Magic"}
                                 p_4={
                                     "Boost your immunity, combat colds, coughs, and digestion issues"
                                 }
@@ -2428,12 +2428,92 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             save2={"16%"}
                             images={blackPepperTurmeric}
                             info1={"Optimize Your Health with This Duo"}
-                            info2={"Enhanced Turmeric's Benefits"}
-                            info3={"Unlocking Turmeric's Power"}
+                            info2={"Golden Immunity Magic"}
+                            info3={"Turmeric's Gift to Your Skin"}
                             T1Text={"Optimize Your Health with This Duo: "}
-                            T2Text={"Enhanced Turmeric's Benefits: "}
-                            T3Text={"Unlocking Turmeric's Power: "}
-                        />} />
+                            T1SubText={"Experience the power of a ready mix that supercharges turmeric's benefits. Unleash natural anti-inflammatory goodness, curbing pain effortlessly. Embrace a holistic path to wellness, easily unlocking turmeric's potential for your body."}
+                            T2Text={"Golden Immunity Magic: "}
+                            T2SubText={"Combined with a pinch of Black Pepper, this simple blend supercharges Curcumin absorption—your shield against oxidative stress, promotes speedy recovery post-surgery, and aids in detoxing from heavy metals."}
+                            T3Text={"Turmeric's Gift to Your Skin: "}
+                            T3SubText={"Adding a dash of black pepper to turmeric boosts Curcumin absorption by a whopping 2000%, supercharging digestion and gut health. Bye-bye acid reflux and hello to a happier tummy! This dynamic duo also aids in reducing pancreatic issues and irritable bowel discomfort."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Hill_Turmeric_Black_Pepper_Powder.png?v=1703074303"}
+                            h4_1={"Makes Your Bones Stronger"}
+                            p_1={"Revitalize your joints with the dynamic duo of Turmeric and Black Pepper."}
+                            h4_2={"Nature's Harmony for Mind & Body"}
+                            p_2={"Experience the synergy of Turmeric and Black Pepper—a perfect blend that supports bipolar and spleen health."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_ec5f14b1-4b45-490e-87a3-9364c38ff206.png?v=1698924577"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-1_1a40a9b7-c494-4f72-ab08-8836fb0520d3.png?v=1698924577"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2_f45e0b98-ab34-43ba-9220-de232667fe4a.png?v=1698924577"}
+                            Tab1={"Experience the magic of curcumin, a powerful compound residing in Turmeric, sourced from the roots of Curcuma Longa Linn plant. With a rich history in Asian remedies, Turmeric offers ancient healing. Maximize curcumin's potential by adding piperine from Black Pepper for optimal absorption. Try our convenient blend for an effective wellness solution. Your journey to well-being starts here."}
+                            Tab3={"Turmeric powder, black pepper"}
+                        />}
+                    />
+                    <Route path="collections/hill-turmeric/products/turmeric-milk-masala"
+                        element={<HillPages
+                            name={"Golden Milk Masala Himalayan Turmeric latte Powder with Natural & Immunizing Spice Blend Himalayan Turmeric, Almonds, Cinnamon, Ginger , Cloves , Ashwagandha & Ground Balck Pepper"}
+                            Name={"Turmeric With Milk Masala"}
+                            price={310}
+                            previousPrice={369}
+                            save={"16% off"}
+                            price1={420}
+                            previousPrice1={499}
+                            save1={"16%"}
+                            price2={545}
+                            previousPrice2={645}
+                            save2={"16%"}
+                            images={turmericMilkMasala}
+                            info1={"Enhance Every Indian Dish with Turmeric Magic"}
+                            info2={"Golden Immunity Magic"}
+                            info3={"Turmeric's Gift to Your Skin"}
+                            T1Text={"Enhance Every Indian Dish with Turmeric Magic: "}
+                            T1SubText={"Experience the power of turmeric – your go-to natural solution! Soothe inflammation, bid farewell to pain, and harness strong antioxidants. Whether you're recovering post-surgery or seeking everyday relief, turmeric supports your wellness journey. Let this golden treasure from nature enhance your vitality and speed up your recovery process. Discover the ancient secret to a healthier, happier you."}
+                            T2Text={"Golden Immunity Magic: "}
+                            T2SubText={"Turmeric aids in flushing out harmful metals, Almonds boost memory prowess, Cloves enrich dental vitality, and all come together to shield your precious blood cells."}
+                            T3Text={"Turmeric's Gift to Your Skin: "}
+                            T3SubText={"Together, they dance to enhance digestion, curb acid reflux, and nourish tummy wellness. Turmeric lends a hand in calming pancreatic woes and irritable bowel troubles. Experience the soothing rhythm of nature's spices, ensuring your stomach feels its happiest best."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Hill_Turmeric_Black_Pepper_Powder.png?v=1703074303"}
+                            h4_1={"Supports Joints, Bones, & Mind"}
+                            p_1={"Farm Naturelle Turmeric Milk Masala helps ease arthritis discomfort, shield against bone loss, and aid bone mending."}
+                            h4_2={"A superhero for your body"}
+                            p_2={"From maintaining healthy cholesterol levels to nurturing your heart, and even guarding against troublesome stomach ulcers, Turmeric does it all."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_9d28ea91-47a8-4a50-ab81-8eba20a6080c.png?v=1698924539"}
+                            Tab1={"Get the magic of Himalayan Turmeric, Almonds, Cinnamon, Ginger, and Cloves in this convenient mix for milk. Just add before boiling, and watch the goodness unfold. Plus, a pinch of Ground Pepper supercharges Curcumin absorption by over 2000%, maximizing benefits for your body."}
+                        />}
+                    />
+                    <Route path="collections/hill-turmeric/products/plain-turmeric"
+                        element={<HillPages
+                            name={"Pure Himalayan Mountain Turmeric Curcumin (Haldi) Powder"}
+                            Name={"Turmeric"}
+                            price={299}
+                            previousPrice={359}
+                            save={"17% off"}
+                            price1={399}
+                            previousPrice1={469}
+                            save1={"15%"}
+                            price2={499}
+                            previousPrice2={599}
+                            save2={"17%"}
+                            images={plainTurmeric}
+                            info1={"Enhance Every Indian Dish with Turmeric Magic"}
+                            info2={"Golden Immunity Magic"}
+                            info3={"Turmeric's Gift to Your Skin"}
+                            Tab1={"Curcumin, an active compound in Turmeric, sourced from the Himalayan heights of Uttarakhand. Farm Naturelle Turmeric thrives amidst nature's purity, devoid of chemicals. With an abundant Curcumin content, it offers unmatched health benefits. Blend it with a touch of Black Pepper for optimum absorption. Embrace centuries of Asian wisdom and elevate your vitality with our natural, high-altitude Mountain Turmeric (Haldi) Powder."}
+                            T1Text={"Enhance Every Indian Dish with Turmeric Magic: "}
+                            T1SubText={"Spice Up Your Cooking: Turmeric, the heart of Indian cuisine, adds a vibrant twist to your daily recipes. From fragrant curries to savory dishes, this golden treasure is your ultimate cooking companion. Elevate the flavor and health benefits of your favorite meals by effortlessly infusing them with the goodness of turmeric. Unleash the essence of India in every bite!"}
+                            T2Text={"Golden Immunity Magic: "}
+                            T2SubText={"Elevate your well-being with a daily ritual – a warm cup of milk infused with Turmeric and a pinch of black pepper. This dynamic duo not only boosts immunity and purifies your body but also promotes stomach wellness, smooth bowel movements, and a radiant complexion. Experience the swift restoration of cellular vitality. Embrace the golden goodness for a vibrant life."}
+                            T3Text={"Turmeric's Gift to Your Skin: "}
+                            T3SubText={"Its potent antibacterial elements work wonders. Embrace a radiant complexion by including it in your regular face pack routine. Experience the joy of soft, luminous skin as blemishes, dark circles, and acne fade away. Let turmeric redefine skincare simplicity for you."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Hill_Turmeric_Powder.png?v=1703074303"}
+                            h4_1={"Potent Perfection from the Himalayas"}
+                            p_1={"Harness the power of the mountains in just a small amount."}
+                            h4_2={"Glowing Skin Secret"}
+                            p_2={"Let the magic of Turmeric dissolve the stubborn sun, dust, and pollution-induced tan."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-1_4d627ec2-9600-4493-81db-ad5e189fd08b.png?v=1698924411"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_e0faee3e-af96-4fee-b46a-f78ef3523ab5.png?v=1698924411"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2_506f8095-b844-498e-8964-25ad27c202f9.png?v=1698924411"}
+                        />}
+                    />
                 </Routes>
             </Provider>
         </BrowserRouter>

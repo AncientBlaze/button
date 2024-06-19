@@ -343,7 +343,7 @@ export default function HillPages({
                                                 price: previousPrice2,
                                                 discount: save2,
                                             },
-                                            
+
                                         };
                                         const selectedoption =
                                             options[e.target.value];
@@ -444,9 +444,8 @@ export default function HillPages({
                             </p>
                             <div>
                                 <div
-                                    className={`${
-                                        offerExpanded ? "block" : "hidden"
-                                    }`}
+                                    className={`${offerExpanded ? "block" : "hidden"
+                                        }`}
                                 >
                                     <p className="border-b border-[#006944] py-5">
                                         Buy one, get one free on raw honey at
@@ -465,8 +464,8 @@ export default function HillPages({
                                         document.getElementById(
                                             "offer",
                                         ).innerHTML = offerExpanded
-                                            ? "More offers"
-                                            : "Less offers";
+                                                ? "More offers"
+                                                : "Less offers";
                                     }}
                                 >
                                     <span className="py-3 pr-2">
@@ -643,35 +642,39 @@ export default function HillPages({
                             alt=""
                         />
                         <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-nowrap scale-75">
-                            Drizzle on Salads
+                            Mix with Ghee
                         </p>
                     </div>
-                    <div className="w-[30%] h-48 bg-[#99C459] rounded-xl text-8xl relative">
-                        <p className="absolute -top-10 left-10 transform -translate-x-1/2 -translate-y-1/2 text-[#D1E0D6]">
-                            02
-                        </p>
-                        <img
-                            className="absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
-                            src={BoxImg2}
-                            alt=""
-                        />
-                        <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75">
-                            Use as teeth cleaner
-                        </p>
-                    </div>
-                    <div className="w-[30%] h-48 bg-[#006944] rounded-xl text-8xl relative">
-                        <p className="absolute -top-10 left-10 transform -translate-x-1/2 -translate-y-1/2 text-[#D1E0D6]">
-                            03
-                        </p>
-                        <img
-                            className="absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
-                            src={BoxImg3}
-                            alt=""
-                        />
-                        <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75">
-                            Stir in water
-                        </p>
-                    </div>
+                    {BoxImg2 &&
+                        <div className="w-[30%] h-48 bg-[#99C459] rounded-xl text-8xl relative">
+                            <p className="absolute -top-10 left-10 transform -translate-x-1/2 -translate-y-1/2 text-[#D1E0D6]">
+                                02
+                            </p>
+                            <img
+                                className="absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+                                src={BoxImg2}
+                                alt=""
+                            />
+                            <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75 text-nowrap">
+                                Salad Dressing
+                            </p>
+                        </div>
+                    }
+                    {BoxImg3 &&
+                        <div className="w-[30%] h-48 bg-[#006944] rounded-xl text-8xl relative">
+                            <p className="absolute -top-10 left-10 transform -translate-x-1/2 -translate-y-1/2 text-[#D1E0D6]">
+                                03
+                            </p>
+                            <img
+                                className="absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+                                src={BoxImg3}
+                                alt=""
+                            />
+                            <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75 text-nowrap">
+                                Add in Curries
+                            </p>
+                        </div>
+                    }
                 </div>
             </div>
             {/* <div className="bg-[#DEEACD] h-auto text-center text-[gray] font-semibold font-jost py-10">
@@ -744,10 +747,10 @@ export default function HillPages({
                                         src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_8.png?v=1703150234"
                                     />
                                 </p>
-                                Uses Organic Apples
+                                Uses Premium Quality Ingredients
                             </div>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_9.png?v=1703153821)] bg-[1%] bg-no-repeat text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                No Additives
+                                Natural Hue
                             </p>
                             <div className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white relative">
                                 <p>
@@ -756,21 +759,39 @@ export default function HillPages({
                                         src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_8.png?v=1703150234"
                                     />
                                 </p>
-                                No Preservatives
+                                Organic
+                            </div>
+                            <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_9.png?v=1703153821)] bg-[1%] bg-no-repeat text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
+                                Un-processed
+                            </p>
+                            <div className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white relative">
+                                <p>
+                                    <img
+                                        className="absolute top-1/2 -translate-y-1/2 left-1"
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_8.png?v=1703150234"
+                                    />
+                                </p>
+                                Chemical Free
                             </div>
                         </div>
                     </div>
                     <div className="w-1/2 h-48 text-[#006944] rounded-xl text-center font-semibold font-jost">
-                        <p className="text-3xl py-10">Apple Cider Vinegar</p>
+                        <p className="text-3xl py-10">NORMAL TURMERIC</p>
                         <div className="w-full flex flex-col justify-center items-center font-light">
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Uses Bad Quality Apple
+                                Uses Bad Quality Ingredients
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-white text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Has Harmful Additives
+                                Added Artifical Colors
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Has Preservatives
+                                Non-Organic
+                            </p>
+                            <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-white text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
+                                Processed
+                            </p>
+                            <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
+                                Added Chemicals
                             </p>
                         </div>
                     </div>
