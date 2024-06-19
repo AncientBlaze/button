@@ -84,7 +84,12 @@ import {
     cowGhee,
 } from "../pages/products/product_data/Ghee_data/Ghee_data.js";
 import ApplePages from "../pages/products/product_data/Apple_data/AppleProducts.jsx";
-import { CinnamonHoney, GingerTurmeric } from "../pages/products/product_data/Apple_data/Apple_data.js";
+import {
+    AppleCiderPic,
+    CinnamonHoney,
+    GingerGarlic,
+    GingerTurmeric,
+} from "../pages/products/product_data/Apple_data/Apple_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -2066,7 +2071,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                         }
                     />
 
-<Route
+                    <Route
                         path="/collections/apple-cider-vinegar/products/acv-ginger-turmeric"
                         element={
                             <ApplePages
@@ -2075,9 +2080,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 }
                                 Name={"ACV Ginger Turmeric"}
                                 images={GingerTurmeric}
-                                info1={
-                                    "Nature's Blend"
-                                }
+                                info1={"Nature's Blend"}
                                 info2={"Natural Magic of Apple Cider Vinegar"}
                                 info3={
                                     "Organic ACV with Mother Aids Weight Loss"
@@ -2102,9 +2105,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 T3SubText={
                                     "Farm Naturelle Apple Cider Vinegar can be your best buddy on your weight loss journey. The 'Mother' in ACV contains enzymes that boost metabolism and control cravings."
                                 }
-                                Tab3={
-                                    "organic apple juice, Ginger & Turmeric"
-                                }
+                                Tab3={"organic apple juice, Ginger & Turmeric"}
                                 extraImage={
                                     "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Ginger_Turmeric_Infused_ACV.png?v=1703070537"
                                 }
@@ -2133,6 +2134,124 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 BoxImg3={
                                     "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_e687c6e8-4d5d-4e2c-a8bc-734f02bf1ae5.png?v=1698923986"
                                 }
+                            />
+                        }
+                    />
+                    <Route
+                        path="/collections/apple-cider-vinegar/products/acv-ginger-garlic"
+                        element={
+                            <ApplePages
+                                name={
+                                    "Organic Apple Cider Vinegar with Mother and Infused Ginger & Garlic"
+                                }
+                                Name={"ACV Ginger Garlic"}
+                                price={525}
+                                previousPrice={675}
+                                save={"22%"}
+                                info1={"Infused with Ginger and Garlic"}
+                                info2={"It’s Your Multi-Benefit Secret"}
+                                info3={
+                                    "Supporting Weight Loss with Organic ACV"
+                                }
+                                images={GingerGarlic}
+                                Tab1={
+                                    "Unveil a world of wellness with Organic ACV and Mother! Experience weight loss support, balanced blood sugar, pressure, and cholesterol levels. Glow with skin health. Enhance immunity for disease defense, soothe heartburn and constipation, and aid digestion. Sparkling smiles await with teeth whitening. Speed up cell repair, fight inflammation. Elevate dishes as a salad dressing. It's not just a condiment – it's your natural health companion. Join the ACV revolution!"
+                                }
+                                T1Text={"Infused with Ginger & Garlic:"}
+                                T1SubText={
+                                    "Experience the power of Apple Cider Vinegar (ACV) enriched with the goodness of Ginger (Adrakh) and Garlic (Lahsun). This natural elixir, known as the 'Mother,' brings you a dynamic fusion of health benefits. Elevate your well-being with this ancient concoction, thoughtfully crafted to invigorate your senses and nurture your body. Simply savor the essence of wellness in every sip!"
+                                }
+                                T2Text={"It's Your Multi-Benefit Secret:"}
+                                T2SubText={
+                                    "Unlocking more than a diabetic-friendly all-purpose marvel, Apple Cider Vinegar doubles as a zesty salad dressing. Embrace its power as a household cleaner too. One solution, endless advantages—naturally versatile for every Indian home."
+                                }
+                                T3Text={
+                                    "Supporting Weight Loss with Organic ACV:"
+                                }
+                                T3SubText={
+                                    "Discover the natural way to shed those extra kilos! Embrace Organic ACV with the Mother—a trusted companion on your weight loss journey. Packed with goodness, it gently supports your efforts. Its natural magic works in harmony with your body, giving you a helping hand towards a healthier you. Let Mother Nature's secret be your ally in achieving your goals."
+                                }
+                                Tab3={"organic apple juice, Ginger & Garlic"}
+                                extraImage={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Ginger_Garlic_ACCV.png?v=1703070537"
+                                }
+                                h4_1={"Natural guardian for your well-being"}
+                                p_1={
+                                    "Embrace balance with this simple addition to your routine. Your health, your way."
+                                }
+                                h4_2={"Repairs Cell & Controls Cholesterol"}
+                                p_2={
+                                    "Apple Cider Vinegar is know for nurturing cells, lowering cholesterol and soothing inflammation."
+                                }
+                                h4_3={"A natural path to wellness"}
+                                p_3={
+                                    "Unlock the potential for weight management while maintaining healthy blood sugar, pressure, and cholesterol levels."
+                                }
+                                h4_4={"A Robust Shield Against Illnesses:"}
+                                p_4={
+                                    "Embrace a healthier you with improved digestion as this elixir naturally nurtures your body."
+                                }
+                                BoxImg1={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-1.png?v=1698923917"
+                                }
+                                BoxImg2={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_77ed805c-36b4-4a66-af5e-e9432863076a.png?v=1698923917"
+                                }
+                                BoxImg3={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2_1b30bae8-8ae8-45aa-b9a2-cb05403e6ee3.png?v=1698923917"
+                                }
+                            />
+                        }
+                    />
+                    <Route
+                        path="/collections/apple-cider-vinegar/products/apple-cider-vinegar"
+                        element={
+                            <ApplePages
+                                name={"Apple Cider Vinegar with Mother"}
+                                Name={"ACV Apple Cider Vinegar"}
+                                price={495}
+                                previousPrice={625}
+                                save={"21% off"}
+                                info1={"Only Goodness Inside"}
+                                info2={"Versatile All-Purpose ACV"}
+                                info3={"Natural Weight Management"}
+                                images={AppleCiderPic}
+                                Tab1={
+                                    "Experience natural weight management, blood sugar control, and healthier heart functions. Elevate your skin's radiance and unveil a brighter smile through detoxification and teeth whitening. Bolster your immunity, ease heartburn and constipation, and revitalize digestion. Renew cells and soothe inflammation. Elevate your meals with ACV as a delightful salad dressing. Embrace the power of ACV - a versatile wellness elixir even for household cleaning."
+                                }
+                                T1Text={"Only Goodness Inside:"}
+                                T1SubText={
+                                    "Taste the magic of unprocessed, pure Organic Apple Cider Vinegar (ACV) with Mother. Crafted from handpicked apples, our ACV is untouched by refining processes, ensuring 100% natural, raw, unfiltered, and unpasteurized goodness. Elevate your well-being with this authentic elixir, straight from nature's lap."
+                                }
+                                T2Text={"Versatile All-Purpose ACV:"}
+                                T2SubText={
+                                    "Elevate your salads with its natural, cold pressed goodness. Embrace its multi-faceted charm as it transforms into a household cleaner, adding sparkle to your spaces."
+                                }
+                                T3Text={"Natural Weight Management:"}
+                                T3SubText={
+                                    "With its natural goodness, your body is nourished for a healthy, healthy life. Embrace the power of ACV - a versatile wellness elixir even for household cleaning."
+                                }
+                                Tab3={"organic apple juice, Ginger & Turmeric"}
+                                extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Apple_cidar_Vinegar.png?v=1703070537"}
+                                h4_1={"Natural guardian for your well-being"}
+                                p_1={
+                                    "Embrace balance with this simple addition to your routine. Your health, your way."
+                                }
+                                h4_2={"Repairs Cell & Controls Cholesterol"}
+                                p_2={
+                                    "Apple Cider Vinegar is know for nurturing cells, lowering cholesterol and soothing inflammation."
+                                }
+                                h4_3={"A natural path to wellness"}
+                                p_3={
+                                    "Unlock the potential for weight management while maintaining healthy blood sugar, pressure, and cholesterol levels."
+                                }
+                                h4_4={"A Robust Shield Against Illnesses:"}
+                                p_4={
+                                    "Embrace a healthier you with improved digestion as this elixir naturally nurtures your body."
+                                }
+                                BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2.png?v=1698923727"}
+                                BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_eb88c28a-358d-4c3d-902d-cebecc45cfc7.png?v=1698923837"}
+                                BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame.png?v=1698923727"}
                             />
                         }
                     />

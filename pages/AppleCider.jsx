@@ -55,7 +55,7 @@ const products = [
         save: 22,
     },
     {
-        id: "acv-duplicate",
+        id: "acv-ginger-garlic",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_33e16e03-4d5c-41ba-8b9c-fc9feb96421c_800x.jpg?v=1708001285",
         PlaceHolder:

@@ -25,7 +25,7 @@ export const GingerGarlic = [
     { img: "https://farmnaturelle.com/cdn/shop/files/1_d3fbb482-9610-475b-b554-a255131c8c2e.jpg?v=1708001296" },
 ];
 
-export const AppleCider = [
+export const AppleCiderPic = [
     { img: "https://farmnaturelle.com/cdn/shop/files/2_d93ab713-7e93-4bf7-9830-34a2061f10ff.jpg?v=1703749654" },
     { img: "https://farmnaturelle.com/cdn/shop/files/3_8ccadb4a-dd63-4a45-8279-e6c6c699a018.jpg?v=1708001287" },
     { img: "https://farmnaturelle.com/cdn/shop/files/5_ff5fa8e1-8632-4290-b17d-13cc1bdba631.jpg?v=1708001289" },
