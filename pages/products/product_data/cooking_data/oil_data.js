@@ -60,3 +60,12 @@ export const CoconutOil = [
     { img: "https://farmnaturelle.com/cdn/shop/files/Rectangle9338.jpg?v=1708001205" },
     { img: "https://farmnaturelle.com/cdn/shop/files/Rectangle9341.jpg?v=1708001207" },
 ];
+
+export const CoconutOil2 = [
+    { img: "https://farmnaturelle.com/cdn/shop/files/Rectangle9369.jpg?v=1703749125" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/Rectangle9370.jpg?v=1708001197" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/Rectangle9372.jpg?v=1703749129" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/Rectangle9373.jpg?v=1703749118" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/Rectangle9368.jpg?v=1708001204" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/Rectangle9371.jpg?v=1708001207" },
+]

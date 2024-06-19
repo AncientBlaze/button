@@ -381,34 +381,40 @@ export default function CookingPages({
                                         setSelectedOption2(selected.discount);
                                     }}
                                 >
-                                    <option value={price}>
-                                        500ml(Pet Bottle)
-                                    </option>
-                                    <option value={price1}>
-                                        1L(Pet Bottle)
-                                    </option>
-                                    <option value={price2}>
-                                        2L(Pet Bottle)
-                                    </option>
-                                    <option value={price3}>
-                                        5L(Pet Bottle)
-                                    </option>
-                                    <option value={price4}>
-                                        500ml(Glass Bottle)
-                                    </option>
-                                    {price5 ? (
+                                    {price && (
+                                        <option value={price}>
+                                            500ml(Pet Bottle)
+                                        </option>
+                                    )}
+                                    {price1 && (
+                                        <option value={price1}>
+                                            1L(Pet Bottle)
+                                        </option>
+                                    )}
+                                    {price2 && (
+                                        <option value={price2}>
+                                            2L(Pet Bottle)
+                                        </option>
+                                    )}
+                                    {price3 && (
+                                        <option value={price3}>
+                                            5L(Pet Bottle)
+                                        </option>
+                                    )}
+                                    {price4 && (
+                                        <option value={price4}>
+                                            500ml(Glass Bottle)
+                                        </option>
+                                    )}
+                                    {price5 && (
                                         <option value={price5}>
                                             1L(Glass Bottle)
                                         </option>
-                                    ) : (
-                                        <option hidden value={price5}></option>
                                     )}
-                                    {price6 ? (
+                                    {price6 && (
                                         <option value={price6}>
                                             2750g(Pet Bottle)
                                         </option>
-                                    ) : (
-                                        <option hidden value={price6}></option>
                                     )}
                                 </select>
                                 <div className="flex gap-2 justify-center items-center w-1/3 border border-[#006944] rounded-lg px-5">

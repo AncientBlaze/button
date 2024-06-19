@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import NavBar from "../src/components/header/Nav";
 import Footer from "../src/components/footer/Footer";
 import CardComponent from "../src/components/CardComponent2";
-import { nanoid } from "@reduxjs/toolkit";
 
 const products = [
     {
@@ -61,17 +60,6 @@ const products = [
         save: 19,
         hidden: "hidden",
     },
-    // {
-    //     ImageUrl:
-    //         "https://farmnaturelle.com/cdn/shop/files/Rectangle9356_800x.jpg?v=1703849688",
-    //     PlaceHolder:
-    //         "https://farmnaturelle.com/cdn/shop/files/Rectangle9357_800x.jpg?v=1703849690",
-    //     title: "Extra Virgin Olive...",
-    //     content: 309,
-    //     PreviousPrice: 379,
-    //     save: 18,
-    //     hidden: "hidden",
-    // },
     {
         id: "black-mustard-oil",
         ImageUrl:
@@ -106,7 +94,8 @@ const products = [
         save: 10,
         hidden: "hidden",
     },
-    {
+    {   
+        id: "organic-virgin-coconut-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9339_800x.jpg?v=1708001195",
         PlaceHolder:
@@ -138,9 +127,7 @@ function CookingOils() {
                                 to={`/collections/best-seller-cooking-oil/products/${product.id}`}
                             >
                                 <CardComponent
-                                    key={product.title}
                                     {...product}
-                                    id={nanoid()}
                                 />
                             </Link>
                         ))}

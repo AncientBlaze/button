@@ -7,6 +7,8 @@ import { nanoid } from "@reduxjs/toolkit";
 
 const products = [
     {
+        id: "acv-cinnamon-honey-fenugreek",
+        catagory: "apple-cider-vinegar",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_38e8be56-efc8-4584-bb40-a9998cd27a2f_800x.jpg?v=1703749530",
         PlaceHolder:
@@ -17,6 +19,8 @@ const products = [
         save: 22,
     },
     {
+        id: "acv-ginger-turmeric",
+        catagory: "apple-cider-vinegar",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_33e16e03-4d5c-41ba-8b9c-fc9feb96421c_800x.jpg?v=1708001285",
         PlaceHolder:
@@ -27,6 +31,8 @@ const products = [
         save: 22,
     },
     {
+        id: "acv-ginger-garlic",
+        catagory: "apple-cider-vinegar",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_33e16e03-4d5c-41ba-8b9c-fc9feb96421c_800x.jpg?v=1708001285",
         PlaceHolder:
@@ -37,6 +43,8 @@ const products = [
         save: 22,
     },
     {
+        id: "apple-cider-vinegar",
+        catagory: "apple-cider-vinegar",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_d93ab713-7e93-4bf7-9830-34a2061f10ff_800x.jpg?v=1703749654",
         PlaceHolder:
@@ -47,6 +55,8 @@ const products = [
         save: 21,
     },
     {
+        id: "yellow-mustard-oil-classic",
+        catagory: "best-seller-cooking-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9435_800x.jpg?v=1708001371",
         PlaceHolder:
@@ -57,6 +67,8 @@ const products = [
         save: 16,
     },
     {
+        id: "sunflower-oil",
+        catagory: "best-seller-cooking-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9423_800x.jpg?v=1703749253",
         PlaceHolder:
@@ -67,6 +79,8 @@ const products = [
         save: 14,
     },
     {
+        id: "black-sesame-oil",
+        catagory: "best-seller-cooking-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9313_800x.jpg?v=1708001210",
         PlaceHolder:
@@ -77,6 +91,8 @@ const products = [
         save: 18,
     },
     {
+        id: "white-sesame-oil-classic",
+        catagory: "best-seller-cooking-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9429_800x.jpg?v=1703849984",
         PlaceHolder:
@@ -88,6 +104,7 @@ const products = [
         hidden: "hidden",
     },
     {
+        catagory: "best-seller-cooking-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_800x.gif",
         PlaceHolder:
@@ -99,17 +116,8 @@ const products = [
         hidden: "hidden",
     },
     {
-        ImageUrl:
-            "https://farmnaturelle.com/cdn/shop/files/Rectangle9356_800x.jpg?v=1703849688",
-        PlaceHolder:
-            "https://farmnaturelle.com/cdn/shop/files/Rectangle9357_800x.jpg?v=1703849690",
-        title: "Extra Virgin Olive...",
-        content: 309,
-        PreviousPrice: 379,
-        save: 18,
-        hidden: "hidden",
-    },
-    {
+        id: "black-mustard-oil",
+        catagory: "best-seller-cooking-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9304_5e288c25-7779-4d43-b049-30fa89946889_800x.jpg?v=1708001211",
         PlaceHolder:
@@ -120,6 +128,8 @@ const products = [
         save: 14,
     },
     {
+        id: "groundnut-oil",
+        catagory: "best-seller-cooking-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9331_800x.jpg?v=1708001211",
         PlaceHolder:
@@ -130,6 +140,8 @@ const products = [
         save: 17,
     },
     {
+        id: "organic-extra-virgin-coconut-oil",
+        catagory: "best-seller-cooking-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9369_800x.jpg?v=1703749125",
         PlaceHolder:
@@ -141,6 +153,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "organic-virgin-coconut-oil",
+        catagory: "best-seller-cooking-oil",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9339_800x.jpg?v=1708001195",
         PlaceHolder:
@@ -150,16 +164,6 @@ const products = [
         PreviousPrice: 429,
         save: 9,
         hidden: "hidden",
-    },
-    {
-        ImageUrl:
-            "https://farmnaturelle.com/cdn/shop/files/2_6334cefd-be7f-46fd-a2ec-f4afb83e43f4_800x.jpg?v=1703749493",
-        PlaceHolder:
-            "https://farmnaturelle.com/cdn/shop/files/3_6ffc569d-4534-4507-97ba-2f4a6afb76d0_800x.jpg?v=1703749499",
-        title: "From Naturelle 100%...",
-        content: 789,
-        PreviousPrice: 519,
-        save: 34,
     },
     {
         ImageUrl:

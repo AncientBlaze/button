@@ -73,6 +73,7 @@ import {
     BlackMustard,
     blackSesame,
     CoconutOil,
+    CoconutOil2,
     GroundNuts,
     sunflowerOil,
     whiteSesame,
@@ -1850,10 +1851,155 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 }
                                 Name={"Organic Extra Virgin Coconut Oil"}
                                 images={CoconutOil}
+                                price={449}
+                                previousPrice={499}
+                                save={"12%"}
+                                price1={629}
+                                previousPrice1={699}
+                                save1={"10%"}
+                                price2={889}
+                                previousPrice2={989}
+                                save2={"10%"}
+                                price3={1099}
+                                previousPrice3={1195}
+                                save3={"8%"}
+                                price4={529}
+                                previousPrice4={649}
+                                save4={"18%"}
+                                price5={1049}
+                                previousPrice5={1099}
+                                save5={"5%"}
+                                price6={2069}
+                                previousPrice6={2179}
+                                save6={"5%"}
+                                info1={"Pure Goodness in Every Drop"}
+                                info2={"Our Unique Cold-Pressed Magic"}
+                                info3={"Immunity-Boosting Cold Pressed Oils"}
+                                Tab1={
+                                    "Farm Naturelle Extra Virgin Organic Coconut Oil – a nurturing treasure from fresh, organically grown coconuts. Cold pressed, never refined, this creamy oil carries a delightful coconut aroma and light taste. Embrace its natural goodness, safe even for baby skin. Transfat-free, cholesterol-free, Gluten and Lactose-free, and Non-GMO, it's an antioxidant-rich elixir perfect for raw or light heat cooking."
+                                }
+                                Tab3={"Coconut Milk oil"}
+                                T1Text={"Pure Goodness in Every Drop: "}
+                                T1SubText={
+                                    "The richness of our Organic Coconut Oil is extracted from Coconut Milk using gentle cold pressing. It's the essence of 100% natural goodness – unrefined and organic. Elevate your wellness journey with this nourishing gift from nature, seamlessly bringing the goodness of coconuts to your table."
+                                }
+                                T2Text={"Our Unique Cold-Pressed Magic: "}
+                                T2SubText={
+                                    "Crafted with Care: Our oils are born through a gentle touch, free from heat. This mindful process safeguards every precious nutrient, nurturing their goodness just for you. Experience the vitality of nature's bounty in every drop – pure, untouched, and ready to elevate your well-being."
+                                }
+                                T3Text={"Immunity-Boosting Cold Pressed Oils: "}
+                                T3SubText={
+                                    " This Extra Virgin coconut oils is your shield, packed with natural antioxidants and antiviral properties. Our unique process ensures that you're getting the best nature has to offer. Strengthen your immunity the natural way with our 100% organic, cold pressed, and unrefined food oils."
+                                }
+                                extraImage={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Extra_Virgin_Coconut_Oil.png?v=1703062546"
+                                }
+                                h4_1={"Nurturing Hearts and Minds"}
+                                p_1={
+                                    "Farm Naturelle Groundnut Oil nourishes heart wellness, enhances brain power, and refines the nervous system."
+                                }
+                                h4_2={"Get a Wrinkle-Free Glow"}
+                                p_2={
+                                    "Discover the natural magic of Vitamin E as it helps keep your skin radiant, smooth, and free from wrinkles. Our cold-pressed, unrefined, and organic food oils are packed with this essential nutrient, giving your skin the care it deserves, the natural way."
+                                }
+                                h4_3={"Perfect Frying Partner"}
+                                p_3={
+                                    "Our 100% natural, cold pressed, unrefined, and organic food oil is your ideal companion for deep-frying. With its ability to handle high temperatures and a delightful nutty essence, it transforms your dishes into crispy perfection. Elevate your cooking adventures with this exceptional oil, ensuring every bite is a true delight."
+                                }
+                                h4_4={"Nourish Your Skin"}
+                                p_4={
+                                    "Experience radiant skin with our unadulterated, cold-pressed oils brimming with Vitamin-E. Unlock the secret to a glowing complexion and smoother skin. These oils, abundant in natural goodness, are your pathway to reducing wrinkles and enhancing skin's vitality."
+                                }
+                                BoxImg1={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Organic_Extra_Virgin_Coconut_Oil-2.png?v=1703063128"
+                                }
+                                BoxImg2={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Organic_Extra_Virgin_Coconut_Oil-1.png?v=1703063128"
+                                }
+                                BoxImg3={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Organic_Extra_Virgin_Coconut_Oil.png?v=1703063128"
+                                }
                             />
                         }
                     />
-                    <Route />
+                    <Route
+                        path="collections/best-seller-cooking-oil/products/organic-virgin-coconut-oil"
+                        element={
+                            <CookingPages
+                                name={
+                                    "100% Pure Coconut Oil | Organic Coconut Oil For Cooking"
+                                }
+                                Name={"Organic Virgin Coconut Oil"}
+                                images={CoconutOil2}
+                                price={449}
+                                previousPrice={499}
+                                save={"12%"}
+                                price1={629}
+                                previousPrice1={699}
+                                save1={"10%"}
+                                price2={889}
+                                previousPrice2={989}
+                                save2={"10%"}
+                                price3={1099}
+                                previousPrice3={1195}
+                                save3={"8%"}
+                                price4={529}
+                                previousPrice4={649}
+                                save4={"18%"}
+                                price5={1049}
+                                previousPrice5={1099}
+                                save5={"5%"}
+                                price6={2069}
+                                previousPrice6={2179}
+                                save6={"5%"}
+                                info1={"Pure Goodness in Every Drop"}
+                                info2={"Our Unique Cold-Pressed Magic"}
+                                info3={"Immunity-Boosting Cold Pressed Oils"}
+                                Tab1={
+                                    "Farm Naturelle Extra Virgin Organic Coconut Oil – a nurturing treasure from fresh, organically grown coconuts. Cold pressed, never refined, this creamy oil carries a delightful coconut aroma and light taste. Embrace its natural goodness, safe even for baby skin. Transfat-free, cholesterol-free, Gluten and Lactose-free, and Non-GMO, it's an antioxidant-rich elixir perfect for raw or light heat cooking."
+                                }
+                                Tab3={"Coconut Milk oil"}
+                                T1Text={"Pure Goodness in Every Drop: "}
+                                T1SubText={
+                                    "The richness of our Organic Coconut Oil is extracted from Coconut Milk using gentle cold pressing. It's the essence of 100% natural goodness – unrefined and organic. Elevate your wellness journey with this nourishing gift from nature, seamlessly bringing the goodness of coconuts to your table."
+                                }
+                                T2Text={"Our Unique Cold-Pressed Magic: "}
+                                T2SubText={
+                                    "Crafted with Care: Our oils are born through a gentle touch, free from heat. This mindful process safeguards every precious nutrient, nurturing their goodness just for you. Experience the vitality of nature's bounty in every drop – pure, untouched, and ready to elevate your well-being."
+                                }
+                                T3Text={"Immunity-Boosting Cold Pressed Oils: "}
+                                T3SubText={
+                                    " This Extra Virgin coconut oils is your shield, packed with natural antioxidants and antiviral properties. Our unique process ensures that you're getting the best nature has to offer. Strengthen your immunity the natural way with our 100% organic, cold pressed, and unrefined food oils."
+                                }
+                                h4_1={"Nurturing Hearts and Minds"}
+                                p_1={
+                                    "Farm Naturelle Groundnut Oil nourishes heart wellness, enhances brain power, and refines the nervous system."
+                                }
+                                h4_2={"Get a Wrinkle-Free Glow"}
+                                p_2={
+                                    "Discover the natural magic of Vitamin E as it helps keep your skin radiant, smooth, and free from wrinkles. Our cold-pressed, unrefined, and organic food oils are packed with this essential nutrient, giving your skin the care it deserves, the natural way."
+                                }
+                                h4_3={"Perfect Frying Partner"}
+                                p_3={
+                                    "Our 100% natural, cold pressed, unrefined, and organic food oil is your ideal companion for deep-frying. With its ability to handle high temperatures and a delightful nutty essence, it transforms your dishes into crispy perfection. Elevate your cooking adventures with this exceptional oil, ensuring every bite is a true delight."
+                                }
+                                h4_4={"Nourish Your Skin"}
+                                p_4={
+                                    "Experience radiant skin with our unadulterated, cold-pressed oils brimming with Vitamin-E. Unlock the secret to a glowing complexion and smoother skin. These oils, abundant in natural goodness, are your pathway to reducing wrinkles and enhancing skin's vitality."
+                                }
+                                extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Organic_Virgin_Coconut_Oil-benefit.png?v=1703061837"}
+                                BoxImg1={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Organic_Extra_Virgin_Coconut_Oil-2.png?v=1703063128"
+                                }
+                                BoxImg2={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Organic_Extra_Virgin_Coconut_Oil-1.png?v=1703063128"
+                                }
+                                BoxImg3={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Organic_Extra_Virgin_Coconut_Oil.png?v=1703063128"
+                                }
+                            />
+                        }
+                    />
                     <Route
                         path="collections/ghee/products/a2-sahiwali-ghee"
                         element={
@@ -2232,7 +2378,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                     "With its natural goodness, your body is nourished for a healthy, healthy life. Embrace the power of ACV - a versatile wellness elixir even for household cleaning."
                                 }
                                 Tab3={"organic apple juice, Ginger & Turmeric"}
-                                extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Apple_cidar_Vinegar.png?v=1703070537"}
+                                extraImage={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Apple_cidar_Vinegar.png?v=1703070537"
+                                }
                                 h4_1={"Natural guardian for your well-being"}
                                 p_1={
                                     "Embrace balance with this simple addition to your routine. Your health, your way."
@@ -2249,9 +2397,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 p_4={
                                     "Embrace a healthier you with improved digestion as this elixir naturally nurtures your body."
                                 }
-                                BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2.png?v=1698923727"}
-                                BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_eb88c28a-358d-4c3d-902d-cebecc45cfc7.png?v=1698923837"}
-                                BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame.png?v=1698923727"}
+                                BoxImg1={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2.png?v=1698923727"
+                                }
+                                BoxImg2={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_eb88c28a-358d-4c3d-902d-cebecc45cfc7.png?v=1698923837"
+                                }
+                                BoxImg3={
+                                    "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame.png?v=1698923727"
+                                }
                             />
                         }
                     />
