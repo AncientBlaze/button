@@ -91,6 +91,8 @@ import {
     GingerGarlic,
     GingerTurmeric,
 } from "../pages/products/product_data/Apple_data/Apple_data.js";
+import HillPages from "../pages/products/product_data/Hill_data/HillPages.jsx";
+import { blackPepperTurmeric } from "../pages/products/product_data/Hill_data/Hill_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -2411,8 +2413,27 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             />
                         }
                     />
-                    <Route path="collections/hill-turmeric/products/turmeric-with-black-pepper" 
-                    element={<ApplePages/>}/>
+                    <Route path="collections/hill-turmeric/products/turmeric-with-black-pepper"
+                        element={<HillPages
+                            name={"Pure Himalayan Mountain Turmeric (Curcumin) with Black Pepper (Peperine) Powder"}
+                            Name={"Turmeric With Black Pepper"}
+                            price={310}
+                            previousPrice={369}
+                            save={"16% off"}
+                            price1={420}
+                            previousPrice1={499}
+                            save1={"16%"}
+                            price2={545}
+                            previousPrice2={645}
+                            save2={"16%"}
+                            images={blackPepperTurmeric}
+                            info1={"Optimize Your Health with This Duo"}
+                            info2={"Enhanced Turmeric's Benefits"}
+                            info3={"Unlocking Turmeric's Power"}
+                            T1Text={"Optimize Your Health with This Duo: "}
+                            T2Text={"Enhanced Turmeric's Benefits: "}
+                            T3Text={"Unlocking Turmeric's Power: "}
+                        />} />
                 </Routes>
             </Provider>
         </BrowserRouter>
