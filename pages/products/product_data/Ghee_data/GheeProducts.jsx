@@ -465,6 +465,7 @@ export default function GheePages({
                                             addToCart({
                                                 title: Name,
                                                 ImageUrl: `${pic}`,
+                                                quantity: count,
                                                 price:
                                                     selectedOption1,
                                                 content:

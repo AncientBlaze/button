@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import NavBar from "../src/components/header/Nav";
 import Footer from "../src/components/footer/Footer";
 import CardComponent from "../src/components/CardComponent2";
-import { nanoid } from "@reduxjs/toolkit";
 
 const herbalJuiceList = [
     {
@@ -28,6 +27,7 @@ const herbalJuiceList = [
         hidden: null,
     },
     {
+        id: "easing-diabetes",
         save: 54,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_446dd4ae-e8a1-4add-8851-a6507a512b59_800x.png?v=1714049445",
@@ -163,7 +163,9 @@ function HerbalJuice() {
                 </p>
                 <div className="w-full h-auto grid xl:grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 px-20 py-8 gap-10 justify-items-center">
                     {herbalJuiceList.map((product, index) => (
-                        <CardComponent key={index} id={nanoid()} {...product} />
+                        <Link key={index} to={`/collections/herbal-juice/products/${product.id}`}>
+                            <CardComponent {...product} />
+                        </Link>
                     ))}
                 </div>
             </div>

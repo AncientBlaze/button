@@ -331,6 +331,7 @@ const products = [
     },
     {
         id: "turmeric-with-black-pepper",
+        catagory: "turmeric",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_b21af706-c19f-495e-8684-fa4c13ea8b56_800x.jpg?v=1708001310",
         PlaceHolder:
@@ -342,6 +343,7 @@ const products = [
     },
     {
         id: "turmeric-milk-masala",
+        catagory: "turmeric",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_c66f704f-ee21-4f84-9c6b-7ca30cd27508_800x.jpg?v=1703748966",
         PlaceHolder:
@@ -353,16 +355,7 @@ const products = [
     },
     {
         id: "plain-turmeric",
-        ImageUrl:
-            "https://farmnaturelle.com/cdn/shop/files/2_d14483a9-8a4f-42d5-8e66-e83b7e506b81_800x.jpg?v=1708001311",
-        PlaceHolder:
-            "https://farmnaturelle.com/cdn/shop/files/3_c0ef04df-dcfd-4964-8436-6af00be07bf8_800x.jpg?v=1708001313",
-        title: "Pure Himalayan Mountain...",
-        content: 299,
-        PreviousPrice: 359,
-        save: 17,
-    },
-    {
+        catagory: "turmeric",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_d14483a9-8a4f-42d5-8e66-e83b7e506b81_800x.jpg?v=1708001311",
         PlaceHolder:

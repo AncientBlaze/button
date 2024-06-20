@@ -410,6 +410,7 @@ export default function HillPages({
                                             addToCart({
                                                 title: Name,
                                                 ImageUrl: `${pic}`,
+                                                quantity: count,
                                                 price: selectedOption1,
                                                 content:
                                                     count > 1

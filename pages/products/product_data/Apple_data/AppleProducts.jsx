@@ -461,6 +461,7 @@ export default function ApplePages({
                                             addToCart({
                                                 title: Name,
                                                 ImageUrl: `${pic}`,
+                                                quantity: count,
                                                 price: selectedOption1,
                                                 content:
                                                     count > 1

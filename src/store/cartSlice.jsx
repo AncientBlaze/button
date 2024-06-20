@@ -29,7 +29,6 @@ const cartSlice = createSlice({
                 // If the item is not in the cart, add it to the cart
                 const newProduct = {
                     ...action.payload,
-                    quantity: 1,
                 };
                 state.cartItems.push(newProduct);
                 toast.success(`${action.payload.title} added to cart`, {

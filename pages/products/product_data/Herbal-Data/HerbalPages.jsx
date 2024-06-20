@@ -1,20 +1,61 @@
-/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/prop-types */
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
-import Nav from "../../src/components/header/Nav";
-import Footer from "../../src/components/footer/Footer";
+import Nav from "../../../../src/components/header/Nav";
+import Footer from "../../../../src/components/footer/Footer";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import { LuChevronDown, LuChevronUp } from "react-icons/lu";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Card from "../../assets/Card3";
+import Card from "../../../../assets/Card3";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaPinterest, FaTwitter,FaEnvelope } from "react-icons/fa";
+import {
+    FaFacebookF,
+    FaPinterest,
+    FaTwitter,
+    FaEnvelope,
+} from "react-icons/fa";
 import { useDispatch } from "react-redux";
-import { add } from "../../src/store/cartSlice";
-import { nanoid } from "@reduxjs/toolkit";
+import { add } from "../../../../src/store/cartSlice";
+import { products } from "../product_data";
 
-export default function MagicmanBooster() {
+export default function ApplePages({
+    name,
+    Name,
+    price,
+    price1,
+    price2,
+    previousPrice,
+    previousPrice1,
+    previousPrice2,
+    save,
+    save1,
+    save2,
+    images,
+    h4_1,
+    h4_2,
+    h4_3,
+    h4_4,
+    p_1,
+    p_2,
+    p_3,
+    p_4,
+    info1,
+    info2,
+    info3,
+    Tab1,
+    T1Text,
+    T1SubText,
+    T2Text,
+    T2SubText,
+    T3Text,
+    T3SubText,
+    Tab3,
+    extraImage,
+    BoxImg1,
+    BoxImg2,
+    BoxImg3,
+}) {
     const dispatch = useDispatch();
 
     const addToCart = (product) => {
@@ -23,9 +64,11 @@ export default function MagicmanBooster() {
 
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
-    const [selectedOption, setSelectedOption] = useState(949);
-    const [selectedOption1, setSelectedOption1] = useState("2,056");
-    const [selectedOption2, setSelectedOption2] = useState("54%");
+    const [selectedOption, setSelectedOption] = useState(price ?? null);
+    const [selectedOption1, setSelectedOption1] = useState(
+        previousPrice ?? null,
+    );
+    const [selectedOption2, setSelectedOption2] = useState(save ?? null);
 
     let sliderRef1 = useRef(null);
     let sliderRef2 = useRef(null);
@@ -50,118 +93,6 @@ export default function MagicmanBooster() {
     const [count, setCount] = useState(1);
     const [offerExpanded, setOfferExpanded] = useState(false);
 
-    const products = [
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/ShilajitFront25g_800x.png?v=1711173556",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Shilajitresin_800x.png?v=1711173556",
-            title: "Pure Himalayan Shilajit",
-            content: 429,
-            PreviousPrice: 579,
-            save: 26,
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9313_800x.jpg?v=1708001210",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9314_800x.jpg?v=1708001212",
-            title: "Black Sesame Oil...",
-            content: 368,
-            PreviousPrice: 449,
-            save: 18,
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9429_800x.jpg?v=1703849984",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9430_800x.jpg?v=1703849986",
-            title: "Buy 100% Pure...",
-            content: 275,
-            PreviousPrice: 329,
-            save: 16,
-            hidden: "hidden",
-        },
-        {
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/3_02314507-5857-4219-a1b5-306c47a83dd1_800x.jpg?v=1708000860",
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/2_58201a2c-cc05-4076-8ce1-c2ad03d1b0c4_800x.jpg?v=1708000855",
-            title: "100% Pure &...",
-            PreviousPrice: 459,
-            content: 369,
-            save: 16,
-            hidden: "hidden",
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9304_5e288c25-7779-4d43-b049-30fa89946889_800x.jpg?v=1708001211",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9305_444d3e7e-98ea-43f4-8c19-c4b7f178614e_800x.jpg?v=1708001213",
-            title: "Organic Cold Pressed...",
-            content: 290,
-            PreviousPrice: 339,
-            save: 14,
-        },
-        {
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/3_04c1d709-5e90-40b5-83fc-6ee87ba55563_800x.jpg?v=1708000860",
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/2_52d72052-4078-4146-a5bb-7eb9c66b2070_800x.jpg?v=1703749282",
-            title: "Vana Tulsi Flower",
-            PreviousPrice: 459,
-            content: 369,
-            save: 16,
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9423_800x.jpg?v=1703749253",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9424_800x.jpg?v=1708001213",
-            title: "100% Natural Cold",
-            content: 290,
-            PreviousPrice: 339,
-            save: 14,
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9449_800x.jpg?v=1708001248",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9450_800x.jpg?v=1708001251",
-            title: "100% Pure Black...",
-            content: 339,
-            PreviousPrice: 430,
-            save: 21,
-        },
-    ];
-
-    const images = [
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/1_717e2b24-b57f-4180-8848-8a1f951b183e.jpg?v=1714049827",
-            alt: "1st",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/2_5e366ade-1d78-40ec-8a7d-c25a792dcd88.jpg?v=1714049828",
-            alt: "2nd",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/3_ce1cb85d-e393-4d1f-9795-d5ed5fc80b01.jpg?v=1714049827",
-            alt: "3rd",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/4_bc0e5d8d-188c-4290-afd4-76af88dccf68.jpg?v=1714049827",
-            alt: "4th",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/5_0cc6c605-e40d-4bd3-8201-2d782e3ee75e.jpg?v=1714049828",
-            alt: "5th",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/6_1d6fe85e-d6e6-453b-b552-916a87f4ecb6.jpg?v=1714049827",
-            alt: "6th",
-        },
-    ];
-
     return (
         <>
             <Nav />
@@ -170,8 +101,8 @@ export default function MagicmanBooster() {
                     <Link to="/">Home</Link>
                     /All products
                 </p>
-                <div className="w-full flex flex-col lg:flex-row-reverse xl:flex-row sm:flex-col justify-center items-start">
-                    <div className="w-full sm:w-1/2 px-10 md:px-20">
+                <div className="w-full flex justify-center items-start">
+                    <div className="w-1/2 px-10">
                         <div className="w-full py-1">
                             <Slider
                                 infinite={true}
@@ -191,58 +122,17 @@ export default function MagicmanBooster() {
                                     </div>
                                 ))}
                             </Slider>
-                            <div className="w-full">
-                                <div className="w-full flex justify-center py-10 items-center gap-3">
-                                    <Link
-                                        to={
-                                            "//www.facebook.com/sharer.php?u=https://farmnaturelle.com/products/stress-buster"
-                                        }
-                                    >
-                                        <i>
-                                            <FaFacebookF />
-                                        </i>
-                                    </Link>
-                                    <Link
-                                        to={
-                                            "//twitter.com/share?url=https://farmnaturelle.com/products/stress-buster&amp;text=STRESS%20Buster"
-                                        }
-                                    >
-                                        <i>
-                                            <FaTwitter />
-                                        </i>
-                                    </Link>
-
-                                    <Link
-                                        to={
-                                            "//pinterest.com/pin/create/button/?url=https://farmnaturelle.com/products/stress-buster&amp;media=http://farmnaturelle.com/cdn/shop/files/1_e68ddc85-4dd2-4122-ab48-7ee7a756fb17_1024x1024.png?v=1714049317&amp;description=STRESS%20Buster"
-                                        }
-                                    >
-                                        <i>
-                                            <FaPinterest />
-                                        </i>
-                                    </Link>
-                                    <Link
-                                        to={
-                                            "mailto:?subject=Check out this site!&amp;body=https://farmnaturelle.com/products/stress-buster"
-                                        }
-                                    >
-                                        <i>
-                                            <FaEnvelope />
-                                        </i>
-                                    </Link>
-                                </div>
-                            </div>
                         </div>
                         <div className="w-full px-20 relative group">
                             <div className="absolute left-0 top-1/2 -translate-y-1/2 flex justify-between w-full px-10">
                                 <button
-                                    className="bg-white hover:bg-[#006944] text-[#000000] shadow-md w-10 h-10 rounded-full hover:text-white flex justify-center items-center transition-colors duration-500"
+                                    className="bg-white hover:bg-[#006944] text-[#000000] shadow-md w-10 h-10 rounded-full hover:text-white flex justify-center items-center transition-colors duration-500 "
                                     onClick={prevSlick}
                                 >
                                     <RiArrowLeftSLine size={32} />
                                 </button>
                                 <button
-                                    className="bg-white hover:bg-[#006944] text-black shadow-md w-10 h-10 rounded-full hover:text-white flex justify-center items-center transition-colors duration-500"
+                                    className="bg-white hover:bg-[#006944] text-black shadow-md w-10 h-10 rounded-full hover:text-white flex justify-center items-center transition-colors duration-500 "
                                     onClick={nextSlick}
                                 >
                                     <RiArrowRightSLine size={32} />
@@ -271,11 +161,50 @@ export default function MagicmanBooster() {
                                 ))}
                             </Slider>
                         </div>
+                        <div className="w-full">
+                            <div className="w-full flex justify-center py-10 items-center gap-3">
+                                <Link
+                                    to={
+                                        "//www.facebook.com/sharer.php?u=https://farmnaturelle.com/products/stress-buster"
+                                    }
+                                >
+                                    <i>
+                                        <FaFacebookF />
+                                    </i>
+                                </Link>
+                                <Link
+                                    to={
+                                        "//twitter.com/share?url=https://farmnaturelle.com/products/stress-buster&amp;text=STRESS%20Buster"
+                                    }
+                                >
+                                    <i>
+                                        <FaTwitter />
+                                    </i>
+                                </Link>
+
+                                <Link
+                                    to={
+                                        "//pinterest.com/pin/create/button/?url=https://farmnaturelle.com/products/stress-buster&amp;media=http://farmnaturelle.com/cdn/shop/files/1_e68ddc85-4dd2-4122-ab48-7ee7a756fb17_1024x1024.png?v=1714049317&amp;description=STRESS%20Buster"
+                                    }
+                                >
+                                    <i>
+                                        <FaPinterest />
+                                    </i>
+                                </Link>
+                                <Link
+                                    to={
+                                        "mailto:?subject=Check out this site!&amp;body=https://farmnaturelle.com/products/stress-buster"
+                                    }
+                                >
+                                    <i>
+                                        <FaEnvelope />
+                                    </i>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                     <div className="flex flex-col font-bold font-jost justify-between">
-                        <div className="text-3xl px-2 font-bold">
-                            Magical Man Booster
-                        </div>
+                        <div className="text-3xl px-2 font-bold">{name}</div>
                         <div className="px-2 py-5 flex gap-2 justify-start font-light text-sm items-center">
                             <span className="flex gap-2">
                                 <em>
@@ -388,13 +317,13 @@ export default function MagicmanBooster() {
                         <div className="text-[#313131] font-jost font-semibold py-10">
                             <ul>
                                 <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
-                                    Shatavari's Natural Power
+                                    <p>{info1}</p>
                                 </li>
                                 <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
-                                    Safed Musli to Improve Performance
+                                    <p>{info2}</p>
                                 </li>
                                 <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
-                                    Shilajit to Your Rescue
+                                    <p>{info3}</p>
                                 </li>
                             </ul>
                         </div>
@@ -402,39 +331,46 @@ export default function MagicmanBooster() {
                             <p>Size</p>
                             <div className="font-light text-sm flex gap-2">
                                 <select
-                                    className="border border-[#006944] py-2 text-left rounded-lg w-1/2 px-3 outline-none"
+                                    className="border border-[#006944] py-2 text-left rounded-lg w-1/2 px-3 outline-none hidden"
                                     onChange={(e) => {
                                         setSelectedOption(e.target.value);
                                         let options = {
-                                            949: {
-                                                price: "2056",
-                                                discount: "54%",
+                                            [price]: {
+                                                price: previousPrice,
+                                                discount: save,
                                             },
-                                            1895: {
-                                                price: "4,355",
-                                                discount: "56%",
+                                            [price1]: {
+                                                price: previousPrice1,
+                                                discount: save1,
                                             },
-                                            2845: {
-                                                price: "6,812",
-                                                discount: "58%",
+                                            [price2]: {
+                                                price: previousPrice2,
+                                                discount: save2,
                                             },
                                         };
                                         const selectedoption =
                                             options[e.target.value];
-                                        var selected = selectedoption;
+                                        const selected = selectedoption;
                                         setSelectedOption1(selected.price);
                                         setSelectedOption2(selected.discount);
                                     }}
                                 >
-                                    <option value={949}>
-                                        1 Month Course- 1+1 Free
-                                    </option>
-                                    <option value={1895}>
-                                        2 Month Course- 2+2 Free
-                                    </option>
-                                    <option value={2845}>
-                                        3 Month Course- 3+3 Free
-                                    </option>
+                                    {price && (
+                                        <option value={price}>
+                                            250ml(Glass Bottle)
+                                        </option>
+                                    )}
+                                    {price1 && (
+                                        <option value={price1}>
+                                            300ml(Glass Bottle)
+                                        </option>
+                                    )}
+                                    {price2 && (
+                                        <option value={price2}>
+                                            550ml(Glass Bottle)
+                                        </option>
+                                    )}
+
                                 </select>
                                 <div className="flex gap-2 justify-center items-center w-1/3 border border-[#006944] rounded-lg px-5">
                                     <button
@@ -453,14 +389,12 @@ export default function MagicmanBooster() {
                                             loading="lazy"
                                         />
                                     </button>
-                                    <div className="text-2xl text-[#006944] font-medium w-full h-full flex justify-center items-center border-l border-r border-black">
-                                        {count}
+                                    <div className="text-2xl font-medium w-full h-full flex justify-center items-center border-l border-r border-black">
+                                        {count ? count : 1}
                                     </div>
                                     <button
                                         className="w-1/2 py-2 px-3 flex justify-center"
-                                        onClick={() => {
-                                            setCount(count + 1);
-                                        }}
+                                        onClick={() => setCount(count + 1)}
                                     >
                                         <img
                                             src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame.svg?v=1696501243"
@@ -476,16 +410,18 @@ export default function MagicmanBooster() {
                                 <div className="flex gap-2 py-3 justify-center items-center">
                                     <button
                                         onClick={() => {
+                                            const pic = images[0].img;
                                             addToCart({
-                                                title: "Magic Man Booster",
-                                                ImageUrl:
-                                                    "https://farmnaturelle.com/cdn/shop/files/1_717e2b24-b57f-4180-8848-8a1f951b183e.jpg?v=1714049827",
-                                                content: selectedOption * count,
+                                                title: Name,
+                                                ImageUrl: `${pic}`,
                                                 quantity: count,
-                                                save: "Save 23%",
-                                                hidden: "hidden",
+                                                price: selectedOption1,
+                                                content:
+                                                    count > 1
+                                                        ? selectedOption * count
+                                                        : selectedOption,
                                             });
-                                            console.log(count);
+                                            console.log(selectedOption1);
                                         }}
                                         className="uppercase"
                                     >
@@ -513,9 +449,8 @@ export default function MagicmanBooster() {
                             </p>
                             <div>
                                 <div
-                                    className={`${
-                                        offerExpanded ? "block" : "hidden"
-                                    }`}
+                                    className={`${offerExpanded ? "block" : "hidden"
+                                        }`}
                                 >
                                     <p className="border-b border-[#006944] py-5">
                                         Buy one, get one free on raw honey at
@@ -534,8 +469,8 @@ export default function MagicmanBooster() {
                                         document.getElementById(
                                             "offer",
                                         ).innerHTML = offerExpanded
-                                            ? "More offers"
-                                            : "Less offers";
+                                                ? "More offers"
+                                                : "Less offers";
                                     }}
                                 >
                                     <span className="py-3 pr-2">
@@ -579,215 +514,164 @@ export default function MagicmanBooster() {
                             </TabList>
                             <TabPanel className="text-lg">
                                 <p className="py-5 text-sm text-[#727271]">
-                                    Experience holistic enhancements for your
-                                    intimate well-being with our herbal
-                                    capsules. Crafted from pure, organic
-                                    ingredients, our capsules offer a natural
-                                    path to invigorate your sexual health.
-                                    Discover a natural way to elevate your
-                                    vitality, fostering a deeper connection and
-                                    enriched wellness.{" "}
+                                    {Tab1}{" "}
                                 </p>
                                 <p></p>
                                 <ul className="text-base">
-                                    <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
-                                        <b className="text-black">
-                                            Shatavari's Natural Power:
-                                        </b>{" "}
-                                        Relieve stress, soothe anxiety, and
-                                        ignite passion effortlessly. Discover
-                                        newfound vitality and endurance in men
-                                        while enhancing libido in both genders.{" "}
-                                    </li>
-                                    <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
-                                        <b>
-                                            <span className="text-black">
-                                                Safed Musli to Improve
-                                                Performance:
-                                            </span>
-                                        </b>{" "}
-                                        Elevate your desire with increased
-                                        libido while promoting healthier
-                                        testosterone levels. Unleash your
-                                        potential for enhanced sexual
-                                        performance the pure, organic way.{" "}
-                                    </li>
-                                    <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
-                                        <b className="text-black">
-                                            Shilajit to Your Rescue:
-                                        </b>{" "}
-                                        This ancient treasure ignites
-                                        testosterone production, enhancing your
-                                        sexual prowess. Embrace the power of
-                                        pure, organic herbal capsules to
-                                        invigorate your intimate moments
-                                        effortlessly.{" "}
-                                    </li>
+                                    {T1Text && (
+                                        <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
+                                            <b className="text-black">
+                                                {T1Text}
+                                            </b>{" "}
+                                            {T1SubText}{" "}
+                                        </li>
+                                    )}
+
+                                    {T2Text && (
+                                        <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
+                                            <b>
+                                                <span className="text-black">
+                                                    {T2Text}
+                                                </span>
+                                            </b>{" "}
+                                            {T2SubText}{" "}
+                                        </li>
+                                    )}
+
+                                    {T3Text && (
+                                        <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
+                                            <b className="text-black">
+                                                {T3Text}
+                                            </b>{" "}
+                                            {T3SubText}{" "}
+                                        </li>
+                                    )}
                                 </ul>
                                 <p></p>
                             </TabPanel>
-
                             <TabPanel>
                                 <p className="py-5 text-sm text-[#727271]">
                                     All men, women of all ages and children can
                                     consume it.
                                 </p>
                             </TabPanel>
-
                             <TabPanel>
                                 <p className="py-5 text-sm text-[#727271]">
-                                    Satavari Dry, Shafed Musli, Shilajeet, Konch
-                                    Seed, Watermelon Seed, Aloevera,
-                                    Ashwagandha, Beetroot
+                                    {Tab3}
                                 </p>
                             </TabPanel>
                         </Tabs>
                     </div>
                 </div>
             </div>
-            <div className="h-[130vh] w-full">
-                <div className="w-full h-full text-center py-2 font-jost relative">
-                    <p className="text-[gray] py-2">Benefits</p>
-                    <p className="text-4xl font-medium text-[#006944]">
-                        <span className="text-black">Benefits Of </span>
-                        Magical Man Booster{" "}
-                    </p>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[40%] flex-col items-center justify-center">
-                        <div className="w-full flex items-center rounded-[50%] bg-[#DEEEC0]">
-                            <img
-                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/B_Magical_Man_Booster.png?v=1703237231"
-                                alt="Benefits"
-                                loading="lazy"
-                            />
-                        </div>
-                        <div className="absolute top-0 left-0 -translate-x-[82%] w-full flex flex-row-reverse h-auto text-sm">
-                            <div className="flex items-start gap-1">
-                                <div className="w-full text-wrap">
-                                    <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
-                                        <img
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857505.png?v=1696832200"
-                                            title=""
-                                            width="52px"
-                                            height="42px"
-                                            loading="lazy"
-                                        />
-                                        <h4 className="text-2xl text-[#006944]">
-                                            Improving Sexual Wellness with
-                                            Kaunch Seeds
-                                        </h4>
-                                        <p>
-                                            Kaunch seeds are a natural
-                                            aphrodisiac that ignites desire and
-                                            enhances virility. Boosting both
-                                            sperm count and motility, it
-                                            elevates your intimate wellness.
-                                            Elevate your confidence with
-                                            increased semen production.{" "}
-                                        </p>
-                                    </div>
-                                </div>
+            <div>
+                <div className="h-[150vh] w-full">
+                    <div className="w-full h-full text-center py-2 font-jost relative">
+                        <p className="text-[gray] py-2">Benefits</p>
+                        <p className="text-4xl font-medium text-[#006944]">
+                            <span className="text-black">Benefits Of </span>
+                            {Name}
+                        </p>
+                        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/3 flex-col items-center justify-center">
+                            <div className="w-full flex items-center rounded-[50%] bg-[#DEEEC0]">
                                 <img
-                                    src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28630.png?v=1696832266"
-                                    width="auto"
-                                    height="auto"
+                                    src={extraImage}
+                                    alt="Benefits"
                                     loading="lazy"
                                 />
                             </div>
-                        </div>
-                        <div className="absolute top-0 right-0 translate-x-[83%] w-full flex flex-row-reverse h-auto">
-                            <div className="flex items-start gap-1">
-                                <img
-                                    src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28630_1.png?v=1696833635"
-                                    alt="arrow"
-                                    width="auto"
-                                    height="auto"
-                                    loading="lazy"
-                                />
-                                <div className="w-full">
-                                    <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
-                                        <img
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/weight.png?v=1696832154"
-                                            title=""
-                                            width="42px"
-                                            height="auto"
-                                            loading="lazy"
-                                        />
-                                        <h4 className="text-2xl text-[#006944]">
-                                            All-in-One Intimacy Solutions
-                                        </h4>
-                                        <p>
-                                            Rediscover your desires, nurture
-                                            intimate moisture, and alleviate
-                                            discomfort during intimacy.
-                                        </p>
+                            <div className="text-[#006944] absolute top-0 left-0 -translate-x-[82%] w-full flex flex-row-reverse h-auto text-sm">
+                                <div className="flex items-start gap-1">
+                                    <div className="w-full text-wrap">
+                                        <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857505.png?v=1696832200"
+                                                title=""
+                                                width="52px"
+                                                height="42px"
+                                                loading="lazy"
+                                            />
+                                            <h4 className="text-2xl">{h4_1}</h4>
+                                            <p>{p_1}</p>
+                                        </div>
+                                    </div>
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28630.png?v=1696832266"
+                                        width="auto"
+                                        height="auto"
+                                        loading="lazy"
+                                    />
+                                </div>
+                            </div>
+                            <div className="text-[#006944] absolute top-0 right-0 translate-x-[83%] w-full flex flex-row-reverse h-auto">
+                                <div className="flex items-start gap-1">
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28630_1.png?v=1696833635"
+                                        alt="arrow"
+                                        width="auto"
+                                        height="auto"
+                                        loading="lazy"
+                                    />
+                                    <div className="text-[#006944] w-full">
+                                        <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/weight.png?v=1696832154"
+                                                title=""
+                                                width="42px"
+                                                height="auto"
+                                                loading="lazy"
+                                            />
+                                            <h4 className="text-2xl">{h4_2}</h4>
+                                            <p>{p_2}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="absolute bottom-10 left-0 -translate-x-[92%] translate-y-32 w-full flex flex-reverse h-auto">
-                            <div className="flex items-start gap-1">
-                                <div className="w-full text-wrap">
-                                    <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
-                                        <img
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857508.png?v=1696832109"
-                                            title=""
-                                            width="50px"
-                                            height="50px"
-                                            loading="lazy"
-                                        />
-                                        <h4 className="text-2xl text-[#006944]">
-                                            Nurturing Wellness Inside Out
-                                        </h4>
-                                        <p>
-                                            Crafted from pure, natural
-                                            ingredients, these capsules serve as
-                                            a gentle tonic for your general
-                                            health. Embrace the power of
-                                            nature's goodness in every capsule,
-                                            revitalizing your body and
-                                            invigorating your spirit.{" "}
-                                        </p>
+                            <div className="text-[#006944] absolute bottom-28 left-0 -translate-x-[82%] translate-y-56 w-full flex flex-reverse h-auto">
+                                <div className="flex items-start gap-1">
+                                    <div className="w-full text-wrap">
+                                        <div className="text-[#006944] w-auto text-center flex flex-col justify-center items-center -my-5">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857508.png?v=1696832109"
+                                                title=""
+                                                width="50px"
+                                                height="50px"
+                                                loading="lazy"
+                                            />
+                                            <h4 className="text-2xl">{h4_3}</h4>
+                                            <p>{p_3}</p>
+                                        </div>
                                     </div>
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28631.png?v=1696833634"
+                                        alt="arrow"
+                                        width="auto"
+                                        height="auto"
+                                        loading="lazy"
+                                    />
                                 </div>
-                                <img
-                                    src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28631.png?v=1696833634"
-                                    alt="arrow"
-                                    width="auto"
-                                    height="auto"
-                                    loading="lazy"
-                                />
                             </div>
-                        </div>
-                        <div className="absolute bottom-0 right-0 translate-x-[82%] translate-y-20 w-full flex flex-row-reverse h-auto">
-                            <div className="flex items-start gap-1">
-                                <img
-                                    src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28631_1.png?v=1696833635"
-                                    alt="arrow"
-                                    width="auto"
-                                    height="auto"
-                                    loading="lazy"
-                                />
-                                <div className="w-full">
-                                    <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
-                                        <img
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856851_1.png?v=1696831956"
-                                            title=""
-                                            width="42px"
-                                            height="auto"
-                                            loading="lazy"
-                                        />
-                                        <h4 className="text-2xl text-[#006944]">
-                                            Elevate Intimate Moments with
-                                            Ashwagandha
-                                        </h4>
-                                        <p>
-                                            AshwagandhaEnhance your intimacy
-                                            naturally and embrace a fulfilling
-                                            connection. Ashwagandha, a
-                                            time-honored herb, is renowned for
-                                            kindling desire, heightening
-                                            pleasure, and boosting performance.
-                                        </p>
+                            <div className="text-[#006944] absolute bottom-0 right-0 translate-x-[82%] translate-y-20 w-full flex flex-row-reverse h-auto">
+                                <div className="flex items-start gap-1">
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28631_1.png?v=1696833635"
+                                        alt="arrow"
+                                        width="auto"
+                                        height="auto"
+                                        loading="lazy"
+                                    />
+                                    <div className="w-full">
+                                        <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856909.svg?v=1699345544"
+                                                title=""
+                                                width="42px"
+                                                height="auto"
+                                                loading="lazy"
+                                            />
+                                            <h4 className="text-2xl">{h4_4}</h4>
+                                            <p>{p_4}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -807,11 +691,11 @@ export default function MagicmanBooster() {
                         </p>
                         <img
                             className="absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
-                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/1_Magical_Man_Booster.png?v=1703237213"
+                            src={BoxImg1}
                             alt=""
                         />
-                        <p className="text-[#D1E0D6] text-3xl font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-nowrap scale-75">
-                            Shake well before use
+                        <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-nowrap scale-75">
+                            Drizzle on Salads
                         </p>
                     </div>
                     <div className="w-[30%] h-48 bg-[#99C459] rounded-xl text-8xl relative">
@@ -820,11 +704,11 @@ export default function MagicmanBooster() {
                         </p>
                         <img
                             className="absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
-                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/2_Magical_Man_Booster.png?v=1703237213"
+                            src={BoxImg2}
                             alt=""
                         />
-                        <p className="text-[#D1E0D6] text-3xl font-semibold absolute top-1/2 left-0 transform scale-75">
-                            Mix 25ml of juice in a glass of water.
+                        <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75">
+                            Use as teeth cleaner
                         </p>
                     </div>
                     <div className="w-[30%] h-48 bg-[#006944] rounded-xl text-8xl relative">
@@ -833,24 +717,23 @@ export default function MagicmanBooster() {
                         </p>
                         <img
                             className="absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
-                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/3_Magical_Man_Booster.png?v=1703237213"
+                            src={BoxImg3}
                             alt=""
                         />
-                        <p className="text-[#D1E0D6] text-3xl font-semibold absolute top-0 left-0 transform translate-y-20 scale-75">
-                            Take empty stomach in the morning and 1 hour post
-                            dinner
+                        <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75">
+                            Stir in water
                         </p>
                     </div>
                 </div>
             </div>
-            <div className="bg-[#DEEACD] h-auto text-center text-[gray] font-semibold font-jost py-10">
+            {/* <div className="bg-[#DEEACD] h-auto text-center text-[gray] font-semibold font-jost py-10">
                 <p className="uppercase py-5">result</p>
                 <p className="text-4xl text-black">What Will You Achieve</p>
                 <div>
                     <div className="flex justify-around py-10 px-10">
                         <div className="w-[23%] h-32 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
                             <div className="text-7xl text-[#006944] absolute -top-7 left-0">
-                                94
+                                93
                                 <span className="font-playfair text-2xl font-extrabold">
                                     %
                                 </span>
@@ -861,7 +744,7 @@ export default function MagicmanBooster() {
                         </div>
                         <div className="w-[23%] h-32 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
                             <div className="text-7xl text-[#006944] absolute -top-7  left-0">
-                                93
+                                94
                                 <span className="font-playfair text-2xl font-extrabold">
                                     %
                                 </span>
@@ -872,7 +755,7 @@ export default function MagicmanBooster() {
                         </div>
                         <div className="w-[23%] h-32 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
                             <div className="text-7xl text-[#006944] absolute -top-7  left-0">
-                                93
+                                89
                                 <span className="font-playfair text-2xl font-extrabold">
                                     %
                                 </span>
@@ -883,7 +766,7 @@ export default function MagicmanBooster() {
                         </div>
                         <div className="w-[23%] h-32 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
                             <div className="text-7xl text-[#006944] absolute -top-7  left-0">
-                                93
+                                90
                                 <span className="font-playfair text-2xl font-extrabold">
                                     %
                                 </span>
@@ -895,53 +778,51 @@ export default function MagicmanBooster() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="bg-white h-auto text-center text-[gray] font-medium font-jost py-10">
                 <p className="py-2">COMPARISON</p>
                 <p className="text-4xl text-black">
                     See why Farm Naturelle is
                     <span className="text-[#006944]"> 100 times Better</span>
                 </p>
-                <div className="w-full flex flex-col lg:flex-row lg:justify-around sm:px-11 sm:py-5">
+                <div className="w-full flex justify-around px-11 py-5">
                     <div className="w-1/2 h-auto text-[#006944] rounded-xl text-center font-semibold font-jost">
-                        <p className="text-3xl py-10">
-                            Farm Naturelle Men Wellness Juice
-                        </p>
+                        {Name && <p className="text-3xl py-10">{Name}</p>}
                         <div className="w-full flex flex-col justify-center items-center font-light">
-                            <p className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Organic
-                            </p>
+                            <div className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white relative">
+                                <p>
+                                    <img
+                                        className="absolute top-1/2 -translate-y-1/2 left-1"
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_8.png?v=1703150234"
+                                    />
+                                </p>
+                                Uses Organic Apples
+                            </div>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_9.png?v=1703153821)] bg-[1%] bg-no-repeat text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Pure{" "}
+                                No Additives
                             </p>
-                            <p className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Unprocessed, Raw
-                            </p>
-                            <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_9.png?v=1703153821)] bg-[1%] bg-no-repeat text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                No added sugar
-                            </p>
-                            <p className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                High Nutritional Value
-                            </p>
+                            <div className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white relative">
+                                <p>
+                                    <img
+                                        className="absolute top-1/2 -translate-y-1/2 left-1"
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_8.png?v=1703150234"
+                                    />
+                                </p>
+                                No Preservatives
+                            </div>
                         </div>
                     </div>
                     <div className="w-1/2 h-48 text-[#006944] rounded-xl text-center font-semibold font-jost">
-                        <p className="text-3xl py-10">Normal Juice</p>
+                        <p className="text-3xl py-10">Apple Cider Vinegar</p>
                         <div className="w-full flex flex-col justify-center items-center font-light">
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Non-organic
+                                Uses Bad Quality Apple
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-white text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Added Chemicals
+                                Has Harmful Additives
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Filtered, heated, pasteurized
-                            </p>
-                            <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-white text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Added Sugar
-                            </p>
-                            <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Less Nutritional Value
+                                Has Preservatives
                             </p>
                         </div>
                     </div>
@@ -1033,9 +914,14 @@ export default function MagicmanBooster() {
                         ref={(slider) => (sliderRef3 = slider)}
                     >
                         {products.map((item, index) => (
-                            <div key={index}>
-                                <Card key={index} id={nanoid()} {...item} />
-                            </div>
+                            <Link
+                                key={index}
+                                to={`/collections/${item.catagory}/products/${item.id}`}
+                            >
+                                <div>
+                                    <Card key={index} {...item} />
+                                </div>
+                            </Link>
                         ))}
                     </Slider>
                 </div>

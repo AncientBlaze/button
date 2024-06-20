@@ -80,14 +80,14 @@ function Nav() {
                                 Shop by Concern
                                 <ul className="absolute hidden h-0 group-hover:h-auto group-hover:block bg-white shadow-lg my-5 max-w-96 w-96 top-2 z-20 py-3 font-[16px]">
                                     <li className="text-nowrap px-4 pb-1 mt-1 hover:text-[#006944]">
-                                        <Link to={"/collections/products/piles-vanish"}>
+                                        <Link to={"/collections/herbal-juice/products/piles-vanish"}>
                                             <span className="underlined">
                                                 Piles Relief
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="text-nowrap px-4 pb-1 mt-1 hover:text-[#006944]">
-                                        <Link to={"/products/smiling-liver"}>
+                                        <Link to={"/collections/herbal-juice/products/smiling-liver"}>
                                             <span className="underlined">
                                                 Healthy Liver
                                             </span>
@@ -95,7 +95,7 @@ function Nav() {
                                     </li>
                                     <li className="text-nowrap px-4 pb-1 mt-1 hover:text-[#006944]">
                                         <Link
-                                            to={"/products/magical-man-booster"}
+                                            to={"/collections/herbal-juice/products/magical-man-booster"}
                                         >
                                             <span className="underlined">
                                                 Magic Man Booster
@@ -104,7 +104,7 @@ function Nav() {
                                     </li>
                                     <li className="text-nowrap px-4 pb-1 mt-1 hover:text-[#006944]">
                                         <Link
-                                            to={"/products/digestive-fitness"}
+                                            to={"/collections/herbal-juice/products/digestive-fitness"}
                                         >
                                             <span className="underlined">
                                                 Digestive Fitness
@@ -112,7 +112,7 @@ function Nav() {
                                         </Link>
                                     </li>
                                     <li className="text-nowrap px-4 pb-1 mt-1 hover:text-[#006944]">
-                                        <Link to={"/products/easing-diabetes"}>
+                                        <Link to={"/collections/herbal-juice/products/easing-diabetes"}>
                                             <span className="underlined">
                                                 Easing Diabetes
                                             </span>
@@ -121,7 +121,7 @@ function Nav() {
                                     <li className="text-nowrap px-4 pb-1 mt-1 hover:text-[#006944]">
                                         <Link
                                             to={
-                                                "/products/anti-hangover-ready-to-drink-shot"
+                                                "/collections/herbal-juice/products/anti-hangover-ready-to-drink-shot"
                                             }
                                         >
                                             <span className="underlined">
@@ -137,7 +137,7 @@ function Nav() {
                                     <li className="text-nowrap px-4 pb-1 mt-1 hover:text-[#006944]">
                                         <Link
                                             to={
-                                                "/products/kidney-stone-crusher-juice"
+                                                "/collections/herbal-juice/products/kidney-stone-crusher-juice"
                                             }
                                         >
                                             <span className="underlined">
@@ -146,14 +146,14 @@ function Nav() {
                                         </Link>
                                     </li>
                                     <li className="text-nowrap px-4 pb-1 mt-1 hover:text-[#006944]">
-                                        <Link to={"/products/women-glow"}>
+                                        <Link to={"/collections/herbal-juice/products/women-glow"}>
                                             <span className="underlined">
                                                 Glowing Woman
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="text-nowrap px-4 pb-1 mt-1 hover:text-[#006944]">
-                                        <Link to={"/products/stress-buster"}>
+                                        <Link to={"/collections/herbal-juice/products/stress-buster"}>
                                             <span className="underlined">
                                                 Stress Buster
                                             </span>
@@ -165,14 +165,14 @@ function Nav() {
                                         </span>
                                     </li>
                                     <li className="text-nowrap px-4 pb-1 mt-1 hover:text-[#006944]">
-                                        <Link to={"/products/joints-and-body-pain-relief"}>
+                                        <Link to={"/collections/herbal-juice/products/joints-and-body-pain-relief"}>
                                             <span className="underlined">
                                                 Pain Relief
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="text-nowrap px-4 pb-1 mt-1 hover:text-[#006944]">
-                                        <Link to={"/products/joints-and-body-pain-relief"}>
+                                        <Link to={"/collections/herbal-juice/products/joints-and-body-pain-relief"}>
                                         <span className="underlined">
                                             Win Weight
                                         </span>

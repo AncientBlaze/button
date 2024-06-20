@@ -51,7 +51,7 @@ function HillTurmeric() {
                 </p>
                 <div className="w-full h-auto grid xl:grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 px-20 py-8 gap-10 justify-items-center">
                     {products.map((product, index) => (
-                        <Link to={`/collections/hill-turmeric/products/${product.id}`} key={index}>
+                        <Link to={`/collections/turmeric/products/${product.id}`} key={index}>
                         <Card key={index} {...product} />
                         </Link>
                     ))}

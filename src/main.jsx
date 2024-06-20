@@ -176,47 +176,47 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                         element={<PrivacyPolicy />}
                     />
                     <Route
-                        path="/collections/products/piles-vanish"
+                        path="/collections/herbal-juice/products/piles-vanish"
                         element={<PilesVanish />}
                     />
                     <Route
-                        path="/products/smiling-liver"
+                        path="/collections/herbal-juice/products/smiling-liver"
                         element={<HealthyLiver />}
                     />
                     <Route
-                        path="/products/magical-man-booster"
+                        path="/collections/herbal-juice/products/magical-man-booster"
                         element={<MagicmanBooster />}
                     />
                     <Route
-                        path="/products/digestive-fitness"
+                        path="/collections/herbal-juice/products/digestive-fitness"
                         element={<DigestiveFitness />}
                     />
                     <Route
-                        path="/products/easing-diabetes"
+                        path="/collections/herbal-juice/products/easing-diabetes"
                         element={<EasingDiabetes />}
                     />
                     <Route
-                        path="/products/anti-hangover-ready-to-drink-shot"
+                        path="/collections/herbal-juice/products/anti-hangover-ready-to-drink-shot"
                         element={<Hangover />}
                     />
                     <Route
-                        path="/products/kidney-stone-crusher-juice"
+                        path="/collections/herbal-juice/products/kidney-stone-crusher-juice"
                         element={<Kidney />}
                     />
                     <Route
-                        path="/products/women-glow"
+                        path="/collections/herbal-juice/products/women-glow"
                         element={<WomanGlow />}
                     />
                     <Route
-                        path="/products/stress-buster"
+                        path="/collections/herbal-juice/products/stress-buster"
                         element={<StressBuster />}
                     />
                     <Route
-                        path="/products/joints-and-body-pain-relief"
+                        path="/collections/herbal-juice/products/joints-and-body-pain-relief"
                         element={<PainRelief />}
                     />
                     <Route
-                        path="/collections/all-products"
+                        path="/collections/herbal-juice/products/all-products"
                         element={<All_Products />}
                     />
                     <Route
@@ -2413,7 +2413,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             />
                         }
                     />
-                    <Route path="collections/hill-turmeric/products/turmeric-with-black-pepper"
+                    <Route path="collections/turmeric/products/turmeric-with-black-pepper"
                         element={<HillPages
                             name={"Pure Himalayan Mountain Turmeric (Curcumin) with Black Pepper (Peperine) Powder"}
                             Name={"Turmeric With Black Pepper"}
@@ -2448,7 +2448,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             Tab3={"Turmeric powder, black pepper"}
                         />}
                     />
-                    <Route path="collections/hill-turmeric/products/turmeric-milk-masala"
+                    <Route path="collections/turmeric/products/turmeric-milk-masala"
                         element={<HillPages
                             name={"Golden Milk Masala Himalayan Turmeric latte Powder with Natural & Immunizing Spice Blend Himalayan Turmeric, Almonds, Cinnamon, Ginger , Cloves , Ashwagandha & Ground Balck Pepper"}
                             Name={"Turmeric With Milk Masala"}
@@ -2480,7 +2480,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             Tab1={"Get the magic of Himalayan Turmeric, Almonds, Cinnamon, Ginger, and Cloves in this convenient mix for milk. Just add before boiling, and watch the goodness unfold. Plus, a pinch of Ground Pepper supercharges Curcumin absorption by over 2000%, maximizing benefits for your body."}
                         />}
                     />
-                    <Route path="collections/hill-turmeric/products/plain-turmeric"
+                    <Route path="collections/turmeric/products/plain-turmeric"
                         element={<HillPages
                             name={"Pure Himalayan Mountain Turmeric Curcumin (Haldi) Powder"}
                             Name={"Turmeric"}

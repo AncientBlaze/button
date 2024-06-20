@@ -449,6 +449,7 @@ export default function HoneyPages({
                                             addToCart({
                                                 title: Name,
                                                 ImageUrl: `${pic}`,
+                                                quantity: count,
                                                 price: selectedOption1,
                                                 content: selectedOption * count,
                                             });
