@@ -93,6 +93,8 @@ import {
 } from "../pages/products/product_data/Apple_data/Apple_data.js";
 import HillPages from "../pages/products/product_data/Hill_data/HillPages.jsx";
 import { blackPepperTurmeric, plainTurmeric, turmericMilkMasala } from "../pages/products/product_data/Hill_data/Hill_data.js";
+import JaggeryPages from "../pages/products/product_data/Jaggery_amla_data/JaggeryPage.jsx";
+import { Jaggery } from "../pages/products/product_data/Jaggery_amla_data/Jaggery_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -216,7 +218,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                         element={<PainRelief />}
                     />
                     <Route
-                        path="/collections/herbal-juice/products/all-products"
+                        path="/collections/all-products"
                         element={<All_Products />}
                     />
                     <Route
@@ -2513,6 +2515,44 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_e0faee3e-af96-4fee-b46a-f78ef3523ab5.png?v=1698924411"}
                             BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2_506f8095-b844-498e-8964-25ad27c202f9.png?v=1698924411"}
                         />}
+                    />
+                    <Route
+                        path="collections/jaggery-amla-candy/products/chatpata-amla-candy"
+                        element={<JaggeryPages
+                            name={"Dried Dry Jaggery Chatpata Amla Candy (Indian Gooseberry)| Export Quality Amla | No Preservative | No Artificial Colour Used"}
+                            Name={"CHATPATA AMLA CANDY"}
+                            images={Jaggery}
+                            price={359}
+                            price1={479}
+                            previousPrice={439}
+                            previousPrice1={699}
+                            save={"18% off"}
+                            save2={"31%"}
+                            info1={"Boost Your Immunity with Amla"}
+                            info2={"Goodness of Vitamin C"}
+                            info3={"A Delicious Boost for Your Digestive Fire"}
+                            Tab1={"Farm Naturelle Chatpata Amla Candy, a tasty, nutritious treat loaded with antioxidants from amla. Boost your immune system, enhance metabolism, aid digestion, and satisfy cravings with its classic chatpata flavor."}
+                            T1Text={"Boost Your Immunity with Amla: "}
+                            T1SubText={" Find the secret to a stronger immune system with our delicious Dried Dry Jaggery Chatpata Amla Candy. Packed with the power of Amla, this tangy treat is your go-to for natural immunity support."}
+                            T2Text={"Goodness of Vitamin C: "}
+                            T2SubText={"Indulge in the goodness of our Chatpata Amla Candy enriched with Vitamin C and dietary fibers. Crafted with care, this tangy treat stimulates metabolism, enhances digestion, and is your perfect daily dose of natural vitality."}
+                            T3Text={"A Delicious Boost for Your Digestive Fire: "}
+                            T3SubText={" Indulge in the zesty delight of Chatpata Amla Candy, not only a treat for your taste buds but also a secret to improved appetite and a fired-up digestive system. Let your agni digestive fire thrive with every tangy bite, making your mealtimes a flavorful experience."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/amla_candy.png?v=1703075308"}
+                            h4_1={"A Tasty Twist for Your Health"}
+                            p_1={"Indulge in the delightful fusion of flavors and wellness with Farm Naturelle Amla Candy. This delicious snack not only satisfies your taste buds but also aids digestion. Perfect for post-meal cravings, it's a scrumptious way to boost your health."}
+                            h4_2={"Satisfies taste buds"}
+                            p_2={"Farm Naturelle Amla Candy offers a delightful fusion of flavors, making it a tasty treat to indulge in. It satisfies your taste buds, providing a satisfying snacking experience."}
+                            h4_3={"Aids digestion"}
+                            p_3={"Along with its delicious taste, Farm Naturelle Amla Candy also aids digestion. It contains amla, which is known for its digestive properties. Consuming this candy after meals can help improve digestion and alleviate digestive discomfort."}
+                            BoxImg1={
+                                "https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2_a2763bf7-9e28-40ce-93d8-a1721c13d0fe.png?v=1698925987"
+                            }
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_385abb8d-b02d-41bb-8d21-4d6d9ca51da2.png?v=1698925987"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-1_0871ed6c-0c7a-48ff-b6d4-674e1e3fb20a.png?v=1698925987"}
+                            Tab3={"Amla Jaggery, Sea salt, Star anise, Vinegar, Cinnamon, Black salt, Bay leaf, Red Chilli, Cumin Powder, Ginger Powder, Citric Acid"}
+                        />
+                        }
                     />
                 </Routes>
             </Provider>

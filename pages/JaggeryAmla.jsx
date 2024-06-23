@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import Nav from "../src/components/header/Nav";
 import Footer from "../src/components/footer/Footer";
 import Card from "../src/components/CardComponent2";
-import { nanoid } from "@reduxjs/toolkit";
 
 const products = [
-    {
+    {   
+        id:"chatpata-amla-candy",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_2c2ad549-91b8-496c-a268-c5b49e3a230f_800x.jpg?v=1708001342",
         PlaceHolder:
@@ -31,7 +31,9 @@ function JaggeryAmla() {
                 </p>
                 <div className="w-full h-auto grid xl:grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 px-20 py-8 gap-10 justify-items-center">
                     {products.map((product, index) => (
-                        <Card key={index} id={nanoid()} {...product} />
+                        <Link key={index} to={`/collections/jaggery-amla-candy/products/${product.id}`}>
+                        <Card {...product} />
+                        </Link>
                     ))}
                 </div>
             </div>
