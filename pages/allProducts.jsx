@@ -165,6 +165,20 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "a2-sahiwali-ghee",
+        catagory: "ghee",
+        ImageUrl:
+            "https://farmnaturelle.com/cdn/shop/files/2_6334cefd-be7f-46fd-a2ec-f4afb83e43f4_800x.jpg?v=1703749493",
+        PlaceHolder:
+            "https://farmnaturelle.com/cdn/shop/files/3_6ffc569d-4534-4507-97ba-2f4a6afb76d0_800x.jpg?v=1703749499",
+        title: "From Naturelle 100%...",
+        content: 789,
+        PreviousPrice: 519,
+        save: 34,
+    },
+    {
+        id: "a2-desi-cow-ghee-from-grass-fed-gir-cows-vedic-bilona-method-curd-churned-golden-grainy-aromatic-keto-friendly-non-gmo-and-a-wooden-spoon",
+        catagory: "ghee",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_749637ab-9d9e-4be2-9213-5a284f8f231e_800x.jpg?v=1708001310",
         PlaceHolder:
@@ -328,7 +342,7 @@ const products = [
         content: 0,
         hidden: "hidden",
     },
-    {   
+    {
         id: "chatpata-amla-candy",
         catagory: "jaggery-amla-candy",
         ImageUrl:

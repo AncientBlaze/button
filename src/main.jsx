@@ -96,7 +96,7 @@ import { blackPepperTurmeric, plainTurmeric, turmericMilkMasala } from "../pages
 import JaggeryPages from "../pages/products/product_data/Jaggery_amla_data/JaggeryPage.jsx";
 import { Jaggery } from "../pages/products/product_data/Jaggery_amla_data/Jaggery_data.js";
 import WellnessPages from "../pages/products/product_data/Wellness_data/WellnessPages.jsx";
-import { blackSeedOil, castorOil } from "../pages/products/product_data/Wellness_data/wellness_data.js";
+import { avocadoOil, blackSeedOil, castorOil, flaxSeedOil } from "../pages/products/product_data/Wellness_data/wellness_data.js";
 import { nanoid } from "@reduxjs/toolkit";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -2643,8 +2643,95 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Black_Seed_Oil-_skin_care_063eacc7-df29-4a44-809e-95243bbb4a99.png?v=1703147397"}
                             BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Black_Seed_Oil-_hair_care_6a80d756-4f33-4b12-8aa9-b681e4416146.png?v=1703147396"}
                         />} />
-                    <Route />
-                    <Route />
+                    <Route
+                        path="collections/wellness-oils/products/avocado-oil"
+                        element={<WellnessPages
+                            name={"100% Pure Extra Virgin Avocado Oil is Pressed from The Fleshy Pulp Surrounding The Avocado"}
+                            Name={"Avocado Oil"}
+                            images={avocadoOil}
+                            price={569}
+                            price1={1115}
+                            price2={1995}
+                            price3={3695}
+                            previousPrice={690}
+                            save={"18%"}
+                            previousPrice1={1340}
+                            save1={"17%"}
+                            previousPrice2={2440}
+                            save2={"18%"}
+                            previousPrice3={4650}
+                            save3={"21%"}
+                            info1={"Loaded with Goodness of Avocado"}
+                            info2={"Abundant Health from Earth's Bounty"}
+                            info3={"All-in-One Wellness Oil"}
+                            Tab1={"Pure Avocado Wellness: Nourish Inside Out with nature's treasure with our cold-pressed Avocado oil. Packed with vitamins, antioxidants, and minerals, it's a multi-purpose elixir for heart, beauty, and body. Elevate your cooking with its high-heat tolerance. Ethically curated, 100% organic, and bursting with Omega 3, 6, 9, Vitamin E, and more. Rejuvenate hair, improve texture, and banish dryness. Embrace healthy fats, embrace a vibrant you."}
+                            T1Text={"Loaded with Goodness of Avocado:"}
+                            T1SubText={"Gently extracted from the lush, creamy flesh that envelops the avocado seed, our oil captures the very best of nature's goodness. Unveil the secret of this cold-pressed, unrefined elixir that's 100% natural and organic"}
+                            T2Text={"Abundant Health from Earth's Bounty:"}
+                            T2SubText={"Farm Naturelle Avocado is a pure blend of nature's goodness, bursting with essential vitamins, minerals, and powerful antioxidants. Unlock your vitality with this organic elixir, carefully cold pressed to retain its unrefined potency."}
+                            T3Text={"All-in-One Wellness Oil:"}
+                            T3SubText={"This avocado oil is enriched with heart, beauty, and body benefits. This all-in-one natural elixir, cold pressed and unrefined, is your path to radiant skin, a healthy heart, and overall vitality. Crafted from the finest organic ingredients, it's your go-to solution for holistic well-being."}
+                            Tab3={"Avocado Oil"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Avocado_Oil.png?v=1703144931"}
+                            h4_1={"Make Cooking Blissful"}
+                            h4_2={"Our Thoughtfully Sourced Organic Avocado Oil"}
+                            h4_3={"Abundant in Nature's Goodness"}
+                            h4_4={"Naturally Revitalize Your Hair"}
+                            p_1={"Fry, sauté, and bake with confidence, knowing you're infusing your dishes with 100% organic goodness."}
+                            p_2={"Discover wellness in its truest form, as we bring you the essence of nourishment straight from the source."}
+                            p_3={"Nourish yourself with a symphony of vital nutrients like Beta Sitosterol, Monounsaturated Fats, and Lutein."}
+                            p_4={"Elevate your hair's texture and bid farewell to dryness. Unlock the secret to luscious locks with our enriching oil blend."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Avocado_Oil-_cooking_1bd3cb89-e1bf-44e3-bd81-74f8ddcd1dcf.png?v=1703147226"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Avocado_Oil-_skin_care_544431f9-cac5-471e-8400-1df4bbf6605c.png?v=1703147226"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Avocado_Oil-_hair_care_0179aafd-c367-454e-962e-470306029049.png?v=1703147226"}
+                        />} />
+                    <Route
+                        path="collections/wellness-oils/products/flax-seed-oil"
+                        element={<WellnessPages
+                            name={"100% Pure Flax Seed Oil | Organic Flax Seed Oil"}
+                            Name={"Flax Seed Oil"}
+                            images={flaxSeedOil}
+                            info1={"Nourish Naturally with Organic Flax Seed Oil"}
+                            info2={"Culinary Delights with Our Flax Seed Oil"}
+                            info3={"Nurtures Heart & Liver Vitality"}
+                            price={269}
+                            previousPrice={320}
+                            save={"16%"}
+                            price1={349}
+                            previousPrice1={460}
+                            save1={"24%"}
+                            price2={559}
+                            previousPrice2={695}
+                            save2={"20%"}
+                            price3={849}
+                            previousPrice3={1075}
+                            save3={"21%"}
+                            Tab1={"The goodness of 100% natural, cold-pressed Organic Flax Seed Oil (Hindi-Alsi Oil). Its protein and fiber naturally curb appetite, aiding weight management. Ideal for cooking, it nurtures heart and liver health. Enjoy radiant skin and lustrous hair. Embrace a healthier lifestyle with its weight loss benefits. Support heart health by enhancing artery flexibility and lowering blood pressure. Reveal beautiful skin, fight wrinkles, and hydrate. Immerse in antioxidant-rich Flax Seed Oil for balanced wellness."}
+                            Tab3={"Flax Seed Oil"}
+                            T1Text={"Nourish Naturally with Organic Flax Seed Oil:"}
+                            T1SubText={"Packed with protein and fiber, it's your natural partner for curbing cravings and managing weight. Savor the goodness of cold-pressed, unrefined wellness, as this oil assists in reducing appetite, making your journey towards balanced health and weight control a delightful one."}
+                            T2Text={"Culinary Delights with Our Flax Seed Oil:"}
+                            T2SubText={"Revitalize your meals with our 100% natural, cold pressed, unrefined oil – not just a culinary marvel, but a wellness elixir too! Elevate your cooking with the goodness of organic ingredients, making every bite a healthful delight."}
+                            T3Text={"Nurtures Heart & Liver Vitality"}
+                            T3SubText={"Elevate your heart and liver well-being effortlessly. Our natural elixirs support the health of these vital organs, ensuring your wellness journey is backed by nature's finest."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Flaxseed_Oil.png?v=1703144931"}
+                            h4_1={"Skin and Hair Wellness"}
+                            h4_2={"Healthy Weight Management"}
+                            h4_3={"Heart's Best Friend"}
+                            h4_4={"Naturally Radiant Skin"}
+                            p_1={"Elevate your skin's glow and hair's strength naturally."}
+                            p_2={"Empowering your weight management efforts, these oils offer nature's touch in every drop."}
+                            p_3={"Feel the difference in your cardiovascular well-being as you embrace the benefits of this organic elixir, straight from nature's lap to your wellness journey."}
+                            p_4={"Effortlessly combats wrinkles, restoring a youthful glow."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Flax_Seed_Oil-_cooking_dd9b199f-e58d-4cc3-a775-b38208ccc392.png?v=1703147316"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Flax_Seed_Oil-_skin_care_79943bd8-70eb-441e-9100-b72a752e6f27.png?v=1703147316"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Flax_Seed_Oil-_hair_care_1887e72a-fcb9-499a-90d2-26dfc92a233a.png?v=1703147316"}
+                        />} />
+                        <Route  />
+                        <Route/>
+                        <Route/>
+                        <Route/>
+                        <Route/>
                 </Routes>
             </Provider>
         </BrowserRouter>

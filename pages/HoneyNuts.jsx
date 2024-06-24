@@ -19,7 +19,7 @@ function HoneyNuts() {
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/2_76b4bceb-21eb-40bc-8b49-d94fff2ccc61_800x.jpg?v=1703849709",
             PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/2_76b4bceb-21eb-40bc-8b49-d94fff2ccc61_800x.jpg?v=1703849709",
+                "https://farmnaturelle.com/cdn/shop/files/3_881facd8-88e6-44cf-b3d6-8bc762df73f8_800x.jpg?v=1708001119",
             title: "Figs in Cinnamon",
             content: 599,
             PreviousPrice: 799,
@@ -39,7 +39,7 @@ function HoneyNuts() {
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/2_76b4bceb-21eb-40bc-8b49-d94fff2ccc61_800x.jpg?v=1703849709",
             PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/2_76b4bceb-21eb-40bc-8b49-d94fff2ccc61_800x.jpg?v=1703849709",
+                "https://farmnaturelle.com/cdn/shop/files/3_89ebac74-72a2-4c03-946d-b17fd95e6a18_800x.jpg?v=1708001119",
             title: "Mix Nut in...",
             content: 539,
             PreviousPrice: 799,
