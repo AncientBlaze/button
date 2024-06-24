@@ -328,7 +328,9 @@ const products = [
         content: 0,
         hidden: "hidden",
     },
-    {
+    {   
+        id: "chatpata-amla-candy",
+        catagory: "jaggery-amla-candy",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_2c2ad549-91b8-496c-a268-c5b49e3a230f_800x.jpg?v=1708001342",
         PlaceHolder:
@@ -623,16 +625,6 @@ const products = [
         title: "Almond in Cinnamon...",
         content: 479,
         PreviousPrice: 799,
-        save: 18,
-    },
-    {
-        ImageUrl:
-            "https://farmnaturelle.com/cdn/shop/files/2_2c2ad549-91b8-496c-a268-c5b49e3a230f_800x.jpg?v=1708001342",
-        PlaceHolder:
-            "https://farmnaturelle.com/cdn/shop/files/3_2696c6c4-fe31-4df6-a91e-8b99ce45653c_800x.jpg?v=1703749897",
-        title: "Dried Dry Jaggery...",
-        content: 359,
-        PreviousPrice: 439,
         save: 18,
     },
     {

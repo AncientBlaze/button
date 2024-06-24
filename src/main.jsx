@@ -95,6 +95,9 @@ import HillPages from "../pages/products/product_data/Hill_data/HillPages.jsx";
 import { blackPepperTurmeric, plainTurmeric, turmericMilkMasala } from "../pages/products/product_data/Hill_data/Hill_data.js";
 import JaggeryPages from "../pages/products/product_data/Jaggery_amla_data/JaggeryPage.jsx";
 import { Jaggery } from "../pages/products/product_data/Jaggery_amla_data/Jaggery_data.js";
+import WellnessPages from "../pages/products/product_data/Wellness_data/WellnessPages.jsx";
+import { blackSeedOil, castorOil } from "../pages/products/product_data/Wellness_data/wellness_data.js";
+import { nanoid } from "@reduxjs/toolkit";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -2554,6 +2557,94 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                         />
                         }
                     />
+                    <Route
+                        path="collections/wellness-oils/products/castor-seed-oil"
+                        element={<WellnessPages
+                            name={"100% Pure Natural Organic Castor Seed Oil (Hindi-Arandi Oil)"}
+                            Name={"Castor Seed Oil"}
+                            images={castorOil}
+                            info1={"Pure of Arandi Oil for Wellness"}
+                            info2={"The Versatile Elixir of Castor Oil"}
+                            info3={"Relieve Joint Discomfort Naturally"}
+                            price={269}
+                            previousPrice={320}
+                            save={"16%"}
+                            price1={349}
+                            previousPrice1={460}
+                            save1={"24%"}
+                            price2={559}
+                            previousPrice2={695}
+                            save2={"20%"}
+                            price3={849}
+                            previousPrice3={1075}
+                            save3={"21%"}
+                            Tab1={"Nourish, Heal, and Shine with Castor Oil. Experience the wonders of 100% pure, natural, and organic cold pressed Castor Seed Oil, known as Arandi Oil in Hindi. Embrace its soothing touch on joint pain, rapid wound healing, and acne scar fading. This elixir hydrates your skin in creams and lotions. Reap the rewards of stronger, voluminous hair with reduced hair loss. With antioxidants and balance-restoring prowess, it's your path to vibrant hair and skin."}
+                            Tab3={`Castor Seed Oil`}
+                            T1Text={"Pure of Arandi Oil for Wellness"}
+                            T2Text={"The Versatile Elixir of Castor Oil"}
+                            T3Text={"Relieve Joint Discomfort Naturally"}
+                            T1SubText={"Benefit yourself with the magic of 100% pure, natural, and organic cold-pressed Arandi Oil. Derived from castor seeds, this Virgin Castor Seed Oil is your pathway to unrefined goodness. Elevate your well-being with its innate properties, untouched by processing."}
+                            T2SubText={"The Versatile Elixir of Castor Oil:This natural gem, with its gentle yet powerful properties, finds its place in both beauty regimes and healing practices. From enhancing your skin's glow to soothing medical concerns, this cold pressed, unrefined, and organic wonder is your trusted companion for holistic wellness."}
+                            T3SubText={"Experience relief from joint discomfort with our pure, cold pressed, and organic wellness oils. Gently easing joint pain, our natural blend offers soothing comfort while promoting flexibility. Embrace the goodness of nature and bid farewell to aching joints."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Castor_Oil.png?v=1703144931"}
+                            h4_1={"Accelerates Healing Naturally"}
+                            h4_2={"Banish Acne Scars Naturally"}
+                            h4_3={"Prevent Hair Loss Naturally"}
+                            h4_4={"Revitalize Your Cells with Castor Oil"}
+                            p_1={"Experience faster healing with our 100% natural, cold pressed, unrefined, and organic wellness oils."}
+                            p_2={"Experience the magic of our 100% natural, cold pressed, unrefined, and organic wellness oils."}
+                            p_3={"Embrace the power of nature for vibrant, resilient hair that shines with health."}
+                            p_4={"Unlock the potential to restore balance within your cells."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Castor_Seed_Oil-_Massage_7dfcabdc-51f1-4a3e-8122-89bce5c1cdbb.png?v=1703147473"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Castor_Seed_Oil-_skin_care_6c797a09-9482-4bae-af49-a2c74a7661a7.png?v=1703147473"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Castor_Seed_Oil-_hair_care_4807a5d9-1751-4362-8047-fc2b35dac637.png?v=1703147473"}
+                            key={nanoid()}
+                        />}
+                    />
+                    <Route
+                        path="collections/wellness-oils/products/black-seed-oil"
+                        element={<WellnessPages
+                            name={"100% Pure Black Seed Oil | Organic Black Seed Oil"}
+                            Name={"Black Seed Oil"}
+                            images={blackSeedOil}
+                            info1={"Organic Cold-Pressed Black Seed Oil"}
+                            info2={"Our Therapeutic Wellness Oils"}
+                            info3={"Improve Your Memory"}
+                            price={339}
+                            previousPrice={430}
+                            save={"22%"}
+                            price1={569}
+                            previousPrice1={765}
+                            save1={"26%"}
+                            price2={949}
+                            previousPrice2={1339}
+                            save2={"29%"}
+                            price3={1685}
+                            previousPrice3={2349}
+                            save3={"28%"}
+                            Tab1={"Experience the wonders of 100% pure, cold-pressed Virgin Black Seed Oil (Kalongi oil). Unlock therapeutic benefits that enhance memory and bone health. Revitalize kidneys, skin, and hair—say goodbye to wrinkles and hair loss. Boost immunity with daily consumption. Breathe easy as sinus issues melt away."}
+                            Tab3={"Black Seed Oil"}
+                            T1Text={"Organic Cold-Pressed Black Seed Oil"}
+                            T2Text={"Our Therapeutic Wellness Oils"}
+                            T3Text={"Improve Your Memory"}
+                            T1SubText={"Embrace pure well-being with our Organic Cold-Pressed Black Seed Oil, lovingly crafted from Kalongi seeds. 100% natural and unrefined, it's a treasure trove of natural goodness. Experience the power of nature's touch in every drop, as we bring you the finest, untouched by chemicals."}
+                            T2SubText={"Experience gentle yet potent remedies that rejuvenate your body and mind. Crafted through cold pressing, these unrefined elixirs retain their full potency and natural essence."}
+                            T3SubText={"Crafted from nature's bounty, these unrefined elixirs offer a natural boost to your memory prowess. Embrace the goodness of unprocessed, organic ingredients, thoughtfully extracted to invigorate your cognitive abilities."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Blackseed_Oil.png?v=1703144931"}
+                            h4_1={"Strengthens Your Bones Naturally"}
+                            h4_2={"Nurturing Your Kidneys"}
+                            h4_3={"Nourish, Hydrate, & Smooth Away Wrinkles"}
+                            h4_4={"Revitalize Your Hair Naturally"}
+                            p_1={"Experience the power of nature as it supports and fortifies your bones."}
+                            p_2={"Experience the goodness of our 100% natural, cold-pressed, unrefined, and organic wellness oils that gently support and enhance your kidney health."}
+                            p_3={"Achieve a radiant glow as our oils deeply moisturize, transforming dryness into supple softness."}
+                            p_4={"Nourishing your hair from root to tip, our oils naturally fortify strands, preventing hair loss and promoting strength."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Black_Seed_Oil-_cooking_37dc54ed-3bf8-4e13-9540-1d6791e3d311.png?v=1703147396"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Black_Seed_Oil-_skin_care_063eacc7-df29-4a44-809e-95243bbb4a99.png?v=1703147397"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Black_Seed_Oil-_hair_care_6a80d756-4f33-4b12-8aa9-b681e4416146.png?v=1703147396"}
+                        />} />
+                    <Route />
+                    <Route />
                 </Routes>
             </Provider>
         </BrowserRouter>
