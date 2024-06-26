@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import Nav from "../src/components/header/Nav";
 import Footer from "../src/components/footer/Footer";
 import Card from "../src/components/CardComponent2";
-import { nanoid } from "@reduxjs/toolkit";
 function HoneyNuts() {
     const products = [
         {
+            id: "wallnut-in-cinnamon",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/Walnut2_800x.jpg?v=1703749109",
             PlaceHolder:
@@ -16,6 +16,7 @@ function HoneyNuts() {
             save: 40,
         },
         {
+            id: "figs-in-cinnamon-honey",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/2_76b4bceb-21eb-40bc-8b49-d94fff2ccc61_800x.jpg?v=1703849709",
             PlaceHolder:
@@ -26,6 +27,7 @@ function HoneyNuts() {
             save: 25,
         },
         {
+            id: "cashew-in-cinnamon-honey",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/Cashew2_800x.jpg?v=1703749861",
             PlaceHolder:
@@ -36,6 +38,7 @@ function HoneyNuts() {
             save: 33,
         },
         {
+            id: "mix-nut-in-cinnamon-honey",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/2_76b4bceb-21eb-40bc-8b49-d94fff2ccc61_800x.jpg?v=1703849709",
             PlaceHolder:
@@ -46,6 +49,7 @@ function HoneyNuts() {
             save: 33,
         },
         {
+            id: "almond-in-cinnamon-honey",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/Almond2_800x.jpg?v=1708001070",
             PlaceHolder:
@@ -68,7 +72,9 @@ function HoneyNuts() {
                 </p>
                 <div className="w-full h-auto grid xl:grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 px-20 py-8 gap-10 justify-items-center">
                     {products.map((product, index) => (
-                        <Card key={index} id={nanoid()} {...product} />
+                        <Link to={`/collections/nuts-in-honey/products/${product.id}`} key={index}>
+                            <Card {...product} />
+                        </Link>
                     ))}
                 </div>
             </div>

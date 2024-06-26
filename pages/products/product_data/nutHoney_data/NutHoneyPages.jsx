@@ -19,21 +19,15 @@ import { useDispatch } from "react-redux";
 import { add } from "../../../../src/store/cartSlice";
 import { products } from "../product_data";
 
-export default function WellnessPages({
+export default function NutHoneyPage({
     name,
     Name,
     price,
     price1,
-    price2,
-    price3,
     previousPrice,
     previousPrice1,
-    previousPrice2,
-    previousPrice3,
     save,
     save1,
-    save2,
-    save3,
     images,
     h4_1,
     h4_2,
@@ -97,7 +91,7 @@ export default function WellnessPages({
     const [offerExpanded, setOfferExpanded] = useState(false);
 
     return (
-        <>
+        <div>
             <Nav />
             <div className="p-10 w-full bg-[#F2F7E3] relative">
                 <p className="text-sm absolute top-5 px-10 uppercase cursor-pointer text-gray-500">
@@ -345,15 +339,7 @@ export default function WellnessPages({
                                             [price1]: {
                                                 price: previousPrice1,
                                                 discount: save1,
-                                            },
-                                            [price2]: {
-                                                price: previousPrice2,
-                                                discount: save2,
-                                            },
-                                            [price3]: {
-                                                price: previousPrice3,
-                                                discount: save3,
-                                            },
+                                            }
                                         };
                                         const selectedoption =
                                             options[e.target.value];
@@ -364,22 +350,12 @@ export default function WellnessPages({
                                 >
                                     {price && (
                                         <option value={price}>
-                                            100ml
+                                            275g(Glass Bottle)
                                         </option>
                                     )}
                                     {price1 && (
                                         <option value={price1}>
-                                            250ml
-                                        </option>
-                                    )}
-                                    {price2 && (
-                                        <option value={price2}>
-                                            500ml
-                                        </option>
-                                    )}
-                                    {price3 && (
-                                        <option value={price3}>
-                                            1000ml
+                                            400g(Glass Bottle)
                                         </option>
                                     )}
                                 </select>
@@ -713,7 +689,7 @@ export default function WellnessPages({
                                 alt=""
                             />
                             <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-nowrap scale-75">
-                                Massage
+                                Spread on Toast
                             </p>
                         </div>}
                     {BoxImg2 &&
@@ -727,7 +703,7 @@ export default function WellnessPages({
                                 alt=""
                             />
                             <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75 text-nowrap">
-                                Skin Care
+                                Try New Recipes
                             </p>
                         </div>
                     }
@@ -742,7 +718,7 @@ export default function WellnessPages({
                                 alt=""
                             />
                             <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75 text-nowrap">
-                                Hair Care
+                                Add in Cookies
                             </p>
                         </div>
                     }
@@ -914,6 +890,6 @@ export default function WellnessPages({
                 </div>
             </div>
             <Footer />
-        </>
+        </div>
     );
 }

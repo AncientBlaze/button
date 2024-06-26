@@ -115,7 +115,8 @@ const herbalJuiceList = [
         content: 899,
         hidden: "hidden",
     },
-    {
+    {   
+        id:"kidney-stone-crusher-juice",
         save: 54,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_9437b3be-2b5d-4708-9eb0-5eb48f0f7aa4_800x.jpg?v=1714049205",

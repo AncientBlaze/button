@@ -98,6 +98,8 @@ import { Jaggery } from "../pages/products/product_data/Jaggery_amla_data/Jagger
 import WellnessPages from "../pages/products/product_data/Wellness_data/WellnessPages.jsx";
 import { avocadoOil, blackSeedOil, castorOil, flaxSeedOil } from "../pages/products/product_data/Wellness_data/wellness_data.js";
 import { nanoid } from "@reduxjs/toolkit";
+import { cashewHoney, cinnamonAlmondHoney, FigsHoney, mixHoney, wallNutHoney } from "../pages/products/product_data/nutHoney_data/nutHoney.js";
+import NutHoneyPage from "../pages/products/product_data/nutHoney_data/NutHoneyPages.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -2727,11 +2729,188 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Flax_Seed_Oil-_skin_care_79943bd8-70eb-441e-9100-b72a752e6f27.png?v=1703147316"}
                             BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Flax_Seed_Oil-_hair_care_1887e72a-fcb9-499a-90d2-26dfc92a233a.png?v=1703147316"}
                         />} />
-                        <Route  />
-                        <Route/>
-                        <Route/>
-                        <Route/>
-                        <Route/>
+                    <Route
+                        path="collections/nuts-in-honey/products/wallnut-in-cinnamon"
+                        element={<NutHoneyPage
+                            name={"Walnut in Cinnamon Honey"}
+                            Name={"Walnut Cinnamon Honey"}
+                            images={wallNutHoney}
+                            price={479}
+                            previousPrice={799}
+                            save={"41%"}
+                            price1={559}
+                            previousPrice1={999}
+                            save1={"44%"}
+                            info1={"Naturally Sweetened Goodness"}
+                            info2={"Flavourful Adventure"}
+                            info3={"Boost Your Immune Defense"}
+                            Tab1={"Capture nature's essence in a beautifully adorned glass jar. Our honey, sourced from the Himalayan foothills and pristine Uttaranchal orchards, is a 100% pure, raw, and natural marvel. No pasteurization, no high-pressure filtration, and absolutely no additives. The result? Honey that gleams with enzymes, trace vitamins, minerals, antioxidants, and antibacterial goodness. A gift that conveys nature's best, perfect for both corporate connections and cherished loved ones. Call our customer care for delightful gifting solutions"}
+                            Tab3={"Honey, Cinnamon, Walnut"}
+                            T1Text={"Naturally Sweetened Goodness:"}
+                            T1SubText={" Indulge in the rich harmony of handpicked walnuts and the warmth of natural cinnamon, gently infused in our pure, raw honey. Experience the perfect blend of big, delicious walnuts and the best quality honey, straight from nature's lap. Savor the taste of 100% pure, raw, and natural ingredients, crafted with care for your well-being."}
+                            T2Text={"Flavourful Adventure:"}
+                            T2SubText={"Savor the magic of our Cinnamon Walnut Infused Honey, where nature's bounty takes center stage. Let the delightful combination of earthy walnuts and the gentle touch of cinnamon dance on your palate. This is more than a taste; it's a sensory journey into the heart of authenticity. Immerse yourself in the wonder of handpicked, natural ingredients, blended for an experience that's as wholesome as it is flavorful."}
+                            T3Text={"Boost Your Immune Defense:"}
+                            T3SubText={"Revitalize your immune system the natural way! Our pure and natural honey range provides a nurturing shield for your health. Elevate your well-being with every spoonful, as our honey's rich nutrients and antioxidants join forces to fortify your body's defenses. Enjoy the sweetness of good health while savoring the taste of pure authenticity."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Walnut_in_Cinnamon_Honey.png?v=1703059320"}
+                            h4_1={"Nature's Bounty Packed in Every Drop"}
+                            h4_2={"Tasty & healthy fusion"}
+                            h4_3={"Honey that Warms Every Heart"}
+                            h4_4={"Nature's Detoxifying Elixir"}
+                            p_1={"Filled with the goodness of essential vitamins, minerals, and powerful antioxidants, our pure and natural honey is a treasure trove of natural nourishment."}
+                            p_2={"Savor the rich sweetness of raw honey, the comforting warmth of cinnamon, and the satisfying crunch of walnuts"}
+                            p_3={"Spread joy and smiles with every spoonful, making moments sweeter for each and every soul. Indulge in nature's nectar that transcends age and brings happiness to every face it touches."}
+                            p_4={"Embrace the goodness of 100% natural honey, your partner in achieving a revitalized body and a vibrant, radiant you."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856943.png?v=1701944168"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856943.png?v=1701944168"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856945.png?v=1701944168"}
+                        />} />
+                    <Route
+                        path="collections/nuts-in-honey/products/figs-in-cinnamon-honey"
+                        Element={<NutHoneyPage
+                            name={"Figs in Cinnamon Honey"}
+                            Name={"Figs in Cinnamon Honey"}
+                            info1={"Fig's Delight Wrapped in Raw Honey and Cinnamon"}
+                            info2={"A Delightful Fusion"}
+                            info3={"Empower your immunity the natural way"}
+                            price={599}
+                            previousPrice={799}
+                            save={"26%"}
+                            price1={659}
+                            previousPrice1={999}
+                            save1={"34%"}
+                            Tab1={"Gift nature's essence in a jar. Crafted from the Himalayan foothills and immaculate orchards of Uttaranchal, our honey radiates authenticity. This glass-jar treasure is equally suited for corporate gifting or expressing affection to friends and family. It stands untouched by pasteurization, high-pressure filtration, added sugars, or preservatives, preserving enzymes, vitamins, minerals, antioxidants, and the natural symphony of taste and aroma. Reach out for thoughtful gifting options."}
+                            Tab3={"Honey, Cinnamon, Figs"}
+                            T1Text={"Fig's Delight Wrapped in Raw Honey and Cinnamon:"}
+                            T1SubText={" Delight in nature's gift with our fig-infused raw honey. Plucked from the orchards of purity, our honey captures the essence of figs and the warmth of natural cinnamon, delivering a taste that's as comforting as a hug from the earth itself."}
+                            T2Text={"A Delightful Fusion:"}
+                            T2SubText={" Get ready to relish a wonderful flavor adventure with our Fig and Cinnamon Infused Honey. We've combined juicy figs with the cozy charm of cinnamon to craft a taste that's pure magic. This delightful blend not only tantalizes your taste buds but also fills the air with a cozy, inviting aroma."}
+                            T3Text={"Empower your immunity the natural way:"}
+                            T3SubText={" Elevate your wellness journey with honey that's more than a treat – it's a partner in supporting your immune system. Handpicked from nature's bounty, our honey range is a simple, delicious choice for your health."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Figs_in_Cinnamon_Honey.png?v=1703059320"}
+                            h4_1={"Wholesome Dose of Nutrients"}
+                            h4_2={"Delicious Duo"}
+                            h4_3={"Honey that Delights All"}
+                            h4_4={"Give your immune system a natural lift"}
+                            p_1={"Brimming with essential vitamins, minerals, and powerful antioxidants, our pure and natural honey nurtures your well-being naturally. Experience the goodness in every taste, as you embrace health the way it was meant to be – simple, pure, and full of vitality."}
+                            p_2={"Treat yourself with cinnamon and the delicate sweetness of figs. Our raw honey and cinnamon with figs blend brings you the untouched goodness of nature, brimming with vital nutrients and natural energy. Indulge in a delightful balance of flavors that not only tantalize your taste buds but also offer a nourishing journey with every spoonful."}
+                            p_3={"Goodness of our pure, natural, and natural honey – a treat that knows no bounds. Perfect for every palate, it spreads joy far and wide, leaving smiles on every face. From young to old, our honey is a simple pleasure meant for all to relish."}
+                            p_4={"Embrace the Power of Nature: Including honey and cinnamon in your routine can. This dynamic duo, rich in purity and goodness, helps fortify your body's defenses. Experience the beauty of an enhanced immune system as you savor the harmony of 100% pure, natural, and natural honey goodness combined with the warmth of cinnamon."}
+                            images={FigsHoney}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856933.png?v=1701942818"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856933.png?v=1701942818"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856931.png?v=1701942818"}
+                        />}
+                    />
+                    <Route
+                        path="collections/nuts-in-honey/products/cashew-in-cinnamon-honey"
+                        element={<NutHoneyPage
+                            name={"Cashew in Cinnamon Honey"}
+                            Name={"Cashew in Cinnamon Honey"}
+                            info1={"Cashew-Infused Cinnamon Honey"}
+                            info2={"Elevate your taste journey"}
+                            info3={"Supports your Immune System"}
+                            price={539}
+                            previousPrice={799}
+                            save={"33%"}
+                            price1={619}
+                            previousPrice1={999}
+                            save1={"38%"}
+                            Tab1={"Elevate your gifting game with our exquisite Glass jar adorned with natural charm. A thoughtful choice for corporate gestures or sharing warmth with loved ones. Indulge in 100% Pure Raw Bee Honey sourced from Himalayan heights and pristine Uttaranchal orchards. Free from Pasteurization, High-Pressure Filtration, added Sugar, or artificial touch – it's a treasure trove of Enzymes, Vitamins, Minerals, Antioxidants, and timeless Taste. Call our caring team for perfect gifting solutions."}
+                            Tab3={"Honey, Cinnamon, Cashew"}
+                            T1Text={"Cashew-Infused Cinnamon Honey:"}
+                            T2Text={"Elevate your taste journey:"}
+                            T3Text={"Supports your Immune System:"}
+                            T1SubText={" Experience the delight of our finest Cashews embraced by the warmth of 100% Pure Raw Cinnamon Honey. Savor the goodness of nature's purest gifts, where each Cashew is a crunchy masterpiece, lovingly immersed in the sweet richness of untouched, natural honey. Elevate your taste journey with this exquisite blend, where every spoonful tells a story of authenticity and flavor."}
+                            T2SubText={" Unveil the magic of our pure, natural, and utterly delectable Cashew & Cinnamon Infused Honey. A symphony of flavors that crafts a scrumptious experience. Embrace the nutty essence of cashews harmonizing with the cozy touch of cinnamon."}
+                            T3SubText={" Our pure, natural, and natural honey is a secret weapon for a strong immune system. Packed with the goodness of nature, it fortifies your body's defenses, helping you stay vibrant and energetic. Let the power of nature's sweetness support your wellness journey effortlessly."}
+                            images={cashewHoney}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Cashews_in_Cinnamon_Honey.png?v=1703059320"}
+                            h4_1={"Wholesome Goodness in Every Drop"}
+                            h4_2={"Carefully crafted for your health"}
+                            h4_3={"A treat that delights every palate"}
+                            h4_4={"Our Promise of Pure Raw Honey"}
+                            p_1={"Experience the wholesome goodness of our pure, natural, and natural honey range. Packed with a bounty of essential vitamins, vital minerals, and powerful antioxidants, our honey nourishes you from within. Feel the richness of nature's goodness as you savor every drop, providing your body with the nutrients it craves. Embrace health in its purest form with our honey – a true gift from the heart of the hive."}
+                            p_2={"Discover the perfect blend of raw honey's purity, warm cinnamon's touch, and the rich embrace of cashew. Savor the goodness of nature's trio, an authentic indulgence that soothes and nourishes. Elevate your senses with our revitalizing fusion, carefully crafted for your well-being. Experience the symphony of flavors, straight from the heart of nature to your table."}
+                            p_3={"Indulge in the goodness of our pure, natural, and natural honey. From the young to the wise, our honey is a joy for all. Its heartwarming sweetness brings smiles to faces across India. Enjoy a taste that unites everyone in happiness."}
+                            p_4={"Experience the essence of pure raw honey with our range - no added sugar, no artificial color. Taste the untouched beauty of nature's sweetness, just as the bees intended. Straight from the hive to your table, our honey is a golden gift of goodness, completely unaltered. Savor the authenticity, embrace the natural."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856938.png?v=1701943327"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856937.png?v=1701943326"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856939.png?v=1701942818"}
+                        />}
+                    />
+                    <Route
+                        path="/collections/nuts-in-honey/products/mix-nut-in-cinnamon-honey"
+                        element={<NutHoneyPage
+                            name={"Mix Nut in Cinnamon Honey"}
+                            Name={"Mix Nut in Cinnamon Honey"}
+                            price={539}
+                            previousPrice={799}
+                            save={"33%"}
+                            price1={619}
+                            previousPrice1={999}
+                            save1={"38%"}
+                            info1={"Nature's Sweet Nutty Delight"}
+                            info2={"Irresistible Mix Nuts with Cinnamon"}
+                            info3={"Boosts Your Body's Defenses"}
+                            Tab1={"Treat yourself with the essence of untouched nature with our 100% raw, natural Bee Honey. Nestled in a decorative glass jar, it's a natural delight, rich in enzymes, vitamins, minerals, and antioxidants. Ideal for corporate and personal gifting."}
+                            Tab3={"Honey, Cinnamon, Almond, Walnut, Cashew, Figs"}
+                            T1Text={"Nature's Sweet Nutty Delight:"}
+                            T2Text={"Irresistible Mix Nuts with Cinnamon:"}
+                            T3Text={"Boosts Your Body's Defenses:"}
+                            T1SubText={" Experience the symphony of nature's finest flavors with our delightful blend of Big Delicious Best Quality Mixed Nuts, embraced in the warm embrace of 100% Pure Raw Natural Cinnamon Honey. Savor the rich goodness of pure and natural ingredients that dance together in perfect harmony, creating a taste that's both wholesome and heavenly."}
+                            T2SubText={" A blend of wholesome mixed nuts harmoniously paired with the alluring essence of cinnamon-infused honey. Relish the rich symphony of flavors that will transport your senses to a world of pure indulgence. Unlock the true essence of natural goodness in every bite, and savor the aromatic magic that only comes from 100% pure, natural ingredients. A taste like no other, crafted for your pleasure."}
+                            T3SubText={" Our pure and natural honey is a delicious way to strengthen your immune system. Packed with natural goodness, it empowers your body to fight off everyday challenges. Elevate your well-being with every spoonful of this golden elixir – a simple step towards a healthier you."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Mix_Nuts_in_Cinnamon_Honey.png?v=1703059320"}
+                            images={mixHoney}
+                            h4_1={"Our Enriching Honey Delight"}
+                            h4_2={"Nourishing Nutty Treasure"}
+                            h4_3={"Nature's Sweet Delight for All"}
+                            h4_4={"Nourish, Cleanse, and Radiate"}
+                            p_1={"Brimming with essential vitamins, minerals, and powerful antioxidants, our pure honey is a natural treasure trove. Each spoonful offers a nourishing blend of nutrients that your body will love. Embrace the richness of nature's gifts with every delectable drop of our natural honey range."}
+                            p_2={"Experience nature's goodness in our blend of pure, unprocessed honey, aromatic cinnamon, and a medley of assorted nuts. This harmonious fusion not only tantalizes your taste buds but also offers a wealth of health. Savor the bountiful energy and wholesome nutrients, straight from the hive to your table."}
+                            p_3={"Experience nature's goodness in our blend of pure, unprocessed honey, aromatic cinnamon, and a medley of assorted nuts. This harmonious fusion not only tantalizes your taste buds but also offers a wealth of health. Savor the bountiful energy and wholesome nutrients, straight from the hive to your table."}
+                            p_4={"Experience the natural magic of our pure honey range. Embrace the goodness that detoxifies your body, sweeping away harmful free radicals lurking in your immune system. Unveil your skin's true radiance as you indulge in the purity of nature. Let our honey be your secret to a revitalized you, effortlessly."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856940.png?v=1701943665"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856941.png?v=1701943665"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856942.png?v=1701943665"}
+                        />} />
+                    <Route
+                        path="collections/nuts-in-honey/products/almond-in-cinnamon-honey"
+                        element={<NutHoneyPage
+                            name={"Almond in Cinnamon Honey"}
+                            Name={"Almond in Cinnamon Honey"}
+                            price={479}
+                            previousPrice={799}
+                            save={"41%"}
+                            price1={559}
+                            previousPrice1={999}
+                            save1={"44%"}
+                            info1={"Taste pure delight"}
+                            info2={"Nourishing Blend of Almond & Cinnamon"}
+                            info3={"Nurtures Your Immunity Naturally"}
+                            T1Text={"Taste pure delight:"}
+                            T2Text={"Nourishing Blend of Almond & Cinnamon:"}
+                            T3Text={"Nurtures Your Immunity Naturally:"}
+                            T1SubText={" Enjoy Farm Naturelle’s delectable blend of premium almonds and the warm embrace of natural cinnamon-infused raw honey. Each spoonful is a journey into indulgence, where the finest quality almonds meet the goodness of untouched, raw honey. Savor the essence of nature's sweetness in every drop, as our 100% pure and natural creation weaves a symphony of flavors that's simply unforgettable."}
+                            T2SubText={" Taste the perfect blend of nature's goodness with our Almond-Infused Raw Honey. Crafted by infusing premium blanched almonds into pure, natural honey, this exquisite fusion offers a wealth of vitamins and minerals. Elevate your wellness journey with each delectable spoonful."}
+                            T3SubText={" Taste the perfect blend of nature's goodness with our Almond-Infused Raw Honey. Crafted by infusing premium blanched almonds into pure, natural honey, this exquisite fusion offers a wealth of vitamins and minerals. Elevate your wellness journey with each delectable spoonful."}
+                            Tab3={"Almond Infused Honey"}
+                            images={cinnamonAlmondHoney}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Immunity_Herbs_Infused_Honey_1b2bd937-3215-492b-8e16-4ab6a7a172e8.png?v=1703059320"}
+                            h4_1={"Nature's Nutrient Treasure"}
+                            h4_2={"Fusion of Almonds, Cinnamon & Honey"}
+                            h4_3={"Nature's Sweet Delight for All"}
+                            h4_4={"Nourish Inside, Radiate Outside"}
+                            p_1={"Packed with essential vitamins, minerals, and powerful antioxidants, our honey is a pure gift from nature. Every drop of our honey is a natural source of valuable nutrients that your body will love. From vitamins to minerals that support your well-being, to antioxidants that help your body thrive, our honey is a delicious way to embrace a healthier you."}
+                            p_2={"Treats your cravings with our heavenly blend of almonds and honey – a match made in nature's paradise. Elevate your dessert game with this all-natural treat that's sure to win your heart. Each bite is a journey into the rich, nutty crunch of almonds embraced by the golden sweetness of pure honey. Let your taste buds dance and your soul rejoice in this delectable, healthy indulgence."}
+                            p_3={"Indulge in the goodness of our pure, natural, and natural honey – a treat that's meant for every palate. From young to old, our honey spreads joy with each delightful drop. It's a taste that unites and brings smiles to all faces. Share the sweetness, share the happiness – it's a gift from nature that everyone can relish!"}
+                            p_4={"Revitalize Your Body and Skin Naturally as the power of pure honey gently purifies your body, sweeping away harmful free radicals that can linger in your immune system. Unveil radiant skin that glows with health, reflecting the beauty that starts from within."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856935.png?v=1701943083"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856936.png?v=1701943083"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856934.png?v=1701943083"}
+                        />}
+                    />
                 </Routes>
             </Provider>
         </BrowserRouter>
