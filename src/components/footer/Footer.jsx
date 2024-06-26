@@ -47,9 +47,9 @@ function Footer() {
                     </div>
                 </div>
                 <div className="h-auto w-full bg-[#006944] font-jost flex">
-                    <div className="h-full w-1/4 px-10 py-16 flex-col text-white text-sm">
+                    <div className="h-full w-1/4 px-10 py-16 flex flex-col text-white text-sm">
                         <img
-                            className="p-2"
+                            className="h-1/2 w-1/3"
                             src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Link_cropped-cropped-FN_logo_2021-1-e1662637473598_png.png?v=1696492045"
                             alt=""
                         />
@@ -71,180 +71,91 @@ function Footer() {
                             />
                         </form>
                     </div>
-                    <div className="h-full w-[75%] px-10 py-16 flex gap-4 text-white">
-                        <div className="h-auto w-1/3 flex justify-center">
-                            <div className="py-5 px-5 flex-col">
-                                <h3 className="text-xl font-medium">
-                                    Categories
-                                </h3>
-                                <ul className="list-none">
-                                    <Link to={"/collections/honey"}>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Honey
-                                        </li>
-                                    </Link>
-                                    <Link
-                                        to={
-                                            "/collections/best-seller-cooking-oil"
-                                        }
-                                    >
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Cooking Oil
-                                        </li>
-                                    </Link>
-                                    <Link to={"/collections/ghee"}>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            A2 Ghee
-                                        </li>
-                                    </Link>
-                                    <Link
-                                        to={"/collections/apple-cider-vinegar"}
-                                    >
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Apple Cidar Vinegar
-                                        </li>
-                                    </Link>
-                                    <Link to={"/collections/herbal-juice"}>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Herbal Juices
-                                        </li>
-                                    </Link>
-                                    <Link to={"/collections/turmeric"}>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Hill Turmeric
-                                        </li>
-                                    </Link>
-                                    <Link
-                                        to={"/collections/jaggery-amla-candy"}
-                                    >
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Amla candy
-                                        </li>
-                                    </Link>
-                                    <Link to={"/collections/wellness-oils"}>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Wellness Oils
-                                        </li>
-                                    </Link>
-                                    <Link to={"/collections/stevia"}>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Stevia
-                                        </li>
-                                    </Link>
-                                </ul>
-                            </div>
+                    <div className="h-full w-[75%] px-10 py-16 grid lg:grid-cols-3 sm:grid-cols-2 gap-4 text-white">
+                        <div className="h-full flex flex-col items-start">
+                            <h3 className="text-xl font-medium">Categories</h3>
+                            <ul className="list-none">
+                                <Link to={"/collections/honey"}>
+                                    <li className="py-2 px-1 cursor-pointer">Honey</li>
+                                </Link>
+                                <Link to={"/collections/best-seller-cooking-oil"}>
+                                    <li className="py-2 px-1 cursor-pointer">Cooking Oil</li>
+                                </Link>
+                                <Link to={"/collections/ghee"}>
+                                    <li className="py-2 px-1 cursor-pointer">A2 Ghee</li>
+                                </Link>
+                                <Link to={"/collections/apple-cider-vinegar"}>
+                                    <li className="py-2 px-1 cursor-pointer">Apple Cidar Vinegar</li>
+                                </Link>
+                                <Link to={"/collections/herbal-juice"}>
+                                    <li className="py-2 px-1 cursor-pointer">Herbal Juices</li>
+                                </Link>
+                                <Link to={"/collections/turmeric"}>
+                                    <li className="py-2 px-1 cursor-pointer">Hill Turmeric</li>
+                                </Link>
+                                <Link to={"/collections/jaggery-amla-candy"}>
+                                    <li className="py-2 px-1 cursor-pointer">Amla candy</li>
+                                </Link>
+                                <Link to={"/collections/wellness-oils"}>
+                                    <li className="py-2 px-1 cursor-pointer">Wellness Oils</li>
+                                </Link>
+                                <Link to={"/collections/stevia"}>
+                                    <li className="py-2 px-1 cursor-pointer">Stevia</li>
+                                </Link>
+                            </ul>
                         </div>
-                        <div className="h-auto w-1/3 flex justify-center">
-                            <div className="py-5 px-5 flex-1">
-                                <h3 className="text-xl font-medium">
-                                    Important Links
-                                </h3>
-                                <ul className="list-none">
-                                    <Link to={"/pages/about-us"}>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            About us
-                                        </li>
-                                    </Link>
-                                    <Link to={"/pages/our-farm"}>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Our Farms
-                                        </li>
-                                    </Link>
-                                    <Link to={"/pages/contact"}>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Contact us
-                                        </li>
-                                    </Link>
-                                    <Link to={"/pages/bulk-orders"}>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Bulk Purchase
-                                        </li>
-                                    </Link>
-                                    <Link>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Blogs
-                                        </li>
-                                    </Link>
-                                    <Link to={"/pages/privacy-policy"}>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Privacy Policy
-                                        </li>
-                                    </Link>
-                                    <Link>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Terms and Conditions
-                                        </li>
-                                    </Link>
-                                    <Link>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Shipping Policy
-                                        </li>
-                                    </Link>
-                                    <Link>
-                                        <li className="py-2 px-1 cursor-pointer">
-                                            Refund Policy
-                                        </li>
-                                    </Link>
-                                </ul>
-                            </div>
+                        <div className="h-full flex flex-col items-start">
+                            <h3 className="text-xl font-medium">Important Links</h3>
+                            <ul className="list-none">
+                                <Link to={"/pages/about-us"}>
+                                    <li className="py-2 px-1 cursor-pointer">About us</li>
+                                </Link>
+                                <Link to={"/pages/our-farm"}>
+                                    <li className="py-2 px-1 cursor-pointer">Our Farms</li>
+                                </Link>
+                                <Link to={"/pages/contact"}>
+                                    <li className="py-2 px-1 cursor-pointer">Contact us</li>
+                                </Link>
+                                <Link to={"/pages/bulk-orders"}>
+                                    <li className="py-2 px-1 cursor-pointer">Bulk Purchase</li>
+                                </Link>
+                                <Link>
+                                    <li className="py-2 px-1 cursor-pointer">Blogs</li>
+                                </Link>
+                                <Link to={"/pages/privacy-policy"}>
+                                    <li className="py-2 px-1 cursor-pointer">Privacy Policy</li>
+                                </Link>
+                                <Link>
+                                    <li className="py-2 px-1 cursor-pointer">Terms and Conditions</li>
+                                </Link>
+                                <Link>
+                                    <li className="py-2 px-1 cursor-pointer">Shipping Policy</li>
+                                </Link>
+                                <Link>
+                                    <li className="py-2 px-1 cursor-pointer">Refund Policy</li>
+                                </Link>
+                            </ul>
                         </div>
-                        <div className="flex justify-center">
-                            <div className="flex-col px-2 py-5">
-                                <h3 className="text-xl font-medium">
-                                    Contact us
-                                </h3>
-                                <ul className="list-none py-2 text-md">
-                                    <li className="cursor-pointer">PHONE:</li>
-                                    <li className="cursor-pointer">
-                                        98109 88725,81305 31333
-                                    </li>
-                                </ul>
-                                <ul className="list-none py-2 text-md">
-                                    <li className="cursor-pointer">EMAIL:</li>
-                                    <li className="cursor-pointer">
-                                        hello@farmnaturelle.com
-                                    </li>
-                                </ul>
-                                <div className="h-auto w-full flex justify-center items-center gap-4 py-5 pr-6">
-                                    <Link
-                                        to={
-                                            "https://www.facebook.com/farmnaturelle1?mibextid=2JQ9oc"
-                                        }
-                                    >
-                                        <img
-                                            className="w-auto h-5"
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Link_813fd181-8ecb-4903-89e0-c8d56b5f4a97.svg?v=1696492952"
-                                            alt=""
-                                        />
-                                    </Link>
-                                    <Link to={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Link.svg?v=1696492952"}>
-                                        <img
-                                            className="w-auto h-5"
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Link.svg?v=1696492952"
-                                            alt=""
-                                        />
-                                    </Link>
-                                    <Link
-                                        to={
-                                            "https://api.whatsapp.com/send?phone=918130531333&text=We%20would%20love%20to%20help%20you!"
-                                        }
-                                    >
-                                        <img
-                                            className="w-auto h-5"
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/whatsapp__icon_2da3a4fd-647f-488f-bca2-c6a85190f40c.svg?v=1704272395"
-                                            alt=""
-                                        />
-                                    </Link>
-                                    <Link
-                                        to={"https://www.youtube.com/@FarmNaturalProduce"}
-                                    >
-                                        <img
-                                            className="w-auto h-5"
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Link_9a739226-ca78-472b-b733-10b2032b2c65.svg?v=1696492952"
-                                            alt=""
-                                        />
-                                    </Link>
-                                </div>
+                        <div className="flex flex-col items-start">
+                            <h3 className="text-xl font-medium">Contact us</h3>
+                            <ul className="list-none py-2 text-md">
+                                <li className="cursor-pointer">PHONE:</li>
+                                <li className="cursor-pointer">98109 88725,81305 31333</li>
+                            </ul>
+                            <ul className="list-none py-2 text-md">
+                                <li className="cursor-pointer">EMAIL:</li>
+                                <li className="cursor-pointer">hello@farmnaturelle.com</li>
+                            </ul>
+                            <div className="h-auto w-full flex justify-center items-center gap-4 py-5 pr-6">
+                                <Link to={"https://www.facebook.com/farmnaturelle1?mibextid=2JQ9oc"}>
+                                    <img className="w-auto h-5" src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Link_813fd181-8ecb-4903-89e0-c8d56b5f4a97.svg?v=1696492952" alt="" />
+                                </Link>
+                                <Link to={"https://www.youtube.com/@FarmNaturalProduce"}>
+                                    <img className="w-auto h-5" src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Link_9a739226-ca78-472b-b733-10b2032b2c65.svg?v=1696492952" alt="" />
+                                </Link>
+                                <Link to={"https://www.youtube.com/@FarmNaturalProduce"}>
+                                    <img className="w-auto h-5" src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/whatsapp__icon_2da3a4fd-647f-488f-bca2-c6a85190f40c.svg?v=1704272395" alt="" />
+                                </Link>
                             </div>
                         </div>
                     </div>

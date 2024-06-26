@@ -341,8 +341,8 @@ export default function ShilajitHoneyPages({
                             </ul>
                         </div>
                         <div>
+                            <p>Size</p>
                             <div className="font-light text-sm flex gap-2">
-                                <p>Size</p>
                                 <select
                                     className="border border-[#006944]  py-2 text-left rounded-lg w-1/2 px-3 outline-none"
                                     onChange={(e) => {
