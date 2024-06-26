@@ -2909,8 +2909,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856935.png?v=1701943083"}
                             BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856936.png?v=1701943083"}
                             BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856934.png?v=1701943083"}
-                        />}
-                    />
+                        />} />
                 </Routes>
             </Provider>
         </BrowserRouter>
