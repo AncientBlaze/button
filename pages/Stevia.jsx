@@ -5,7 +5,7 @@ import Card from "../src/components/CardComponent2";
 import { nanoid } from "@reduxjs/toolkit";
 
 const products = [
-    {
+    {   id:"stevia-sugar-replacement",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9475_800x.jpg?v=1708001356",
         PlaceHolder:
@@ -29,7 +29,9 @@ function Stevia() {
                 </p>
                 <div className="w-full h-auto grid xl:grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 px-20 py-8 gap-10 justify-items-center">
                     {products.map((product, index) => (
-                        <Card key={index} id={nanoid()} {...product} />
+                        <Link key={nanoid()} to={`/collections/stevia/products/${product.id}`}>
+                        <Card key={index} {...product} />
+                        </Link>
                     ))}
                 </div>
             </div>

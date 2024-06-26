@@ -100,6 +100,11 @@ import { avocadoOil, blackSeedOil, castorOil, flaxSeedOil } from "../pages/produ
 import { nanoid } from "@reduxjs/toolkit";
 import { cashewHoney, cinnamonAlmondHoney, FigsHoney, mixHoney, wallNutHoney } from "../pages/products/product_data/nutHoney_data/nutHoney.js";
 import NutHoneyPage from "../pages/products/product_data/nutHoney_data/NutHoneyPages.jsx";
+import SteviaPages from "../pages/products/product_data/Stevia_data/SteviaPage.jsx";
+import { stevia } from "../pages/products/product_data/Stevia_data/stevia.js";
+import ShilajitPages from "../pages/products/product_data/Shilajit_data/ShilajitPage.jsx";
+import { shilajit1, shilajit2 } from "../pages/products/product_data/Shilajit_data/shilajit_data.js";
+import ShilajitHoneyPages from "../pages/products/product_data/Shilajit_data/ShilajitHoney.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -2910,6 +2915,115 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856936.png?v=1701943083"}
                             BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856934.png?v=1701943083"}
                         />} />
+                    <Route path="collections/stevia/products/stevia-sugar-replacement"
+                        element={<SteviaPages
+                            name={"Stevia (Sugar Replacement) Concentrated Stevia Extract Liquid for Weight Loss and for Diabetic People"}
+                            Name={"Stevia"}
+                            price={289}
+                            previousPrice={369}
+                            save={"22%"}
+                            info1={"Stevia: Nature's Delight"}
+                            info2={"Your Sweet Solution for Wellness"}
+                            info3={"Pure Sweetness, Zero Worries"}
+                            T1Text={"Stevia: Nature's Delight:"}
+                            T2Text={"Your Sweet Solution for Wellness:"}
+                            T3Text={"Pure Sweetness, Zero Worries:"}
+                            images={stevia}
+                            Tab1={"Experience the magic of Stevia, a natural, zero-calorie sugar replacement. Perfect for weight-conscious individuals and diabetics, Stevia Extract Liquid is 100% natural with no side effects. It's a blood sugar champion, lowering levels in diabetes. Safe for all, even if you're allergic to other sweeteners."}
+                            Tab3={"Stevia extract, glycerin, purified water"}
+                            T1SubText={"Stevia is the natural magic for your convenient, and zero-calorie sugar replacement. Say goodbye to guilt and sugar spikes. Experience the sweetness of nature, right from your kitchen. It's the healthy choice, made easy!"}
+                            T2SubText={"Stevia: your secret weapon for weight loss and diabetes management. Say goodbye to sugar's harmful effects. This zero-calorie, plant-based sweetener not only helps shed those extra kilos but also supports healthy blood sugar levels."}
+                            T3SubText={"Our Stevia is 100% natural, delivering guilt-free sweetness with zero side effects. Say goodbye to artificial sweeteners and savor the pure, healthy sweetness of Stevia. Your taste buds will thank you, naturally!"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Stevia.png?v=1703076878"}
+                            h4_1={"Sweet Relief for Diabetics"}
+                            h4_2={"Natural Choice for All"}
+                            h4_3={"Your All-Natural Sweetening Solution"}
+                            p_1={"It is the natural sweetener, offers hope to those with diabetes."}
+                            p_2={"It's safe for everyone, even those with sweetener allergies."}
+                            p_3={"Elevate your recipes with guilt-free sweetness! Perfect for baking, cooking, and elevating beverages, it's your go-to sugar substitute."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Stevia-2.png?v=1703077312"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Stevia-1.png?v=1703077312"}
+                            BoxImg3={'https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Stevia_9bcf9453-fa74-41ce-a619-0cb9c239def9.png?v=1703077312'}
+                        />
+                        } />
+                    <Route
+                        path="collections/shilajit/products/himalayan-shilajit-shilajeet-resin-bull-power-performance-booster-for-endurance-and-stamina-100-ayurvedic-silajit-for-man-woman"
+                        element={<ShilajitPages
+                            name={"himalayan-shilajit-shilajeet-resin-bull-power-performance-booster-for-endurance-and-stamina-100-ayurvedic-silajit-for-man-woman"}
+                            Name={"Himalayan Shilajit Infused Honey"}
+                            price={429}
+                            previousPrice={579}
+                            save={"26%"}
+                            price1={879}
+                            previousPrice1={1399}
+                            save1={"37%"}
+                            price2={1399}
+                            previousPrice2={2699}
+                            save2={"48%"}
+                            info1={"Elevate your Stamina"}
+                            info2={"Enhancing Cognitive Abilities Naturally"}
+                            info3={"Boost Your Body's Defenses Naturall"}
+                            info4={"Natural Anti-Aging Benefits"}
+                            images={shilajit1}
+                            Tab1={"Experience a natural boost in stamina with our Shilajit Resin, packed with an impressive 60% fulvic acid content. Elevate brain function, fortify your immune system, embrace anti-aging benefits, and foster healthy digestion. Discover the power of Shilajit, simplified for your wellness journey."}
+                            Tab3={"Shilajit"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Shilaji_Below.png?v=1711029351"}
+                            h4_1={"Boost Your Body's Defenses Naturally"}
+                            h4_2={"Natural Anti-Aging Benefits"}
+                            h4_3={"Nourish Your Gut with Shilajit Resin"}
+                            h4_4={"Elevate Your Stamina"}
+                            p_1={"Shilajit resin, a gift from the Himalayas, enhances your immune system effortlessly. Elevate your body's natural defenses with this ancient wonder, handcrafted for you."}
+                            p_2={"Our premium resin promotes natural anti-aging effects, revitalizing your body and mind. Embrace the power of Shilajit, trusted for generations in India, to rejuvenate your life. Say goodbye to signs of aging and hello to a brighter, more vibrant you."}
+                            p_3={"Discover a centuries-old remedy that revitalizes your gut, promoting smooth digestion. Elevate your well-being with this ancient treasure, now within your reach. Say goodbye to digestive woes and embrace a life of vitality, all thanks to Shilajit Resin."}
+                            p_4={"Farm Naturelle Shilajit Resin is packed with an incredible 60% fulvic acid content, specially formulated to supercharge your stamina levels. Say goodbye to fatigue and hello to sustained energy, all in a single, easy-to-use resin."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Water.png?v=1711107563"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Milk.png?v=1711107563"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Juice.png?v=1711107563"}
+                        />}
+                    />
+                    <Route path="collections/shilajit/products/himalayan-shilajit-infused-honey-300gm-help-improve-strength-stamina-for-men-women-shilajeet-gold-infused-honey"
+                        element={<ShilajitHoneyPages
+                            name={"Shilajit Honey | Help Improve Strength & stamina for men & women | Natural Shilajit Honey"}
+                            Name={"Himalayan Shilajit Infused Honey"}
+                            images={shilajit2}
+                            info1={"Increases Stamina and Strength"}
+                            info2={"Promotes Overall Health"}
+                            info3={"Enhances Performance"}
+                            info4={"Improves Joint Health"}
+                            price={395}
+                            previousPrice={879}
+                            save={"55%"}
+                            price1={620}
+                            previousPrice1={1379}
+                            save1={"55%"}
+                            price2={1450}
+                            previousPrice2={3219}
+                            save2={"55%"}
+                            price3={1775}
+                            previousPrice3={3929}
+                            save3={"55%"}
+                            price4={2023}
+                            previousPrice4={4279}
+                            save4={"53%"}
+                            price5={2320}
+                            previousPrice5={5129}
+                            save5={"55%"}
+                            Tab1={"Experience the potent blend of nature's goodness with Farm Naturelle Pure Original Himalayan Shilajit Infused Honey. Enhance strength and stamina for both men and women. Enriched with the goodness of Shilajit Gold, this natural and Ayurvedic fusion helps improve overall holistic wellness."}
+                            Tab3={"Shilajit, Cinnamon, Multiflora honey"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/SJ_Template.png?v=1711020554"}
+                            h4_1={"Increases Stamina and Strength"}
+                            h4_2={"Promotes Overall Health"}
+                            h4_3={"Improves Joint Health"}
+                            h4_4={"Enhances Performance"}
+                            p_1={"Natural compounds present in this elixir contribute to increased stamina and strength, making it an ideal choice for athletes and fitness enthusiasts."}
+                            p_2={"Packed with essential minerals, vitamins, and antioxidants, this elixir promotes overall health by supporting immune function, aiding digestion, and improving metabolic processes"}
+                            p_3={"Regular consumption can reduce inflammation, alleviate joint pain, and enhance joint flexibility, making it beneficial for individuals with joint issues or those seeking joint support."}
+                            p_4={"Known for its performance-enhancing properties, this elixir improves cognitive function, mental alertness, and focus. It boosts energy levels, leading to better physical performance during workouts and mental performance in tasks requiring concentration."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/1.png?v=1711175810"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/2.png?v=1711175811"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/3.png?v=1711175810"}
+                        />}
+                    />
                 </Routes>
             </Provider>
         </BrowserRouter>
