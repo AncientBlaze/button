@@ -105,6 +105,8 @@ import { stevia } from "../pages/products/product_data/Stevia_data/stevia.js";
 import ShilajitPages from "../pages/products/product_data/Shilajit_data/ShilajitPage.jsx";
 import { shilajit1, shilajit2 } from "../pages/products/product_data/Shilajit_data/shilajit_data.js";
 import ShilajitHoneyPages from "../pages/products/product_data/Shilajit_data/ShilajitHoney.jsx";
+import GiftingPages from "../pages/products/product_data/Gifting_data/GiftingPages.jsx";
+import { Gift1, Gift10, Gift11, Gift12, Gift2, Gift3, Gift4, Gift5, Gift6, Gift7, Gift8, Gift9 } from "../pages/products/product_data/Gifting_data/Gifting_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -2772,7 +2774,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                         />} />
                     <Route
                         path="collections/nuts-in-honey/products/figs-in-cinnamon-honey"
-                        Element={<NutHoneyPage
+                        element={<NutHoneyPage
                             name={"Figs in Cinnamon Honey"}
                             Name={"Figs in Cinnamon Honey"}
                             info1={"Fig's Delight Wrapped in Raw Honey and Cinnamon"}
@@ -2981,7 +2983,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Juice.png?v=1711107563"}
                         />}
                     />
-                    <Route path="collections/shilajit/products/himalayan-shilajit-infused-honey-300gm-help-improve-strength-stamina-for-men-women-shilajeet-gold-infused-honey"
+                    <Route
+                        path="collections/shilajit/products/himalayan-shilajit-infused-honey-300gm-help-improve-strength-stamina-for-men-women-shilajeet-gold-infused-honey"
                         element={<ShilajitHoneyPages
                             name={"Shilajit Honey | Help Improve Strength & stamina for men & women | Natural Shilajit Honey"}
                             Name={"Himalayan Shilajit Infused Honey"}
@@ -3022,6 +3025,364 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/1.png?v=1711175810"}
                             BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/2.png?v=1711175811"}
                             BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/3.png?v=1711175810"}
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/150x4-red-box-with-dipper"
+                        element={<GiftingPages
+                            name={"150x4 red box with dipper"}
+                            Name={"150x4 Red Box with Dipper"}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            images={Gift1}
+                            price={1195}
+                            previousPrice={1494}
+                            save={"21%"}
+                            value={"All plain Honey"}
+                            price1={1250}
+                            previousPrice1={1563}
+                            save1={"20%"}
+                            value1={"Infused Honey & Plain Honey"}
+                            price2={1250}
+                            previousPrice2={1563}
+                            save2={"20%"}
+                            value2={"1 Plain + 1 infused + 2 tea"}
+                            price3={1395}
+                            previousPrice3={1744}
+                            save3={"20%"}
+                            value3={"2 Nuts in cinnamon Honey + 2 (any honey)"}
+                            T1Text={"Festivals & Holidays:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Corporate gifting:"}
+                            T1SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul. Choose teas and honey that energize and uplift, marking their journey with a touch of sweetness."}
+                            T3SubText={" Show sincere appreciation to your clients & employees with unique teas & honeys. Go beyond the ordinary with personalized gift boxes featuring branding, leaving a lasting impression. Surprise your loved ones: Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            key={"gift"}
+                        />
+                        } />
+                    <Route
+                        path="collections/gift/products/blue-foliage-box-with-dipper-spoon-and-pepper-bag"
+                        element={<GiftingPages
+                            name={"Blue Foliage Box with Dipper/ Spoon and pepper bag"}
+                            Name={"Blue Foliage Box with Dipper/ Spoon and pepper bag"}
+                            images={Gift2}
+                            price={1650}
+                            previousPrice={2063}
+                            save={"21%"}
+                            value={"180x6 Honey"}
+                            price1={1650}
+                            previousPrice1={2063}
+                            save1={"21%"}
+                            value1={"3 Honey + 3 Green tea"}
+                            price2={1650}
+                            previousPrice2={2063}
+                            save2={"21%"}
+                            value2={"All 6 green teas"}
+                            price3={1650}
+                            previousPrice3={2063}
+                            save3={"21%"}
+                            value3={"180g x 3 Honey + 3 Green tea"}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                        />
+                        }
+                    />
+                    <Route
+                        path="collections/gift/products/red-foliage-box-with-dipper-spoon-and-pepper-bag"
+                        element={<GiftingPages
+                            name={"Red Foliage Box with Dipper/ Spoon and pepper bag"}
+                            Name={"Red Foliage Box with Dipper/ Spoon and pepper bag"}
+                            images={Gift3}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            price={1750}
+                            previousPrice={2188}
+                            save={"20%"}
+                            value={"300g x 2 Honey + 3 Green teas"}
+                            price1={1750}
+                            previousPrice1={2188}
+                            save1={"20%"}
+                            value1={"2 Big Green teas + 180g x 3 honey"}
+                            price2={1895}
+                            previousPrice2={2369}
+                            save2={"20%"}
+                            value2={"300g x 2 Nuts Infused Honey + 3 small honey/tea"}
+                            price3={1550}
+                            previousPrice3={1938}
+                            save3={"20%"}
+                            value3={"2 Mugs + 3 Raw Honey with Dipper"}
+                            price4={1550}
+                            previousPrice4={1938}
+                            save4={"20%"}
+                            value4={"2 Mugs + 3 Green teas + Spoon"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
+                        />
+                        }
+                    />
+                    <Route
+                        path="collections/gift/products/775g x 1 Kraft Wooden Box with Dipper Plain Or Infused Honey Or Nuts in cinnamon honey"
+                        element={<GiftingPages
+                            name={"775g x 1 Kraft Wooden Box with Dipper Plain Or Infused Honey Or Nuts in cinnamon honey"}
+                            Name={"775g x 1 Kraft Wooden Box with Dipper Plain Or Infused Honey Or Nuts in cinnamon honey"}
+                            price={959}
+                            previousPrice={1199}
+                            save={"21%"}
+                            value={"plain Honey"}
+                            price1={1059}
+                            previousPrice1={1324}
+                            save1={"20%"}
+                            value1={"Infused Honey"}
+                            price2={1359}
+                            previousPrice2={1699}
+                            save2={"20%"}
+                            value2={"Nuts in Infused Honey"}
+                            images={Gift4}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/400g-x-1-in-kraft-wooden-box-with-dipper-plain-honey"
+                        element={<GiftingPages
+                            name={"400g x 1 in kraft Wooden Box with Dipper (Plain honey)"}
+                            Name={"400g x 1 in kraft Wooden Box with Dipper (Plain honey)"}
+                            price={795}
+                            previousPrice={994}
+                            save={"21%"}
+                            value={"400g x 1 raw honey in kraft Wooden Box"}
+                            price1={799}
+                            previousPrice1={999}
+                            save1={"20%"}
+                            value1={"400g x 1 infused honey in kraft Wooden Box"}
+                            images={Gift5}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/55g-x-7-all-infused-honey-spoon-a-different-flavor-for-each-day-of-the-week"
+                        element={<GiftingPages
+                            name={"55g x 7 (All infused honey) + Spoon A different flavor for each day of the week"}
+                            Name={"55g x 7 (All infused honey) + Spoon A different flavor for each day of the week"}
+                            price={795}
+                            previousPrice={994}
+                            save={"21%"}
+                            images={Gift6}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/750gx2-in-jute-bag-with-dipper"
+                        element={<GiftingPages
+                            name={"750gx2 in jute bag with dipper"}
+                            Name={"750gx2 in jute bag with dipper"}
+                            price={1475}
+                            previousPrice={1844}
+                            save={"21%"}
+                            price1={1595}
+                            previousPrice1={1994}
+                            save1={"20%"}
+                            price2={1550}
+                            previousPrice2={1938}
+                            save2={"20%"}
+                            value={"Plain Honey"}
+                            value1={"Infused Honey"}
+                            value2={"Nuts in Infused Honey"}
+                            images={Gift7}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/300gx1-in-jute-bag-with-dipper"
+                        element={<GiftingPages
+                            name={"300gx1 in jute bag with dipper"}
+                            Name={"300gx1 in jute bag with dipper"}
+                            price={615}
+                            previousPrice={769}
+                            save={"21%"}
+                            price1={665}
+                            previousPrice1={831}
+                            save1={"20%"}
+                            price2={715}
+                            previousPrice2={894}
+                            save2={"20%"}
+                            value={"Plain Honey"}
+                            value1={"Infused Honey"}
+                            value2={"Nuts in Infused Honey"}
+                            images={Gift8}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/350g-x-3-in-jute-bag-with-dipper"
+                        element={<GiftingPages
+                            name={"350g x 3 in jute bag with dipper"}
+                            Name={"350g x 3 in jute bag with dipper"}
+                            images={Gift9}
+                            price={1375}
+                            previousPrice={1719}
+                            save={"21%"}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/300g-x-2-in-jute-bag-with-dipper"
+                        element={<GiftingPages
+                            name={"300gx2 in jute bag with dipper"}
+                            Name={"300gx2 in jute bag with dipper"}
+                            price={965}
+                            previousPrice={1206}
+                            save={"20%"}
+                            price1={1065}
+                            previousPrice1={1331}
+                            save1={"20%"}
+                            price2={1170}
+                            previousPrice2={1463}
+                            save2={"20%"}
+                            value={"300gx2 raw honey in jute bag with dipper"}
+                            value1={"300gx2 Infused honey in jute bag with dipper"}
+                            value2={"300gx2 Nut in Infused honey in jute bag with dipper"}
+                            images={Gift10}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/775g-x-1-with-dipper-in-embroidered-jute-potli"
+                        element={<GiftingPages
+                            name={"775g x 1 with dipper in embroidered jute potli"}
+                            Name={"775g x 1 with dipper in embroidered jute potli"}
+                            price={889}
+                            previousPrice={1111}
+                            save={"20%"}
+                            images={Gift11}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/400g-x-1-with-dipper-in-embroidered-jute-potli"
+                        element={<GiftingPages
+                            name={"400g x 1 with dipper in embroidered jute potli"}
+                            Name={"400g x 1 with dipper in embroidered jute potli"}
+                            price={600}
+                            previousPrice={750}
+                            save={"20%"}
+                            images={Gift12}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/"
+                        element={<GiftingPages
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/"
+                        element={<GiftingPages
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/"
+                        element={<GiftingPages
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/"
+                        element={<GiftingPages
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/"
+                        element={<GiftingPages
                         />}
                     />
                 </Routes>

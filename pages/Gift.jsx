@@ -3,12 +3,12 @@ import Nav from "../src/components/header/Nav";
 import Footer from "../src/components/footer/Footer";
 import Card from "../src/components/CardComponent2";
 import Card2 from "../src/components/CardComp3";
-import { nanoid } from "@reduxjs/toolkit";
 
 
 function Gift() {
     const products = [
         {
+            id: "150x4-red-box-with-dipper",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/150x10g1_800x.jpg?v=1703748858",
             title: "150 x 4 red box...",
@@ -18,6 +18,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "blue-foliage-box-with-dipper-spoon-and-pepper-bag",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/IMG_8787-2_207e35ba-a884-47df-a550-8b66a93b8909_800x.jpg?v=1708001405",
             PlaceHolder:
@@ -29,6 +30,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "red-foliage-box-with-dipper-spoon-and-pepper-bag",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/IMG_8787-3_800x.jpg?v=1703749179",
             PlaceHolder:
@@ -40,6 +42,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "775g x 1 Kraft Wooden Box with Dipper Plain Or Infused Honey Or Nuts in cinnamon honey",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/IMG_80161_400x_f853f57e-7e3d-4dd4-b837-5efb7a862740_800x.jpg?v=1713351149",
             title: "775 x 1 red box...",
@@ -49,6 +52,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "400g-x-1-in-kraft-wooden-box-with-dipper-plain-honey",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/IMG_80101_800x.jpg?v=1703749446",
             PlaceHolder:
@@ -60,6 +64,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "55g-x-7-all-infused-honey-spoon-a-different-flavor-for-each-day-of-the-week",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/IMG_78421_800x.jpg?v=1703749456",
             title: "55g x 7...",
@@ -69,6 +74,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "750gx2-in-jute-bag-with-dipper",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/IMG_78423_800x.jpg?v=1708001416",
             title: "750gx2 in jute...",
@@ -78,6 +84,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "300gx1-in-jute-bag-with-dipper",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/IMG_78371_400x_e004947d-aac3-4312-b16b-8d7cb2a5df7d_800x.jpg?v=1713351098",
             title: "300gx1 in jute...",
@@ -87,6 +94,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "350g-x-3-in-jute-bag-with-dipper",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/IMG_78431_800x.jpg?v=1703748871",
             title: "350g x 3...",
@@ -96,6 +104,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "300g-x-2-in-jute-bag-with-dipper",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/150x10g1_b80ce7c8-9145-4da7-abe8-5b60207ef7fe_800x.jpg?v=1713351098",
             title: "300g x 2...",
@@ -105,6 +114,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "775g-x-1-with-dipper-in-embroidered-jute-potli",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/775gpotli1_800x.jpg?v=1703749469",
             title: "775g x 1...",
@@ -114,6 +124,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "400g-x-1-with-dipper-in-embroidered-jute-potli",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/400gpotli1_800x.jpg?v=1703749449",
             title: "400g x 1...",
@@ -171,6 +182,15 @@ function Gift() {
             save: 20,
             hidden: "hidden",
         },
+        {
+            ImageUrl: "https://farmnaturelle.com/cdn/shop/files/IMG_7444_800x.jpg?v=1703749908",
+            PlaceHolder: "https://farmnaturelle.com/cdn/shop/files/File_009_800x.jpg?v=1703749910",
+            title: "Chocolate Tulip Box",
+            PreviousPrice: 1744,
+            content: 1395,
+            save: 20,
+            hidden: "hidden"
+        }
     ];
     return (
         <div>
@@ -185,18 +205,23 @@ function Gift() {
                 <div className="w-full h-auto grid xl:grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 px-20 py-8 gap-10 justify-items-center">
                     {products.map((product, index) =>
                         product.PlaceHolder === undefined ? (
-                            <Card2
+                            <Link
                                 key={index}
-                                id={nanoid()}
-                                {...product}
-                                
-                            />
+                                to={`/collections/gift/products/${product.id}`}
+                            >
+                                <Card2
+                                    {...product}
+                                />
+                            </Link>
                         ) : (
-                            <Card
+                            <Link
                                 key={index}
-                                id={nanoid()}
-                                {...product}
-                            />
+                                to={`/collections/gift/products/${product.id}`}
+                            >
+                                <Card
+                                    {...product}
+                                />
+                            </Link>
                         ),
                     )}
                 </div>
