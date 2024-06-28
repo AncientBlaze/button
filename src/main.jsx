@@ -3361,12 +3361,37 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                         />}
                     />
                     <Route
-                        path="collections/gift/products/"
+                        path="collections/gift/products/350-g-x-3-red-box-with-dipper-infuser"
                         element={<GiftingPages
                             name={"350 g x 3 red box with dipper/infuser"}
                             Name={"350 g x 3 red box with dipper/infuser"}
                             images={Gift13}
-                            
+                            price={1350}
+                            previousPrice={1688}
+                            save={"21%"}
+                            price1={1550}
+                            previousPrice1={1938}
+                            save1={"20%"}
+                            price2={1790}
+                            previousPrice2={2238}
+                            save2={"20%"}
+                            price3={1790}
+                            previousPrice3={2238}
+                            save3={"20%"}
+                            value={"Any 3 types of Honey + Dipper"}
+                            value1={"Any 2 Honey + Tea + Dipper + Infuser"}
+                            value2={"All 3 nuts in infused honey + Dipper"}
+                            value3={"1 Honey + 1 Nuts in honey + 1 Tea + 1 Dipper"}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
                         />}
                     />
                     <Route
