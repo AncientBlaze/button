@@ -40,3 +40,12 @@ export const Gift11 = [
 export const Gift12 = [
     { img: "https://farmnaturelle.com/cdn/shop/files/400gpotli1.jpg?v=1703749449" }
 ];
+
+export const Gift13 = [
+    { img: "https://farmnaturelle.com/cdn/shop/files/redbox11.jpg?v=1708001405" }
+];
+export const Gift14 = [];
+export const Gift15 = [];
+export const Gift16 = [];
+export const Gift17 = [];
+export const Gift18 = [];

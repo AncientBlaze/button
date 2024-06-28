@@ -106,7 +106,7 @@ import ShilajitPages from "../pages/products/product_data/Shilajit_data/Shilajit
 import { shilajit1, shilajit2 } from "../pages/products/product_data/Shilajit_data/shilajit_data.js";
 import ShilajitHoneyPages from "../pages/products/product_data/Shilajit_data/ShilajitHoney.jsx";
 import GiftingPages from "../pages/products/product_data/Gifting_data/GiftingPages.jsx";
-import { Gift1, Gift10, Gift11, Gift12, Gift2, Gift3, Gift4, Gift5, Gift6, Gift7, Gift8, Gift9 } from "../pages/products/product_data/Gifting_data/Gifting_data.js";
+import { Gift1, Gift10, Gift11, Gift12, Gift13, Gift2, Gift3, Gift4, Gift5, Gift6, Gift7, Gift8, Gift9 } from "../pages/products/product_data/Gifting_data/Gifting_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -3363,6 +3363,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     <Route
                         path="collections/gift/products/"
                         element={<GiftingPages
+                            name={"350 g x 3 red box with dipper/infuser"}
+                            Name={"350 g x 3 red box with dipper/infuser"}
+                            images={Gift13}
+                            
                         />}
                     />
                     <Route

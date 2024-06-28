@@ -46,10 +46,10 @@ function Nav() {
 
     const Handler = () => {
         const copyText = "NFARM100";
-        navigator.clipboard.writeText(copyText);
+        navigator.clipboard.writeText(`${copyText}`);
         toast.done("Copied the text: " + copyText, {
             position: "top-center"
-            });
+        });
     };
     return (
         <>
@@ -62,7 +62,7 @@ function Nav() {
                         </p>
                         <img 
                             className="cursor-pointer"
-                            onClick={Handler}
+                            onClick={Handler()}
                             src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ph_copy.svg?v=1695374232"
                             alt="copy"
                             width="inherit"
