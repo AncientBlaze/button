@@ -198,10 +198,10 @@ function Honey() {
                 <div className="w-full h-auto grid xl:grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 px-20 py-8 gap-10 justify-items-center">
                     {products.map((product, index) => (
                         <Link
-                            key={product?.id}
+                            key={index}
                             to={`/collections/honey/products/${product.id}`}
                         >
-                            <CardComponent2 key={index} {...product} />
+                            <CardComponent2 {...product} />
                         </Link>
                     ))}
                 </div>

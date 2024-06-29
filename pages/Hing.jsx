@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import Nav from "../src/components/header/Nav";
 import Footer from "../src/components/footer/Footer";
 import Card from "../src/components/CardComponent2";
-import { nanoid } from "@reduxjs/toolkit";
 
 const products = [
     {
+        id: "hing",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9491_800x.jpg?v=1703849891",
         PlaceHolder:
@@ -14,6 +14,7 @@ const products = [
         content: 395,
         PreviousPrice: 595,
         save: 34,
+        hidden: "hidden"
     },
 ];
 
@@ -30,7 +31,9 @@ function Hing() {
                 </p>
                 <div className="w-full h-auto grid xl:grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 px-20 py-8 gap-10 justify-items-center">
                     {products.map((product, index) => (
-                        <Card key={index} id={nanoid()} {...product} />
+                        <Link key={index} to={`/collections/${product.id}/products/${product.id}`}>
+                            <Card {...product} />
+                        </Link>
                     ))}
                 </div>
             </div>

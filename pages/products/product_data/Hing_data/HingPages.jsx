@@ -1,19 +1,58 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
-import Nav from "../../src/components/header/Nav";
-import Footer from "../../src/components/footer/Footer";
+import Nav from "../../../../src/components/header/Nav";
+import Footer from "../../../../src/components/footer/Footer";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import { LuChevronDown, LuChevronUp } from "react-icons/lu";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Card from "../../assets/Card3";
+import Card from "../../../../assets/Card3";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaPinterest, FaTwitter,FaEnvelope } from "react-icons/fa";
+import {
+    FaFacebookF,
+    FaPinterest,
+    FaTwitter,
+    FaEnvelope,
+} from "react-icons/fa";
 import { useDispatch } from "react-redux";
-import { add } from "../../src/store/cartSlice";
-import { nanoid } from "@reduxjs/toolkit";
+import { add } from "../../../../src/store/cartSlice";
+import { products } from "../product_data";
 
-export default function Kidney() {
+export default function HingPages({
+    name,
+    Name,
+    price,
+    price1,
+    previousPrice,
+    previousPrice1,
+    save,
+    save1,
+    images,
+    h4_1,
+    h4_2,
+    h4_3,
+    h4_4,
+    p_1,
+    p_2,
+    p_3,
+    p_4,
+    info1,
+    info2,
+    info3,
+    Tab1,
+    T1Text,
+    T1SubText,
+    T2Text,
+    T2SubText,
+    T3Text,
+    T3SubText,
+    Tab3,
+    extraImage,
+    BoxImg1,
+    BoxImg2,
+    BoxImg3,
+}) {
     const dispatch = useDispatch();
 
     const addToCart = (product) => {
@@ -22,9 +61,11 @@ export default function Kidney() {
 
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
-    const [selectedOption, setSelectedOption] = useState(999);
-    const [selectedOption1, setSelectedOption1] = useState("2,156");
-    const [selectedOption2, setSelectedOption2] = useState("54%");
+    const [selectedOption, setSelectedOption] = useState(price ?? null);
+    const [selectedOption1, setSelectedOption1] = useState(
+        previousPrice ?? null,
+    );
+    const [selectedOption2, setSelectedOption2] = useState(save ?? null);
 
     let sliderRef1 = useRef(null);
     let sliderRef2 = useRef(null);
@@ -49,120 +90,8 @@ export default function Kidney() {
     const [count, setCount] = useState(1);
     const [offerExpanded, setOfferExpanded] = useState(false);
 
-    const products = [
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/ShilajitFront25g_800x.png?v=1711173556",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Shilajitresin_800x.png?v=1711173556",
-            title: "Pure Himalayan Shilajit",
-            content: 429,
-            PreviousPrice: 579,
-            save: 26,
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9313_800x.jpg?v=1708001210",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9314_800x.jpg?v=1708001212",
-            title: "Black Sesame Oil...",
-            content: 368,
-            PreviousPrice: 449,
-            save: 18,
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9429_800x.jpg?v=1703849984",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9430_800x.jpg?v=1703849986",
-            title: "Buy 100% Pure...",
-            content: 275,
-            PreviousPrice: 329,
-            save: 16,
-            hidden: "hidden",
-        },
-        {
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/3_02314507-5857-4219-a1b5-306c47a83dd1_800x.jpg?v=1708000860",
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/2_58201a2c-cc05-4076-8ce1-c2ad03d1b0c4_800x.jpg?v=1708000855",
-            title: "100% Pure &...",
-            PreviousPrice: 459,
-            content: 369,
-            save: 16,
-            hidden: "hidden",
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9304_5e288c25-7779-4d43-b049-30fa89946889_800x.jpg?v=1708001211",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9305_444d3e7e-98ea-43f4-8c19-c4b7f178614e_800x.jpg?v=1708001213",
-            title: "Organic Cold Pressed...",
-            content: 290,
-            PreviousPrice: 339,
-            save: 14,
-        },
-        {
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/3_04c1d709-5e90-40b5-83fc-6ee87ba55563_800x.jpg?v=1708000860",
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/2_52d72052-4078-4146-a5bb-7eb9c66b2070_800x.jpg?v=1703749282",
-            title: "Vana Tulsi Flower",
-            PreviousPrice: 459,
-            content: 369,
-            save: 16,
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9423_800x.jpg?v=1703749253",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9424_800x.jpg?v=1708001213",
-            title: "100% Natural Cold",
-            content: 290,
-            PreviousPrice: 339,
-            save: 14,
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9449_800x.jpg?v=1708001248",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9450_800x.jpg?v=1708001251",
-            title: "100% Pure Black...",
-            content: 339,
-            PreviousPrice: 430,
-            save: 21,
-        },
-    ];
-
-    const images = [
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/1_7b84664c-9194-4da1-bfe7-4d66670a0cb0.jpg?v=1714049205",
-            alt: "1st",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/2_9437b3be-2b5d-4708-9eb0-5eb48f0f7aa4.jpg?v=1714049205",
-            alt: "2nd",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/3_6777fbbc-d9a9-48f9-adb0-a801d120739e.jpg?v=1714049204",
-            alt: "3rd",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/4_7aa53494-b9b1-4b56-a569-eac77863db20.jpg?v=1714049206",
-            alt: "4th",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/5_265934ab-1b30-4b74-84f9-ee10084f9139.jpg?v=1714049205",
-            alt: "5th",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/6_e4957b5c-affe-455e-aa1a-5b6e0d741481.jpg?v=1714049205",
-            alt: "6th",
-        },
-    ];
-
     return (
-        <>
+        <div>
             <Nav />
             <div className="p-10 w-full bg-[#F2F7E3] relative">
                 <p className="text-sm absolute top-5 px-10 uppercase cursor-pointer text-gray-500">
@@ -191,7 +120,7 @@ export default function Kidney() {
                                 ))}
                             </Slider>
                         </div>
-                        <div className="w-full px-20 relative">
+                        <div className="w-full px-20 relative group">
                             <div className="absolute left-0 top-1/2 -translate-y-1/2 flex justify-between w-full px-10">
                                 <button
                                     className="bg-white hover:bg-[#006944] text-[#000000] shadow-md w-10 h-10 rounded-full hover:text-white flex justify-center items-center transition-colors duration-500 "
@@ -272,10 +201,7 @@ export default function Kidney() {
                         </div>
                     </div>
                     <div className="flex flex-col font-bold font-jost justify-between">
-                        <div className="text-3xl px-2 font-bold">
-                            Ayurvedic Kidney Stone Crusher Juice | Combination
-                            of Patharchatta and Gokhru Beej With No Side Effect
-                        </div>
+                        <div className="text-3xl px-2 font-bold">{name}</div>
                         <div className="px-2 py-5 flex gap-2 justify-start font-light text-sm items-center">
                             <span className="flex gap-2">
                                 <em>
@@ -388,53 +314,50 @@ export default function Kidney() {
                         <div className="text-[#313131] font-jost font-semibold py-10">
                             <ul>
                                 <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
-                                    Breaks Stone Efficiently
+                                    <p>{info1}</p>
                                 </li>
                                 <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
-                                    Nature's Stone-Breaker
+                                    <p>{info2}</p>
                                 </li>
                                 <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
-                                    Cleanses Urinary Bladder
+                                    <p>{info3}</p>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <p>Size</p>
                             <div className="font-light text-sm flex gap-2">
+                                <p className="hidden">Size</p>
                                 <select
-                                    className="border border-[#006944] py-2 text-left rounded-lg w-1/2 px-3 outline-none"
+                                    className="border border-[#006944] hidden py-2 text-left rounded-lg w-1/2 px-3 outline-none"
                                     onChange={(e) => {
                                         setSelectedOption(e.target.value);
                                         let options = {
-                                            999: {
-                                                price: "2,156",
-                                                discount: "54%",
+                                            [price]: {
+                                                price: previousPrice,
+                                                discount: save,
                                             },
-                                            1995: {
-                                                price: "4,555",
-                                                discount: "56%",
-                                            },
-                                            2995: {
-                                                price: "6,812",
-                                                discount: "58%",
-                                            },
+                                            [price1]: {
+                                                price: previousPrice1,
+                                                discount: save1,
+                                            }
                                         };
                                         const selectedoption =
                                             options[e.target.value];
-                                        var selected = selectedoption;
+                                        const selected = selectedoption;
                                         setSelectedOption1(selected.price);
                                         setSelectedOption2(selected.discount);
                                     }}
                                 >
-                                    <option value={999}>
-                                        1 Month Course- 1+1 Free
-                                    </option>
-                                    <option value={1995}>
-                                        2 Month Course- 2+2 Free
-                                    </option>
-                                    <option value={2995}>
-                                        3 Month Course- 3+3 Free
-                                    </option>
+                                    {price && (
+                                        <option value={price}>
+                                            Hing 15gm x 1
+                                        </option>
+                                    )}
+                                    {price1 && (
+                                        <option value={price1}>
+                                            Hing 30gm x 1
+                                        </option>
+                                    )}
                                 </select>
                                 <div className="flex gap-2 justify-center items-center w-1/3 border border-[#006944] rounded-lg px-5">
                                     <button
@@ -453,8 +376,8 @@ export default function Kidney() {
                                             loading="lazy"
                                         />
                                     </button>
-                                    <div className="text-2xl text-[#006944] font-medium w-full h-full flex justify-center items-center border-l border-r border-black">
-                                        {count}
+                                    <div className="text-2xl font-medium w-full h-full flex justify-center items-center border-l border-r border-black">
+                                        {count ? count : 1}
                                     </div>
                                     <button
                                         className="w-1/2 py-2 px-3 flex justify-center"
@@ -474,14 +397,18 @@ export default function Kidney() {
                                 <div className="flex gap-2 py-3 justify-center items-center">
                                     <button
                                         onClick={() => {
+                                            const pic = images[0].img;
                                             addToCart({
-                                                title: "Ayurvedic Kidney Stone Crusher Juice | Combination of Patharchatta and Gokhru Beej With No Side Effects",
-                                                ImageUrl:
-                                                    "https://farmnaturelle.com/cdn/shop/files/1_7b84664c-9194-4da1-bfe7-4d66670a0cb0.jpg?v=1714049205",
-                                                content: selectedOption * count,
-                                                save: "Save 23%",
-                                                hidden: "hidden",
+                                                title: Name,
+                                                ImageUrl: `${pic}`,
+                                                quantity: count,
+                                                price: selectedOption1,
+                                                content:
+                                                    count > 1
+                                                        ? selectedOption * count
+                                                        : selectedOption,
                                             });
+                                            console.log(selectedOption1);
                                         }}
                                         className="uppercase"
                                     >
@@ -509,9 +436,8 @@ export default function Kidney() {
                             </p>
                             <div>
                                 <div
-                                    className={`${
-                                        offerExpanded ? "block" : "hidden"
-                                    }`}
+                                    className={`${offerExpanded ? "block" : "hidden"
+                                        }`}
                                 >
                                     <p className="border-b border-[#006944] py-5">
                                         Buy one, get one free on raw honey at
@@ -530,8 +456,8 @@ export default function Kidney() {
                                         document.getElementById(
                                             "offer",
                                         ).innerHTML = offerExpanded
-                                            ? "More offers"
-                                            : "Less offers";
+                                                ? "More offers"
+                                                : "Less offers";
                                     }}
                                 >
                                     <span className="py-3 pr-2">
@@ -575,221 +501,174 @@ export default function Kidney() {
                             </TabList>
                             <TabPanel className="text-lg">
                                 <p className="py-5 text-sm text-[#727271]">
-                                    Farm Naturelle Kidney Stone Crusher Juice, a
-                                    potent natural elixir designed to gently
-                                    dissolve small kidney and gall bladder
-                                    stones. Crafted from pure, organic
-                                    ingredients, this herbal marvel maintains
-                                    your urinary tract's crystal-clear purity,
-                                    ensuring uninterrupted urine flow.{" "}
+                                    {Tab1}{" "}
                                 </p>
                                 <p></p>
                                 <ul className="text-base">
-                                    <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
-                                        <b className="text-black">
-                                            Nature's Stone-Breaker:{" "}
-                                        </b>
-                                        Kidney Stone Crusher Juices also known
-                                        as pattharchatta or patharchatta in
-                                        Hindi. The name draws from its
-                                        remarkable power–'pathar' signifies
-                                        stone and 'chatta' implies breaking.
-                                        Just as this name suggests, our juice
-                                        aids in naturally maintaining your
-                                        well-being, helping your body gently
-                                        break down barriers to health.
-                                    </li>
-                                    <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
-                                        <b>
-                                            <span className="text-black">
-                                                Protecting your liver’s health:
-                                            </span>
-                                        </b>{" "}
-                                        With the power of ginseng, our herbal
-                                        capsules gently shield your liver with
-                                        its natural anti-inflammatory
-                                        properties.{" "}
-                                    </li>
-                                    <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
-                                        <b className="text-black">
-                                            Cleanses Urinary Bladder:
-                                        </b>{" "}
-                                        This herbal juices gently purify and
-                                        invigorate your urinary bladder and
-                                        kidneys, promoting their well-being. Our
-                                        thoughtfully crafted blends provide a
-                                        nurturing cleanse, maintaining your
-                                        urinary health. Experience the goodness
-                                        of 100% pure, natural, and organic
-                                        ingredients, handpicked to support your
-                                        vitality.{" "}
-                                    </li>
+                                    {T1Text && (
+                                        <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
+                                            <b className="text-black">
+                                                {T1Text}
+                                            </b>{" "}
+                                            {T1SubText}{" "}
+                                        </li>
+                                    )}
+
+                                    {T2Text && (
+                                        <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
+                                            <b>
+                                                <span className="text-black">
+                                                    {T2Text}
+                                                </span>
+                                            </b>{" "}
+                                            {T2SubText}{" "}
+                                        </li>
+                                    )}
+
+                                    {T3Text && (
+                                        <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
+                                            <b className="text-black">
+                                                {T3Text}
+                                            </b>{" "}
+                                            {T3SubText}{" "}
+                                        </li>
+                                    )}
                                 </ul>
                                 <p></p>
                             </TabPanel>
-
                             <TabPanel>
                                 <p className="py-5 text-sm text-[#727271]">
                                     All men, women of all ages and children can
                                     consume it.
                                 </p>
                             </TabPanel>
-
                             <TabPanel>
                                 <p className="py-5 text-sm text-[#727271]">
-                                    pattharchatta, Gorju beej, punarnava bark,
-                                    ajwain
+                                    {Tab3}
                                 </p>
                             </TabPanel>
                         </Tabs>
                     </div>
                 </div>
             </div>
-            <div className="h-[130vh] w-full">
+            <div className="h-[150vh] w-full">
                 <div className="w-full h-full text-center py-2 font-jost relative">
                     <p className="text-[gray] py-2">Benefits</p>
                     <p className="text-4xl font-medium text-[#006944]">
                         <span className="text-black">Benefits Of </span>
-                        Kidney Stone Crusher Juice
+                        {Name}
                     </p>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[40%] flex-col items-center justify-center">
+                    <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/3 flex-col items-center justify-center">
                         <div className="w-full flex items-center rounded-[50%] bg-[#DEEEC0]">
                             <img
-                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Stone_care_front-min.png?v=1697791504"
+                                src={extraImage}
                                 alt="Benefits"
                                 loading="lazy"
                             />
                         </div>
-                        <div className="absolute top-0 left-0 -translate-x-[82%] w-full flex flex-row-reverse h-auto text-sm">
-                            <div className="flex items-start gap-1">
-                                <div className="w-full text-wrap">
-                                    <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
-                                        <img
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/kidney_2.png?v=1703661343"
-                                            title=""
-                                            width="52px"
-                                            height="42px"
-                                            loading="lazy"
-                                        />
-                                        <h4 className="text-2xl text-[#006944]">
-                                            No Nasties
-                                        </h4>
-                                        <p>
-                                            Get purity of our herbal juices: no
-                                            added sugar, colors, vitamins, or
-                                            minerals. Experience the natural
-                                            essence without worries of side
-                                            effects.{" "}
-                                        </p>
+                        {h4_1 &&
+                            <div className="text-[#006944] absolute top-0 left-0 -translate-x-[82%] w-full flex flex-row-reverse h-auto text-sm">
+                                <div className="flex items-start gap-1">
+                                    <div className="w-full text-wrap">
+                                        <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/stevia_2.png?v=1703663504"
+                                                title=""
+                                                width="52px"
+                                                height="42px"
+                                                loading="lazy"
+                                            />
+                                            <h4 className="text-2xl">{h4_1}</h4>
+                                            <p>{p_1}</p>
+                                        </div>
                                     </div>
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28630.png?v=1696832266"
+                                        width="auto"
+                                        height="auto"
+                                        loading="lazy"
+                                    />
                                 </div>
-                                <img
-                                    src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28630.png?v=1696832266"
-                                    width="auto"
-                                    height="auto"
-                                    loading="lazy"
-                                />
                             </div>
-                        </div>
-                        <div className="absolute top-0 right-0 translate-x-[83%] w-full flex flex-row-reverse h-auto">
-                            <div className="flex items-start gap-1">
-                                <img
-                                    src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/kidney_1.png?v=1703661343"
-                                    alt="arrow"
-                                    width="auto"
-                                    height="auto"
-                                    loading="lazy"
-                                />
-                                <div className="w-full">
-                                    <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
-                                        <img
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/weight.png?v=1696832154"
-                                            title=""
-                                            width="42px"
-                                            height="auto"
-                                            loading="lazy"
-                                        />
-                                        <h4 className="text-2xl text-[#006944]">
-                                            Gently Flushes Kidneys
-                                        </h4>
-                                        <p>
-                                            Our herbal juices delicately aid in
-                                            purging away particles and oxalates
-                                            that could lead to stone formation.
-                                            Embrace the power of nature's
-                                            cleanse for your kidneys' lasting
-                                            well-being.
-                                        </p>
+                        }
+                        {h4_2 &&
+                            <div className="text-[#006944] absolute top-0 right-0 translate-x-[83%] w-full flex flex-row-reverse h-auto">
+                                <div className="flex items-start gap-1">
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28630_1.png?v=1696833635"
+                                        alt="arrow"
+                                        width="auto"
+                                        height="auto"
+                                        loading="lazy"
+                                    />
+                                    <div className="text-[#006944] w-full">
+                                        <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/black_pepper_3.png?v=1703663504"
+                                                title=""
+                                                width="42px"
+                                                height="auto"
+                                                loading="lazy"
+                                            />
+                                            <h4 className="text-2xl">{h4_2}</h4>
+                                            <p>{p_2}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="absolute bottom-10 left-0 -translate-x-[92%] translate-y-32 w-full flex flex-reverse h-auto">
-                            <div className="flex items-start gap-1">
-                                <div className="w-full text-wrap">
-                                    <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
-                                        <img
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/kidney_4.png?v=1703661341"
-                                            title=""
-                                            width="50px"
-                                            height="50px"
-                                            loading="lazy"
-                                        />
-                                        <h4 className="text-2xl text-[#006944]">
-                                            For Kidney & Gall Bladder Health
-                                        </h4>
-                                        <p>
-                                            A gentle and potent solution crafted
-                                            to aid in breaking down small kidney
-                                            and gall bladder stones. Embrace the
-                                            benefits of 100% pure, natural, and
-                                            organic ingredients.{" "}
-                                        </p>
+                        }
+                        {h4_3 &&
+                            <div className="text-[#006944] absolute bottom-28 left-0 -translate-x-[82%] translate-y-56 w-full flex flex-reverse h-auto">
+                                <div className="flex items-start gap-1">
+                                    <div className="w-full text-wrap">
+                                        <div className="text-[#006944] w-auto text-center flex flex-col justify-center items-center -my-5">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857508.png?v=1696832109"
+                                                title=""
+                                                width="50px"
+                                                height="50px"
+                                                loading="lazy"
+                                            />
+                                            <h4 className="text-2xl">{h4_3}</h4>
+                                            <p>{p_3}</p>
+                                        </div>
                                     </div>
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28631.png?v=1696833634"
+                                        alt="arrow"
+                                        width="auto"
+                                        height="auto"
+                                        loading="lazy"
+                                    />
                                 </div>
-                                <img
-                                    src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28631.png?v=1696833634"
-                                    alt="arrow"
-                                    width="auto"
-                                    height="auto"
-                                    loading="lazy"
-                                />
                             </div>
-                        </div>
-                        <div className="absolute bottom-0 right-0 translate-x-[82%] translate-y-20 w-full flex flex-row-reverse h-auto">
-                            <div className="flex items-start gap-1">
-                                <img
-                                    src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28631_1.png?v=1696833635"
-                                    alt="arrow"
-                                    width="auto"
-                                    height="auto"
-                                    loading="lazy"
-                                />
-                                <div className="w-full">
-                                    <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
-                                        <img
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/kidney_3.png?v=1703661341"
-                                            title=""
-                                            width="42px"
-                                            height="auto"
-                                            loading="lazy"
-                                        />
-                                        <h4 className="text-2xl text-[#006944]">
-                                            Helps Flush Out Particles
-                                        </h4>
-                                        <p>
-                                            Our unique formulation delicately
-                                            fragments kidney and gall bladder
-                                            deposits into tiny particles,
-                                            effortlessly purifying your body.
-                                            Embrace the feeling of vitality as
-                                            these particles naturally wash away,
-                                            leaving you refreshed and renewed.
-                                        </p>
+                        }
+                        {h4_4 &&
+                            <div className="text-[#006944] absolute bottom-0 right-0 translate-x-[82%] translate-y-20 w-full flex flex-row-reverse h-auto">
+                                <div className="flex items-start gap-1">
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28631_1.png?v=1696833635"
+                                        alt="arrow"
+                                        width="auto"
+                                        height="auto"
+                                        loading="lazy"
+                                    />
+                                    <div className="w-full">
+                                        <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856851_1.png?v=1696831956"
+                                                title=""
+                                                width="42px"
+                                                height="auto"
+                                                loading="lazy"
+                                            />
+                                            <h4 className="text-2xl">{h4_4}</h4>
+                                            <p>{p_4}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        }
                     </div>
                 </div>
             </div>
@@ -799,103 +678,50 @@ export default function Kidney() {
                     How To <span className="text-[#006944]">Use</span>
                 </p>
                 <div className="flex justify-around items-center w-full py-36">
-                    <div className="w-[30%] h-48 bg-[#006944] rounded-xl text-8xl relative">
-                        <p className="absolute -top-10 left-10 transform -translate-x-1/2 -translate-y-1/2 text-[#D1E0D6]">
-                            01
-                        </p>
-                        <img
-                            className="hidden absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
-                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/1_Smiling_Liver.png?v=1703237213"
-                            alt=""
-                        />
-                        <p className="text-[white] text-3xl font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-nowrap scale-75">
-                            Shake well before use
-                        </p>
-                    </div>
-                    <div className="w-[30%] h-48 bg-[#99C459] rounded-xl text-8xl relative">
-                        <p className="absolute -top-10 left-10 transform -translate-x-1/2 -translate-y-1/2 text-[#D1E0D6]">
-                            02
-                        </p>
-                        <img
-                            className="hidden absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
-                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/2_Smiling_Liver.png?v=1703237213"
-                            alt=""
-                        />
-                        <p className="text-[white] text-3xl font-semibold absolute top-1/2 left-0 transform scale-75">
-                            Mix 25ml of juice in a glass of water.
-                        </p>
-                    </div>
-                    <div className="w-[30%] h-48 bg-[#006944] rounded-xl text-8xl relative">
-                        <p className="absolute -top-10 left-10 transform -translate-x-1/2 -translate-y-1/2 text-[#D1E0D6]">
-                            03
-                        </p>
-                        <img
-                            className="hidden absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
-                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/3_Smiling_Liver.png?v=1703237213"
-                            alt=""
-                        />
-                        <p className="text-[white] text-3xl font-semibold absolute top-0 left-0 transform translate-y-20 scale-75">
-                            Take empty stomach in the morning and 1 hour post
-                            dinner
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div className="bg-[#DEEACD] h-auto text-center text-[gray] font-semibold font-jost py-10">
-                <p className="uppercase py-5">result</p>
-                <p className="text-4xl text-black">What Will You Achieve</p>
-                <div>
-                    <div className="flex justify-around py-10 px-10">
-                        <div className="w-[23%] h-32 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
-                            <div className="text-7xl text-[#006944] absolute -top-7 left-0">
-                                93
-                                <span className="font-playfair text-2xl font-extrabold">
-                                    %
-                                </span>
-                            </div>
-                            <p className="text-xl text-left absolute top-1/2 left-0 px-5">
-                                Felt relief from discomfort caused by
-                                stones/deposits
+                    {BoxImg1 &&
+                        <div className="w-[30%] h-48 bg-[#006944] rounded-xl text-8xl relative">
+                            <p className="absolute -top-10 left-10 transform -translate-x-1/2 -translate-y-1/2 text-[#D1E0D6]">
+                                01
+                            </p>
+                            <img
+                                className="absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+                                src={BoxImg1}
+                                alt=""
+                            />
+                            <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-nowrap scale-75">
+                                Curries
+                            </p>
+                        </div>}
+                    {BoxImg2 &&
+                        <div className="w-[30%] h-48 bg-[#99C459] rounded-xl text-8xl relative">
+                            <p className="absolute -top-10 left-10 transform -translate-x-1/2 -translate-y-1/2 text-[#D1E0D6]">
+                                02
+                            </p>
+                            <img
+                                className="absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+                                src={BoxImg2}
+                                alt=""
+                            />
+                            <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75 text-nowrap">
+                                Pulao
                             </p>
                         </div>
-                        <div className="w-[23%] h-32 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
-                            <div className="text-7xl text-[#006944] absolute -top-7  left-0">
-                                94
-                                <span className="font-playfair text-2xl font-extrabold">
-                                    %
-                                </span>
-                            </div>
-                            <p className="text-xl text-left absolute top-1/2 left-0 px-5">
-                                Felt reduction in pain and after the deposits
-                                were gone then absolutely no pain
+                    }
+                    {BoxImg3 &&
+                        <div className="w-[30%] h-48 bg-[#006944] rounded-xl text-8xl relative">
+                            <p className="absolute -top-10 left-10 transform -translate-x-1/2 -translate-y-1/2 text-[#D1E0D6]">
+                                03
+                            </p>
+                            <img
+                                className="absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+                                src={BoxImg3}
+                                alt=""
+                            />
+                            <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75 text-nowrap">
+                                Snacks
                             </p>
                         </div>
-                        <div className="w-[23%] h-32 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
-                            <div className="text-7xl text-[#006944] absolute -top-7  left-0">
-                                97
-                                <span className="font-playfair text-2xl font-extrabold">
-                                    %
-                                </span>
-                            </div>
-                            <p className="text-xl text-left absolute top-1/2 left-0 px-5">
-                                Obvserved very small particles of sand like
-                                grains in the urine
-                            </p>
-                        </div>
-                        <div className="w-[23%] h-32 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
-                            <div className="text-7xl text-[#006944] absolute -top-7  left-0">
-                                95
-                                <span className="font-playfair text-2xl font-extrabold">
-                                    %
-                                </span>
-                            </div>
-                            <p className="text-xl text-left absolute top-1/2 left-0 px-5">
-                                Noticed that deposts in the kidney were either
-                                reduced or altogather gone. No deposit seen
-                                after couple of months
-                            </p>
-                        </div>
-                    </div>
+                    }
                 </div>
             </div>
             <div className="bg-white h-auto text-center text-[gray] font-medium font-jost py-10">
@@ -906,42 +732,42 @@ export default function Kidney() {
                 </p>
                 <div className="w-full flex justify-around px-11 py-5">
                     <div className="w-1/2 h-auto text-[#006944] rounded-xl text-center font-semibold font-jost">
-                        <p className="text-3xl py-10">Regular Stevia</p>
+                        {Name && <p className="text-3xl py-10 uppercase">Farm Naturelle {Name}</p>}
                         <div className="w-full flex flex-col justify-center items-center font-light">
-                            <p className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Artificial Flavors
-                            </p>
+                            <div className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white relative">
+                                <p>
+                                    <img
+                                        className="absolute top-1/2 -translate-y-1/2 left-1"
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_8.png?v=1703150234"
+                                    />
+                                </p>
+                                Premium Quality Hing
+                            </div>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_9.png?v=1703153821)] bg-[1%] bg-no-repeat text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Harmful Preservatives
+                                Natural Aroma
                             </p>
-                            <p className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Have Chemicals
-                            </p>
-                            <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_9.png?v=1703153821)] bg-[1%] bg-no-repeat text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Adds Calories
-                            </p>
-                            <p className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Aritifically Extracted
-                            </p>
+                            <div className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white relative">
+                                <p>
+                                    <img
+                                        className="absolute top-1/2 -translate-y-1/2 left-1"
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_8.png?v=1703150234"
+                                    />
+                                </p>
+                                No Artificial Flavours
+                            </div>
                         </div>
                     </div>
                     <div className="w-1/2 h-48 text-[#006944] rounded-xl text-center font-semibold font-jost">
-                        <p className="text-3xl py-10">Normal Juice</p>
+                        <p className="text-3xl py-10 uppercase">processed {Name}</p>
                         <div className="w-full flex flex-col justify-center items-center font-light">
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Non-organic
+                                Regular Quality Hing
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-white text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Added Chemicals
+                                Artificial Aroma
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Filtered, heated, pasteurized
-                            </p>
-                            <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-white text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Added Sugar
-                            </p>
-                            <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Less Nutritional Value
+                                Artificial Flavours
                             </p>
                         </div>
                     </div>
@@ -1033,14 +859,19 @@ export default function Kidney() {
                         ref={(slider) => (sliderRef3 = slider)}
                     >
                         {products.map((item, index) => (
-                            <div key={index}>
-                                <Card key={index} id={nanoid()} {...item} />
-                            </div>
+                            <Link
+                                key={index}
+                                to={`/collections/${item.catagory}/products/${item.id}`}
+                            >
+                                <div>
+                                    <Card key={index} {...item} />
+                                </div>
+                            </Link>
                         ))}
                     </Slider>
                 </div>
             </div>
             <Footer />
-        </>
+        </div>
     );
 }

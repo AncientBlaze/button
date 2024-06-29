@@ -51,14 +51,15 @@ function Cart({ handleClose }) {
                                     </div>
                                     <div className="h-20 flex items-end justify-center">
                                         <div className="w-full flex flex-col">
-                                        <div className="w-full flex justify-between px-3">
-                                                {cartProduct.content ? (
+                                            <div className="w-full flex justify-between px-3">
+                                                {cartProduct.quantity ? (
                                                     <p className="text-center text-lg">
                                                         Rs.
                                                         {cartProduct.content *
                                                             cartProduct.quantity}
                                                     </p>
-                                                ) : null}
+                                                ) : null
+                                                }
                                                 {cartProduct.price ? (
                                                     <p className="text-center text-lg line-through text-red-700">
                                                         Rs.

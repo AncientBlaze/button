@@ -38,18 +38,8 @@ import Login from "../pages/LoginPage.jsx";
 import AboutUs from "../pages/AboutUs.jsx";
 import PrivacyPolicy from "../pages/Privacy.jsx";
 import All_Products from "../pages/allProducts.jsx";
-import PilesVanish from "../pages/products/PilesVanish.jsx";
-import HealthyLiver from "../pages/products/HealthyLiver.jsx";
-import MagicmanBooster from "../pages/products/MagicmanBooster.jsx";
 import store from "./store/store.js";
 import { Provider } from "react-redux";
-import DigestiveFitness from "../pages/products/DigestiveFitness.jsx";
-import EasingDiabetes from "../pages/products/EasingDiabetes.jsx";
-import Hangover from "../pages/products/Hangover.jsx";
-import Kidney from "../pages/products/Kidney.jsx";
-import WomanGlow from "../pages/products/WomanGlow.jsx";
-import StressBuster from "../pages/products/StressBuster.jsx";
-import PainRelief from "../pages/products/PainRelief.jsx";
 import HoneyPages from "../pages/products/product_data/honey_data/HoneyProducts.jsx";
 import {
     AlciasHoney,
@@ -107,6 +97,11 @@ import { shilajit1, shilajit2 } from "../pages/products/product_data/Shilajit_da
 import ShilajitHoneyPages from "../pages/products/product_data/Shilajit_data/ShilajitHoney.jsx";
 import GiftingPages from "../pages/products/product_data/Gifting_data/GiftingPages.jsx";
 import { Gift1, Gift10, Gift11, Gift12, Gift13, Gift14, Gift15, Gift16, Gift17, Gift18, Gift2, Gift3, Gift4, Gift5, Gift6, Gift7, Gift8, Gift9 } from "../pages/products/product_data/Gifting_data/Gifting_data.js";
+import HingPages from "../pages/products/product_data/Hing_data/HingPages.jsx";
+import { Hingimg } from "../pages/products/product_data/Hing_data/Hing_data.js";
+import WellnessJuice from "../pages/WellnessJuices.jsx";
+import HerbalPages from "../pages/products/product_data/Herbal_data/HerbalPages.jsx";
+import { magicalMan, pilesVanish, smilingLiver } from "../pages/products/product_data/Herbal_data/Herbal_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -191,43 +186,127 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     />
                     <Route
                         path="/collections/herbal-juice/products/piles-vanish"
-                        element={<PilesVanish />}
-                    />
+                        element={<HerbalPages
+                            name={"Piles Vanish Juice |Supports Digestive Health | Reduces Inflammation"}
+                            Name={"Piles Relief"}
+                            price={949}
+                            previousPrice={2056}
+                            save={"54%"}
+                            price1={1895}
+                            previousPrice1={4355}
+                            save1={"56%"}
+                            price2={2845}
+                            previousPrice2={6812}
+                            save2={"58%"}
+                            images={pilesVanish}
+                            info1={"Healing Comfort for Piles"}
+                            info2={"Gentle Relief for Peptic Ulcers & Piles"}
+                            info3={"Nature's Soothing Care for Piles"}
+                            Tab1={"Piles care Combo is beneficial in treating all kinds of piles and constipation. It also strengthens the digestive system. The formulation of the product is made from 17 unique herbs."}
+                            T1SubText={" Seek relief with our Piles Care Combo, enriched with natural analgesic qualities. Ease discomfort, soothe pain, and support swift wound recovery."}
+                            T2SubText={" This blend of herbal juices offers a potential solution to halt internal bleeding caused by peptic ulcers and internal piles. Discover the natural path to comfort and well-being, as you enjoy the benefits of our pure, organic, and gentle remedies."}
+                            T3SubText={" Get the gentle touch of neem leaves, brimming with natural anti-inflammatory strength. Embrace relief as they aid in curbing harmful bacteria and toxins, guarding against discomfort."}
+                            Tab3={"Neem leaves, Pipal, Priyangu, Nagkesar, Amla Dry, Nishot, Amalthas, Kutki, Suran, Ashwaganda, Barad, Saunf, Cirayta, Vidang, Bealgiri, Harad"}
+                            h4_1={"Get Comfort with Our Piles Care Elixir"}
+                            h4_2={"Gentle Relief for Piles"}
+                            h4_3={"Find Relief the Herbal Way"}
+                            h4_4={"Gentle Relief for Digestive Ease"}
+                            p_1={"Revitalize with our Piles Care Elixir, thoughtfully crafted to naturally ease discomfort. Witness potential reduction in pile lumps, soothing of inflammation, relief from pain, and cessation of bleeding."}
+                            p_2={"Harnessing the power of nature, this blend might assist in managing excessive bleeding caused by piles. Embrace the goodness of pure, organic ingredients, and take a step towards a more comfortable and natural solution."}
+                            p_3={"Say goodbye to discomfort with our Piles Care Combo. Made from pure natural ingredients, this combo gently reduces swelling around the anus region, giving soothing relief for ongoing piles."}
+                            p_4={"Crafted with nature's gentle touch. Embracing its natural laxative qualities, this blend aids in averting constipation and piles. By softening stools and promoting seamless movement through your body, it champions digestive well-being."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/1_Piles_vanish.png?v=1703237213"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/2_Piles_vanish.png?v=1703237213"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/3_Piles_vanish.png?v=1703237213"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/M_K07712.png?v=1703160000"}
+                        />
+                        } />
                     <Route
                         path="/collections/herbal-juice/products/smiling-liver"
-                        element={<HealthyLiver />}
+                        element={<HerbalPages
+                            name={"Smiling Liver Juice | Supports Liver Health | Detoxifies the Liver"}
+                            Name={"Smiling Liver Juice"}
+                            images={smilingLiver}
+                            info1={"Your ultimate liver companion"}
+                            info2={"Protecting your liver’s health"}
+                            info3={"Reducing Liver Injuries"}
+                            price={849}
+                            previousPrice={1099}
+                            save={"23%"}
+                            price1={1695}
+                            previousPrice1={1695}
+                            save1={"0%"}
+                            price2={2545}
+                            previousPrice2={2545}
+                            save2={"0%"}
+                            Tab1={"Make your liver healthy the power of Aloe Vera! Our herbal capsules offer a natural path to a healthier liver. Packed with hydration and plant nutrients, they gently cleanse and rejuvenate your liver, promoting detoxification."}
+                            Tab3={"Aloe Vera, Ginseng, Licorice, Garlic, Bhui Amla, Kalmegh, Kutki , Fresh Haldi"}
+                            T1SubText={" Aloe Vera juice, a tropical treasure that nourishes your liver. Hydrating and packed with enriching phytonutrients. Detoxify and invigorate your liver's functions effortlessly."}
+                            T2SubText={" With the power of ginseng, our herbal capsules gently shield your liver with its natural anti-inflammatory properties."}
+                            T3SubText={" Bolster your liver's defense with potent antioxidants and soothing anti-inflammatory support. It can reduce liver injury."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/B_Smiling_Liver.png?v=1703237231"}
+                            h4_1={"Cleanse your liver with Garlic"}
+                            h4_2={"Reverse Unhealthy Liver"}
+                            h4_3={"Gentle Care with Kalmegh"}
+                            h4_4={"Guardian for Your Liver Health"}
+                            p_1={"The ancient potency of garlic, a nature's gem that bestows your liver with its mineral magic. Embrace a revitalized you as garlic's cleansing touch gently detoxifies your liver."}
+                            p_2={"Safeguarding your liver through potent antioxidants, antiviral might, and hepatoprotective prowess. Manage liver concerns with ease as they undo damage, making your liver stronger than ever. Embrace the goodness of 100% pure, organic ingredients."}
+                            p_3={"Experience the goodness of Kalmegh, your natural companion for a healthy liver. Packed with natural wonders, Kalmegh gently nurtures your liver, aiding in managing fatty liver concerns. Its special elements work to naturally support healthy lipid levels, promoting overall wellness."}
+                            p_4={"Our herbal capsules act as a safeguard, curbing substances that pose a threat to your liver's well-being."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/1_Smiling_Liver.png?v=1703237213"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/2_Smiling_Liver.png?v=1703237213"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/3_Smiling_Liver.png?v=1703237213"}
+                        />}
                     />
                     <Route
                         path="/collections/herbal-juice/products/magical-man-booster"
-                        element={<MagicmanBooster />}
-                    />
+                        element={<HerbalPages
+                            name={"Magical Man Booster"}
+                            Name={"Magical Man Booster"}
+                            images={magicalMan}
+                            price={949}
+                            previousPrice={2056}
+                            save={"54%"}
+                            price1={1895}
+                            previousPrice1={4355}
+                            save1={"56%"}
+                            price2={2845}
+                            previousPrice2={6812}
+                            save2={"58%"}
+                            info1={"Shatavari's Natural Power"}
+                            info2={"Safed Musli to Improve Performance"}
+                            info3={"Shilajit to Your Rescue"}
+                            Tab1={"Experience holistic enhancements for your intimate well-being with our herbal capsules. Crafted from pure, organic ingredients, our capsules offer a natural path to invigorate your sexual health. Discover a natural way to elevate your vitality, fostering a deeper connection and enriched wellness."}
+                            Tab3={"Satavari Dry, Shafed Musli, Shilajeet, Konch Seed, Watermelon Seed, Aloevera, Ashwagandha, Beetroot"}
+                        />
+                        } />
                     <Route
                         path="/collections/herbal-juice/products/digestive-fitness"
-                        element={<DigestiveFitness />}
+                        element={<HerbalPages />}
                     />
                     <Route
                         path="/collections/herbal-juice/products/easing-diabetes"
-                        element={<EasingDiabetes />}
+                        element={<HerbalPages />}
                     />
                     <Route
                         path="/collections/herbal-juice/products/anti-hangover-ready-to-drink-shot"
-                        element={<Hangover />}
+                        element={<HerbalPages />}
                     />
                     <Route
                         path="/collections/herbal-juice/products/kidney-stone-crusher-juice"
-                        element={<Kidney />}
+                        element={<HerbalPages />}
                     />
                     <Route
                         path="/collections/herbal-juice/products/women-glow"
-                        element={<WomanGlow />}
+                        element={<HerbalPages />}
                     />
                     <Route
                         path="/collections/herbal-juice/products/stress-buster"
-                        element={<StressBuster />}
+                        element={<HerbalPages />}
                     />
                     <Route
                         path="/collections/herbal-juice/products/joints-and-body-pain-relief"
-                        element={<PainRelief />}
+                        element={<HerbalPages />}
                     />
                     <Route
                         path="/collections/all-products"
@@ -3547,6 +3626,41 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
                         />}
                     />
+                    <Route
+                        path="collections/hing/products/hing"
+                        element={<HingPages
+                            images={Hingimg}
+                            name={"100% Pure and Natural Heeng | Best Hing (Asafoetida from Kazakhthan)"}
+                            Name={"Hing"}
+                            info1={"Experience the Finest Hing"}
+                            info2={"Boosts Your Immunity & Breath of Life"}
+                            info3={"Gentle on Tummies, Strong on Digestion"}
+                            price={395}
+                            previousPrice={595}
+                            save={"34% off"}
+                            price1={649}
+                            previousPrice1={1095}
+                            save1={"41%"}
+                            Tab1={"Experience the Finest Hing for Your Well-being- hand-pounded, natural, and expertly packed in dual layers to preserve its rich flavor over time. Enhance your immune and respiratory systems while aiding digestion. Indulge in the captivating aroma and robust taste."}
+                            T1Text={"Experience the Finest Hing:"}
+                            T2Text={"Boosts Your Immunity & Breath of Life:"}
+                            T3Text={"Gentle on Tummies, Strong on Digestion:"}
+                            T1SubText={"Crafted meticulously by hand, Farm Naturelle Hing embraces its natural essence. Double-layered packaging ensures enduring flavor and lasting taste. Your culinary creations deserve nothing less than the world's finest Hing, cherished for its authenticity and robustness."}
+                            T2SubText={"Give your health a natural edge with Hing. This remarkable spice empowers your body's defense and enriches your respiratory well-being. Enjoy the power of improved immunity and easier breathing, all thanks to the goodness of Hing. Discover a simpler path to a healthier you!"}
+                            T3SubText={"Hing, our culinary ally, eases tummy woes by aiding digestion. Like a caring friend, it helps break down food, curbing discomfort. Experience the joy of seamless mealtimes as Hing takes the edge off digestion, so you can relish every bite without worry."}
+                            Tab3={"Hing"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Hing.png?v=1703077544"}
+                            h4_3={"Introducing the Aromatic Essence of Hing:"}
+                            p_3={"Let the magic of Hing transform your dishes effortlessly."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_7104dc86-9760-460a-9f9b-9bc17e87e985.png?v=1703077617"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-1_6e197100-560f-4f81-915a-abb5ed288305.png?v=1703077618"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame-2_e86bcc6a-da91-4351-bb35-1cbb716a8b8c.png?v=1703077616"}
+                            key={"Hing"}
+                        />}
+                    />
+                    <Route
+                        path="collections/wellness-juice"
+                        element={<WellnessJuice />} />
                 </Routes>
             </Provider>
         </BrowserRouter>

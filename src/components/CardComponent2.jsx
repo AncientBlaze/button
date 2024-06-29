@@ -4,6 +4,7 @@ import { useState } from "react";
 import { add } from "../store/cartSlice";
 import { addToWishlist, remove } from "../store/wishSlice";
 import { useDispatch } from "react-redux";
+import { nanoid } from "@reduxjs/toolkit";
 
 const CardComponent2 = ({
     id,
@@ -20,7 +21,9 @@ const CardComponent2 = ({
     const [isLiked, setIsLiked] = useState(
         () => localStorage.getItem(`liked-${id}`) === "true",
     );
-
+    const [count, setCount] = useState(1);
+    // eslint-disable-next-line no-unused-vars
+    const [selectedOption1, setSelectedOption1] = useState(PreviousPrice);
     const handleLike = (e) => {
         e.preventDefault();
         e.stopPropagation();
@@ -93,10 +96,11 @@ const CardComponent2 = ({
                     <button
                         className={buttonClasses}
                         onClick={(e) => {
-                            e.preventDefault(),
-                                // eslint-disable-next-line no-undef
-                                dispatch(add({ id, title, content, ImageUrl }));
-                        }}
+                            e.preventDefault();
+                            dispatch(add({ id: nanoid(), quantity: count, title, content, PreviousPrice: selectedOption1, ImageUrl }));
+                            setCount(count);
+                        }
+                        }
                     >
                         Add to Cart
                     </button>

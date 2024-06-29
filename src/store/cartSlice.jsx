@@ -20,10 +20,12 @@ const cartSlice = createSlice({
             if (itemIndex >= 0) {
                 // If the item is already in the cart, increase the quantity
                 state.cartItems[itemIndex].quantity += 1;
-                toast.info(`${action.payload.title} increased quantity`, {
-                    position: "bottom-left",
-                    bodyStyle: { color: "black" },
-                });
+                if (state.cartItems[itemIndex].quantity >= 0) {
+                    toast.info(`${action.payload.title} increased quantity`, {
+                        position: "bottom-left",
+                        bodyStyle: { color: "black" },
+                    });
+                }
                 state.cartTotalAmount += action.payload.content; // Update total amount
             } else {
                 // If the item is not in the cart, add it to the cart
@@ -52,7 +54,7 @@ const cartSlice = createSlice({
 
             if (itemIndex >= 0) {
                 // Check if the quantity is greater than 1
-                if (state.cartItems[itemIndex].quantity ) {
+                if (state.cartItems[itemIndex].quantity) {
                     const updatedCartItems = [...state.cartItems]; // Create a copy of cartItems
                     updatedCartItems[itemIndex].quantity += 1; // Update quantity of specific item
                     state.cartItems = updatedCartItems; // Update state with the new cartItems
@@ -71,10 +73,10 @@ const cartSlice = createSlice({
                 }
             } else {
                 toast.warn("are you brain dead?"),
-                    {
-                        position: "bottom-left",
-                        bodyStyle: { color: "black" },
-                    };
+                {
+                    position: "bottom-left",
+                    bodyStyle: { color: "black" },
+                };
             }
             localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
         },
@@ -106,10 +108,10 @@ const cartSlice = createSlice({
                 }
             } else {
                 toast.warn("are you brain dead?"),
-                    {
-                        position: "bottom-left",
-                        bodyStyle: { color: "black" },
-                    };
+                {
+                    position: "bottom-left",
+                    bodyStyle: { color: "black" },
+                };
             }
             localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
         },

@@ -17,7 +17,7 @@ function Collection() {
                         <Card
                             image="https://farmnaturelle.com/cdn/shop/files/ShilajitFront25g_grande.png?v=1711173556"
                             text="All Products"
-                            items={79}
+                            items={78}
                         />
                     </Link>
                     <Link to={"/collections/apple-cider-vinegar"}>
@@ -173,7 +173,7 @@ function Collection() {
                         text="Tea"
                         items={7}
                     />
-                    <Link to={"/collections/herbal-juice"}>
+                    <Link to={"/collections/wellness-juice"}>
                         <Card
                             image="https://farmnaturelle.com/cdn/shop/files/1_98b2b386-ba0d-488b-96fb-882a52e2d204_grande.jpg?v=1714049005"
                             text="Wellness Juice"

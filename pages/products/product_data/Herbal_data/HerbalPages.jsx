@@ -1,25 +1,58 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
-import Nav from "../../src/components/header/Nav";
-import Footer from "../../src/components/footer/Footer";
+import Nav from "../../../../src/components/header/Nav";
+import Footer from "../../../../src/components/footer/Footer";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import { LuChevronDown, LuChevronUp } from "react-icons/lu";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Card from "../../assets/Card3";
+import Card from "../../../../assets/Card3";
 import { Link } from "react-router-dom";
-
-import { useDispatch } from "react-redux";
-import { add } from "../../src/store/cartSlice";
-import { nanoid } from "@reduxjs/toolkit";
 import {
-    FaEnvelope,
     FaFacebookF,
     FaPinterest,
     FaTwitter,
+    FaEnvelope,
 } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { add } from "../../../../src/store/cartSlice";
+import { products } from "../product_data";
 
-export default function PainRelief() {
+export default function HerbalPages({
+    name,
+    Name,
+    price,
+    price1,
+    price2,
+    previousPrice,
+    previousPrice1,
+    previousPrice2,
+    save,
+    save1,
+    save2,
+    images,
+    h4_1,
+    h4_2,
+    h4_3,
+    h4_4,
+    p_1,
+    p_2,
+    p_3,
+    p_4,
+    info1,
+    info2,
+    info3,
+    Tab1,
+    T1SubText,
+    T2SubText,
+    T3SubText,
+    Tab3,
+    extraImage,
+    BoxImg1,
+    BoxImg2,
+    BoxImg3,
+}) {
     const dispatch = useDispatch();
 
     const addToCart = (product) => {
@@ -28,9 +61,9 @@ export default function PainRelief() {
 
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
-    const [selectedOption, setSelectedOption] = useState(949);
-    const [selectedOption1, setSelectedOption1] = useState("2,056");
-    const [selectedOption2, setSelectedOption2] = useState("54%");
+    const [selectedOption, setSelectedOption] = useState(price);
+    const [selectedOption1, setSelectedOption1] = useState(previousPrice);
+    const [selectedOption2, setSelectedOption2] = useState(save);
 
     let sliderRef1 = useRef(null);
     let sliderRef2 = useRef(null);
@@ -55,134 +88,16 @@ export default function PainRelief() {
     const [count, setCount] = useState(1);
     const [offerExpanded, setOfferExpanded] = useState(false);
 
-    const products = [
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/ShilajitFront25g_800x.png?v=1711173556",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Shilajitresin_800x.png?v=1711173556",
-            title: "Pure Himalayan Shilajit",
-            content: 429,
-            PreviousPrice: 579,
-            save: 26,
-            hidden: "hidden",
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9313_800x.jpg?v=1708001210",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9314_800x.jpg?v=1708001212",
-            title: "Black Sesame Oil...",
-            content: 368,
-            PreviousPrice: 449,
-            save: 18,
-            hidden: "hidden",
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9429_800x.jpg?v=1703849984",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9430_800x.jpg?v=1703849986",
-            title: "Buy 100% Pure...",
-            content: 275,
-            PreviousPrice: 329,
-            save: 16,
-            hidden: "hidden",
-        },
-        {
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/3_02314507-5857-4219-a1b5-306c47a83dd1_800x.jpg?v=1708000860",
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/2_58201a2c-cc05-4076-8ce1-c2ad03d1b0c4_800x.jpg?v=1708000855",
-            title: "100% Pure &...",
-            PreviousPrice: 459,
-            content: 369,
-            save: 16,
-            hidden: "hidden",
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9304_5e288c25-7779-4d43-b049-30fa89946889_800x.jpg?v=1708001211",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9305_444d3e7e-98ea-43f4-8c19-c4b7f178614e_800x.jpg?v=1708001213",
-            title: "Organic Cold Pressed...",
-            content: 290,
-            PreviousPrice: 339,
-            save: 14,
-            hidden: "hidden",
-        },
-        {
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/3_04c1d709-5e90-40b5-83fc-6ee87ba55563_800x.jpg?v=1708000860",
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/2_52d72052-4078-4146-a5bb-7eb9c66b2070_800x.jpg?v=1703749282",
-            title: "Vana Tulsi Flower",
-            PreviousPrice: 459,
-            content: 369,
-            save: 16,
-            hidden: "hidden",
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9423_800x.jpg?v=1703749253",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9424_800x.jpg?v=1708001213",
-            title: "100% Natural Cold",
-            content: 290,
-            PreviousPrice: 339,
-            save: 14,
-            hidden: "hidden",
-        },
-        {
-            ImageUrl:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9449_800x.jpg?v=1708001248",
-            PlaceHolder:
-                "https://farmnaturelle.com/cdn/shop/files/Rectangle9450_800x.jpg?v=1708001251",
-            title: "100% Pure Black...",
-            content: 339,
-            PreviousPrice: 430,
-            save: 21,
-            hidden: "hidden",
-        },
-    ];
-
-    const images = [
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/1_e183e938-b61b-48f6-b113-9a5c1912aaa4.png?v=1714049277",
-            alt: "1st",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/2_a2fe77c9-5f12-4f2a-b24a-640ce689fed4.png?v=1714049278",
-            alt: "2nd",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/3_71cb8571-ade3-4cb3-9855-a9a49728fed5.png?v=1714049278",
-            alt: "3rd",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/4_39383759-0bed-4e0c-907e-14d41a9b6fb8.png?v=1714049279",
-            alt: "4th",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/5_d2d3809e-598e-4ab1-9298-80133b3759d9.png?v=1714049279",
-            alt: "5th",
-        },
-        {
-            img: "https://farmnaturelle.com/cdn/shop/files/6_a369c677-fd4d-4aaa-8e35-fe585a1f541b.png?v=1714049278",
-            alt: "6th",
-        },
-    ];
-
     return (
         <>
             <Nav />
-            <div className="px-1 py-10 w-full bg-[#F2F7E3] relative">
-                <p className="text-sm absolute top-5 px-1 uppercase cursor-pointer text-gray-500">
+            <div className="p-10 w-full bg-[#F2F7E3] relative">
+                <p className="text-sm absolute top-5 px-10 uppercase cursor-pointer text-gray-500">
                     <Link to="/">Home</Link>
                     /All products
                 </p>
-                <div className="w-full flex flex-col lg:flex-row xl:flex-row sm:flex-col justify-center gap-10 items-start">
-                    <div className="w-full sm:w-1/2 md:px-6 lg:px-2">
+                <div className="w-full flex justify-center items-start">
+                    <div className="w-1/2 px-10">
                         <div className="w-full py-1">
                             <Slider
                                 infinite={true}
@@ -206,13 +121,13 @@ export default function PainRelief() {
                         <div className="w-full px-20 relative group">
                             <div className="absolute left-0 top-1/2 -translate-y-1/2 flex justify-between w-full px-10">
                                 <button
-                                    className="bg-white hover:bg-[#006944] text-[#000000] shadow-md w-10 h-10 rounded-full hover:text-white flex justify-center items-center transition-colors duration-500"
+                                    className="bg-white hover:bg-[#006944] text-[#000000] shadow-md w-10 h-10 rounded-full hover:text-white flex justify-center items-center transition-colors duration-500 "
                                     onClick={prevSlick}
                                 >
                                     <RiArrowLeftSLine size={32} />
                                 </button>
                                 <button
-                                    className="bg-white hover:bg-[#006944] text-black shadow-md w-10 h-10 rounded-full hover:text-white flex justify-center items-center transition-colors duration-500"
+                                    className="bg-white hover:bg-[#006944] text-black shadow-md w-10 h-10 rounded-full hover:text-white flex justify-center items-center transition-colors duration-500 "
                                     onClick={nextSlick}
                                 >
                                     <RiArrowRightSLine size={32} />
@@ -283,10 +198,8 @@ export default function PainRelief() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col font-bold font-jost py-5 justify-between">
-                        <div className="text-3xl px-2 font-bold">
-                            Joints and Body Pain Relief
-                        </div>
+                    <div className="flex flex-col font-bold font-jost justify-between">
+                        <div className="text-3xl px-2 font-bold">{name}</div>
                         <div className="px-2 py-5 flex gap-2 justify-start font-light text-sm items-center">
                             <span className="flex gap-2">
                                 <em>
@@ -399,13 +312,13 @@ export default function PainRelief() {
                         <div className="text-[#313131] font-jost font-semibold py-10">
                             <ul>
                                 <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
-                                    Natural Relief for Pain & Swelling
+                                    <p>{info1}</p>
                                 </li>
                                 <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
-                                    Soothe Your Throat and Breathe Freely
+                                    <p>{info2}</p>
                                 </li>
                                 <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
-                                    Joint Pain Relief
+                                    <p>{info3}</p>
                                 </li>
                             </ul>
                         </div>
@@ -417,34 +330,34 @@ export default function PainRelief() {
                                     onChange={(e) => {
                                         setSelectedOption(e.target.value);
                                         let options = {
-                                            949: {
-                                                price: "2,056",
-                                                discount: "54%",
+                                            [price]: {
+                                                price: previousPrice,
+                                                discount: save,
                                             },
-                                            1895: {
-                                                price: "4,355",
-                                                discount: "56%",
+                                            [price1]: {
+                                                price: previousPrice1,
+                                                discount: save1,
                                             },
-                                            2845: {
-                                                price: "6,812",
-                                                discount: "58%",
+                                            [price2]: {
+                                                price: previousPrice2,
+                                                discount: save2,
                                             },
                                         };
                                         const selectedoption =
                                             options[e.target.value];
-                                        var selected = selectedoption;
+                                        const selected = selectedoption;
                                         setSelectedOption1(selected.price);
                                         setSelectedOption2(selected.discount);
                                     }}
                                 >
-                                    <option value={949}>
-                                        1 Month Course- 1+1 Free
+                                    <option value={price}>
+                                        1 Month Course-1+1 Free
                                     </option>
-                                    <option value={1895}>
-                                        2 Month Course- 2+2 Free
+                                    <option value={price1}>
+                                        2 Month Course-2+2 Free
                                     </option>
-                                    <option value={2845}>
-                                        3 Month Course- 3+3 Free
+                                    <option value={price2}>
+                                        3 Month Course-3+3 Free
                                     </option>
                                 </select>
                                 <div className="flex gap-2 justify-center items-center w-1/3 border border-[#006944] rounded-lg px-5">
@@ -469,14 +382,7 @@ export default function PainRelief() {
                                     </div>
                                     <button
                                         className="w-1/2 py-2 px-3 flex justify-center"
-                                        onClick={() => {
-                                            setCount(count + 1) &&
-                                                dispatch(
-                                                    increaseQuantity(
-                                                        cartProduct.id,
-                                                    ),
-                                                );
-                                        }}
+                                        onClick={() => setCount(count + 1)}
                                     >
                                         <img
                                             src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame.svg?v=1696501243"
@@ -492,15 +398,13 @@ export default function PainRelief() {
                                 <div className="flex gap-2 py-3 justify-center items-center">
                                     <button
                                         onClick={() => {
+                                            const pic = images[0].img;
                                             addToCart({
-                                                title: "Joints and Body Pain Relief",
-                                                ImageUrl:
-                                                    "https://farmnaturelle.com/cdn/shop/files/1_e183e938-b61b-48f6-b113-9a5c1912aaa4.png?v=1714049277",
-                                                content: selectedOption * count,
+                                                title: Name,
+                                                ImageUrl: `${pic}`,
                                                 quantity: count,
-                                                description: "select",
-                                                save: "Save 23%",
-                                                hidden: "hidden",
+                                                price: selectedOption1,
+                                                content: selectedOption * count,
                                             });
                                         }}
                                         className="uppercase"
@@ -529,9 +433,8 @@ export default function PainRelief() {
                             </p>
                             <div>
                                 <div
-                                    className={`${
-                                        offerExpanded ? "block" : "hidden"
-                                    }`}
+                                    className={`${offerExpanded ? "block" : "hidden"
+                                        }`}
                                 >
                                     <p className="border-b border-[#006944] py-5">
                                         Buy one, get one free on raw honey at
@@ -550,8 +453,8 @@ export default function PainRelief() {
                                         document.getElementById(
                                             "offer",
                                         ).innerHTML = offerExpanded
-                                            ? "More offers"
-                                            : "Less offers";
+                                                ? "More offers"
+                                                : "Less offers";
                                     }}
                                 >
                                     <span className="py-3 pr-2">
@@ -595,54 +498,25 @@ export default function PainRelief() {
                             </TabList>
                             <TabPanel className="text-lg">
                                 <p className="py-5 text-sm text-[#727271]">
-                                    Get soothing relief from joint discomfort
-                                    with Farm Naturelle Pain Relief herbal
-                                    capsules. Crafted from pure, organic
-                                    ingredients, our capsules offer a gentle
-                                    remedy for joint pain. Embrace the power of
-                                    nature to ease your movements and enhance
-                                    your everyday life.{" "}
+                                    {Tab1}{" "}
                                 </p>
                                 <p></p>
                                 <ul className="text-base">
                                     <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
-                                        <b className="text-black">
-                                            Natural Relief for Pain & Swelling:
-                                        </b>{" "}
-                                        These herbal Capsules has natural
-                                        analgesic properties work wonders to
-                                        ease pain and reduce swelling. Discover
-                                        the power of nature's remedy for a more
-                                        comfortable you.{" "}
+                                        <b className="text-black">{info1}</b>{":"}
+                                        {T1SubText}{" "}
                                     </li>
                                     <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
                                         <b>
                                             <span className="text-black">
-                                                Soothe Your Throat and Breathe
-                                                Freely:
+                                                {info2}
                                             </span>
                                         </b>{" "}
-                                        Experience relief as our herbal capsules
-                                        harness nature's anti-inflammatory power
-                                        to ease discomfort in your throat and
-                                        respiratory passages. Our pure, natural,
-                                        and organic formula gently reduces pain
-                                        and calms inflammation, letting you
-                                        enjoy a breath of fresh air without the
-                                        irritation. Say goodbye to discomfort
-                                        and hello to comfort, the way nature
-                                        intended.{" "}
+                                        {T2SubText}{":"}
                                     </li>
                                     <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
-                                        <b className="text-black">
-                                            Joint Pain Relief:
-                                        </b>{" "}
-                                        Benefit the power of pure, organic
-                                        ingredients that gently ease joint
-                                        discomfort and relieve arthritis-related
-                                        woes. Embrace the joy of movement as you
-                                        bid adieu to aches and pains, the
-                                        natural way.{" "}
+                                        <b className="text-black">{info3}</b>{":"}
+                                        {T3SubText}{" "}
                                     </li>
                                 </ul>
                                 <p></p>
@@ -657,164 +531,129 @@ export default function PainRelief() {
 
                             <TabPanel>
                                 <p className="py-5 text-sm text-[#727271]">
-                                    Jatamansi, Brahmi, Haritaki, Guduchi, Hing,
-                                    Boswellia Extract, Guggul, Haldi – Curcumin,
-                                    Hathjod, Ashwagandha, Nirgundi Leaf Extract
+                                    {Tab3}
                                 </p>
                             </TabPanel>
                         </Tabs>
                     </div>
                 </div>
             </div>
-            <div className="h-[130vh] w-full">
-                <div className="w-full h-full text-center py-2 font-jost relative">
-                    <p className="text-[gray] py-2">Benefits</p>
-                    <p className="text-4xl font-medium text-[#006944]">
-                        <span className="text-black">Benefits Of </span>
-                        Joints and Body PAIN RELIEF{" "}
-                    </p>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[40%] flex-col items-center justify-center">
-                        <div className="w-full flex items-center rounded-[50%] bg-[#DEEEC0] opacity-0">
-                            <img
-                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/B_Magical_Man_Booster.png?v=1703237231"
-                                alt="Benefits"
-                                loading="lazy"
-                            />
-                        </div>
-                        <div className="absolute top-0 left-0 -translate-x-[82%] w-full flex flex-row-reverse h-auto text-sm">
-                            <div className="flex items-start gap-1">
-                                <div className="w-full text-wrap">
-                                    <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
-                                        <img
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857505.png?v=1696832200"
-                                            title=""
-                                            width="52px"
-                                            height="42px"
-                                            loading="lazy"
-                                        />
-                                        <h4 className="text-2xl text-[#006944]">
-                                            Natural Companion for Comfortable
-                                            Periods
-                                        </h4>
-                                        <p>
-                                            Embracing natural blood-thinning
-                                            properties of hing in these capsules
-                                            gently ease away menstrual
-                                            discomfort. By promoting smoother
-                                            flow and diminishing clots, we're
-                                            here to make your periods more
-                                            manageable and less painful.{" "}
-                                        </p>
-                                    </div>
-                                </div>
+            <div>
+                <div className="h-[130vh] w-full">
+                    <div className="w-full h-full text-center py-2 font-jost relative">
+                        <p className="text-[gray] py-2">Benefits</p>
+                        <p className="text-4xl font-medium text-[#006944]">
+                            <span className="text-black">Benefits Of </span>
+                            {Name}
+                        </p>
+                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[40%] flex-col items-center justify-center">
+                            <div className="w-full flex items-center rounded-[50%] bg-[#DEEEC0]">
                                 <img
-                                    src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28630.png?v=1696832266"
-                                    width="auto"
-                                    height="auto"
+                                    src={extraImage}
+                                    alt="Benefits"
                                     loading="lazy"
                                 />
                             </div>
-                        </div>
-                        <div className="absolute top-0 right-0 translate-x-[83%] w-full flex flex-row-reverse h-auto">
-                            <div className="flex items-start gap-1">
-                                <img
-                                    src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28630_1.png?v=1696833635"
-                                    alt="arrow"
-                                    width="auto"
-                                    height="auto"
-                                    loading="lazy"
-                                />
-                                <div className="w-full">
-                                    <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
-                                        <img
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/weight.png?v=1696832154"
-                                            title=""
-                                            width="42px"
-                                            height="auto"
-                                            loading="lazy"
-                                        />
-                                        <h4 className="text-2xl text-[#006944]">
-                                            Soothing Power of Boswellia
-                                        </h4>
-                                        <p>
-                                            Boswellia is nature's answer to
-                                            inflammation. Feel the relief as it
-                                            gently calms inflammation, eases
-                                            discomfort, and supports joint
-                                            health. Embrace the tradition of
-                                            wellness with our herbal capsules
-                                            that soothe without harsh chemicals.
-                                        </p>
+                            <div className="absolute top-0 left-0 -translate-x-[82%] w-full flex flex-row-reverse h-auto text-sm">
+                                <div className="flex items-start gap-1">
+                                    <div className="w-full text-wrap">
+                                        <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857505.png?v=1696832200"
+                                                title=""
+                                                width="52px"
+                                                height="42px"
+                                                loading="lazy"
+                                            />
+                                            <h4 className="text-2xl text-[#006944]">
+                                                {h4_1}
+                                            </h4>
+                                            <p>{p_1}</p>
+                                        </div>
+                                    </div>
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28630.png?v=1696832266"
+                                        width="auto"
+                                        height="auto"
+                                        loading="lazy"
+                                    />
+                                </div>
+                            </div>
+                            <div className="absolute top-0 right-0 translate-x-[83%] w-full flex flex-row-reverse h-auto">
+                                <div className="flex items-start gap-1">
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28630_1.png?v=1696833635"
+                                        alt="arrow"
+                                        width="auto"
+                                        height="auto"
+                                        loading="lazy"
+                                    />
+                                    <div className="w-full">
+                                        <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/weight.png?v=1696832154"
+                                                title=""
+                                                width="42px"
+                                                height="auto"
+                                                loading="lazy"
+                                            />
+                                            <h4 className="text-2xl text-[#006944]">
+                                                {h4_2}
+                                            </h4>
+                                            <p>{p_2}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="absolute bottom-10 left-0 -translate-x-[92%] translate-y-32 w-full flex flex-reverse h-auto">
-                            <div className="flex items-start gap-1">
-                                <div className="w-full text-wrap">
-                                    <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
-                                        <img
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857508.png?v=1696832109"
-                                            title=""
-                                            width="50px"
-                                            height="50px"
-                                            loading="lazy"
-                                        />
-                                        <h4 className="text-2xl text-[#006944]">
-                                            Nurturing Joint Comfort Naturally
-                                        </h4>
-                                        <p className="">
-                                            Gently eases inflammation,
-                                            supporting relief from conditions
-                                            like arthritis. Our herbal capsules
-                                            offer nature's touch to help soothe
-                                            discomfort, the natural way.{" "}
-                                        </p>
+                            <div className="absolute bottom-10 left-0 -translate-x-[92%] translate-y-32 w-full flex flex-reverse h-auto">
+                                <div className="flex items-start gap-1">
+                                    <div className="w-full text-wrap">
+                                        <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857508.png?v=1696832109"
+                                                title=""
+                                                width="50px"
+                                                height="50px"
+                                                loading="lazy"
+                                            />
+                                            <h4 className="text-2xl text-[#006944]">
+                                                {h4_3}
+                                            </h4>
+                                            <p>{p_3}</p>
+                                        </div>
                                     </div>
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28631.png?v=1696833634"
+                                        alt="arrow"
+                                        width="auto"
+                                        height="auto"
+                                        loading="lazy"
+                                    />
                                 </div>
-                                <img
-                                    src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28631.png?v=1696833634"
-                                    alt="arrow"
-                                    width="auto"
-                                    height="auto"
-                                    loading="lazy"
-                                />
                             </div>
-                        </div>
-                        <div className="absolute bottom-0 right-0 translate-x-[82%] translate-y-20 w-full flex flex-row-reverse h-auto">
-                            <div className="flex items-start gap-1">
-                                <img
-                                    src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28631_1.png?v=1696833635"
-                                    alt="arrow"
-                                    width="auto"
-                                    height="auto"
-                                    loading="lazy"
-                                />
-                                <div className="w-full">
-                                    <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
-                                        <img
-                                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856851_1.png?v=1696831956"
-                                            title=""
-                                            width="42px"
-                                            height="auto"
-                                            loading="lazy"
-                                        />
-                                        <h4 className="text-2xl text-[#006944]">
-                                            Your Solution for Osteoarthritis
-                                            Relief
-                                        </h4>
-                                        <p>
-                                            Experience relief like never before
-                                            with our herbal capsules. Embrace a
-                                            life with reduced discomfort and
-                                            enhanced mobility for those dealing
-                                            with osteoarthritis. Our natural
-                                            blend is carefully crafted to bring
-                                            you the joy of pain-free movement.
-                                            Say goodbye to stiffness and hello
-                                            to joyful living with our organic
-                                            approach to well-being.
-                                        </p>
+                            <div className="absolute bottom-0 right-0 translate-x-[82%] translate-y-20 w-full flex flex-row-reverse h-auto">
+                                <div className="flex items-start gap-1">
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28631_1.png?v=1696833635"
+                                        alt="arrow"
+                                        width="auto"
+                                        height="auto"
+                                        loading="lazy"
+                                    />
+                                    <div className="w-full">
+                                        <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_14856851_1.png?v=1696831956"
+                                                title=""
+                                                width="42px"
+                                                height="auto"
+                                                loading="lazy"
+                                            />
+                                            <h4 className="text-2xl text-[#006944]">
+                                                {h4_4}
+                                            </h4>
+                                            <p>{p_4}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -833,11 +672,11 @@ export default function PainRelief() {
                             01
                         </p>
                         <img
-                            className="hidden absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
-                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/1_Magical_Man_Booster.png?v=1703237213"
+                            className="absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+                            src={BoxImg1}
                             alt=""
                         />
-                        <p className="text-[#D1E0D6] text-3xl font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-nowrap scale-75">
+                        <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-nowrap scale-75">
                             Shake well before use
                         </p>
                     </div>
@@ -846,11 +685,11 @@ export default function PainRelief() {
                             02
                         </p>
                         <img
-                            className="hidden absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
-                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/2_Magical_Man_Booster.png?v=1703237213"
+                            className="absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+                            src={BoxImg2}
                             alt=""
                         />
-                        <p className="text-[#D1E0D6] text-3xl font-semibold absolute top-1/2 left-0 transform scale-75">
+                        <p className="text-white text-3xl font-semibold absolute top-1/2 left-0 transform scale-75">
                             Mix 25ml of juice in a glass of water.
                         </p>
                     </div>
@@ -859,34 +698,55 @@ export default function PainRelief() {
                             03
                         </p>
                         <img
-                            className="hidden absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
-                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/3_Magical_Man_Booster.png?v=1703237213"
+                            className="absolute -top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+                            src={BoxImg3}
                             alt=""
                         />
-                        <p className="text-[#D1E0D6] text-3xl font-semibold absolute top-0 left-0 transform translate-y-20 scale-75">
-                            Take empty stomach in the morning and 1 hour post
-                            dinner
+                        <p className="text-white text-3xl font-semibold absolute top-0 left-0 transform translate-y-20 scale-75">
+                            Take empty stomach in the morning and 1 hour post dinner
                         </p>
                     </div>
                 </div>
             </div>
-            <div className="bg-[#DEEACD] h-auto text-center text-[gray] font-semibold font-jost py-10">
+            {/* <div className="bg-[#DEEACD] h-auto text-center text-[gray] font-semibold font-jost py-10">
                 <p className="uppercase py-5">result</p>
                 <p className="text-4xl text-black">What Will You Achieve</p>
                 <div>
                     <div className="flex justify-around py-10 px-10">
-                        <div className="w-[23%] h-40 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
+                        <div className="w-[23%] h-32 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
                             <div className="text-7xl text-[#006944] absolute -top-7 left-0">
+                                93
+                                <span className="font-playfair text-2xl font-extrabold">
+                                    %
+                                </span>
+                            </div>
+                            <p className="text-xl text-left absolute top-1/2 left-0 px-5">
+                                Felt improvement in digestive system
+                            </p>
+                        </div>
+                        <div className="w-[23%] h-32 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
+                            <div className="text-7xl text-[#006944] absolute -top-7  left-0">
+                                94
+                                <span className="font-playfair text-2xl font-extrabold">
+                                    %
+                                </span>
+                            </div>
+                            <p className="text-xl text-left absolute top-1/2 left-0 px-5">
+                                Observed huge improvement in Energy Levels
+                            </p>
+                        </div>
+                        <div className="w-[23%] h-32 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
+                            <div className="text-7xl text-[#006944] absolute -top-7  left-0">
                                 89
                                 <span className="font-playfair text-2xl font-extrabold">
                                     %
                                 </span>
                             </div>
                             <p className="text-xl text-left absolute top-1/2 left-0 px-5">
-                                Felt relief in joint pain and body pain
+                                Noticed improvement in skin health and glow
                             </p>
                         </div>
-                        <div className="w-[23%] h-40 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
+                        <div className="w-[23%] h-32 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
                             <div className="text-7xl text-[#006944] absolute -top-7  left-0">
                                 90
                                 <span className="font-playfair text-2xl font-extrabold">
@@ -894,90 +754,56 @@ export default function PainRelief() {
                                 </span>
                             </div>
                             <p className="text-xl text-left absolute top-1/2 left-0 px-5">
-                                Noticed reduction in inflammation
-                            </p>
-                        </div>
-                        <div className="w-[23%] h-40 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
-                            <div className="text-7xl text-[#006944] absolute -top-7  left-0">
-                                93
-                                <span className="font-playfair text-2xl font-extrabold">
-                                    %
-                                </span>
-                            </div>
-                            <p className="text-xl text-left absolute top-1/2 left-0 px-5">
-                                Obvserved healing of allied illnesses associated
-                                with fractures
-                            </p>
-                        </div>
-                        <div className="w-[23%] h-40 bg-white rounded-3xl text-center text-[#B3B3B3] font-light p-5 relative">
-                            <div className="text-7xl text-[#006944] absolute -top-7  left-0">
-                                94
-                                <span className="font-playfair text-2xl font-extrabold">
-                                    %
-                                </span>
-                            </div>
-                            <p className="text-xl text-left absolute top-1/2 left-0 px-5 opacity-0">
-                                Felt healthier with improved digestive health
-                                and better metobolism
+                                Noticed Noticed improvement in Joints
+                                health/Joint pain
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            
+            </div> */}
             <div className="bg-white h-auto text-center text-[gray] font-medium font-jost py-10">
                 <p className="py-2">COMPARISON</p>
                 <p className="text-4xl text-black">
                     See why Farm Naturelle is
                     <span className="text-[#006944]"> 100 times Better</span>
                 </p>
-                <div className="w-full flex flex-col lg:flex-row lg:justify-around sm:px-11 sm:py-5">
+                <div className="w-full flex justify-around px-11 py-5">
                     <div className="w-1/2 h-auto text-[#006944] rounded-xl text-center font-semibold font-jost">
-                        <p className="text-3xl py-10">
-                            Farm Naturelle Men Wellness Juice
-                        </p>
+                        {Name && <p className="text-3xl py-10">Pharmaceutical Capsules</p>}
                         <div className="w-full flex flex-col justify-center items-center font-light">
                             <p className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Organic
+                                Chemical-enriched
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_9.png?v=1703153821)] bg-[1%] bg-no-repeat text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Pure{" "}
+                                Causes Side Effects
                             </p>
                             <p className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Unprocessed, Raw
+                                Harsh Treatment
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Vector_9.png?v=1703153821)] bg-[1%] bg-no-repeat text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                No added sugar
-                            </p>
-                            <p className="bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                High Nutritional Value
+                                Short-term Relief
                             </p>
                         </div>
                     </div>
                     <div className="w-1/2 h-48 text-[#006944] rounded-xl text-center font-semibold font-jost">
-                        <p className="text-3xl py-10">Normal Juice</p>
+                        <p className="text-3xl py-10">Pharmaceutical Capsules</p>
                         <div className="w-full flex flex-col justify-center items-center font-light">
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Non-organic
+                                Chemical-enriched
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-white text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Added Chemicals
+                                Causes Side Effects
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Filtered, heated, pasteurized
+                                Harsh Treatment
                             </p>
                             <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-white text-left w-3/4 rounded-lg px-10 py-5 text-[#006944]">
-                                Added Sugar
-                            </p>
-                            <p className="bg-[url(https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ic_baseline-question-mark.png?v=1703226972)] bg-no-repeat bg-[1%] bg-[#006944] text-left w-3/4 rounded-lg px-10 py-5 text-white">
-                                Less Nutritional Value
+                                Short-term Relief
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-                                    
-            {/* Why Farm Naturelle */}
             <div className="h-auto bg-[url(https://farmnaturelle.com/cdn/shop/files/div.icon-real-deal.jpg?v=1696929748)] font-jost text-center py-10 text-white">
                 <p>WHY FARM NATURELLE?</p>
                 <p className="text-5xl">Here’s why we’re the real deal.</p>
@@ -1042,7 +868,7 @@ export default function PainRelief() {
                         </span>
                     </p>
                 </div>
-                <div className="w-full h-auto px-20 relative !flex !justify-center py-10 bg-[#F8F7F1] text-black">
+                <div className="w-full h-auto px-20 relative !flex !justify-center py-10 bg-[#F8F7F1]">
                     <button
                         className="absolute top-1/2 left-5 bg-white hover:bg-[#006944] text-black w-10 h-10 rounded-full hover:text-white flex justify-center items-center transition-colors duration-500 z-10"
                         onClick={prevSlick1}
@@ -1056,7 +882,7 @@ export default function PainRelief() {
                         <RiArrowRightSLine size={28} />
                     </button>
                     <Slider
-                        className="w-full"
+                        className="w-full bg-[#F8F7F1]"
                         arrows={false}
                         infinite={true}
                         slidesToScroll={4}
@@ -1064,9 +890,14 @@ export default function PainRelief() {
                         ref={(slider) => (sliderRef3 = slider)}
                     >
                         {products.map((item, index) => (
-                            <div key={index}>
-                                <Card key={index} id={nanoid()} {...item} />
-                            </div>
+                            <Link
+                                key={index}
+                                to={`/collections/${item.catagory}/products/${item.id}`}
+                            >
+                                <div>
+                                    <Card key={index} {...item} />
+                                </div>
+                            </Link>
                         ))}
                     </Slider>
                 </div>

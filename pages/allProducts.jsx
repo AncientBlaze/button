@@ -391,6 +391,8 @@ const products = [
         save: 17,
     },
     {
+        id: "hing",
+        catagory: "hing",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9491_800x.jpg?v=1703849891",
         PlaceHolder:
