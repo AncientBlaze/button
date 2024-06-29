@@ -102,6 +102,7 @@ import { Hingimg } from "../pages/products/product_data/Hing_data/Hing_data.js";
 import WellnessJuice from "../pages/WellnessJuices.jsx";
 import HerbalPages from "../pages/products/product_data/Herbal_data/HerbalPages.jsx";
 import { antiHangover, Detox, digestiveFitness, easingDiabetes, jointsPainCare, kidneyStoneCrusher, magicalMan, pilesVanish, smilingLiver, streesBuster, womenGlow } from "../pages/products/product_data/Herbal_data/Herbal_data.js";
+import Tea from "../pages/Tea.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -153,6 +154,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     <Route
                         path="/collections/shilajit"
                         element={<Shilajit />}
+                    />
+                    <Route
+                        path="/collections/tea"
+                        element={<Tea/>}
                     />
                     <Route path="/collections/saffron" element={<Saffron />} />
                     <Route
