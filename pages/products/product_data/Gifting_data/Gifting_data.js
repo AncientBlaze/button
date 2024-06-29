@@ -44,8 +44,29 @@ export const Gift12 = [
 export const Gift13 = [
     { img: "https://farmnaturelle.com/cdn/shop/files/redbox11.jpg?v=1708001405" }
 ];
-export const Gift14 = [];
-export const Gift15 = [];
-export const Gift16 = [];
-export const Gift17 = [];
-export const Gift18 = [];
+export const Gift14 = [
+    { img: "https://farmnaturelle.com/cdn/shop/files/250gx21.jpg?v=1703748861" }
+];
+export const Gift15 = [
+    { img: "https://farmnaturelle.com/cdn/shop/files/40x10g.jpg?v=1703749451" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/40x10.jpg?v=1708001407" }
+];
+export const Gift16 = [
+    { img: "https://farmnaturelle.com/cdn/shop/files/55X91.jpg?v=1708001372" }
+];
+export const Gift17 = [
+    { img: "https://farmnaturelle.com/cdn/shop/files/IMG_0265.jpg?v=1708001372" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/IMG_0268.jpg?v=1708001374" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/IMG_0263.jpg?v=1708001377" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/IMG_0264.jpg?v=1708001379" },
+];
+export const Gift18 = [
+    { img: "https://farmnaturelle.com/cdn/shop/files/IMG_7444.jpg?v=1703749908" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/File_009.jpg?v=1703749910" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/IMG_7449.jpg?v=1703749912" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/IMG_7450.jpg?v=1703749918" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/IMG_7451.jpg?v=1708001381" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/IMG_0284_e3325e89-0e10-472a-be7e-266892cf33cd.jpg?v=1708001383" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/IMG_0286_fc23f08c-202c-4030-8784-d124ae7411df.jpg?v=1703749926" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/IMG_0283_68d737ce-6744-4015-a2db-72c7a4e5dae5.jpg?v=1708001388" },
+];

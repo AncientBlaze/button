@@ -106,7 +106,7 @@ import ShilajitPages from "../pages/products/product_data/Shilajit_data/Shilajit
 import { shilajit1, shilajit2 } from "../pages/products/product_data/Shilajit_data/shilajit_data.js";
 import ShilajitHoneyPages from "../pages/products/product_data/Shilajit_data/ShilajitHoney.jsx";
 import GiftingPages from "../pages/products/product_data/Gifting_data/GiftingPages.jsx";
-import { Gift1, Gift10, Gift11, Gift12, Gift13, Gift2, Gift3, Gift4, Gift5, Gift6, Gift7, Gift8, Gift9 } from "../pages/products/product_data/Gifting_data/Gifting_data.js";
+import { Gift1, Gift10, Gift11, Gift12, Gift13, Gift14, Gift15, Gift16, Gift17, Gift18, Gift2, Gift3, Gift4, Gift5, Gift6, Gift7, Gift8, Gift9 } from "../pages/products/product_data/Gifting_data/Gifting_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -3395,23 +3395,156 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                         />}
                     />
                     <Route
-                        path="collections/gift/products/"
+                        path="collections/gift/products/250gx2-blue-box-with-dipper"
                         element={<GiftingPages
+                            name={"250gx2 blue box with dipper"}
+                            Name={"250gx2 blue box with dipper"}
+                            images={Gift14}
+                            price={995}
+                            previousPrice={1244}
+                            save={"21%"}
+                            price1={1195}
+                            previousPrice1={1494}
+                            save1={"20%"}
+                            price2={1195}
+                            previousPrice2={1494}
+                            save2={"20%"}
+                            price3={1290}
+                            previousPrice3={1613}
+                            save3={"20%"}
+                            value={"Any 2 type of honey + dipper"}
+                            value1={"1 Honey + 1 Tea + Dipper + infuser"}
+                            value2={"1 Honey + 1 Nuts in infused honey + 1 dipper"}
+                            value3={"Both Nuts in infused honey + Dipper"}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
                         />}
                     />
                     <Route
-                        path="collections/gift/products/"
+                        path="collections/gift/products/40g-x-10-honey"
                         element={<GiftingPages
+                            name={"40g x 10 honey"}
+                            Name={"40g x 10 honey"}
+                            images={Gift15}
+                            price={850}
+                            previousPrice={1063}
+                            save={"21%"}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
                         />}
                     />
                     <Route
-                        path="collections/gift/products/"
+                        path="collections/gift/products/gift-the-finest-honeys-9-bottles"
                         element={<GiftingPages
+                            name={"55g x9 Any combination of plain & infused honey"}
+                            Name={"55g x9 Any combination of plain & infused honey"}
+                            images={Gift16}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
                         />}
                     />
                     <Route
-                        path="collections/gift/products/"
+                        path="collections/gift/products/red-tulip-box-1"
                         element={<GiftingPages
+                            name={"red-tulip-box-1"}
+                            Name={"red-tulip-box-1"}
+                            images={Gift17}
+                            price={1595}
+                            previousPrice={1994}
+                            save={"21%"}
+                            price1={1695}
+                            previousPrice1={2119}
+                            save1={"20%"}
+                            price2={1795}
+                            previousPrice2={2244}
+                            save2={"20%"}
+                            price3={1650}
+                            previousPrice3={2063}
+                            save3={"20%"}
+                            price4={2190}
+                            previousPrice4={2738}
+                            save4={"20%"}
+                            value={"All plain honey"}
+                            value1={"Infused honey or tea + 2 Plain honey"}
+                            value2={"2 Plain honey or tea + 1 nuts in infused honey"}
+                            value3={"1 plain + 1 infused + 1 tea"}
+                            value4={"All 3 nuts in infused honey"}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
+                        />}
+                    />
+                    <Route
+                        path="collections/gift/products/chocolate-tulip-box"
+                        element={<GiftingPages
+                            name={"Chocolate Tulip Box with Dipper and pepper bag"}
+                            Name={"Chocolate Tulip Box with Dipper and pepper bag"}
+                            images={Gift18}
+                            price={1395}
+                            previousPrice={1744}
+                            save={"21%"}
+                            price1={1395}
+                            previousPrice1={1744}
+                            save1={"21%"}
+                            price2={1595}
+                            previousPrice2={1994}
+                            save2={"20%"}
+                            price3={1395}
+                            previousPrice3={1744}
+                            save3={"20%"}
+                            price4={1395}
+                            previousPrice4={1744}
+                            save4={"20%"}
+                            price5={1790}
+                            previousPrice5={2238}
+                            save5={"20%"}
+                            value={"Both plain Honey"}
+                            value1={"1 infused honey/tea + 1 plain honey"}
+                            value2={"1 plain + 1 Nuts in infused honey"}
+                            value3={"Both infused honey"}
+                            value4={"1 infused + 1 tea"}
+                            value5={"Both with nuts in infused honey"}
+                            info1={"Festivals & Holidays"}
+                            info2={"Special Occasions"}
+                            info3={"Corporate gifting"}
+                            info4={"Surprise your loved ones"}
+                            T1Text={"Surprise your loved ones:"}
+                            T2Text={"Special Occasions:"}
+                            T3Text={"Festivals & Holidays:"}
+                            T1SubText={" Express your care and appreciation with a thoughtful gesture, no occasion needed. Show you're thinking of them with a gift that promotes relaxation and self-care."}
+                            T2SubText={" Celebrate milestones such as Birthdays & anniversaries, achievements such as graduation with a gift that nourishes both body and soul."}
+                            T3SubText={" Ignite the festive spirit or ring in the holidays with vibrant tea blends, Masala Chai, and flavorful honeys. Spread joy and warmth with a thoughtful gift that embodies the spirit of giving."}
                         />}
                     />
                 </Routes>

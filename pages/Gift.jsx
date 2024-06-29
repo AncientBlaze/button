@@ -144,6 +144,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "250gx2-blue-box-with-dipper",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/250gx21_800x.jpg?v=1703748861",
             title: "250gx2 blue box...",
@@ -153,6 +154,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "40g-x-10-honey",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/40x10g_800x.jpg?v=1703749451",
             PlaceHolder:
@@ -164,6 +166,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "gift-the-finest-honeys-9-bottles",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/55X91_800x.jpg?v=1708001372",
             title: "55g x9 Any...",
@@ -173,6 +176,7 @@ function Gift() {
             hidden: "hidden",
         },
         {
+            id: "red-tulip-box-1",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/IMG_0265_800x.jpg?v=1708001372",
             PlaceHolder:

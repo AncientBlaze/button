@@ -158,17 +158,17 @@ export default function GiftingPages({
                                     infinite={false}
                                     asNavFor={nav1}
                                     ref={(slider) => (sliderRef2 = slider)}
-                                    slidesToShow={4}
+                                    slidesToShow={images.length}
+                                    adaptiveHeight={true}
                                     slidesToScroll={1}
                                     arrows={false}
                                     dots={false}
                                     focusOnSelect={true}
                                 >
                                     {images.map((item, index) => (
-                                        <div key={index}>
+                                        <div key={index} className="p-1 group">
                                             <img
-                                                height={120}
-                                                width={120}
+                                                className="border m-2 space-x-1 border-black"
                                                 src={item.img}
                                                 alt={item.alt}
                                                 loading="lazy"
