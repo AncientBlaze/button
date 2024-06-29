@@ -103,6 +103,8 @@ import WellnessJuice from "../pages/WellnessJuices.jsx";
 import HerbalPages from "../pages/products/product_data/Herbal_data/HerbalPages.jsx";
 import { antiHangover, Detox, digestiveFitness, easingDiabetes, jointsPainCare, kidneyStoneCrusher, magicalMan, pilesVanish, smilingLiver, streesBuster, womenGlow } from "../pages/products/product_data/Herbal_data/Herbal_data.js";
 import Tea from "../pages/Tea.jsx";
+import TeaPages from "../pages/products/product_data/Tea_data/TeaPages.jsx";
+import { appleCinnamonGreenTea } from "../pages/products/product_data/Tea_data/Tea_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -157,7 +159,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     />
                     <Route
                         path="/collections/tea"
-                        element={<Tea/>}
+                        element={<Tea />}
                     />
                     <Route path="/collections/saffron" element={<Saffron />} />
                     <Route
@@ -3909,6 +3911,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     <Route
                         path="collections/wellness-juice"
                         element={<WellnessJuice />} />
+                    <Route
+                        path="collections/tea/products/apple-cinnamon-tea"
+                        element={<TeaPages
+                            images={appleCinnamonGreenTea}
+                        />
+                        } />
                 </Routes>
             </Provider>
         </BrowserRouter>

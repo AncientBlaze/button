@@ -1,10 +1,5 @@
 export const appleCinnamonGreenTea = [
     { img: "https://farmnaturelle.com/cdn/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_800x.gif" },
-    { img: "" },
-    { img: "" },
-    { img: "" },
-    { img: "" },
-    { img: "" },
 ];
 export const moringaGreenTea = [
     { img: "https://farmnaturelle.com/cdn/shop/files/2_6d22d326-4bd5-48a4-a01f-d019862ff85b.jpg?v=1703749394" },
