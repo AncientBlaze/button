@@ -69,6 +69,11 @@ function Cart({ handleClose }) {
                                                             cartProduct.quantity}
                                                     </p>
                                                 ) : null}
+                                                {cartProduct.PreviousPrice ? (
+                                                    <p className="text-center text-lg line-through text-red-700">
+                                                        Rs.{cartProduct.PreviousPrice * cartProduct.quantity}
+                                                    </p>
+                                                ) : null}
                                             </div>
                                             <div className="w-full flex justify-center items-center">
                                                 <RiDeleteBin5Line

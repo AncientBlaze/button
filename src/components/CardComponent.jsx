@@ -1,8 +1,14 @@
+/* eslint-disable react/prop-types */
 import { IoIosHeartEmpty, IoIosHeart } from "react-icons/io";
 import PropTypes from "prop-types";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { add } from "../store/cartSlice";
+import { addToWishlist,remove } from "../store/wishSlice";
+import { nanoid } from "@reduxjs/toolkit";
 
 const CardComponent = ({
+    id,
     ImageUrl,
     PlaceHolder,
     title,
@@ -10,14 +16,34 @@ const CardComponent = ({
     content,
     save,
 }) => {
-    const [isLiked, setIsLiked] = useState(false);
+    const dispatch = useDispatch();
 
-    const handleLike = () => {
-        return setIsLiked(!isLiked);
+    const [isLiked, setIsLiked] = useState(
+        () => localStorage.getItem(`liked-${id}`) === "true",
+    );
+    const [count, setCount] = useState(1);
+    // eslint-disable-next-line no-unused-vars
+    const [selectedOption1, setSelectedOption1] = useState(PreviousPrice);
+    const handleLike = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        dispatch(addToWishlist({ id, title, ImageUrl, content }));
+        setIsLiked(true);
+        localStorage.setItem(`liked-${id}`, "true");
+    };
+
+    const handleUnlike = (e) => {
+        e.preventDefault();
+        dispatch(remove(id));
+        setIsLiked(false);
+        if (localStorage.getItem(`liked-${id}`)) {
+            localStorage.removeItem(`liked-${id}`);
+            setIsLiked(false);
+        }
     };
 
     const likeIcon = isLiked ? (
-        <IoIosHeart size={28} onClick={handleLike} />
+        <IoIosHeart color="black" size={28} onClick={handleUnlike} />
     ) : (
         <IoIosHeartEmpty size={28} onClick={handleLike} />
     );
@@ -61,7 +87,13 @@ const CardComponent = ({
                 </p>
                 <div className={saveClasses}>Save {save}%</div>
                 <div className="flex justify-center items-center">
-                    <button className={buttonClasses}>Add to Cart</button>
+                    <button className={buttonClasses}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            dispatch(add({ id: nanoid(), quantity: count, title, content, PreviousPrice: selectedOption1, ImageUrl }));
+                            setCount(count);
+                        }
+                        }>Add to Cart</button>
                 </div>
             </div>
         </div>
