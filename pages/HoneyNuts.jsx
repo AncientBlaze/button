@@ -6,6 +6,7 @@ function HoneyNuts() {
     const products = [
         {
             id: "wallnut-in-cinnamon",
+            catagory:"nuts-in-honey",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/Walnut2_800x.jpg?v=1703749109",
             PlaceHolder:
@@ -17,6 +18,7 @@ function HoneyNuts() {
         },
         {
             id: "figs-in-cinnamon-honey",
+            catagory:"nuts-in-honey",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/2_76b4bceb-21eb-40bc-8b49-d94fff2ccc61_800x.jpg?v=1703849709",
             PlaceHolder:
@@ -28,6 +30,7 @@ function HoneyNuts() {
         },
         {
             id: "cashew-in-cinnamon-honey",
+            catagory:"nuts-in-honey",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/Cashew2_800x.jpg?v=1703749861",
             PlaceHolder:
@@ -39,6 +42,7 @@ function HoneyNuts() {
         },
         {
             id: "mix-nut-in-cinnamon-honey",
+            catagory:"nuts-in-honey",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/2_76b4bceb-21eb-40bc-8b49-d94fff2ccc61_800x.jpg?v=1703849709",
             PlaceHolder:
@@ -50,6 +54,7 @@ function HoneyNuts() {
         },
         {
             id: "almond-in-cinnamon-honey",
+            catagory:"nuts-in-honey",
             ImageUrl:
                 "https://farmnaturelle.com/cdn/shop/files/Almond2_800x.jpg?v=1708001070",
             PlaceHolder:

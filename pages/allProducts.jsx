@@ -439,6 +439,7 @@ const products = [
     },
     {
         id: "jungle-flora-honey",
+        catagory: "Honey",
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/3_3f8e2c55-7493-4cb5-9602-9b75acfe9ce7_800x.jpg?v=1708763010",
         ImageUrl:
@@ -592,6 +593,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "wallnut-in-cinnamon",
+        catagory: "nuts-in-honey",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Walnut2_800x.jpg?v=1703749109",
         PlaceHolder:
@@ -602,16 +605,20 @@ const products = [
         save: 40,
     },
     {
+        id: "figs-in-cinnamon-honey",
+        catagory: "nuts-in-honey",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_76b4bceb-21eb-40bc-8b49-d94fff2ccc61_800x.jpg?v=1703849709",
         PlaceHolder:
-            "https://farmnaturelle.com/cdn/shop/files/2_76b4bceb-21eb-40bc-8b49-d94fff2ccc61_800x.jpg?v=1703849709",
+            "https://farmnaturelle.com/cdn/shop/files/3_881facd8-88e6-44cf-b3d6-8bc762df73f8_800x.jpg?v=1708001119",
         title: "Figs in Cinnamon",
         content: 599,
         PreviousPrice: 799,
         save: 25,
     },
     {
+        id: "cashew-in-cinnamon-honey",
+        catagory: "nuts-in-honey",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Cashew2_800x.jpg?v=1703749861",
         PlaceHolder:
@@ -622,16 +629,20 @@ const products = [
         save: 33,
     },
     {
+        id: "mix-nut-in-cinnamon-honey",
+        catagory: "nuts-in-honey",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/2_76b4bceb-21eb-40bc-8b49-d94fff2ccc61_800x.jpg?v=1703849709",
         PlaceHolder:
-            "https://farmnaturelle.com/cdn/shop/files/2_76b4bceb-21eb-40bc-8b49-d94fff2ccc61_800x.jpg?v=1703849709",
+            "https://farmnaturelle.com/cdn/shop/files/3_89ebac74-72a2-4c03-946d-b17fd95e6a18_800x.jpg?v=1708001119",
         title: "Mix Nut in...",
         content: 539,
         PreviousPrice: 799,
         save: 33,
     },
     {
+        id: "almond-in-cinnamon-honey",
+        catagory: "nuts-in-honey",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Almond2_800x.jpg?v=1708001070",
         PlaceHolder:
@@ -642,6 +653,8 @@ const products = [
         save: 18,
     },
     {
+        id: "himalayan-shilajit-shilajeet-resin-bull-power-performance-booster-for-endurance-and-stamina-100-ayurvedic-silajit-for-man-woman",
+        catagory: "shilajit",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/ShilajitFront25g_800x.png?v=1711173556",
         PlaceHolder:
@@ -652,6 +665,8 @@ const products = [
         save: 26,
     },
     {
+        id: "himalayan-shilajit-infused-honey-300gm-help-improve-strength-stamina-for-men-women-shilajeet-gold-infused-honey",
+        catagory: "shilajit",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Shilaji_800x.png?v=1711014184",
         PlaceHolder:
@@ -662,6 +677,8 @@ const products = [
         save: 55,
     },
     {
+        id: "stevia-sugar-replacement",
+        catagory: "stevia",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/Rectangle9475_800x.jpg?v=1708001356",
         PlaceHolder:
@@ -712,6 +729,8 @@ const products = [
         save: 18,
     },
     {
+        id: "150x4-red-box-with-dipper",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/150x10g1_800x.jpg?v=1703748858",
         title: "150 x 4 red box...",
@@ -721,6 +740,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "blue-foliage-box-with-dipper-spoon-and-pepper-bag",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/IMG_8787-2_207e35ba-a884-47df-a550-8b66a93b8909_800x.jpg?v=1708001405",
         PlaceHolder:
@@ -732,6 +753,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "red-foliage-box-with-dipper-spoon-and-pepper-bag",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/IMG_8787-3_800x.jpg?v=1703749179",
         PlaceHolder:
@@ -743,6 +766,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "775g x 1 Kraft Wooden Box with Dipper Plain Or Infused Honey Or Nuts in cinnamon honey",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/IMG_80161_400x_f853f57e-7e3d-4dd4-b837-5efb7a862740_800x.jpg?v=1713351149",
         title: "775 x 1 red box...",
@@ -752,6 +777,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "400g-x-1-in-kraft-wooden-box-with-dipper-plain-honey",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/IMG_80101_800x.jpg?v=1703749446",
         PlaceHolder:
@@ -763,6 +790,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "55g-x-7-all-infused-honey-spoon-a-different-flavor-for-each-day-of-the-week",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/IMG_78421_800x.jpg?v=1703749456",
         title: "55g x 7...",
@@ -772,6 +801,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "750gx2-in-jute-bag-with-dipper",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/IMG_78423_800x.jpg?v=1708001416",
         title: "750gx2 in jute...",
@@ -781,6 +812,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "300gx1-in-jute-bag-with-dipper",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/IMG_78371_400x_e004947d-aac3-4312-b16b-8d7cb2a5df7d_800x.jpg?v=1713351098",
         title: "300gx1 in jute...",
@@ -790,6 +823,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "350g-x-3-in-jute-bag-with-dipper",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/IMG_78431_800x.jpg?v=1703748871",
         title: "350g x 3...",
@@ -799,6 +834,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "300g-x-2-in-jute-bag-with-dipper",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/150x10g1_b80ce7c8-9145-4da7-abe8-5b60207ef7fe_800x.jpg?v=1713351098",
         title: "300g x 2...",
@@ -808,6 +845,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "775g-x-1-with-dipper-in-embroidered-jute-potli",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/775gpotli1_800x.jpg?v=1703749469",
         title: "775g x 1...",
@@ -817,6 +856,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "400g-x-1-with-dipper-in-embroidered-jute-potli",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/400gpotli1_800x.jpg?v=1703749449",
         title: "400g x 1...",
@@ -826,6 +867,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "350-g-x-3-red-box-with-dipper-infuser",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/redbox11_800x.jpg?v=1708001405",
         title: "350 g x...",
@@ -835,6 +878,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "250gx2-blue-box-with-dipper",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/250gx21_800x.jpg?v=1703748861",
         title: "250gx2 blue box...",
@@ -844,6 +889,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "40g-x-10-honey",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/40x10g_800x.jpg?v=1703749451",
         PlaceHolder:
@@ -855,6 +902,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "gift-the-finest-honeys-9-bottles",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/55X91_800x.jpg?v=1708001372",
         title: "55g x9 Any...",
@@ -864,6 +913,8 @@ const products = [
         hidden: "hidden",
     },
     {
+        id: "red-tulip-box-1",
+        catagory: "gift",
         ImageUrl:
             "https://farmnaturelle.com/cdn/shop/files/IMG_0265_800x.jpg?v=1708001372",
         PlaceHolder:
@@ -874,6 +925,17 @@ const products = [
         save: 20,
         hidden: "hidden",
     },
+    {
+        id: "chocolate-tulip-box",
+        catagory: "gift",
+        ImageUrl: "https://farmnaturelle.com/cdn/shop/files/IMG_7444_800x.jpg?v=1703749908",
+        PlaceHolder: "https://farmnaturelle.com/cdn/shop/files/File_009_800x.jpg?v=1703749910",
+        title: "Chocolate Tulip Box",
+        PreviousPrice: 1744,
+        content: 1395,
+        save: 20,
+        hidden: "hidden"
+    }
 ];
 
 function All_Products() {
