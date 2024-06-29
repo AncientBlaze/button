@@ -34,9 +34,9 @@ const products = [
     {
         id: "apple-cinnamon-tea",
         ImageUrl:
-            "https://farmnaturelle.com/cdn/shop/files/2_38e8be56-efc8-4584-bb40-a9998cd27a2f_800x.jpg?v=1703749530",
+            "https://farmnaturelle.com/cdn/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_800x.gif",
         PlaceHolder:
-            "https://farmnaturelle.com/cdn/shop/files/3_6e7d5bcd-67a9-470c-88e9-955ce7799ee3_800x.jpg?v=1708001287",
+            "https://farmnaturelle.com/cdn/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_800x.gif",
         title: "Apple Cinnamon Green...",
         content: 240,
         PreviousPrice: 389,
