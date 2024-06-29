@@ -549,6 +549,7 @@ export default function HerbalPages({
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[40%] flex-col items-center justify-center">
                             <div className="w-full flex items-center rounded-[50%] bg-[#DEEEC0]">
                                 <img
+                                    className=""
                                     src={extraImage}
                                     alt="Benefits"
                                     loading="lazy"

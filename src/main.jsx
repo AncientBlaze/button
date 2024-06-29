@@ -101,7 +101,7 @@ import HingPages from "../pages/products/product_data/Hing_data/HingPages.jsx";
 import { Hingimg } from "../pages/products/product_data/Hing_data/Hing_data.js";
 import WellnessJuice from "../pages/WellnessJuices.jsx";
 import HerbalPages from "../pages/products/product_data/Herbal_data/HerbalPages.jsx";
-import { magicalMan, pilesVanish, smilingLiver } from "../pages/products/product_data/Herbal_data/Herbal_data.js";
+import { antiHangover, Detox, digestiveFitness, easingDiabetes, jointsPainCare, kidneyStoneCrusher, magicalMan, pilesVanish, smilingLiver, streesBuster, womenGlow } from "../pages/products/product_data/Herbal_data/Herbal_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -278,35 +278,278 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             info3={"Shilajit to Your Rescue"}
                             Tab1={"Experience holistic enhancements for your intimate well-being with our herbal capsules. Crafted from pure, organic ingredients, our capsules offer a natural path to invigorate your sexual health. Discover a natural way to elevate your vitality, fostering a deeper connection and enriched wellness."}
                             Tab3={"Satavari Dry, Shafed Musli, Shilajeet, Konch Seed, Watermelon Seed, Aloevera, Ashwagandha, Beetroot"}
+                            T1SubText={"Relieve stress, soothe anxiety, and ignite passion effortlessly. Discover newfound vitality and endurance in men while enhancing libido in both genders."}
+                            T2SubText={" Elevate your desire with increased libido while promoting healthier testosterone levels. Unleash your potential for enhanced sexual performance the pure, organic way."}
+                            T3SubText={" This ancient treasure ignites testosterone production, enhancing your sexual prowess. Embrace the power of pure, organic herbal capsules to invigorate your intimate moments effortlessly."}
+                            h4_1={"Improving Sexual Wellness with Kaunch Seeds"}
+                            h4_2={"All-in-One Intimacy Solutions"}
+                            h4_3={"Nurturing Wellness Inside Out"}
+                            h4_4={"Elevate Intimate Moments with Ashwagandha"}
+                            p_1={"Kaunch seeds are a natural aphrodisiac that ignites desire and enhances virility. Boosting both sperm count and motility, it elevates your intimate wellness. Elevate your confidence with increased semen production."}
+                            p_2={"Rediscover your desires, nurture intimate moisture, and alleviate discomfort during intimacy."}
+                            p_3={"Crafted from pure, natural ingredients, these capsules serve as a gentle tonic for your general health. Embrace the power of nature's goodness in every capsule, revitalizing your body and invigorating your spirit."}
+                            p_4={"AshwagandhaEnhance your intimacy naturally and embrace a fulfilling connection. Ashwagandha, a time-honored herb, is renowned for kindling desire, heightening pleasure, and boosting performance."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/1_Magical_Man_Booster.png?v=1703237213"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/2_Magical_Man_Booster.png?v=1703237213"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/3_Magical_Man_Booster.png?v=1703237213"}
                         />
                         } />
                     <Route
                         path="/collections/herbal-juice/products/digestive-fitness"
-                        element={<HerbalPages />}
+                        element={<HerbalPages
+                            name={"DIGESTIVE FITNESS Juice"}
+                            Name={"DIGESTIVE FITNESS Juice"}
+                            images={digestiveFitness}
+                            price={749}
+                            previousPrice={1656}
+                            save={"55%"}
+                            price1={1495}
+                            previousPrice1={3555}
+                            save1={"58%"}
+                            price2={2245}
+                            previousPrice2={5612}
+                            save2={"60%"}
+                            Tab1={"Your Digestion's Defender is here! Elevate your immunity the natural way with Farm Naturelle Digestive Care Capsules. These capsules empower your digestion, building a strong defense against illnesses. Enjoy a healthier you, with a fortified immune system guarding against diseases."}
+                            T1SubText={" Our herbal capsules gently encourage gastric glands to release essential juices. This aids in breaking down complex nutrients like proteins, fats, and sugars, promoting gut health. Bid farewell to indigestion, diarrhea, and nausea, and embrace a vibrant, discomfort-free life."}
+                            T2SubText={" A Hidden Warrior: Farm Naturelle Herbal capsules lovingly enhance digestion, boosting the power of natural enzymes in your tummy and small gut. Feel the comfort as your belly dances with joy, making every meal a delight."}
+                            T3SubText={" Ajwain's active enzymes naturally enhances stomach acid flow. Experience soothing relief from indigestion, bloating, and gas."}
+                            Tab3={"Jeera, Hing, Ajwain, Dhaniya, Triphla, Garcinia, Digestive Enzyme"}
+                            h4_1={"Healthy Tummy, Happy You"}
+                            h4_2={"Age-old Secret for Your Tummy"}
+                            h4_3={"Natural Enzymes in Capsules"}
+                            h4_4={"Soothing Acid Reflux"}
+                            p_1={"It is a natural blend packed with fibers that enhance digestion and promote healthy bowel movements. Embrace the power of anti-diabetic properties as it supports balanced insulin growth, fostering overall well-being."}
+                            p_2={"Our herbal capsules bring you the power of nature's gentle touch to soothe digestion naturally."}
+                            p_3={"Packed with the essence of beneficial pro-biotics and natural enzymes, these capsules work harmoniously to support your digestion."}
+                            p_4={"Naturally crafted to calm acid reflux and ease pesky heartburn, these capsules work harmoniously to enhance digestion. Discover the soothing power of pure, organic ingredients, giving you a happier, healthier gut."}
+                        />
+                        }
                     />
                     <Route
                         path="/collections/herbal-juice/products/easing-diabetes"
-                        element={<HerbalPages />}
+                        element={<HerbalPages
+                            name={"Easing Diabetes"}
+                            Name={"Easing Diabetes"}
+                            images={easingDiabetes}
+                            price={949}
+                            previousPrice={2056}
+                            save={"54%"}
+                            price1={1895}
+                            previousPrice1={4355}
+                            save1={"56%"}
+                            price2={2845}
+                            previousPrice2={6812}
+                            save2={"58%"}
+                            info1={"Energize Your Health Naturally"}
+                            info2={"Balancing Blood Sugar, the Natural Way"}
+                            info3={"Giloy- BFF in Diabetes"}
+                            Tab1={"Farm Naturelle Diabetes Care Capsules aid in balancing blood sugar, igniting metabolism, and enhancing digestion. These capsules lovingly encourage insulin release, fostering overall well-being."}
+                            Tab3={"Jamun seed, dry Karela, Dry Giloy tukdi, dry Tulshi, Panchtatva, Neem leaves, Fenugreek ( Methi), Gudmar, Vijaysar, Amla Dry"}
+                            T1SubText={" Transforming starch into vital energy, our herbal capsules offer holistic support for diabetes management. Quenching thirst and reducing frequent urination, they address common symptoms, naturally."}
+                            T2SubText={" Maintains healthy blood sugar for both type I and type II diabetes, harnessing the power of nature. Experience the goodness of our herbal capsules, working gently to support balanced glucose levels."}
+                            T3SubText={" Giloy Supports Insulin Production and Manages Blood Sugar. Embrace the natural goodness of Giloy, which aids your body in making insulin. This incredible herb also works to tackle extra glucose, leading to healthier blood sugar levels."}
+                            h4_1={"Tulsi- A Superfood"}
+                            h4_2={"Your Natural Solution for Diabetes"}
+                            h4_3={"Easy Absorption of Carbs & Sugar"}
+                            h4_4={"Keeps Pancrease Healthy"}
+                            p_1={"Farm Naturelle herbal capsules are a natural way to boost pancreatic health, enhancing insulin secretion and beta-cell function. Experience the goodness of organic Tulsi, working to maintain balanced blood sugar levels."}
+                            p_2={"Packed with flavonoids, triterpenoids, anti-viral agents, and glycosides, our capsules offer an effective way to regulate blood sugar levels."}
+                            p_3={"With nourishing fiber, our herbal capsules gently ease digestion, naturally steadying the uptake of carbs and sugars."}
+                            p_4={"Safeguard your precious pancreatic cells, boost insulin production, and naturally lower blood sugar levels. Our organic formula embraces your well-being, providing a shield against damage while supporting healthy sugar balance."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/B_Diabetic_Care_Juice.png?v=1703237231"}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/1_Diabetic_Care_Juice.png?v=1703237213"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/2_Diabetic_Care_Juice.png?v=1703237213"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/3_Diabetic_Care_Juice.png?v=1703237213"}
+                        />
+                        }
                     />
                     <Route
                         path="/collections/herbal-juice/products/anti-hangover-ready-to-drink-shot"
-                        element={<HerbalPages />}
+                        element={<HerbalPages
+                            name={"Anti Hangover Juice | Refresh & Recover |"}
+                            Name={"Anti Hangover Juice"}
+                            images={antiHangover}
+                            price={949}
+                            previousPrice={2056}
+                            save={"54%"}
+                            price1={1895}
+                            previousPrice1={4355}
+                            save1={"56%"}
+                            price2={2845}
+                            previousPrice2={6812}
+                            save2={"58%"}
+                            info1={"Your Natural Hangover Solution"}
+                            info2={"Your Instant Rescue from Hangovers"}
+                            info3={"Revitalize Rapidly"}
+                            Tab1={"Get relief from after celebrations like never before with our ready-to-drink anti-hangover shot. Alleviate nausea, dehydration, and discomfort effortlessly. This potent remedy, enriched with Moringa's vital nutrients, soothes hangover woes by replenishing lost vitamins. Its carb-rich content aids glucose metabolism, boosting energy levels. Hydrate & rejuvenate with our natural solution."}
+                            Tab3={"Ginger, Sugar, Salt, Ginseng, Moringa"}
+                            T1SubText={" Get relief from motion sickness and nausea with ReviveEase, a ready-to-drink anti-hangover shot. This powerful remedy harnesses the potency of natural spices, making it an ideal choice to alleviate hangover symptoms. Swiftly recover with this simple, effective home cure that's trusted across India."}
+                            T2SubText={" Say goodbye to morning grogginess! After a night of fun, excessive alcohol can disrupt your glucose metabolism. Our solution? A delicious snack packed with carbs and honey's fructose. These ingredients shoot up your blood sugar, giving you an energy boost when you need it most."}
+                            T3SubText={" Rehydrate swiftly and replenish lost sugars and vital salts with our ready-to-drink anti-hangover shot. Bounce back after a night out! Regain hydration, essential nutrients, and energy in one shot. Your go-to remedy, simplified for you. Say goodbye to hangovers the easy way."}
+                            h4_1={"Say goodbye to morning-after misery"}
+                            p_1={"Our ready-to-drink anti-hangover shot is your ultimate companion after a night of fun. Banish thirst, nausea, and dehydration in one go. Specially formulated for quick relief, it's your ticket to feeling fresh and energized. Embrace your mornings without the hangover blues."}
+                            h4_2={"Your Ultimate Hangover Companion"}
+                            p_2={"Experience rejuvenation with our Moringa-infused anti-hangover shot. Replenish vital vitamins and nutrients lost overnight. Combat hangovers the natural way, as Moringa soothes and restores."}
+                        />
+                        }
                     />
                     <Route
                         path="/collections/herbal-juice/products/kidney-stone-crusher-juice"
-                        element={<HerbalPages />}
+                        element={<HerbalPages
+                            name={"Ayurvedic Kidney Stone Crusher Juice | Combination of Patharchatta and Gokhru Beej With No Side Effect"}
+                            Name={"Ayurvedic Kidney Stone Crusher Juice"}
+                            images={kidneyStoneCrusher}
+                            price={999}
+                            previousPrice={2156}
+                            save={"54%"}
+                            price1={1995}
+                            previousPrice1={4555}
+                            save1={"56%"}
+                            price2={2995}
+                            previousPrice2={7112}
+                            save2={"58%"}
+                            info1={"Breaks Stone Efficiently"}
+                            info2={"Nature's Stone-Breaker"}
+                            info3={"Cleanses Urinary Bladder"}
+                            Tab1={"Farm Naturelle Kidney Stone Crusher Juice, a potent natural elixir designed to gently dissolve small kidney and gall bladder stones. Crafted from pure, organic ingredients, this herbal marvel maintains your urinary tract's crystal-clear purity, ensuring uninterrupted urine flow."}
+                            Tab3={"pattharchatta, Gorju beej, punarnava bark, ajwain"}
+                            T1SubText={" This herbal juice delicately aid in breaking down kidney Stone and gall bladder deposits into smaller fragments. Embrace the benefits of our pure and organic blends, promoting your well-being through nature's touch."}
+                            T2SubText={" Kidney Stone Crusher Juices also known as pattharchatta or patharchatta in Hindi. The name draws from its remarkable power – 'pathar' signifies stone and 'chatta' implies breaking. Just as this name suggests, our juice aids in naturally maintaining your well-being, helping your body gently break down barriers to health."}
+                            T3SubText={" This herbal juices gently purify and invigorate your urinary bladder and kidneys, promoting their well-being. Our thoughtfully crafted blends provide a nurturing cleanse, maintaining your urinary health. Experience the goodness of 100% pure, natural, and organic ingredients, handpicked to support your vitality."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Stone_care_front-min.png?v=1697791504"}
+                            h4_1={"No Nasties"}
+                            h4_2={"Gently Flushes Kidneys"}
+                            h4_3={"For Kidney & Gall Bladder Health"}
+                            h4_4={"Helps Flush Out Particles"}
+                            p_1={"Get purity of our herbal juices: no added sugar, colors, vitamins, or minerals. Experience the natural essence without worries of side effects."}
+                            p_2={"Our herbal juices delicately aid in purging away particles and oxalates that could lead to stone formation. Embrace the power of nature's cleanse for your kidneys' lasting well-being."}
+                            p_3={"A gentle and potent solution crafted to aid in breaking down small kidney and gall bladder stones. Embrace the benefits of 100% pure, natural, and organic ingredients."}
+                            p_4={"Our unique formulation delicately fragments kidney and gall bladder deposits into tiny particles, effortlessly purifying your body. Embrace the feeling of vitality as these particles naturally wash away, leaving you refreshed and renewed."}
+                        />}
                     />
                     <Route
                         path="/collections/herbal-juice/products/women-glow"
-                        element={<HerbalPages />}
+                        element={<HerbalPages
+                            name={"Glowing Women"}
+                            Name={"Glowing Women"}
+                            images={womenGlow}
+                            price={899}
+                            previousPrice={1956}
+                            save={"55%"}
+                            price1={1795}
+                            previousPrice1={4155}
+                            save1={"57%"}
+                            price2={2695}
+                            previousPrice2={6512}
+                            save2={"59%"}
+                            info1={"Revitalize Your Skin"}
+                            info2={"Biotin-rich Capsules"}
+                            info3={"Pomegranate’s Goodness for You"}
+                            Tab1={"Farm Naturelle herbal capsules gracefully diminish wrinkles and fine lines, and youthful skin. Plant-based collagen enhances skin's suppleness, while biotin fosters hydration, imparting a silky texture. Pomegranate, a potent antioxidant, invigorates skin, accelerating cell renewal for an age-defying allure."}
+                            Tab3={"Veg Collagen, Biotin, Pomegranate, Shatavari, Mulethi"}
+                            T1SubText={" Our herbal capsules work wonders in minimizing wrinkles and fine lines, leaving your face and neck looking youthful. Experience enhanced skin elasticity as our veg collagen formulation restores and rejuvenates, giving you firm and supple skin."}
+                            T2SubText={"Revitalizing from within, our herbal capsules, rich in biotin, work wonders for your skin. Experience enhanced hydration, a silky-smooth texture, and a radiant appearance."}
+                            T3SubText={" With its natural antioxidants, our herbal capsules turn back the clock on aging. Experience the marvel as it accelerates cell renewal, revealing your radiant essence. Embrace the power of nature for timeless beauty and rejuvenation."}
+                            h4_1={"Age-Defying Magic of Shatavari"}
+                            p_1={"Shatavari is a cherished natural gem known for its age-reversing prowess. Unveil nature's secret to graceful aging with our pure and organic herbal capsules. Shatavari, your ultimate ally for radiant skin, strong vitality, and a youthful spirit."}
+                            h4_2={"Bring Out Your Skin's Inner Glow"}
+                            p_2={"With the magic of nature with our herbal capsules, brimming with beneficial compounds and antioxidants. Revel in skin-soothing and brightening wonders that gently fade dark spots, creating an even, luminous skin tone."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Stone_care_front-min.png?v=1697791504"}
+                        />
+                        }
                     />
                     <Route
                         path="/collections/herbal-juice/products/stress-buster"
-                        element={<HerbalPages />}
-                    />
+                        element={<HerbalPages
+                            name={"Stress Buster"}
+                            Name={"Stress Buster"}
+                            images={streesBuster}
+                            price={799}
+                            previousPrice={1756}
+                            save={"54%"}
+                            price1={1595}
+                            previousPrice1={3755}
+                            save1={"58%"}
+                            price2={2395}
+                            previousPrice2={5912}
+                            save2={"59%"}
+                            info1={"Ashwagandha"}
+                            info2={"Brahmi"}
+                            info3={"Find Peace with Jatamansi Herbal Juice"}
+                            Tab1={"Thoughtfully crafted to create a soothing stress-relief regimen. Effortlessly unwind as these natural elixirs gently ease away the burdens of daily life, promoting a serene sense of calm. Experience the power of nature's embrace, as our juices assist in alleviating overall stress, allowing you to savor each moment fully."}
+                            Tab3={"Ashwagandha, Brahmi, Jatamansi, Kava, tulsi, Shankhpushpi"}
+                            T1SubText={" Experience tranquility with Ashwagandha, renowned for its remarkable stress-relief abilities. Embrace serenity as this ancient herb gently diminishes stress and anxiety, promoting a peaceful mind. Our herbal juices harness the power of Ashwagandha, providing you with a holistic way to soothe your senses and find balance in your daily life."}
+                            T2SubText={" Your Stress-Relief BFF: It gently influences key enzymes linked to stress, curbing stress and anxiety. Your mood receives a blissful lift, while cortisol (stress hormone) levels diminish. Elevating serotonin levels, Brahmi becomes your ultimate stressbuster, paving the way for inner calm and harmony."}
+                            T3SubText={" Discover the ancient wisdom of Ayurveda that identifies Vata as the orchestrator of body and nervous system harmony. Unveil serenity as Jatamansi, a soothing herb, alleviates anxiety by restoring Vata balance. Reclaim peace, as nature's essence flows through every drop of our herbal juice, supporting your journey to a tranquil mind and body."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Stone_care_front-min.png?v=1697791504"}
+                            h4_1={"Kava Kava to Your Rescue"}
+                            h4_2={"The Magic of Shankh Pushpi"}
+                            p_1={"Experience serenity with our Kava Kava herbal juice. Crafted from nature's embrace, it gently eases worries, like a soothing balm for the mind. Relish the calming magic, as tension melts away, leaving only peace. Indulge in nature's remedy for a serene soul"}
+                            p_2={"This ancient herbal gem gently soothes the mind, melting away stress and anxiety. Feel the embrace of calmness while enhancing memory through its Medhya wonder—nourishing your intelligence. Elevate your wellness journey with our pure, natural, and organic herbal juices."}
+                        />
+                        } />
                     <Route
                         path="/collections/herbal-juice/products/joints-and-body-pain-relief"
-                        element={<HerbalPages />}
+                        element={<HerbalPages
+                            name={"Joints and Body Pain Relief"}
+                            Name={"Joints and Body Pain Relief"}
+                            images={jointsPainCare}
+                            price={949}
+                            previousPrice={2056}
+                            save={"54%"}
+                            price1={1895}
+                            previousPrice1={4355}
+                            save1={"56%"}
+                            price2={2845}
+                            previousPrice2={6812}
+                            save2={"58%"}
+                            info1={"Natural Relief for Pain & Swelling"}
+                            info2={"Soothe Your Throat and Breathe Freely"}
+                            info3={"Joint Pain Relief"}
+                            Tab1={"Get soothing relief from joint discomfort with Farm Naturelle Pain Relief herbal capsules. Crafted from pure, organic ingredients, our capsules offer a gentle remedy for joint pain. Embrace the power of nature to ease your movements and enhance your everyday life."}
+                            T1SubText={" These herbal Capsules has natural analgesic properties work wonders to ease pain and reduce swelling. Discover the power of nature's remedy for a more comfortable you."}
+                            T2SubText={" Experience relief as our herbal capsules harness nature's anti-inflammatory power to ease discomfort in your throat and respiratory passages. Our pure, natural, and organic formula gently reduces pain and calms inflammation, letting you enjoy a breath of fresh air without the irritation. Say goodbye to discomfort and hello to comfort, the way nature intended."}
+                            T3SubText={" Benefit the power of pure, organic ingredients that gently ease joint discomfort and relieve arthritis-related woes. Embrace the joy of movement as you bid adieu to aches and pains, the natural way"}
+                            h4_1={"Natural Companion for Comfortable Periods"}
+                            h4_2={"Soothing Power of Boswellia"}
+                            h4_3={"Nurturing Joint Comfort Naturally"}
+                            h4_4={"Your Solution for Osteoarthritis Relief"}
+                            p_1={"Embracing natural blood-thinning properties of hing in these capsules gently ease away menstrual discomfort. By promoting smoother flow and diminishing clots, we're here to make your periods more manageable and less painful."}
+                            p_2={"Boswellia is nature's answer to inflammation. Feel the relief as it gently calms inflammation, eases discomfort, and supports joint health. Embrace the tradition of wellness with our herbal capsules that soothe without harsh chemicals."}
+                            p_3={"Gently eases inflammation, supporting relief from conditions like arthritis. Our herbal capsules offer nature's touch to help soothe discomfort, the natural way."}
+                            p_4={"Experience relief like never before with our herbal capsules. Embrace a life with reduced discomfort and enhanced mobility for those dealing with osteoarthritis. Our natural blend is carefully crafted to bring you the joy of pain-free movement. Say goodbye to stiffness and hello to joyful living with our organic approach to well-being."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Stone_care_front-min.png?v=1697791504"}
+                        />
+                        } />
+                    <Route
+                        path="/collections/herbal-juice/products/detox-miracle-shots-ready-to-drink-shots"
+                        element={<HerbalPages
+                            name={"Detox-Miracle Shots-READY TO DRINK SHOTS"}
+                            Name={"Detox-Miracle Shots"}
+                            images={Detox}
+                            price={899}
+                            previousPrice={1798}
+                            save={"50%"}
+                            price1={1795}
+                            previousPrice1={3596}
+                            save1={"50%"}
+                            price2={2695}
+                            previousPrice2={5396}
+                            save2={"50%"}
+                            info1={"Bottles of wellness"}
+                            info2={"Elevate Your Health"}
+                            info3={"Revitalize Your Body with Aloe Vera"}
+                            Tab1={"Experience the detoxifying power of our shots, promoting heart health, anti-aging effects, and immunity. Our blends, enriched with jaggery and aloe vera, balance doshas, soothe nerves, and purify your blood. Rediscover wellness today."}
+                            Tab3={"AMLA, JAGGERY POWDER, ALOE VERA, ROSE PETALS POWDER, ASHOKA BARK, Phyllanthus emblica, Saccharum officinarum, Aloe barbadensis miller, Rosa, Saraca indica"}
+                            T1SubText={" Boost your heart health, unlock the secrets of anti-aging, supercharge your immunity, and bid farewell to heartburn discomfort. It's all in one sip – your journey to a vibrant, healthier you starts here!"}
+                            T2SubText={" Discover the power of immunity-boosting jaggery in every shot. Packed with selenium and zinc, our jaggery shots shield your body, preventing liver damage."}
+                            T3SubText={" Packed with amino acids, these shots enhance your immunity, flush toxins from your blood, and promote better digestion and glowing skin."}
+                            h4_1={"Rebalance Your Life with Ayurveda"}
+                            h4_2={"Your Path to Health & Wellness"}
+                            p_1={"Discover the magic of Harmony Shots, meticulously crafted to balance Vata and Pitta dosha. Our elixir calms your central nervous system, easing anxiety, while enhancing digestion and immunity. Experience Ayurveda's wisdom in a ready-to-drink form, making holistic well-being accessible to all."}
+                            p_2={"Experience remarkable blood-purifying power of Farm Naturelle Detox-Miracle Ready-to-drink shots, offering respite from common women's health concerns and an effective solution for spasms."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Stone_care_front-min.png?v=1697791504"}
+                        />}
                     />
                     <Route
                         path="/collections/all-products"

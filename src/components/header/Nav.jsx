@@ -46,7 +46,7 @@ function Nav() {
 
     const Handler = () => {
         const copyText = "NFARM100";
-        
+
         toast.done("Copied the text: " + copyText, {
             position: "top-center"
         });
@@ -60,7 +60,7 @@ function Nav() {
                             Get an extra 5% discount on orders over ₹1000, up to
                             ₹100 - Use coupon NFARM100
                         </p>
-                        <img 
+                        <img
                             className="cursor-pointer"
                             onClick={Handler()}
                             src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ph_copy.svg?v=1695374232"
@@ -173,15 +173,17 @@ function Nav() {
                                     </li>
                                     <li className="text-nowrap px-4 pb-1 mt-1 hover:text-[#006944]">
                                         <Link to={"/collections/herbal-juice/products/joints-and-body-pain-relief"}>
-                                        <span className="underlined">
-                                            Win Weight
-                                        </span>
+                                            <span className="underlined">
+                                                Win Weight
+                                            </span>
                                         </Link>
                                     </li>
                                     <li className="text-nowrap px-4 pb-1 mt-1 hover:text-[#006944]">
+                                        <Link to={"/collections/herbal-juice/products/detox-miracle-shots-ready-to-drink-shots"}>
                                         <span className="underlined">
                                             Detox Miracle Shot
                                         </span>
+                                        </Link>
                                     </li>
                                 </ul>
                                 <RiArrowDropDownLine className="group-hover:rotate-180 group-hover:transition-all size-7" />
@@ -427,9 +429,9 @@ function Nav() {
                                         <div
                                             className="border hover:border-black border-gray-500 rounded-full h-6 w-7 cursor-pointer text-xs flex items-center justify-center hover:text-black transition-all duration-300 text-gray-500"
                                             onClick={() =>
-                                                (document.getElementById(
-                                                    "search",
-                                                ).style.display = "none")
+                                            (document.getElementById(
+                                                "search",
+                                            ).style.display = "none")
                                             }
                                         >
                                             X
