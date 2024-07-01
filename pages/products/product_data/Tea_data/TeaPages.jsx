@@ -19,15 +19,21 @@ import { useDispatch } from "react-redux";
 import { add } from "../../../../src/store/cartSlice";
 import { products } from "../product_data";
 
-export default function SteviaPages({
+export default function TeaPages({
     name,
     Name,
     price,
     price1,
+    price2,
+    price3,
     previousPrice,
     previousPrice1,
+    previousPrice2,
+    previousPrice3,
     save,
     save1,
+    save2,
+    save3,
     images,
     h4_1,
     h4_2,
@@ -41,13 +47,9 @@ export default function SteviaPages({
     info2,
     info3,
     Tab1,
-    T1Text,
     T1SubText,
-    T2Text,
     T2SubText,
-    T3Text,
     T3SubText,
-    Tab3,
     extraImage,
     BoxImg1,
     BoxImg2,
@@ -101,63 +103,75 @@ export default function SteviaPages({
                 <div className="w-full flex justify-center items-start">
                     <div className="w-1/2 px-10">
                         <div className="w-full py-1">
-                            <Slider
-                                infinite={true}
-                                arrows={false}
-                                asNavFor={nav2}
-                                ref={(slider) => (sliderRef1 = slider)}
-                            >
-                                {images.map((item, index) => (
-                                    <div key={index}>
-                                        <img
-                                            height="auto"
-                                            width="100%"
-                                            src={item.img}
-                                            alt={item.alt}
-                                            loading="lazy"
-                                        />
-                                    </div>
-                                ))}
-                            </Slider>
+                            {images.length > 1 ? (
+                                <Slider
+                                    infinite={true}
+                                    arrows={false}
+                                    asNavFor={nav2}
+                                    ref={(slider) => (sliderRef1 = slider)}
+                                >
+                                    {images.map((item, index) => (
+                                        <div key={index}>
+                                            <img
+                                                height="auto"
+                                                width="100%"
+                                                src={item.img}
+                                                alt={item.alt}
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    ))}
+                                </Slider>
+                            ) : (
+                                <div className="w-[80vh]">
+                                    <img
+                                        src={images[0].img}
+                                        alt={images[0].alt}
+                                        loading="lazy"
+                                    />
+                                </div>
+                            )}
                         </div>
-                        <div className="w-full px-20 relative group">
-                            <div className="absolute left-0 top-1/2 -translate-y-1/2 flex justify-between w-full px-10">
-                                <button
-                                    className="bg-white hover:bg-[#006944] text-[#000000] shadow-md w-10 h-10 rounded-full hover:text-white flex justify-center items-center transition-colors duration-500 "
-                                    onClick={prevSlick}
+                        {images.length > 1 ? (
+                            <div className="w-full px-20 relative group">
+                                <div className="absolute left-0 top-1/2 -translate-y-1/2 flex justify-between w-full px-10">
+                                    <button
+                                        className="bg-white hover:bg-[#006944] text-[#000000] shadow-md w-10 h-10 rounded-full hover:text-white flex justify-center items-center transition-colors duration-500 "
+                                        onClick={prevSlick}
+                                    >
+                                        <RiArrowLeftSLine size={32} />
+                                    </button>
+                                    <button
+                                        className="bg-white hover:bg-[#006944] text-black shadow-md w-10 h-10 rounded-full hover:text-white flex justify-center items-center transition-colors duration-500 "
+                                        onClick={nextSlick}
+                                    >
+                                        <RiArrowRightSLine size={32} />
+                                    </button>
+                                </div>
+                                <Slider
+                                    infinite={false}
+                                    asNavFor={nav1}
+                                    ref={(slider) => (sliderRef2 = slider)}
+                                    slidesToShow={4}
+                                    slidesToScroll={1}
+                                    arrows={false}
+                                    dots={false}
+                                    focusOnSelect={true}
                                 >
-                                    <RiArrowLeftSLine size={32} />
-                                </button>
-                                <button
-                                    className="bg-white hover:bg-[#006944] text-black shadow-md w-10 h-10 rounded-full hover:text-white flex justify-center items-center transition-colors duration-500 "
-                                    onClick={nextSlick}
-                                >
-                                    <RiArrowRightSLine size={32} />
-                                </button>
+                                    {images.map((item, index) => (
+                                        <div key={index}>
+                                            <img
+                                                height={120}
+                                                width={120}
+                                                src={item.img}
+                                                alt={item.alt}
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    ))}
+                                </Slider>
                             </div>
-                            <Slider
-                                infinite={false}
-                                asNavFor={nav1}
-                                ref={(slider) => (sliderRef2 = slider)}
-                                slidesToShow={4}
-                                slidesToScroll={1}
-                                arrows={false}
-                                dots={false}
-                                focusOnSelect={true}
-                            >
-                                {images.map((item, index) => (
-                                    <div key={index}>
-                                        <img
-                                            height={120}
-                                            width={120}
-                                            src={item.img}
-                                            alt={item.alt}
-                                            loading="lazy"
-                                        />
-                                    </div>
-                                ))}
-                            </Slider>
-                        </div>
+                        ) : null}
                         <div className="w-full">
                             <div className="w-full flex justify-center py-10 items-center gap-3">
                                 <Link
@@ -325,10 +339,10 @@ export default function SteviaPages({
                             </ul>
                         </div>
                         <div>
+                            <p>Size</p>
                             <div className="font-light text-sm flex gap-2">
-                                <p className="hidden">Size</p>
                                 <select
-                                    className="border border-[#006944] hidden py-2 text-left rounded-lg w-1/2 px-3 outline-none"
+                                    className="border border-[#006944] py-2 text-left rounded-lg w-1/2 px-3 outline-none"
                                     onChange={(e) => {
                                         setSelectedOption(e.target.value);
                                         let options = {
@@ -339,7 +353,15 @@ export default function SteviaPages({
                                             [price1]: {
                                                 price: previousPrice1,
                                                 discount: save1,
-                                            }
+                                            },
+                                            [price2]: {
+                                                price: previousPrice2,
+                                                discount: save2,
+                                            },
+                                            [price3]: {
+                                                price: previousPrice3,
+                                                discount: save3,
+                                            },
                                         };
                                         const selectedoption =
                                             options[e.target.value];
@@ -350,12 +372,22 @@ export default function SteviaPages({
                                 >
                                     {price && (
                                         <option value={price}>
-                                            275g(Glass Bottle)
+                                            Small
                                         </option>
                                     )}
                                     {price1 && (
                                         <option value={price1}>
-                                            400g(Glass Bottle)
+                                            Medium
+                                        </option>
+                                    )}
+                                    {price2 && (
+                                        <option value={price2}>
+                                            Large
+                                        </option>
+                                    )}
+                                    {price3 && (
+                                        <option value={price3}>
+                                            X-Large
                                         </option>
                                     )}
                                 </select>
@@ -489,46 +521,42 @@ export default function SteviaPages({
                     <div className="w-full px-16 py-5 bg-[#F2F7E3]">
                         <Tabs>
                             <TabList className="flex justify-between py-2">
-                                <Tab className="outline-none cursor-pointer font-jost text-3xl text-[#006944] focus:underline">
+                                <Tab className="outline-none cursor-pointer font-jost text-xl text-[#006944] focus:underline underline">
                                     PRODUCT DETAILS
-                                </Tab>
-                                <Tab className="outline-none cursor-pointer font-jost text-3xl text-[#006944] focus:underline">
-                                    WHO SHOULD TAKE IT?
-                                </Tab>
-                                <Tab className="outline-none cursor-pointer font-jost text-3xl text-[#006944] focus:underline">
-                                    KEY INGREDIENTS
                                 </Tab>
                             </TabList>
                             <TabPanel className="text-lg">
                                 <p className="py-5 text-sm text-[#727271]">
                                     {Tab1}{" "}
                                 </p>
-                                <p></p>
+                                <p>
+                                    {" "}
+                                </p>
                                 <ul className="text-base">
-                                    {T1Text && (
+                                    {info1 && (
                                         <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
                                             <b className="text-black">
-                                                {T1Text}
+                                                {info1}:
                                             </b>{" "}
                                             {T1SubText}{" "}
                                         </li>
                                     )}
 
-                                    {T2Text && (
+                                    {info2 && (
                                         <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
                                             <b>
                                                 <span className="text-black">
-                                                    {T2Text}
+                                                    {info2}:
                                                 </span>
                                             </b>{" "}
                                             {T2SubText}{" "}
                                         </li>
                                     )}
 
-                                    {T3Text && (
+                                    {info3 && (
                                         <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
                                             <b className="text-black">
-                                                {T3Text}
+                                                {info3}:
                                             </b>{" "}
                                             {T3SubText}{" "}
                                         </li>
@@ -536,31 +564,22 @@ export default function SteviaPages({
                                 </ul>
                                 <p></p>
                             </TabPanel>
-                            <TabPanel>
-                                <p className="py-5 text-sm text-[#727271]">
-                                    All men, women of all ages and children can
-                                    consume it.
-                                </p>
-                            </TabPanel>
-                            <TabPanel>
-                                <p className="py-5 text-sm text-[#727271]">
-                                    {Tab3}
-                                </p>
-                            </TabPanel>
                         </Tabs>
                     </div>
                 </div>
             </div>
-            <div className="h-[150vh] w-full">
+            <div className="h-[150vh] w-full overflow-y-hidden">
                 <div className="w-full h-full text-center py-2 font-jost relative">
                     <p className="text-[gray] py-2">Benefits</p>
                     <p className="text-4xl font-medium text-[#006944]">
                         <span className="text-black">Benefits Of </span>
                         {Name}
                     </p>
-                    <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/3 flex-col items-center justify-center">
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3 flex-col items-center justify-center">
                         <div className="w-full flex items-center rounded-[50%] bg-[#DEEEC0]">
                             <img
+                                height={120}
+                                width={420}
                                 src={extraImage}
                                 alt="Benefits"
                                 loading="lazy"
@@ -572,7 +591,7 @@ export default function SteviaPages({
                                     <div className="w-full text-wrap">
                                         <div className="w-auto text-center flex flex-col justify-center items-center -my-5">
                                             <img
-                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/stevia_2.png?v=1703663504"
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857505.png?v=1696832200"
                                                 title=""
                                                 width="52px"
                                                 height="42px"
@@ -604,7 +623,7 @@ export default function SteviaPages({
                                     <div className="text-[#006944] w-full">
                                         <div className="w-full -my-5 text-center flex flex-col justify-center items-center text-sm">
                                             <img
-                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/black_pepper_3.png?v=1703663504"
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/weight.png?v=1696832154"
                                                 title=""
                                                 width="42px"
                                                 height="auto"
@@ -618,12 +637,12 @@ export default function SteviaPages({
                             </div>
                         }
                         {h4_3 &&
-                            <div className="text-[#006944] absolute bottom-28 left-0 -translate-x-[82%] translate-y-56 w-full flex flex-reverse h-auto">
+                            <div className="text-[#006944] absolute bottom-0 left-0 -translate-x-[82%] translate-y-32 w-full flex flex-row-reverse h-auto">
                                 <div className="flex items-start gap-1">
                                     <div className="w-full text-wrap">
                                         <div className="text-[#006944] w-auto text-center flex flex-col justify-center items-center -my-5">
                                             <img
-                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/stevia_1.png?v=1703663504"
+                                                src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857508.png?v=1696832109"
                                                 title=""
                                                 width="50px"
                                                 height="50px"
@@ -644,7 +663,7 @@ export default function SteviaPages({
                             </div>
                         }
                         {h4_4 &&
-                            <div className="text-[#006944] absolute bottom-0 right-0 translate-x-[82%] translate-y-20 w-full flex flex-row-reverse h-auto">
+                            <div className="text-[#006944] absolute bottom-0 right-0 translate-x-[82%] translate-y-16 w-full flex flex-row-reverse h-auto">
                                 <div className="flex items-start gap-1">
                                     <img
                                         src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Group_28631_1.png?v=1696833635"
@@ -678,7 +697,7 @@ export default function SteviaPages({
                     How To <span className="text-[#006944]">Use</span>
                 </p>
                 <div className="flex justify-around items-center w-full py-36">
-                    {BoxImg1 &&
+                    {
                         <div className="w-[30%] h-48 bg-[#006944] rounded-xl text-8xl relative">
                             <p className="absolute -top-10 left-10 transform -translate-x-1/2 -translate-y-1/2 text-[#D1E0D6]">
                                 01
@@ -688,11 +707,11 @@ export default function SteviaPages({
                                 src={BoxImg1}
                                 alt=""
                             />
-                            <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-nowrap scale-75">
-                                Desserts
+                            <p className="text-white text-3xl font-semibold absolute top-1/3 transform text-wrap scale-75">
+                                Add 1 teaspoon of Lemongrass Mint Green Tea to a cup (200ml) of water.
                             </p>
                         </div>}
-                    {BoxImg2 &&
+                    {
                         <div className="w-[30%] h-48 bg-[#99C459] rounded-xl text-8xl relative">
                             <p className="absolute -top-10 left-10 transform -translate-x-1/2 -translate-y-1/2 text-[#D1E0D6]">
                                 02
@@ -702,12 +721,12 @@ export default function SteviaPages({
                                 src={BoxImg2}
                                 alt=""
                             />
-                            <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75 text-nowrap">
-                                Baking
+                            <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform text-wrap scale-100">
+                                Boil for 5-7 minutes.
                             </p>
                         </div>
                     }
-                    {BoxImg3 &&
+                    {
                         <div className="w-[30%] h-48 bg-[#006944] rounded-xl text-8xl relative">
                             <p className="absolute -top-10 left-10 transform -translate-x-1/2 -translate-y-1/2 text-[#D1E0D6]">
                                 03
@@ -717,8 +736,8 @@ export default function SteviaPages({
                                 src={BoxImg3}
                                 alt=""
                             />
-                            <p className="text-white text-3xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 transform scale-75 text-nowrap">
-                                Beverages
+                            <p className="text-white text-3xl font-semibold absolute top-1/2 transform text-wrap scale-75">
+                                Strain the tea, You may add sugar or honey to taste.
                             </p>
                         </div>
                     }

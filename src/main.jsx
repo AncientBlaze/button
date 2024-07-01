@@ -104,7 +104,7 @@ import HerbalPages from "../pages/products/product_data/Herbal_data/HerbalPages.
 import { antiHangover, Detox, digestiveFitness, easingDiabetes, jointsPainCare, kidneyStoneCrusher, magicalMan, pilesVanish, smilingLiver, streesBuster, womenGlow } from "../pages/products/product_data/Herbal_data/Herbal_data.js";
 import Tea from "../pages/Tea.jsx";
 import TeaPages from "../pages/products/product_data/Tea_data/TeaPages.jsx";
-import { appleCinnamonGreenTea } from "../pages/products/product_data/Tea_data/Tea_data.js";
+import { appleCinnamonGreenTea, moringaGreenTea } from "../pages/products/product_data/Tea_data/Tea_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -3914,9 +3914,71 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     <Route
                         path="collections/tea/products/apple-cinnamon-tea"
                         element={<TeaPages
+                            name={"Apple cinnamon Green Tea - Acts as Immunity Booster and Anti Inflammatory | Natural Ingredient Infused - Not Artificially Flavoured | Long Leaf Loose Tea"}
+                            Name={"Apple cinnamon Green Tea"}
                             images={appleCinnamonGreenTea}
+                            info1={"Immunity boost"}
+                            info2={"Blood sugar reduction"}
+                            info3={"Stress buster"}
+                            price={240}
+                            previousPrice={389}
+                            save={"39%"}
+                            price1={350}
+                            previousPrice1={589}
+                            save1={"41%"}
+                            price2={375}
+                            previousPrice2={619}
+                            save2={"39%"}
+                            price3={695}
+                            previousPrice3={1159}
+                            save3={"40%"}
+                            Tab1={"Immerse yourself in the essence of Farm Naturelle Kashmiri Shahi Qawah (Kahwa) – a premium fusion that delights the senses and soothes the soul. A cherished tradition in Jammu and Kashmir, this authentic brew, harvested using timeless methods, brings the goodness of the valleys to you. With its masterfully curated blend of spices and green tea, it offers a symphony of flavors and a tapestry of health benefits. Embrace the pure heritage, sip by sip."}
+                            T1SubText={"Carefully crafted using age-old methods, our Qawah embraces the pure essence and fragrant allure of Jammu and Kashmir's valleys."}
+                            T2SubText={"Savor the goodness of Farm Naturelle Kashmiri Shahi Qawah—a wholesome and authentic choice over sugary beverages. Crafted from nature's treasures, this herbal tea is a burst of health with zero artificial flavors, preservatives, or coloring. Embrace a natural, refreshing indulgence that uplifts your well-being. Cheers to a healthier you!"}
+                            T3SubText={"Indulge in the delightful and aromatic infusion that brings a sense of calmness, perfect for any time of the day. Let the soothing flavors take you on a serene journey, making each moment a cherished one."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Kashmiri_kahwa_1.png?v=1700726094"}
+                            p_1={"Unveil the essence of India's diverse flavors through every comforting cup."}
+                            p_2={"Immerse yourself in the heritage of Kashmir, one sip at a time."}
+                            p_3={"Embrace the magic of a delightful cup that transports you to comfort in every sip."}
                         />
                         } />
+                    <Route
+                        path="collections/tea/products/moringa-green-tea"
+                        element={<TeaPages
+                            name={"Moringa Green tea -Acts as Immunity Booster and Anti Inflammatory | Natural Ingredient Infused - Not Artificially Flavoured | Long Leaf"}
+                            Name={"Moringa Green Tea"}
+                            images={moringaGreenTea}
+                            price={210}
+                            previousPrice={339}
+                            save={"38%"}
+                            price1={290}
+                            previousPrice1={459}
+                            save1={"37%"}
+                            price2={320}
+                            previousPrice2={489}
+                            save2={"35%"}
+                            price3={540}
+                            previousPrice3={829}
+                            save3={"35%"}
+                            info1={"Nutrient-Rich Goodness"}
+                            info2={"Energy Boost, Naturally"}
+                            info3={"Immune System Warrior"}
+                            Tab1={"Immerse yourself in the essence of Farm Naturelle Kashmiri Shahi Qawah (Kahwa) – a premium fusion that delights the senses and soothes the soul. A cherished tradition in Jammu and Kashmir, this authentic brew, harvested using timeless methods, brings the goodness of the valleys to you. With its masterfully curated blend of spices and green tea, it offers a symphony of flavors and a tapestry of health benefits. Embrace the pure heritage, sip by sip."}
+                            T1SubText={"Carefully crafted using age-old methods, our Qawah embraces the pure essence and fragrant allure of Jammu and Kashmir's valleys."}
+                            T2SubText={"Savor the goodness of Farm Naturelle Kashmiri Shahi Qawah—a wholesome and authentic choice over sugary beverages. Crafted from nature's treasures, this herbal tea is a burst of health with zero artificial flavors, preservatives, or coloring. Embrace a natural, refreshing indulgence that uplifts your well-being. Cheers to a healthier you!"}
+                            T3SubText={"Green tea blended with Dried moringa leaves & ginger"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Kashmiri_kahwa_1.png?v=1700726094"}
+                            h4_1={"Nourishes Skin & Hair"}
+                            h4_2={"Liver Guardian"}
+                            h4_3={"Balances Blood Sugar"}
+                            h4_4={"Kidney Stone Defender"}
+                            p_1={"Beauty from the inside out! Moringa Tea isn't just for sipping; it's a secret ingredient for radiant skin and luscious hair."}
+                            p_2={"Let your liver breathe easy. Moringa Tea helps protect and support your liver's health, ensuring it functions at its best."}
+                            p_3={"Keep your blood sugar levels in check with the goodness of Moringa Tea, promoting a balanced and healthy lifestyle."}
+                            p_4={"Safeguard your kidneys naturally. Moringa Tea aids in preventing kidney stones, letting you enjoy life worry-free."}
+                        />
+                        }
+                    />
                 </Routes>
             </Provider>
         </BrowserRouter>
