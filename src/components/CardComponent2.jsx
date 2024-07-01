@@ -4,7 +4,6 @@ import { useState } from "react";
 import { add } from "../store/cartSlice";
 import { addToWishlist, remove } from "../store/wishSlice";
 import { useDispatch } from "react-redux";
-import { nanoid } from "@reduxjs/toolkit";
 
 const CardComponent2 = ({
     id,
@@ -97,7 +96,7 @@ const CardComponent2 = ({
                         className={buttonClasses}
                         onClick={(e) => {
                             e.preventDefault();
-                            dispatch(add({ id: nanoid(), quantity: count, title, content, PreviousPrice: selectedOption1, ImageUrl }));
+                            dispatch(add({ id:id ,quantity: count, title, content, PreviousPrice: selectedOption1, ImageUrl }));
                             setCount(count);
                         }
                         }

@@ -64,7 +64,8 @@ const herbalJuiceList = [
         content: 799,
         hidden: "hidden",
     },
-    {   
+    {
+        id: "neem-juice",
         save: 55,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_1c415fe2-6230-4092-9385-ff713a887201_800x.jpg?v=1714052494",
@@ -76,6 +77,7 @@ const herbalJuiceList = [
         hidden: "hidden",
     },
     {
+        id: "tulsi-juice",
         save: 54,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_004df024-ed33-458d-aea1-6e51827032ab_800x.jpg?v=1714052517",
@@ -87,6 +89,7 @@ const herbalJuiceList = [
         hidden: "hidden",
     },
     {
+        id: "aloevera-wheatgrass-juice",
         save: 54,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_047add8d-cc48-4702-8731-35cf403a0d56_800x.jpg?v=1714052542",
@@ -98,6 +101,7 @@ const herbalJuiceList = [
         hidden: "hidden",
     },
     {
+        id: "aloevera-juice",
         save: 54,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_37e192c9-2780-485f-8b49-ef97b113677d_800x.jpg?v=1714052560",
@@ -109,6 +113,7 @@ const herbalJuiceList = [
         hidden: "hidden",
     },
     {
+        id: "triphala-juice",
         save: 54,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_bc280e4b-ed7d-4208-bfba-bb75b1409910_800x.jpg?v=1714052582",
@@ -131,6 +136,7 @@ const herbalJuiceList = [
         content: 999,
     },
     {
+        id: "noni-juice",
         save: 54,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_facb5c7e-9bc8-475b-adda-d62911bf3546_800x.jpg?v=1714052666",
@@ -142,6 +148,7 @@ const herbalJuiceList = [
         hidden: "hidden",
     },
     {
+        id: "",
         save: 54,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_79cf5e46-0c60-4e75-aace-881115784fd3_800x.png?v=1714052859",

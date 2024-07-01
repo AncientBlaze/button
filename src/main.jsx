@@ -101,7 +101,7 @@ import HingPages from "../pages/products/product_data/Hing_data/HingPages.jsx";
 import { Hingimg } from "../pages/products/product_data/Hing_data/Hing_data.js";
 import WellnessJuice from "../pages/WellnessJuices.jsx";
 import HerbalPages from "../pages/products/product_data/Herbal_data/HerbalPages.jsx";
-import { amlaJuice, antiHangover, Detox, digestiveFitness, easingDiabetes, jointsPainCare, kidneyStoneCrusher, magicalMan, pilesVanish, PureHerbal, slimFitJuice, smilingLiver, streesBuster, strongest6Ayurvedic, womenGlow } from "../pages/products/product_data/Herbal_data/Herbal_data.js";
+import { aloeVeraJuice, aloeVeraWheatGrassJuice, amlaJuice, antiHangover, Detox, digestiveFitness, easingDiabetes, jointsPainCare, kidneyStoneCrusher, magicalMan, neemJuice, NoniJuice, pilesVanish, PureHerbal, slimFitJuice, smilingLiver, streesBuster, strongest6Ayurvedic, TriphalaJuice, tulsiJuice, womenGlow } from "../pages/products/product_data/Herbal_data/Herbal_data.js";
 import Tea from "../pages/Tea.jsx";
 import TeaPages from "../pages/products/product_data/Tea_data/TeaPages.jsx";
 import { appleCinnamonGreenTea, kashmirTea, lemonGrass, masalaTea, moringaGreenTea, tulsiGreenTea, turmericGreenTea } from "../pages/products/product_data/Tea_data/Tea_data.js";
@@ -703,20 +703,222 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                         />}
                     />
                     <Route
-                        path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />} />
+                        path="/collections/herbal-juice/products/neem-juice"
+                        element={<HerbalPages
+                            name={"Neem Juice"}
+                            Name={"Neem Juice"}
+                            images={neemJuice}
+                            price={749}
+                            previousPrice={1656}
+                            save={"55%"}
+                            price1={1495}
+                            previousPrice1={3555}
+                            save1={"58%"}
+                            price2={2245}
+                            previousPrice2={5612}
+                            save2={"60%"}
+                            info1={"Radiant Skin & Wellness"}
+                            info2={"Neem's Blessing for Body, Skin, & Hair"}
+                            info3={"Nature’s Touch for Glowing Skin"}
+                            Tab1={"Experience the power of Neem juice! Daily consumption manages sugar levels and boosts liver function. Skin-soothing Neem massages fade chickenpox marks, tackle eczema, and smallpox. Count on Neem Patra juice's natural potency against malaria. For moms-to-be, it eases vaginal discomfort during pregnancy. Embrace holistic wellness with our 100% pure, organic Neem herbal juice range. Your path to vitality starts here!"}
+                            Tab3={"Neem patra, vitamins & minerals"}
+                            T1SubText={" Say goodbye to pesky pimples and acne, while enhancing blood flow beneath your skin, unveiling a smoother texture and waving wrinkles goodbye. Boost your immunity and find solace from malaria, eczema, chickenpox, and more. Elevate liver vitality for holistic well-being. Your path to vibrant skin and health begins here."}
+                            T2SubText={" Neem, renowned for centuries, brings boundless benefits for your body, skin, and hair. Embrace the holistic power of purity and unlock wellness effortlessly."}
+                            T3SubText={" Gently bid farewell to bothersome acne and pesky pimples. Let your skin's natural beauty shine through, as our concoctions help in achieving a smoother, blemish-free complexion."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Neem_Patra_Juice.png?v=1703142001"}
+                            h4_1={"Radiance Inside Out"}
+                            h4_2={"Nurturing Wellness from Within"}
+                            h4_3={"An All-rounder for Your Health"}
+                            h4_4={"Your Immuno Booster"}
+                            p_1={"Farm Naturelle herbal neem juice, bursting with purity, gift you radiant skin. Experience a natural transformation as your complexion finds new vibrance, reflecting the purity within you."}
+                            p_2={"Improved hair quality alongside the comfort of better digestion. Our pure and organic blends work harmoniously to enhance your natural radiance. Embrace the power of nature's goodness for luscious hair and a happy tummy. Feel the difference with every sip, as health and vitality become your everyday companions."}
+                            p_3={"Discover Neem Juice’s soothing Anti-Stress properties, embrace the purity of a Natural Blood Purifier, and find relief from the common cold and fever. Embrace the power of nature's embrace for your well-being."}
+                            p_4={"Our Neem Juice is crafted to bolster your body's defenses, while gently cleansing your bloodstream. Elevate your vitality as our pure, organic blends work harmoniously to fortify your well-being."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Neem_Juice_shake.png?v=1698829149"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Neem_Juice_water.png?v=1698829148"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Neem_Juice_stomach.png?v=1698829149"}
+                        />}
+                    />
                     <Route
-                        path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />} />
+                        path="/collections/herbal-juice/products/tulsi-juice"
+                        element={<HerbalPages
+                            name={"Tulsi Juice Most Effective -The Finest Tulsi Juice-Herbal Basil"}
+                            Name={"Tulsi Juice"}
+                            images={tulsiJuice}
+                            price={899}
+                            previousPrice={1956}
+                            save={"55%"}
+                            price1={1795}
+                            previousPrice1={4155}
+                            save1={"57%"}
+                            price2={2695}
+                            previousPrice2={6512}
+                            save2={"59%"}
+                            info1={"Tranquility in a Sip"}
+                            info2={"Your Natural Stress Buster"}
+                            info3={"Natural Blood Purifier"}
+                            Tab1={"Farm Naturelle Tulsi Juice, your natural ally against stress. Restore mood, sleep, appetite, and vitality. Boost immunity, soothe asthma, and safeguard against respiratory woes. Breathe easy with antioxidant-rich Tulsi. Shield your body from heart disease, cancer, and free radical harm. Experience relief from pain and inflammation. Elevate wellness the pure, organic way."}
+                            T1SubText={" Tulsi Juice - your natural remedy to ease both body and mind. Let the essence of Tulsi gently dissolve physical tension and emotional strains, restoring balance within. Embrace your day with a serene heart, as mood swings find their retreat in this pure, organic elixir."}
+                            T2SubText={" Tulsi, a remarkable adaptogen, is nature's support for your body and mind during tough times. It’s like a guardian that helps your body handle stress, whether it's physical or emotional. Imagine Tulsi as your shield, promoting a healthy response when life gets overwhelming. Feel its calming power, crafted by nature, in every sip of our herbal juices. Experience the pure embrace of wellness."}
+                            T3SubText={" Discover the natural way to purify your blood, promoting overall wellness. Gently detoxify and revitalize with each sip, as this herbal marvel sweeps away impurities."}
+                            Tab3={"tulsi juice, class 2 preservative"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Tulsi_Juice.png?v=1703142000"}
+                            h4_1={"Natural Healing Agent"}
+                            h4_2={"Your Mood Buster"}
+                            h4_3={"Has Anti-stress Properties"}
+                            h4_4={"Nature's Own Blood Cleanse"}
+                            p_1={"Farm Naturelle Tulsi Juice is extracted with care, ensures your well-being without worries. No side effects, only harmony. Sip the power of nature's healing, free from any concerns. Your path to wellness, uncomplicated and pure."}
+                            p_2={"Farm Naturelle Tusli Juice gently embrace your well-being, soothing away stress and balancing moods. Embrace the goodness of nature to find your inner calm and joy."}
+                            p_3={"Tulsi is know of its anti-stress properties. Consume it regularly and see the difference."}
+                            p_4={"Enhance immunity while experiencing the gentle touch of a natural blood purifier. Reconnect with nature's goodness as you sip your way to a healthier you."}
+                        />}
+                    />
                     <Route
-                        path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />} />
+                        path="/collections/herbal-juice/products/aloevera-wheatgrass-juice"
+                        element={<HerbalPages
+                            name={"Aloevera Wheatgrass Juice 100% Pure Herbal Concentrated (Extra Fiber in Gel Form) Aloevera Wheatgrass Gel/Juice"}
+                            Name={"Aloevera Wheatgrass Juice"}
+                            images={aloeVeraWheatGrassJuice}
+                            price={899}
+                            previousPrice={1956}
+                            save={"55%"}
+                            price1={1795}
+                            previousPrice1={4155}
+                            save1={"57%"}
+                            price2={2695}
+                            previousPrice2={6512}
+                            save2={"59%"}
+                            info1={"Your Health Buddy"}
+                            info2={"All Your Health Issues Addressed"}
+                            info3={"Low Fat Herbal Juices"}
+                            Tab1={"Aloe Vera, a versatile wonder, enhances digestion, boosts immunity, and fights aging. It soothes skin, relieves pain, and supports overall wellness. Wheatgrass, a green elixir, combats asthma, nurtures skin, and aids digestion. It's a powerhouse of nutrients, detoxifying blood and managing health. Embrace vitality as Aloe Vera and Wheatgrass unite for your enduring well-being."}
+                            Tab3={"Aloevera gel ,Wheat Grass, class 2 preservative"}
+                            T1SubText={" This incredible blend of Aloevera and wheatgrass not only fuels your energy instantly but also works wonders for digestion and purifying your blood. Feel the natural goodness as it uplifts your vitality while aiding digestion and promoting a cleaner system. Embrace wellness the natural way!"}
+                            T2SubText={" Bolster immunity, gracefully embrace age, and find relief from dermatitis and menstrual concerns. Discover nature's secret to aiding fat reduction."}
+                            T3SubText={" This 100% pure and organic wheatgrass packs only 23 calories in 100 grams. Savor the taste of wellness without worries of excess fat. Let every sip remind you that nourishment can be both light and fulfilling. Welcome to a world where health and flavor unite seamlessly!"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Aloe_Vera_Wheatgrass_Juice.png?v=1703142001"}
+                            h4_1={"Daily dose of nature's goodness"}
+                            h4_2={"Mineral Boost for Vitality"}
+                            h4_3={"Loaded with Goodness"}
+                            h4_4={"Power of Wheatgrass"}
+                            p_1={"Pure Wheatgrass herbal juice – a natural elixir enriched with choline and chlorophyll. Replenishing your body's essential minerals lost throughout the day, it's your ultimate way to rejuvenate. Embrace the goodness of 100% organic ingredients, lovingly crafted to restore your energy."}
+                            p_2={"Farm Naturelle Aloevera Wheatgrass herbal juice range, packed with essential minerals like calcium, sodium, and magnesium. Energize your body with these vital nutrients that support strong bones, a balanced metabolism, and overall wellness."}
+                            p_3={"Farm Naturelle Aloevera Wheatgrass herbal juice range, packed with essential minerals like calcium, sodium, and magnesium. Energize your body with these vital nutrients that support strong bones, a balanced metabolism, and overall wellness."}
+                            p_4={"Packed with choline and chlorophyll, our herbal juice is a natural treasure. Bursting with essential vitamins A, C, and E, it's your daily dose of vitality. Embrace the purity of nature in every sip, as we bring you the richness of wholesome nutrients, straight from the earth. Elevate your well-being with our 100% pure, natural, and organic herbal juice."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/wheatgrass.png?v=1698822141"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/wheatgrass2.png?v=1698822142"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/wheatgrass3.png?v=1698822142"}
+                        />}
+                    />
                     <Route
-                        path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />} />
+                        path="/collections/herbal-juice/products/aloevera-juice"
+                        element={<HerbalPages
+                            name={"Aloevera Juice Strongest Aloevera Juice with 80% pulp-Revitalize Hair and Skin"}
+                            Name={"Aloevera Juice"}
+                            images={aloeVeraJuice}
+                            price={799}
+                            previousPrice={1756}
+                            save={"55%"}
+                            price1={1595}
+                            previousPrice1={3755}
+                            save1={"58%"}
+                            price2={2395}
+                            previousPrice2={5912}
+                            save2={"59%"}
+                            info1={"Timeless Goodness from Ancient Origins"}
+                            info2={"Healing Power of Aloe Vera"}
+                            info3={"Nurturing Wellness from Within"}
+                            Tab1={"With roots tracing back 6,000 years to Sudan, Aloe Vera has journeyed through history, cherished by Egyptians, Greeks, Indians, and more. This miracle plant, a treasure trove of mannans, polysaccharides, and anthraquinones, gifts us bountiful health. From the heartlands of diverse civilizations, our herbal juices bring you the ageless benefits of Aloe Vera, nurturing your well-being naturally."}
+                            Tab3={"Aloevera gel , class 2 preservative"}
+                            T1SubText={" Experience nature's gift with our Aloe Vera herbal juice. With roots tracing back 6,000 years to Sudan, this remarkable plant's merits have resonated through history—cherished by Egyptians, Greeks, Indians, and more. Packed with mannans, polysaccharides, lectins, and anthraquinones, our Aloe Vera nurtures your health in ways revered by civilizations past and present. Pure well-being, bottled just for you."}
+                            T2SubText={" Revitalize with our Aloe Vera herbal juice. Boost your immunity, slow down aging, and find relief from dermatitis and menstrual issues."}
+                            T3SubText={" Crafted to harmonize digestion and cleanse your blood naturally. Experience the gentle power of nature's goodness as it aids digestion and purifies your blood, fostering a healthier, more vibrant you. Your journey to a balanced and revitalized life begins here."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Aloe_Vera_Juice.png?v=1703142001"}
+                            h4_1={"Naturally Fights Inflammation"}
+                            h4_2={"Healthy You, Nature's Way"}
+                            h4_3={"Lifelong Wellness"}
+                            h4_4={"Boost Your Immunity with Nature's Best"}
+                            p_1={"Unleash the power of herbs! Our herbal juices bring you the gift of nature to calm inflammation. Embrace the goodness of plant-based healing, crafted to ease discomfort the natural way."}
+                            p_2={"A pure and organic elixir carefully crafted to invigorate your well-being. A natural source of vitality, each sip offers boundless benefits for your body."}
+                            p_3={"Crafted from the purest, organic ingredients, each sip is a step towards nurturing your well-being. Elevate your health journey with the wholesome goodness of nature, supporting your lasting wellness."}
+                            p_4={"Farm Naturelle Aloe Vera Herbal Juice is a Premium Natural Supplement, enhancing your body's defenses. Elevate your well-being with every sip, as the essence of nature nurtures your health."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Aloevera_Juice_shake.png?v=1698821880"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Aloevera_Juice_water.png?v=1698821880"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Aloevera_Juice_stomach.png?v=1698821879"}
+                        />}
+                    />
                     <Route
-                        path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />} />
+                        path="/collections/herbal-juice/products/triphala-juice"
+                        element={<HerbalPages
+                            name={"Triphala Juice"}
+                            Name={"Triphala Juice"}
+                            images={TriphalaJuice}
+                            price={899}
+                            previousPrice={1956}
+                            save={"55%"}
+                            price1={1795}
+                            previousPrice1={4155}
+                            save1={"57%"}
+                            price2={2695}
+                            previousPrice2={6512}
+                            save2={"59%"}
+                            info1={"Your Ayurvedic Digestive Companion"}
+                            info2={"Nature's Triple Delight"}
+                            info3={"Nature's Secret to Smooth Digestion"}
+                            Tab1={"Step into the world of Triphala, an ancient herbal treasure celebrated for its antioxidant, anti-inflammatory, and antibacterial miracles. Embrace improved oral care, enhanced digestion, and skin renaissance. Deeply rooted in Ayurveda, Triphala softly aids digestion and promotes bowel regularity, guiding you toward inner equilibrium. Embrace the time-honored Triphala remedy – your pathway to holistic wellness."}
+                            T1SubText={" Experience the power of nature with our Triphala Juice. It gently eases digestion while cleansing your blood, curbing acidity, and enhancing liver vitality. This pure, organic elixir offers more than just natural relief – it's your path to a rejuvenated you!"}
+                            T2SubText={" Embrace the goodness of nature's finest trio: Amalaki, Bibhitaka, and Haritaki. Our herbal juices blend these three incredible fruits to perfection, bringing you a sip of health and vitality. Packed with pure, organic goodness, our juices offer a harmonious fusion of flavors and nutrients."}
+                            T3SubText={" Revitalize your digestion with our Gentle Nudge Herbal Juice. Crafted to support effortless bowel movement, this natural elixir gently encourages your body's rhythm. Experience the joy of a harmonious tummy, with every sip paving the way for comfort and ease. Embrace the power of nature for a smoothly flowing you!"}
+                            h4_1={"No Nasties, only Goodness"}
+                            h4_2={"Empower Your Immunity"}
+                            h4_3={"Herbal Nourishment for You"}
+                            h4_4={"Nature's Ancient Antioxidant Elixir"}
+                            p_1={"Experience the pure essence of health with our herbal juice range. Revel in the simplicity of nature's bounty, ensuring no unwanted side effects. Your path to vitality starts here, where every sip is a step towards a healthier you."}
+                            p_2={"Each sip is a step towards a stronger, healthier you. Pure, organic, and bursting with goodness, our juices are your go-to source for bolstering your body's natural armor"}
+                            p_3={"Boost Immunity, Cleanse Blood, Aid Digestion & Soothe Acidity, Rejuvenate Liver Function. Strengthen your body's defenses, detoxify from within, and relish smoother digestion."}
+                            p_4={"Triphala- a time-honored herbal gem packed with natural antioxidants, soothing anti-inflammatory properties, and gentle antibacterial goodness."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Frame_14857236_d08d3adb-9613-4a0b-948f-b5d69ccd07cf.png?v=1698819089"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Triphala_Juice_2.png?v=1698818446"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Triphala_Juice_3.png?v=1698818446"}
+                        />}
+                    />
+                    <Route
+                        path="/collections/herbal-juice/products/noni-juice"
+                        element={<HerbalPages
+                            name={"Noni Juice Supports Overall Health | Rich in Antioxidants"}
+                            Name={"Noni Juice"}
+                            images={NoniJuice}
+                            price={999}
+                            previousPrice={2156}
+                            save={"54%"}
+                            price1={1995}
+                            previousPrice1={4555}
+                            save1={"56%"}
+                            price2={2995}
+                            previousPrice2={7112}
+                            save2={"58%"}
+                            info1={"An All-rounder Juice"}
+                            info2={"Nurturing Nature's Goodness"}
+                            info3={"Naturally Side Effect-Free"}
+                            Tab1={"Discover the natural magic of our herbal juice! Ideal for poor digestion, high blood pressure, diabetes, respiratory and immune issues, plus arthritis pain. It's a vitality elixir too – Noni, the miraculous fruit, ignites your energy. Elevate your wellness journey with our 100% pure, organic range."}
+                            Tab3={"noni, garcinia, grape extract & class 2 preservatives"}
+                            T1SubText={" Improve digestion, strengthen immunity, relieve from arthritis discomfort, regulate blood pressure, and a shield against the shadows of depression. Elevate your wellness journey the natural way with our herbal elixir. Your path to vitality starts here."}
+                            T2SubText={" A herbal juice that soothes digestion, eases high blood pressure, manages diabetes, tackles respiratory issues, bolsters immunity, alleviates morning sickness, restores vitality, and relieves arthritis discomfort. Embrace the power of pure, organic herbal juices – your path to holistic wellness, handpicked from Mother Nature herself."}
+                            T3SubText={" Unmatched Effectiveness, Zero Worries About Side Effects. Embrace the goodness of our herbal juices, harnessing the strength of Noni without any unwanted reactions. Your path to wellness, paved with nature's finest, awaits."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Noni_Front-min.png?v=1697791489"}
+                            h4_1={"Power of Pure"}
+                            h4_2={"Nature's Trio for Your Wellness"}
+                            h4_3={"Nurture Your Well-being"}
+                            h4_4={"Say Goodbye to Health Worries"}
+                            p_1={"Experience the purity of our herbal juices – free from added sugars, artificial colors, and even extra vitamins or minerals. We believe in the power of nature, providing you with 100% organic blends that speak for themselves. Embrace the true essence of wellness, one refreshing gulp at a time. Your health, naturally preserved."}
+                            p_2={"With the power of pure Noni juice, the vitality of Garcinia, and the goodness of grapes extract, our herbal juices offer a delightful blend of health benefits. Embrace the richness of these natural wonders, thoughtfully combined to invigorate your well-being. Rejuvenate with every sip of this harmonious fusion, brought to you straight from the heart of Mother Earth."}
+                            p_3={"Experience the goodness of unadulterated herbal elixirs. Our herbal juices blend the essence of pure Noni juice with the power of Garcinia and grapes extracts. Embrace the richness of nature as these potent ingredients come together, bringing you a refreshing way to nurture your well-being."}
+                            p_4={"Experience the goodness of our herbal juices, carefully crafted to invigorate your health. Embrace improved digestion, balanced blood pressure, and enhanced energy levels. Say goodbye to worries about diabetes, respiratory woes, and morning discomfort. Elevate your vitality the natural way with our pure, organic blends. Your path to wellness starts here."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Triphala_Juice1_b968454f-babd-4e5e-a421-29e3e091a0b9.png?v=1698819277"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Triphala_Juice_4.png?v=1698819277"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Triphala_Juice_5.png?v=1698819277"}
+                        />}
+                    />
                     <Route
                         path="/collections/herbal-juice/products/"
                         element={<HerbalPages />} />
