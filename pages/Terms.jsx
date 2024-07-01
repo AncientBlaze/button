@@ -13,7 +13,7 @@ export default function Terms() {
                     </Link>
                     /<span className="text-black">&nbsp;Terms and Conditions</span>
                 </p>
-                <div className="text-5xl font-jost py-5">
+                <div className="text-5xl font-jost py-5 px-10">
                     <p>Terms and Conditions</p>
                     <p className="text-3xl py-10"></p>
                     <div className="grid text-base gap-10">
