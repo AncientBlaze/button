@@ -55,13 +55,17 @@ function Nav() {
                         </p>
                         <img
                             className="cursor-pointer"
-                            src="https://farmnaturelle.com/cdn/shop/files/clipboard.png?v=1694410359"
+                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ph_copy.svg?v=1695374232"
                             alt="copy"
                             height="auto"
-                            onClick={async function handler() {
+                            onClick={async () => {
                                 const copyText = "NFARM100";
-                                navigator.clipboard.writeText(copyText);
-                                toast(`Copied ${copyText}`)
+                                try {
+                                    await navigator.clipboard.writeText(copyText);
+                                    toast(`Copied ${copyText}`);
+                                } catch (error) {
+                                    console.error("Error copying text: ", error);
+                                }
                             }}
                         />
                     </div>
