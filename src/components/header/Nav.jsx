@@ -44,13 +44,6 @@ function Nav() {
         setOpenModal(false);
     };
 
-    const Handler = () => {
-        const copyText = "NFARM100";
-
-        toast.done("Copied the text: " + copyText, {
-            position: "top-center"
-        });
-    };
     return (
         <>
             <Sticky top={0} innerZ={20}>
@@ -62,11 +55,14 @@ function Nav() {
                         </p>
                         <img
                             className="cursor-pointer"
-                            onClick={Handler()}
-                            src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/ph_copy.svg?v=1695374232"
+                            src="https://farmnaturelle.com/cdn/shop/files/clipboard.png?v=1694410359"
                             alt="copy"
-                            width="inherit"
                             height="auto"
+                            onClick={async function handler() {
+                                const copyText = "NFARM100";
+                                navigator.clipboard.writeText(copyText);
+                                toast(`Copied ${copyText}`)
+                            }}
                         />
                     </div>
                 </header>
@@ -180,9 +176,9 @@ function Nav() {
                                     </li>
                                     <li className="text-nowrap px-4 pb-1 mt-1 hover:text-[#006944]">
                                         <Link to={"/collections/herbal-juice/products/detox-miracle-shots-ready-to-drink-shots"}>
-                                        <span className="underlined">
-                                            Detox Miracle Shot
-                                        </span>
+                                            <span className="underlined">
+                                                Detox Miracle Shot
+                                            </span>
                                         </Link>
                                     </li>
                                 </ul>
