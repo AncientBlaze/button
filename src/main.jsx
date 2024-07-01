@@ -559,6 +559,36 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                         />}
                     />
                     <Route
+                        path="/collections/herbal-juice/products/slimfit-juice"
+                        element={<HerbalPages />}/>
+                    <Route
+                        path="/collections/herbal-juice/products/"
+                        element={<HerbalPages />}/>
+                    <Route
+                        path="/collections/herbal-juice/products/"
+                        element={<HerbalPages />}/>
+                    <Route
+                        path="/collections/herbal-juice/products/"
+                        element={<HerbalPages />}/>
+                    <Route
+                        path="/collections/herbal-juice/products/"
+                        element={<HerbalPages />}/>
+                    <Route
+                        path="/collections/herbal-juice/products/"
+                        element={<HerbalPages />}/>
+                    <Route
+                        path="/collections/herbal-juice/products/"
+                        element={<HerbalPages />}/>
+                    <Route
+                        path="/collections/herbal-juice/products/"
+                        element={<HerbalPages />}/>
+                    <Route
+                        path="/collections/herbal-juice/products/"
+                        element={<HerbalPages />}/>
+                    <Route
+                        path="/collections/herbal-juice/products/"
+                        element={<HerbalPages />}/>
+                    <Route
                         path="/collections/all-products"
                         element={<All_Products />}
                     />

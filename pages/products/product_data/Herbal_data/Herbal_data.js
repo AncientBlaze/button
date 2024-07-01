@@ -93,4 +93,85 @@ export const Detox = [
     { img: "https://farmnaturelle.com/cdn/shop/files/4.png?v=1714049116" },
     { img: "https://farmnaturelle.com/cdn/shop/files/5.png?v=1714049116" },
     { img: "https://farmnaturelle.com/cdn/shop/files/6.png?v=1714049117" },
-]
+];
+
+export const slimFitJuice = [
+    { img: "https://farmnaturelle.com/cdn/shop/files/1_4b094ce5-cde7-42fe-aefb-65ca541ddfa3.jpg?v=1714050510" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/2_322aa64c-c3a9-4bc8-a4b4-958d1435158d.jpg?v=1714050510" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/3_0c58249b-3eb7-4a76-97ab-a453550594a6.jpg?v=1714050511" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/4_d2971a3c-0e9c-45ac-851f-f9b915ed9669.jpg?v=1714050511" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/5_45c5adf3-7739-4770-83ee-a7db31795051.jpg?v=1714050510" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/6_35a4a733-45d3-4c1b-9ea5-fdd65ceb3a4c.jpg?v=1714050509" },
+];
+export const strongest6Ayurvedic = [
+    { img: "https://farmnaturelle.com/cdn/shop/files/1_5b2a26c1-6eee-435b-a91e-e522528e9c7b.png?v=1714050547" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/2_c664de08-e1df-42c1-bef6-ed9146acad00.png?v=1714050546" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/3_dd95453b-0c8c-4ac1-870c-4b7b5b3b2c64.png?v=1714050546" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/4_9c1f9732-1559-4117-8dde-c125719aacfd.png?v=1714050545" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/5_7bd0f390-2cc5-4acd-bb08-d9fb755c326e.png?v=1714050546" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/6_64688242-3f81-4dcb-abfb-55f239123f40.png?v=1714050545" },
+];
+export const PureHerbal = [
+    { img: "https://farmnaturelle.com/cdn/shop/files/1_59a381d1-6441-4b21-9947-ba3e420b612e.png?v=1714050635" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/2_a4028fcd-59ab-4f15-9e4f-4010b8a572b4.png?v=1714050634" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/3_5a413dde-7322-4b1d-92a2-d551fdd05efe.png?v=1714050635" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/4_fd0bb86a-bf44-459d-97a9-fe9f97445fa4.png?v=1714050635" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/5_b4f67dd2-2c06-4d10-8d8d-21b75ef121bd.png?v=1714050636" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/6_69883072-6f37-4835-aba1-78f992acc973.png?v=1714050636" },
+];
+export const amlaJuice = [
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+];
+export const neemJuice = [
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+];
+export const tulsiJuice = [
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+];
+export const aloeVeraWheatGrassJuice = [
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+];
+export const aloeVeraJuice = [
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+];
+export const TriphalaJuice = [
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+];
+export const NoniJuice = [
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+    { img: "" },
+];
