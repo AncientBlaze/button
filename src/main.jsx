@@ -104,7 +104,7 @@ import HerbalPages from "../pages/products/product_data/Herbal_data/HerbalPages.
 import { antiHangover, Detox, digestiveFitness, easingDiabetes, jointsPainCare, kidneyStoneCrusher, magicalMan, pilesVanish, smilingLiver, streesBuster, womenGlow } from "../pages/products/product_data/Herbal_data/Herbal_data.js";
 import Tea from "../pages/Tea.jsx";
 import TeaPages from "../pages/products/product_data/Tea_data/TeaPages.jsx";
-import { appleCinnamonGreenTea, moringaGreenTea, turmericGreenTea } from "../pages/products/product_data/Tea_data/Tea_data.js";
+import { appleCinnamonGreenTea, kashmirTea, lemonGrass, masalaTea, moringaGreenTea, tulsiGreenTea, turmericGreenTea } from "../pages/products/product_data/Tea_data/Tea_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -4000,6 +4000,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                             info1={"Purely Natural Goodness"}
                             info2={"Boost Your Immunity"}
                             info3={"Gentle on the Gut"}
+                            info4={"Rich in Antioxidants"}
                             Tab1={"Immerse yourself in the essence of Farm Naturelle Kashmiri Shahi Qawah (Kahwa) – a premium fusion that delights the senses and soothes the soul. A cherished tradition in Jammu and Kashmir, this authentic brew, harvested using timeless methods, brings the goodness of the valleys to you. With its masterfully curated blend of spices and green tea, it offers a symphony of flavors and a tapestry of health benefits. Embrace the pure heritage, sip by sip."}
                             T1SubText={"Carefully crafted using age-old methods, our Qawah embraces the pure essence and fragrant allure of Jammu and Kashmir's valleys."}
                             T2SubText={"Savor the goodness of Farm Naturelle Kashmiri Shahi Qawah—a wholesome and authentic choice over sugary beverages. Crafted from nature's treasures, this herbal tea is a burst of health with zero artificial flavors, preservatives, or coloring. Embrace a natural, refreshing indulgence that uplifts your well-being. Cheers to a healthier you!"}
@@ -4016,13 +4017,149 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                         />}
                     />
                     <Route
-                        path="collections/tea/products/masala-tea" />
+                        path="collections/tea/products/masala-tea"
+                        element={<TeaPages
+                            name={"Masala Green Tea - Acts as Immunity Booster and Anti Inflammatory | Natural Ingredient Infused - Not Artificially Flavoured | Long Leaf Loose Tea"}
+                            Name={"Masala Green Tea"}
+                            images={masalaTea}
+                            price={210}
+                            previousPrice={339}
+                            save={"38%"}
+                            price1={290}
+                            previousPrice1={459}
+                            save1={"37%"}
+                            price2={320}
+                            previousPrice2={489}
+                            save2={"35%"}
+                            price3={540}
+                            previousPrice3={829}
+                            save3={"35%"}
+                            info1={"Immunity Boost"}
+                            info2={"Antioxidant Rich"}
+                            info3={"Energy Infusion"}
+                            Tab1={"Immerse yourself in the essence of Farm Naturelle Kashmiri Shahi Qawah (Kahwa) – a premium fusion that delights the senses and soothes the soul. A cherished tradition in Jammu and Kashmir, this authentic brew, harvested using timeless methods, brings the goodness of the valleys to you. With its masterfully curated blend of spices and green tea, it offers a symphony of flavors and a tapestry of health benefits. Embrace the pure heritage, sip by sip."}
+                            T1SubText={"Carefully crafted using age-old methods, our Qawah embraces the pure essence and fragrant allure of Jammu and Kashmir's valleys."}
+                            T2SubText={"Savor the goodness of Farm Naturelle Kashmiri Shahi Qawah—a wholesome and authentic choice over sugary beverages. Crafted from nature's treasures, this herbal tea is a burst of health with zero artificial flavors, preservatives, or coloring. Embrace a natural, refreshing indulgence that uplifts your well-being. Cheers to a healthier you!"}
+                            T3SubText={"Green tea blended with Dried moringa leaves & ginger"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Kashmiri_kahwa_1.png?v=1700726094"}
+                            h4_1={"Nourishes Skin & Hair"}
+                            h4_2={"Liver Guardian"}
+                            h4_3={"Balances Blood Sugar"}
+                            h4_4={"Kidney Stone Defender"}
+                            p_1={"Beauty from the inside out! Moringa Tea isn't just for sipping; it's a secret ingredient for radiant skin and luscious hair."}
+                            p_2={"Let your liver breathe easy. Moringa Tea helps protect and support your liver's health, ensuring it functions at its best."}
+                            p_3={"Keep your blood sugar levels in check with the goodness of Moringa Tea, promoting a balanced and healthy lifestyle."}
+                            p_4={"Safeguard your kidneys naturally. Moringa Tea aids in preventing kidney stones, letting you enjoy life worry-free."}
+                        />}
+                    />
                     <Route
-                        path="collections/tea/products/kashmiri-kahwa-tea" />
+                        path="collections/tea/products/kashmiri-kahwa-tea"
+                        element={<TeaPages
+                            name={"Kashmiri Kahwa Green Tea Blended with Saffron, Almonds, Spices -100% Natural Ingredients"}
+                            Name={"Kashmiri Kahwa Green Tea"}
+                            images={kashmirTea}
+                            price={240}
+                            previousPrice={389}
+                            save={"39%"}
+                            price1={350}
+                            previousPrice1={589}
+                            save1={"41%"}
+                            price2={375}
+                            previousPrice2={619}
+                            save2={"39%"}
+                            price3={695}
+                            previousPrice3={1159}
+                            save3={"40%"}
+                            info1={"Flavorful Charm of Jammu & Kashmir"}
+                            info2={"Healthier Sips Your Way"}
+                            info3={"Sip Serenity All Day"}
+                            Tab1={"Immerse yourself in the essence of Farm Naturelle Kashmiri Shahi Qawah (Kahwa) – a premium fusion that delights the senses and soothes the soul. A cherished tradition in Jammu and Kashmir, this authentic brew, harvested using timeless methods, brings the goodness of the valleys to you. With its masterfully curated blend of spices and green tea, it offers a symphony of flavors and a tapestry of health benefits. Embrace the pure heritage, sip by sip."}
+                            T1SubText={"Carefully crafted using age-old methods, our Qawah embraces the pure essence and fragrant allure of Jammu and Kashmir's valleys."}
+                            T2SubText={"Savor the goodness of Farm Naturelle Kashmiri Shahi Qawah—a wholesome and authentic choice over sugary beverages. Crafted from nature's treasures, this herbal tea is a burst of health with zero artificial flavors, preservatives, or coloring. Embrace a natural, refreshing indulgence that uplifts your well-being. Cheers to a healthier you!"}
+                            T3SubText={"Green tea blended with Dried moringa leaves & ginger"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Kashmiri_kahwa_1.png?v=1700726094"}
+                            h4_1={"Nourishes Skin & Hair"}
+                            h4_2={"Liver Guardian"}
+                            h4_3={"Balances Blood Sugar"}
+                            h4_4={"Kidney Stone Defender"}
+                            p_1={"Beauty from the inside out! Moringa Tea isn't just for sipping; it's a secret ingredient for radiant skin and luscious hair."}
+                            p_2={"Let your liver breathe easy. Moringa Tea helps protect and support your liver's health, ensuring it functions at its best."}
+                            p_3={"Keep your blood sugar levels in check with the goodness of Moringa Tea, promoting a balanced and healthy lifestyle."}
+                            p_4={"Safeguard your kidneys naturally. Moringa Tea aids in preventing kidney stones, letting you enjoy life worry-free."}
+                        />}
+                    />
                     <Route
-                        path="collections/tea/products/lemongrass-mint-green-tea" />
+                        path="collections/tea/products/lemongrass-mint-green-tea"
+                        element={<TeaPages
+                            name={"Lemongrass Mint Green Tea"}
+                            Name={"Lemongrass Mint Green Tea"}
+                            images={lemonGrass}
+                            price={240}
+                            previousPrice={389}
+                            save={"39%"}
+                            price1={350}
+                            previousPrice1={589}
+                            save1={"41%"}
+                            price2={375}
+                            previousPrice2={619}
+                            save2={"39%"}
+                            price3={695}
+                            previousPrice3={1159}
+                            save3={"40%"}
+                            info1={"Stomach Soothing Tea"}
+                            info2={"Nature's Anti-Inflammatory Tea"}
+                            info3={"Your Natural Stress and Anxiety Ally"}
+                            Tab1={"Immerse yourself in the essence of Farm Naturelle Kashmiri Shahi Qawah (Kahwa) – a premium fusion that delights the senses and soothes the soul. A cherished tradition in Jammu and Kashmir, this authentic brew, harvested using timeless methods, brings the goodness of the valleys to you. With its masterfully curated blend of spices and green tea, it offers a symphony of flavors and a tapestry of health benefits. Embrace the pure heritage, sip by sip."}
+                            T1SubText={"Carefully crafted using age-old methods, our Qawah embraces the pure essence and fragrant allure of Jammu and Kashmir's valleys."}
+                            T2SubText={"Savor the goodness of Farm Naturelle Kashmiri Shahi Qawah—a wholesome and authentic choice over sugary beverages. Crafted from nature's treasures, this herbal tea is a burst of health with zero artificial flavors, preservatives, or coloring. Embrace a natural, refreshing indulgence that uplifts your well-being. Cheers to a healthier you!"}
+                            T3SubText={"Green tea blended with Dried moringa leaves & ginger"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Kashmiri_kahwa_1.png?v=1700726094"}
+                            h4_1={"Nourishes Skin & Hair"}
+                            h4_2={"Liver Guardian"}
+                            h4_3={"Balances Blood Sugar"}
+                            h4_4={"Kidney Stone Defender"}
+                            p_1={"Beauty from the inside out! Moringa Tea isn't just for sipping; it's a secret ingredient for radiant skin and luscious hair."}
+                            p_2={"Let your liver breathe easy. Moringa Tea helps protect and support your liver's health, ensuring it functions at its best."}
+                            p_3={"Keep your blood sugar levels in check with the goodness of Moringa Tea, promoting a balanced and healthy lifestyle."}
+                            p_4={"Safeguard your kidneys naturally. Moringa Tea aids in preventing kidney stones, letting you enjoy life worry-free."}
+                        />}
+                    />
                     <Route
-                        path="collections/tea/products/tulsi-green-tea" />
+                        path="collections/tea/products/tulsi-green-tea"
+                        element={<TeaPages
+                            name={"Tulsi Green Tea - Acts as Immunity Booster and Anti Inflammatory | Natural Ingredient Infused - Not Artificially Flavoured | Long Leaf Loose Tea"}
+                            Name={"Tulsi Green Tea"}
+                            images={tulsiGreenTea}
+                            price={240}
+                            previousPrice={389}
+                            save={"39%"}
+                            price1={350}
+                            previousPrice1={589}
+                            save1={"41%"}
+                            price2={375}
+                            previousPrice2={619}
+                            save2={"39%"}
+                            price3={695}
+                            previousPrice3={1159}
+                            save3={"40%"}
+                            info1={"Exquisite Tulsi Green Tea"}
+                            info2={"Pure Perfection Sourced From Farm"}
+                            info3={"Revitalize Your Health"}
+                            Tab1={"Immerse yourself in the essence of Farm Naturelle Kashmiri Shahi Qawah (Kahwa) – a premium fusion that delights the senses and soothes the soul. A cherished tradition in Jammu and Kashmir, this authentic brew, harvested using timeless methods, brings the goodness of the valleys to you. With its masterfully curated blend of spices and green tea, it offers a symphony of flavors and a tapestry of health benefits. Embrace the pure heritage, sip by sip."}
+                            T1SubText={"Carefully crafted using age-old methods, our Qawah embraces the pure essence and fragrant allure of Jammu and Kashmir's valleys."}
+                            T2SubText={"Savor the goodness of Farm Naturelle Kashmiri Shahi Qawah—a wholesome and authentic choice over sugary beverages. Crafted from nature's treasures, this herbal tea is a burst of health with zero artificial flavors, preservatives, or coloring. Embrace a natural, refreshing indulgence that uplifts your well-being. Cheers to a healthier you!"}
+                            T3SubText={"Green tea blended with Dried moringa leaves & ginger"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Kashmiri_kahwa_1.png?v=1700726094"}
+                            h4_1={"Nourishes Skin & Hair"}
+                            h4_2={"Liver Guardian"}
+                            h4_3={"Balances Blood Sugar"}
+                            h4_4={"Kidney Stone Defender"}
+                            p_1={"Beauty from the inside out! Moringa Tea isn't just for sipping; it's a secret ingredient for radiant skin and luscious hair."}
+                            p_2={"Let your liver breathe easy. Moringa Tea helps protect and support your liver's health, ensuring it functions at its best."}
+                            p_3={"Keep your blood sugar levels in check with the goodness of Moringa Tea, promoting a balanced and healthy lifestyle."}
+                            p_4={"Safeguard your kidneys naturally. Moringa Tea aids in preventing kidney stones, letting you enjoy life worry-free."}
+                        />}
+                    />
                 </Routes>
             </Provider>
         </BrowserRouter>
