@@ -3,8 +3,114 @@ import { CgArrowRight } from "react-icons/cg";
 import Slider from "react-slick";
 import React from "react";
 import CardComponent from "./CardComponent";
+import { Link } from "react-router-dom";
 
 const CarouselComponent2 = () => {
+    const products = [
+        {
+            id: "yellow-mustard-oil-classic",
+            ImageUrl:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9435_800x.jpg?v=1708001371",
+            PlaceHolder:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9436_800x.jpg?v=1708001374",
+            title: "100% Pure...",
+            content: 275,
+            PreviousPrice: 329,
+            save: 16,
+        },
+        {
+            id: "sunflower-oil",
+            ImageUrl:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9423_800x.jpg?v=1703749253",
+            PlaceHolder:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9424_800x.jpg?v=1708001213",
+            title: "100% Natural Cold",
+            content: 290,
+            PreviousPrice: 339,
+            save: 14,
+        },
+        {
+            id: "black-sesame-oil",
+            ImageUrl:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9313_800x.jpg?v=1708001210",
+            PlaceHolder:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9314_800x.jpg?v=1708001212",
+            title: "Black Sesame Oil...",
+            content: 368,
+            PreviousPrice: 449,
+            save: 18,
+        },
+        {
+            id: "white-sesame-oil-classic",
+            ImageUrl:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9429_800x.jpg?v=1703849984",
+            PlaceHolder:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9430_800x.jpg?v=1703849986",
+            title: "Buy 100% Pure...",
+            content: 275,
+            PreviousPrice: 329,
+            save: 16,
+            hidden: "hidden",
+        },
+        {
+            ImageUrl:
+                "https://farmnaturelle.com/cdn/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_800x.gif",
+            PlaceHolder:
+                "https://farmnaturelle.com/cdn/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_800x.gif",
+            title: "Organic Extra Light",
+            content: 299,
+            PreviousPrice: 369,
+            save: 19,
+            hidden: "hidden",
+        },
+        {
+            id: "black-mustard-oil",
+            ImageUrl:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9304_5e288c25-7779-4d43-b049-30fa89946889_800x.jpg?v=1708001211",
+            PlaceHolder:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9305_444d3e7e-98ea-43f4-8c19-c4b7f178614e_800x.jpg?v=1708001213",
+            title: "Organic Cold Pressed...",
+            content: 290,
+            PreviousPrice: 339,
+            save: 14,
+        },
+        {
+            id: "groundnut-oil",
+            ImageUrl:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9331_800x.jpg?v=1708001211",
+            PlaceHolder:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9332_800x.jpg?v=1708001213",
+            title: "100% Pure Organic...",
+            content: 580,
+            PreviousPrice: 695,
+            save: 17,
+        },
+        {
+            id: "organic-extra-virgin-coconut-oil",
+            ImageUrl:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9369_800x.jpg?v=1703749125",
+            PlaceHolder:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9370_800x.jpg?v=1708001197",
+            title: "Organic Extra Virgin...",
+            content: 449,
+            PreviousPrice: 499,
+            save: 10,
+            hidden: "hidden",
+        },
+        {
+            id: "organic-virgin-coconut-oil",
+            ImageUrl:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9339_800x.jpg?v=1708001195",
+            PlaceHolder:
+                "https://farmnaturelle.com/cdn/shop/files/Rectangle9340_800x.jpg?v=1708001199",
+            title: "100% Pure Coconut...",
+            content: 389,
+            PreviousPrice: 429,
+            save: 9,
+            hidden: "hidden",
+        },
+    ];
+
     const slider = React.useRef(null);
 
     const settings = {
@@ -59,9 +165,11 @@ const CarouselComponent2 = () => {
                                 <CgArrowRight />
                             </button>
                         </div>
-                        <button className="bg-[#855245] text-white w-[210px] h-[45px] rounded-lg hover:text-[#855245] border border-white hover:bg-white transition-colors duration-1000 hover:border hover:border-[#855245]">
-                            View All
-                        </button>
+                        <Link to={"collections/best-seller-cooking-oil"}>
+                            <button className="bg-[#855245] text-white w-[210px] h-[45px] rounded-lg hover:text-[#855245] border border-white hover:bg-white transition-colors duration-1000 hover:border hover:border-[#855245]">
+                                View All
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <div className="w-2/3 h-full bg-transparent flex justify-center items-center">
@@ -71,62 +179,22 @@ const CarouselComponent2 = () => {
                             {...settings}
                             className="w-full h-screen flex items-center"
                         >
-                            <CardComponent
-                                save={14}
-                                PlaceHolder="https://farmnaturelle.com/cdn/shop/files/Rectangle9305_444d3e7e-98ea-43f4-8c19-c4b7f178614e_800x.jpg?v=1708001213"
-                                ImageUrl="https://farmnaturelle.com/cdn/shop/files/Rectangle9304_5e288c25-7779-4d43-b049-30fa89946889_800x.jpg?v=1708001211"
-                                title="Organic Cold Pressed..."
-                                PreviousPrice={339}
-                                content={290}
-                            />
-                            <CardComponent
-                                save={16}
-                                PlaceHolder="https://farmnaturelle.com/cdn/shop/files/Rectangle9436_800x.jpg?v=1708001374"
-                                ImageUrl="https://farmnaturelle.com/cdn/shop/files/Rectangle9435_800x.jpg?v=1708001371"
-                                title="100% Pure..."
-                                PreviousPrice={329}
-                                content={275}
-                            />
-                            <CardComponent
-                                save={14}
-                                PlaceHolder="https://farmnaturelle.com/cdn/shop/files/Rectangle9424_800x.jpg?v=1708001213"
-                                ImageUrl="https://farmnaturelle.com/cdn/shop/files/Rectangle9423_800x.jpg?v=1703749253"
-                                title="100% Natural Cold"
-                                PreviousPrice={339}
-                                content={290}
-                            />
-                            <CardComponent
-                                save={18}
-                                PlaceHolder="https://farmnaturelle.com/cdn/shop/files/Rectangle9314_800x.jpg?v=1708001212"
-                                ImageUrl="https://farmnaturelle.com/cdn/shop/files/Rectangle9313_800x.jpg?v=1708001210"
-                                title="Black Sesame Oil..."
-                                PreviousPrice={449}
-                                content={368}
-                            />
-                            <CardComponent
-                                save={16}
-                                PlaceHolder="https://farmnaturelle.com/cdn/shop/files/Rectangle9430_800x.jpg?v=1703849986"
-                                ImageUrl="https://farmnaturelle.com/cdn/shop/files/Rectangle9429_800x.jpg?v=1703849984"
-                                title="Buy 100% Pure..."
-                                PreviousPrice={329}
-                                content={275}
-                            />
-                            <CardComponent
-                                save={19}
-                                PlaceHolder="https://farmnaturelle.com/cdn/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_800x.gif"
-                                ImageUrl="https://farmnaturelle.com/cdn/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_800x.gif"
-                                title="Organic Extra Light"
-                                PreviousPrice={369}
-                                content={299}
-                            />
-                            <CardComponent
-                                save={18}
-                                PlaceHolder="https://farmnaturelle.com/cdn/shop/files/Rectangle9357_800x.jpg?v=1703849690"
-                                ImageUrl="https://farmnaturelle.com/cdn/shop/files/Rectangle9356_800x.jpg?v=1703849688"
-                                title="Extra Virgin Olive..."
-                                PreviousPrice={379}
-                                content={309}
-                            />
+                            {products.map((item, index) => (
+                                <Link
+                                    key={index}
+                                    to={`/collections/best-seller-cooking-oil/products/${item.id}`}
+                                >
+                                    <CardComponent
+                                        id={item.id}
+                                        PlaceHolder={item.PlaceHolder}
+                                        ImageUrl={item.ImageUrl}
+                                        title={item.title}
+                                        PreviousPrice={item.PreviousPrice}
+                                        content={item.content}
+                                        save={item.save}
+                                    />
+                                </Link>
+                            ))}
                         </Slider>
                     </div>
                 </div>

@@ -972,3 +972,4 @@ function All_Products() {
 }
 
 export default All_Products;
+console.log(products.length);
