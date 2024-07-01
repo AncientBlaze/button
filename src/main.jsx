@@ -104,7 +104,7 @@ import HerbalPages from "../pages/products/product_data/Herbal_data/HerbalPages.
 import { antiHangover, Detox, digestiveFitness, easingDiabetes, jointsPainCare, kidneyStoneCrusher, magicalMan, pilesVanish, smilingLiver, streesBuster, womenGlow } from "../pages/products/product_data/Herbal_data/Herbal_data.js";
 import Tea from "../pages/Tea.jsx";
 import TeaPages from "../pages/products/product_data/Tea_data/TeaPages.jsx";
-import { appleCinnamonGreenTea, moringaGreenTea } from "../pages/products/product_data/Tea_data/Tea_data.js";
+import { appleCinnamonGreenTea, moringaGreenTea, turmericGreenTea } from "../pages/products/product_data/Tea_data/Tea_data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -3979,6 +3979,50 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                         />
                         }
                     />
+                    <Route
+                        path="collections/tea/products/turmeric-green-tea"
+                        element={<TeaPages
+                            name={"Turmeric green tea Acts as Immunity Booster and Anti Inflammatory | Natural Ingredient Infused - Not Artificially Flavoured | Long Leaf Loose Tea (Mountain Turmeric Tea"}
+                            Name={"Turmeric green Tea"}
+                            images={turmericGreenTea}
+                            price={210}
+                            previousPrice={339}
+                            save={"38%"}
+                            price1={290}
+                            previousPrice1={459}
+                            save1={"37%"}
+                            price2={320}
+                            previousPrice2={489}
+                            save2={"35%"}
+                            price3={540}
+                            previousPrice3={829}
+                            save3={"35%"}
+                            info1={"Purely Natural Goodness"}
+                            info2={"Boost Your Immunity"}
+                            info3={"Gentle on the Gut"}
+                            Tab1={"Immerse yourself in the essence of Farm Naturelle Kashmiri Shahi Qawah (Kahwa) – a premium fusion that delights the senses and soothes the soul. A cherished tradition in Jammu and Kashmir, this authentic brew, harvested using timeless methods, brings the goodness of the valleys to you. With its masterfully curated blend of spices and green tea, it offers a symphony of flavors and a tapestry of health benefits. Embrace the pure heritage, sip by sip."}
+                            T1SubText={"Carefully crafted using age-old methods, our Qawah embraces the pure essence and fragrant allure of Jammu and Kashmir's valleys."}
+                            T2SubText={"Savor the goodness of Farm Naturelle Kashmiri Shahi Qawah—a wholesome and authentic choice over sugary beverages. Crafted from nature's treasures, this herbal tea is a burst of health with zero artificial flavors, preservatives, or coloring. Embrace a natural, refreshing indulgence that uplifts your well-being. Cheers to a healthier you!"}
+                            T3SubText={"Green tea blended with Dried moringa leaves & ginger"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Kashmiri_kahwa_1.png?v=1700726094"}
+                            h4_1={"Nourishes Skin & Hair"}
+                            h4_2={"Liver Guardian"}
+                            h4_3={"Balances Blood Sugar"}
+                            h4_4={"Kidney Stone Defender"}
+                            p_1={"Beauty from the inside out! Moringa Tea isn't just for sipping; it's a secret ingredient for radiant skin and luscious hair."}
+                            p_2={"Let your liver breathe easy. Moringa Tea helps protect and support your liver's health, ensuring it functions at its best."}
+                            p_3={"Keep your blood sugar levels in check with the goodness of Moringa Tea, promoting a balanced and healthy lifestyle."}
+                            p_4={"Safeguard your kidneys naturally. Moringa Tea aids in preventing kidney stones, letting you enjoy life worry-free."}
+                        />}
+                    />
+                    <Route
+                        path="collections/tea/products/masala-tea" />
+                    <Route
+                        path="collections/tea/products/kashmiri-kahwa-tea" />
+                    <Route
+                        path="collections/tea/products/lemongrass-mint-green-tea" />
+                    <Route
+                        path="collections/tea/products/tulsi-green-tea" />
                 </Routes>
             </Provider>
         </BrowserRouter>

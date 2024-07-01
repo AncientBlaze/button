@@ -46,6 +46,7 @@ export default function TeaPages({
     info1,
     info2,
     info3,
+    info4,
     Tab1,
     T1SubText,
     T2SubText,
@@ -336,6 +337,11 @@ export default function TeaPages({
                                 <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
                                     <p>{info3}</p>
                                 </li>
+                                {info4 &&
+                                    <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
+                                        <p>{info4}</p>
+                                    </li>
+                                }
                             </ul>
                         </div>
                         <div>
