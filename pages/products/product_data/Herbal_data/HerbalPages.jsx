@@ -311,15 +311,21 @@ export default function HerbalPages({
                         </div>
                         <div className="text-[#313131] font-jost font-semibold py-10">
                             <ul>
-                                <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
-                                    <p>{info1}</p>
-                                </li>
-                                <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
-                                    <p>{info2}</p>
-                                </li>
-                                <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
-                                    <p>{info3}</p>
-                                </li>
+                                {info1 &&
+                                    <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
+                                        <p>{info1}</p>
+                                    </li>
+                                }
+                                {info2 &&
+                                    <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
+                                        <p>{info2}</p>
+                                    </li>
+                                }
+                                {info3 &&
+                                    <li className="bg-[url(https://farmnaturelle.com/cdn/shop/files/np_tick_1308418_000000_svg.svg?v=1696564417)] bg-no-repeat bg-[1%] p-2 px-10">
+                                        <p>{info3}</p>
+                                    </li>
+                                }
                             </ul>
                         </div>
                         <div>
@@ -502,22 +508,27 @@ export default function HerbalPages({
                                 </p>
                                 <p></p>
                                 <ul className="text-base">
-                                    <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
-                                        <b className="text-black">{info1}</b>{":"}
-                                        {T1SubText}{" "}
-                                    </li>
-                                    <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
-                                        <b>
-                                            <span className="text-black">
-                                                {info2}
-                                            </span>
-                                        </b>{" "}
-                                        {T2SubText}{":"}
-                                    </li>
-                                    <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
-                                        <b className="text-black">{info3}</b>{":"}
-                                        {T3SubText}{" "}
-                                    </li>
+                                    {
+                                        info1 && <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
+                                            <b className="text-black">{info1}</b>{":"}
+                                            {T1SubText}{" "}
+                                        </li>
+                                    }
+                                    {
+                                        info2 && <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
+                                            <b>
+                                                <span className="text-black">
+                                                    {info2}
+                                                </span>
+                                            </b>{" "}
+                                            {T2SubText}{":"}
+                                        </li>}
+                                    {info3 &&
+                                        <li className="text-[#727271] py-2 px-10 bg-[url(https://farmnaturelle.com/cdn/shop/files/Vector_7.svg?v=1696824655)] bg-no-repeat bg-[1%]">
+                                            <b className="text-black">{info3}</b>{":"}
+                                            {T3SubText}{" "}
+                                        </li>
+                                    }
                                 </ul>
                                 <p></p>
                             </TabPanel>

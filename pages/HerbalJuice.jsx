@@ -5,6 +5,7 @@ import CardComponent from "../src/components/CardComponent2";
 
 const herbalJuiceList = [
     {
+        id: "slimfit-juice",
         save: 54,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_322aa64c-c3a9-4bc8-a4b4-958d1435158d_800x.jpg?v=1714050510",
@@ -16,6 +17,7 @@ const herbalJuiceList = [
         hidden: null,
     },
     {
+        id: "immunity-juice",
         save: 54,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_c664de08-e1df-42c1-bef6-ed9146acad00_800x.png?v=1714050546",
@@ -39,6 +41,7 @@ const herbalJuiceList = [
         hidden: "hidden",
     },
     {
+        id: "giloy-juice",
         save: 54,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_a4028fcd-59ab-4f15-9e4f-4010b8a572b4_800x.png?v=1714050634",
@@ -50,6 +53,7 @@ const herbalJuiceList = [
         hidden: "hidden",
     },
     {
+        id: "amla-juice",
         save: 54,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_b9ab028d-a331-48f9-9751-93f109576017_800x.jpg?v=1714050669",
@@ -60,7 +64,7 @@ const herbalJuiceList = [
         content: 799,
         hidden: "hidden",
     },
-    {
+    {   
         save: 55,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_1c415fe2-6230-4092-9385-ff713a887201_800x.jpg?v=1714052494",
@@ -115,8 +119,8 @@ const herbalJuiceList = [
         content: 899,
         hidden: "hidden",
     },
-    {   
-        id:"kidney-stone-crusher-juice",
+    {
+        id: "kidney-stone-crusher-juice",
         save: 54,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_9437b3be-2b5d-4708-9eb0-5eb48f0f7aa4_800x.jpg?v=1714049205",

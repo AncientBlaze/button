@@ -101,7 +101,7 @@ import HingPages from "../pages/products/product_data/Hing_data/HingPages.jsx";
 import { Hingimg } from "../pages/products/product_data/Hing_data/Hing_data.js";
 import WellnessJuice from "../pages/WellnessJuices.jsx";
 import HerbalPages from "../pages/products/product_data/Herbal_data/HerbalPages.jsx";
-import { antiHangover, Detox, digestiveFitness, easingDiabetes, jointsPainCare, kidneyStoneCrusher, magicalMan, pilesVanish, smilingLiver, streesBuster, womenGlow } from "../pages/products/product_data/Herbal_data/Herbal_data.js";
+import { amlaJuice, antiHangover, Detox, digestiveFitness, easingDiabetes, jointsPainCare, kidneyStoneCrusher, magicalMan, pilesVanish, PureHerbal, slimFitJuice, smilingLiver, streesBuster, strongest6Ayurvedic, womenGlow } from "../pages/products/product_data/Herbal_data/Herbal_data.js";
 import Tea from "../pages/Tea.jsx";
 import TeaPages from "../pages/products/product_data/Tea_data/TeaPages.jsx";
 import { appleCinnamonGreenTea, kashmirTea, lemonGrass, masalaTea, moringaGreenTea, tulsiGreenTea, turmericGreenTea } from "../pages/products/product_data/Tea_data/Tea_data.js";
@@ -560,34 +560,166 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     />
                     <Route
                         path="/collections/herbal-juice/products/slimfit-juice"
-                        element={<HerbalPages />}/>
+                        element={<HerbalPages
+                            name={"Slimfit Juice| Supports Weight Management | Boosts Metabolism"}
+                            Name={"Slimfit Juice"}
+                            images={slimFitJuice}
+                            price={999}
+                            previousPrice={2156}
+                            save={"54%"}
+                            price1={1995}
+                            previousPrice1={4555}
+                            save1={"56%"}
+                            price2={2995}
+                            previousPrice2={7112}
+                            save2={"58%"}
+                            info1={"Boost Your Immunity Naturally"}
+                            info2={"Naturally Shields Against Viral Threats"}
+                            Tab1={"Enjoy the power of Giloy in our herbal juice – a trusted aid to manage sugar levels. This natural wonder boasts renowned hypoglycemic properties, offering a helping hand in regulating sugar. By embracing regular consumption, you're not only nurturing fitness but also bolstering immunity against various ailments. Elevate your well-being with every sip, courtesy of the goodness of 100% pure, natural, and organic ingredients."}
+                            Tab3={"Hypoglycemic Properties, Natural Ingredients, 100% Pure, Organic, Certified, Safe, Safe For Pets, Safe For Kids, Safe For Baby"}
+                            T1SubText={" The power of Giloy Juice will shield against fevers and flu. This herbal elixir supercharges your immunity, providing robust protection. Bid adieu to ailments as Giloy strengthens your body's defense."}
+                            T2SubText={" Farm Naturelle Slimfit Juice is a shield of nature to guard against viral infections. Crafted to keep you safe, these pure, organic blends are your natural defense. Elevate your health the way nature intended, with each sip strengthening your armor."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Slim_Fit_Juice.png?v=1703142001"}
+                            h4_1={"Nature's Answer to Aches and Headaches"}
+                            h4_2={"Naturally Nurtured Skin"}
+                            h4_3={"Bottle Health for You"}
+                            h4_4={"Nature's Support for Balanced Blood Sugar"}
+                            p_1={"Taste the soothing touch of nature with our herbal juices. Bid farewell to bothersome body aches and pesky headaches. Embrace the power of purity as our juices work harmoniously to keep discomfort at bay. Naturally derived, our drinks are your go-to remedy for aches – leaving you refreshed, rejuvenated, and ache-free."}
+                            p_2={"Rediscover radiant skin with our herbal juice range. Crafted from pure, organic ingredients, our juices work harmoniously to enhance skin health. Embrace the beauty of nature as you enjoy a revitalizing journey towards a more vibrant complexion."}
+                            p_3={"Experience the power of pure, natural herbal juices. Our exquisite range offers holistic relief from fever, rheumatism, gout, jaundice, and anemia. Embrace the goodness of nature as you journey towards a healthier you."}
+                            p_4={"Giloy- celebrated for its hypoglycemic properties, this juice gently helps maintain healthy sugar levels. Embrace the goodness of pure, organic ingredients, crafted to nurture your vitality."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Slimfit_Juice_shake.png?v=1698819668"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Slimfit_Juice_water.png?v=1698819667"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Slimfit_Juice_stomach.png?v=1698819667"}
+                        />}
+                    />
+                    <Route
+                        path="/collections/herbal-juice/products/immunity-juice"
+                        element={<HerbalPages
+                            name={"Strongest Ayurvedic 6 Herbs Immunity boosting Kalp Amrit juice-Improves Immunity & Reduces Stress n anxiety"}
+                            Name={"Kalp Amrit Juice"}
+                            images={strongest6Ayurvedic}
+                            price={999}
+                            previousPrice={2156}
+                            save={"54%"}
+                            price1={1995}
+                            previousPrice1={4555}
+                            save1={"56%"}
+                            price2={2995}
+                            previousPrice2={7112}
+                            save2={"58%"}
+                            info1={"Nature's Shield Against Fevers"}
+                            info2={"Nurturing Wellness Inside Out"}
+                            info3={"Boost Your Immunity Naturally"}
+                            Tab1={"Have the enchanting blend of Aloe Vera, Tulsi, Giloye, Ginger, Amla, and Ashwagandha in FARM NATURELLE Kalp Amrit juice. Cultivate wellness effortlessly – from a robust digestive system to stress resilience, glowing skin to overall immunity. Your natural path to health and vitality."}
+                            T1SubText={" The enchanting blend of Aloe Vera, Tulsi, Giloye, Ginger, Amla, and Ashwagandha. This mystical fusion boosts immunity manifold, guarding against a spectrum of fevers. Unveil the power of pure, organic ingredients, thoughtfully combined to shield you naturally."}
+                            T2SubText={" Revitalize your digestion and glow with radiant skin! Our herbal juices, bursting with nature's purity, actively promote digestive harmony, ensuring your system runs as smooth as silk. Immerse yourself in the embrace of health, where your skin and gut thrive hand in hand."}
+                            T3SubText={" Supercharge your body's defense with our herbal juices! Experience a remarkable immune system boost, shielding you from fevers, flu, and illnesses. Embrace a healthier you as your immunity surges, safeguarding against common ailments."}
+                            Tab3={"gwarpatha, amla, tulsi, ginger, giloy, ashwagandha & class 2 preservatives"}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Immunity_Care_Juice.png?v=1703142001"}
+                            h4_1={"Relax and Boost"}
+                            h4_2={"Nurturing Wellness from Within"}
+                            h4_3={"An Health All-rounder"}
+                            h4_4={"Natural Blood Cleanser"}
+                            p_1={"Farm Naturelle Immunity juice is crafted to effortlessly reduce stress and bolster your immunity. Let nature's goodness flow through you, calming your mind and strengthening your body's defenses."}
+                            p_2={"Farm Naturelle Immunity Juice lovingly support your digestion and skin. Embrace vitality as your digestive system finds harmony, reflecting the radiance in your skin. Immerse yourself in the purity of 100% natural and organic ingredients, nourishing you from the inside out."}
+                            p_3={"From supporting digestion to relieving stress and enhancing skin's radiance, our herbal juices are a pure embrace of health. Experience vitality the natural way, with a blend that cares for your body and soul. Pure, potent, and brimming with nature's goodness."}
+                            p_4={"This Immunity Juice is your gateway to a fortified immune system and a naturally purified bloodstream. Elevate your well-being as our juices work harmoniously with your body, boosting immunity and gently purifying your blood, the way nature intended."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Immunity_Juice_shake.png?v=1698830927"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Immunity_Juice_water.png?v=1698830928"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Immunity_Juice_stomach.png?v=1698830927"}
+                        />}
+                    />
+                    <Route
+                        path="/collections/herbal-juice/products/giloy-juice"
+                        element={<HerbalPages
+                            name={"100% Pure Herbal Giloy Juice Enhances body immunity"}
+                            Name={"Herbal Giloy Juice"}
+                            images={PureHerbal}
+                            price={849}
+                            previousPrice={1856}
+                            save={"55%"}
+                            price1={1695}
+                            previousPrice1={3955}
+                            save1={"57%"}
+                            price2={2545}
+                            previousPrice2={6212}
+                            save2={"59%"}
+                            info1={"Immunity Booster"}
+                            info2={"Safeguard Against Viral Intrusions"}
+                            Tab1={"Giloy Juice, a renowned natural hypoglycemic agent, in our herbal juice. Maintain healthy sugar levels effortlessly. Embrace daily consumption for a robust, disease-resistant body. Your path to fitness and immunity starts here, with pure, organic, and 100% natural ingredients."}
+                            Tab3={"giloy juice & class 2 preservatives"}
+                            T1SubText={" Experience the power of Giloy Juice, your ultimate defense against fevers and flu. Our 100% pure and natural herbal elixir supercharges your body's immunity, offering robust protection. Bid farewell to illnesses as Giloy Juice empowers your defenses, safeguarding you the natural way."}
+                            T2SubText={" Boost your body's defense against viral invaders the natural way. Elevate your immunity and stay resilient against infections. Choose 100% pure, organic goodness for a healthier you."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Giloy_Juice.png?v=1703142001"}
+                            h4_1={"Giloy’s Soothing Defense"}
+                            h4_2={"Radiant Skin, Naturally Delivered"}
+                            h4_3={"Natural Remedy for Overall Health"}
+                            h4_4={"Balanced Sugar Levels"}
+                            p_1={"Seek relief from body aches and headaches with our herbal juices. Crafted from pure, organic goodness, our juices work harmoniously to keep those unwelcome discomforts at bay."}
+                            p_2={"Farm Naturelle Giloy juice gently enhances your skin's vitality. Unlock the secret to healthier skin with our pure, natural, and organic blends. Elevate your skincare routine with the power of nature, promoting a vibrant and glowing complexion. Say hello to skin that's nurtured from within."}
+                            p_3={"Soothing Relief for Fever, Rheumatism, Gout, Jaundice, and Anemia. Embrace the goodness of our herbal juices, crafted from pure and organic ingredients."}
+                            p_4={"Farm Naturelle Giloy Juice- A Trusted Aid for Balanced Blood Sugar. Embrace the natural benefits of Giloy, a well-known hypoglycemic agent. Our herbal juice offers potential support in maintaining healthy sugar levels."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Giloy_Juice_shake.png?v=1698830867"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Giloy_Juice_water.png?v=1698830866"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Giloy_Juice_stomach.png?v=1698830867"}
+                        />}
+                    />
+                    <Route
+                        path="/collections/herbal-juice/products/amla-juice"
+                        element={<HerbalPages
+                            name={"Amla Juice 100% Pure Strong & Effective Amla Juice. The Finest Herbal Amla Juice"}
+                            Name={"Amla Juice"}
+                            images={amlaJuice}
+                            price={799}
+                            previousPrice={1756}
+                            save={"55%"}
+                            price1={1595}
+                            previousPrice1={3755}
+                            save1={"58%"}
+                            price2={2395}
+                            previousPrice2={5912}
+                            save2={"59%"}
+                            info1={"Live fuller, longer, naturally"}
+                            info2={"Hydration in Every Sip"}
+                            info3={"Healthy & Glowing Skin for You"}
+                            Tab1={"Farm Naturelle Amla juice – a heart's ally, a bowels' friend. Nourishing heart muscles, it soothes, a remedy for heart care. Unlock relief from discomfort with its gentle nudge against constipation. Bid farewell to the grip of time through its anti-aging touch, rejuvenating body cells. A dash of turmeric, a hint of honey, and diabetes finds a balancing act."}
+                            Tab3={"Amla juice with extra fiver, class 2 preservatives"}
+                            T1SubText={" Amla Juice packages 20 times the Vitamin C of an Orange. Embrace a vibrant life with our herbal juices. Regular use, a key to lasting well-being."}
+                            T2SubText={" Quench your thirst with our Amla herbal juice, a true gift from nature. Overflowing with over 80% water, it's a refreshing gulp of vitality. Packed with fibers, minerals, proteins, and carbs, it's a wholesome way to nourish your body. Stay hydrated and revitalized the natural way with every delicious drop."}
+                            T3SubText={" Get radiant skin and a vibrant life with our herbal juice range. Say goodbye to blemishes and welcome a natural, healthy glow. Boost your red blood cells for boundless energy and wellness."}
+                            extraImage={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Amla_Juice.png?v=1703142001"}
+                            h4_1={"Nurturing Hearts, Extending Lives"}
+                            h4_2={"Radiant Skin & Lustrous Hair"}
+                            h4_3={"Healthier you, the natural way"}
+                            h4_4={"Your shield against illnesses"}
+                            p_1={"Naturally reducing harmful osteoclasts, our juices promote heart wellness and contribute to a longer, healthier life. Crafted from pure, organic ingredients, our elixirs are a gentle yet effective way to care for your heart and boost your vitality. Choose nature's path to a vibrant life with every sip."}
+                            p_2={"Unlock your skin's natural radiance, bestowing a captivating facial glow. Feel the power of stronger, more vibrant hair that commands attention. Our 100% pure, natural, and organic formulas work harmoniously with your body, enhancing both your facial allure and the strength of your precious locks."}
+                            p_3={"Farm Naturelle Amla Juice, a pure elixir packed with Vitamin C, essential amino acids, and vital minerals. Elevate your immunity naturally, promoting a robust and vibrant life."}
+                            p_4={"Packed with the goodness of Vitamin C, vital Amino Acids, and essential Minerals, our herbal juices fortify your immunity the natural way. Embrace the power of nature to boost your body's defense with every sip."}
+                            BoxImg1={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Amla_Juice_shake.png?v=1698830804"}
+                            BoxImg2={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Amla_Juice_water.png?v=1698830804"}
+                            BoxImg3={"https://cdn.shopify.com/s/files/1/0781/6711/4011/files/Amla_Juice_stomach.png?v=1698830804"}
+                        />}
+                    />
                     <Route
                         path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />}/>
+                        element={<HerbalPages />} />
                     <Route
                         path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />}/>
+                        element={<HerbalPages />} />
                     <Route
                         path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />}/>
+                        element={<HerbalPages />} />
                     <Route
                         path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />}/>
+                        element={<HerbalPages />} />
                     <Route
                         path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />}/>
+                        element={<HerbalPages />} />
                     <Route
                         path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />}/>
-                    <Route
-                        path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />}/>
-                    <Route
-                        path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />}/>
-                    <Route
-                        path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />}/>
+                        element={<HerbalPages />} />
                     <Route
                         path="/collections/all-products"
                         element={<All_Products />}
