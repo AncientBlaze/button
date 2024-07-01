@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import Nav from "../src/components/header/Nav";
 import Footer from "../src/components/footer/Footer";
-function PrivacyPolicy() {
+export default function RefundReturnPolicy() {
     return (
         <div>
             <Nav />
@@ -14,63 +14,32 @@ function PrivacyPolicy() {
                     /<span className="text-black">&nbsp;Privacy Policy</span>
                 </p>
                 <div className="text-5xl font-jost py-5">
-                    <p>Privacy Policy</p>
-                    <p className="text-3xl py-10">Personal Information</p>
+                    <p>Refund & Return Policy</p>
+                    <p className="text-3xl py-10">Refund and Return Policy for Farm Natural Products</p>
                     <div className="grid text-base gap-10">
                         <p>
-                            Farm Natural Produce is a company dedicated to
-                            providing high-quality natural produce and is
-                            committed to safeguarding the privacy and protection
-                            of personal information in compliance with
-                            applicable laws and regulations.
-                        </p>
-                        <p>
-                            Throughout this document, the terms "we," "us,"
-                            "our," and "ours" refer to Farm Natural Produce.
-                            Wherever we have said "you" or "your," this means
-                            YOU.
-                        </p>
-                        <p>
-                            We are committed to treating data privacy seriously.
-                            This Privacy Policy provides the necessary details
-                            about how your data is collected and used by us. By
-                            accessing the services provided by us, you agree to
-                            the collection and use of your data by us in
-                            accordance with this Privacy Policy.
+                            Our company, Farm Natural Produce, strives to provide a seamless and satisfactory shopping experience for our valued customers. To ensure transparency and customer satisfaction, we have established the following refund and return policy.
                         </p>
                     </div>
                     <p className="text-3xl py-10">
-                        Personal Information Collected
+                        Cancellation by Customer
                     </p>
                     <div className="grid text-base gap-10">
                         <p>
-                            As part of your interactions with Farm Natural
-                            Produce, we may collect personally identifiable
-                            information, including but not limited to your name
-                            (first and last), email address, contact details,
-                            date of birth, gender, residential address, and
-                            other information relevant to your engagement with
-                            our services. We may also gather information about
-                            your interactions with our website, such as the
-                            pages you visited, links clicked, and browsing
-                            activities.
+                            Customers are empowered to cancel an order at any time before it has been dispatched by reaching out to our dedicated customer service team. Once an order has been dispatched, it becomes ineligible for cancellation. In cases of suspected fraudulent transactions or violations of our website's terms and conditions, we reserve the right to cancel such orders at our discretion, with or without prior notification to the customer. We maintain a negative list of all fraudulent transactions and customers and may deny access or cancel any orders placed by them.
                         </p>
                     </div>
                     <p className="text-3xl py-10">
-                        Why We Collect Your Personal Information
+                        Returns
                     </p>
-                    <div className="grid text-base gap-10">
-                        <p>
-                            We collect personally identifiable information about
-                            you for the purpose of registering you as a user of
-                            our services, verifying your identity, processing
-                            transactions, communicating with you, providing
-                            promotional offers, and updating you about our
-                            products and services. We use this information to
-                            operate, provide, develop, and improve our products
-                            and services.
-                        </p>
-                    </div>
+                    <span className="grid text-base gap-10">
+                        Due to the unique nature of our natural farm produce, we adhere to a strict no-return or exchange policy. However, we will consider exchanges or returns under the following circumstances:
+
+                        1.The product is damaged, empty, or contains wrong/missing items upon delivery.
+                        2.Customers are required to provide an unboxing video, a packaging defect video, as well as images of the damaged product or any questionable item.
+
+                        For damaged, wrong, or missing product-related concerns, customers should promptly contact our customer service at [purefarmnatural@gmail.com] or call us at [98109 88725, 8130531333] within 48 hours of the product delivery. Each return will be handled on an individual and case-by-case basis. Customers are advised not to return the purchase to the farm and must provide the receipt number for expedited damaged product redressal.
+                    </span>
                     <p className="text-3xl py-10">
                         Manner of Collection of Information
                     </p>
@@ -153,5 +122,3 @@ function PrivacyPolicy() {
         </div>
     );
 }
-
-export default PrivacyPolicy;

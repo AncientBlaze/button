@@ -148,7 +148,7 @@ const herbalJuiceList = [
         hidden: "hidden",
     },
     {
-        id: "",
+        id: "body-revitlizer-juice",
         save: 54,
         PlaceHolder:
             "https://farmnaturelle.com/cdn/shop/files/2_79cf5e46-0c60-4e75-aace-881115784fd3_800x.png?v=1714052859",

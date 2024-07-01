@@ -125,10 +125,10 @@ function Footer() {
                                 <Link to={"/pages/privacy-policy"}>
                                     <li className="py-2 px-1 cursor-pointer">Privacy Policy</li>
                                 </Link>
-                                <Link>
+                                <Link to={"/pages/terms-and-conditions"}>
                                     <li className="py-2 px-1 cursor-pointer">Terms and Conditions</li>
                                 </Link>
-                                <Link>
+                                <Link to={"/pages/refund-return-policy"}>
                                     <li className="py-2 px-1 cursor-pointer">Shipping Policy</li>
                                 </Link>
                                 <Link>

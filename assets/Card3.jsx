@@ -49,7 +49,7 @@ const CardComponent2 = ({
     const likeIcon = isLiked ? (
         <IoIosHeart color="black" size={28} onClick={handleLike} />
     ) : (
-        <IoIosHeartEmpty size={28} onClick={handleLike} />
+        <IoIosHeartEmpty color="black" size={28} onClick={handleLike} />
     );
 
     const buttonClasses =

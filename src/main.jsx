@@ -101,10 +101,11 @@ import HingPages from "../pages/products/product_data/Hing_data/HingPages.jsx";
 import { Hingimg } from "../pages/products/product_data/Hing_data/Hing_data.js";
 import WellnessJuice from "../pages/WellnessJuices.jsx";
 import HerbalPages from "../pages/products/product_data/Herbal_data/HerbalPages.jsx";
-import { aloeVeraJuice, aloeVeraWheatGrassJuice, amlaJuice, antiHangover, Detox, digestiveFitness, easingDiabetes, jointsPainCare, kidneyStoneCrusher, magicalMan, neemJuice, NoniJuice, pilesVanish, PureHerbal, slimFitJuice, smilingLiver, streesBuster, strongest6Ayurvedic, TriphalaJuice, tulsiJuice, womenGlow } from "../pages/products/product_data/Herbal_data/Herbal_data.js";
+import { aloeVeraJuice, aloeVeraWheatGrassJuice, amlaJuice, antiHangover, bodyRevitilizer, Detox, digestiveFitness, easingDiabetes, jointsPainCare, kidneyStoneCrusher, magicalMan, neemJuice, NoniJuice, pilesVanish, PureHerbal, slimFitJuice, smilingLiver, streesBuster, strongest6Ayurvedic, TriphalaJuice, tulsiJuice, womenGlow } from "../pages/products/product_data/Herbal_data/Herbal_data.js";
 import Tea from "../pages/Tea.jsx";
 import TeaPages from "../pages/products/product_data/Tea_data/TeaPages.jsx";
 import { appleCinnamonGreenTea, kashmirTea, lemonGrass, masalaTea, moringaGreenTea, tulsiGreenTea, turmericGreenTea } from "../pages/products/product_data/Tea_data/Tea_data.js";
+import RefundReturnPolicy from "../pages/Shipping_returning.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -190,6 +191,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     <Route
                         path="/pages/privacy-policy"
                         element={<PrivacyPolicy />}
+                    />
+                    <Route
+                        path="/pages/refund-return-policy"
+                        element={<RefundReturnPolicy />}
                     />
                     <Route
                         path="/collections/herbal-juice/products/piles-vanish"
@@ -920,8 +925,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                         />}
                     />
                     <Route
-                        path="/collections/herbal-juice/products/"
-                        element={<HerbalPages />} />
+                        path="/collections/herbal-juice/products/body-revitlizer-juice"
+                        element={<HerbalPages
+                            name={"Body revitlizer juice"}
+                            Name={"Body revitlizer juice"}
+                            images={bodyRevitilizer}
+                        />}
+                    />
                     <Route
                         path="/collections/all-products"
                         element={<All_Products />}

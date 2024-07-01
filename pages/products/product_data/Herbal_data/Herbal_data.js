@@ -175,3 +175,12 @@ export const NoniJuice = [
     { img: "https://farmnaturelle.com/cdn/shop/files/5_0bcd7bfb-d810-408c-a5db-8adc8d3d1326.jpg?v=1714052666" },
     { img: "https://farmnaturelle.com/cdn/shop/files/6_4f41edf2-99ea-4916-825f-e91b6b64612c.jpg?v=1714052667" },
 ];
+
+export const bodyRevitilizer = [
+    { img: "https://farmnaturelle.com/cdn/shop/files/1_56f02ccc-0613-4129-a1fb-53080772d02f.png?v=1714052859" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/2_79cf5e46-0c60-4e75-aace-881115784fd3.png?v=1714052859" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/3_c89f490f-5b8a-46dc-bede-054aedeaddb8.png?v=1714052859" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/4_d5c794fd-4eeb-4a93-b2e3-a7396048be70.png?v=1716214973" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/5_e5d96faf-3472-41cc-b8f8-3c53a7b67f3e.png?v=1714052860" },
+    { img: "https://farmnaturelle.com/cdn/shop/files/6_f5d359e3-3ae7-41c9-b7f1-137d2ba33aad.png?v=1716214972" }
+];
