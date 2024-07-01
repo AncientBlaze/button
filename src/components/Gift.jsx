@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { CgArrowLeft, CgArrowRight } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 const Gift = () => {
   const slider = React.useRef(null);
@@ -61,9 +62,11 @@ const Gift = () => {
                     <p className="text-yellow-500 text-[20px] leading-[30px]">
                       Starting From ₹949 only -
                     </p>
-                    <button className="mt-20 transition-colors duration-900 w-[200px] border border-[#006944] hover:bg-[#006944] bg-white hover:text-white text-lg font-jost font-bold uppercase text-[#006944] py-3 px-4 rounded-md my-2 cursor-pointer">
-                      Buy Now
-                    </button>
+                    <Link to={"collections/gift/products/chocolate-tulip-box"}>
+                      <button className="mt-20 transition-colors duration-900 w-[200px] border border-[#006944] hover:bg-[#006944] bg-white hover:text-white text-lg font-jost font-bold uppercase text-[#006944] py-3 px-4 rounded-md my-2 cursor-pointer">
+                        Buy Now
+                      </button>
+                    </Link>
                   </div>
 
                 </div>
@@ -85,9 +88,11 @@ const Gift = () => {
                     <p className="text-yellow-500 text-[20px] leading-[30px]">
                       Starting From ₹1130 only -
                     </p>
-                    <button className="mt-20 transition-colors duration-900 w-[200px] border border-[#006944] hover:bg-[#006944] bg-white hover:text-white text-lg font-jost font-bold uppercase text-[#006944] py-3 px-4 rounded-md my-2 cursor-pointer">
-                      Buy Now
-                    </button>
+                    <Link to={"collections/gift/products/red-tulip-box-1"}>
+                      <button className="mt-20 transition-colors duration-900 w-[200px] border border-[#006944] hover:bg-[#006944] bg-white hover:text-white text-lg font-jost font-bold uppercase text-[#006944] py-3 px-4 rounded-md my-2 cursor-pointer">
+                        Buy Now
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -108,9 +113,11 @@ const Gift = () => {
                     <p className="text-yellow-500 text-[20px] leading-[30px]">
                       Starting From ₹600 only -
                     </p>
-                    <button className="mt-20 transition-colors duration-900 w-[200px] border border-[#006944] hover:bg-[#006944] bg-white hover:text-white text-lg font-jost font-bold uppercase text-[#006944] py-3 px-4 rounded-md my-2 cursor-pointer">
-                      Buy Now
-                    </button>
+                    <Link to={"collections/gift/products/40g-x-10-honey"}>
+                      <button className="mt-20 transition-colors duration-900 w-[200px] border border-[#006944] hover:bg-[#006944] bg-white hover:text-white text-lg font-jost font-bold uppercase text-[#006944] py-3 px-4 rounded-md my-2 cursor-pointer">
+                        Buy Now
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -131,9 +138,11 @@ const Gift = () => {
                     <p className="text-yellow-500 text-[20px] leading-[30px]">
                       Starting From ₹695 only -
                     </p>
-                    <button className="mt-20 transition-colors duration-900 w-[200px] border border-[#006944] hover:bg-[#006944] bg-white hover:text-white text-lg font-jost font-bold uppercase text-[#006944] py-3 px-4 rounded-md my-2 cursor-pointer">
-                      Buy Now
-                    </button>
+                    <Link to={"collections/gift/products/gift-the-finest-honeys-9-bottles"}>
+                      <button className="mt-20 transition-colors duration-900 w-[200px] border border-[#006944] hover:bg-[#006944] bg-white hover:text-white text-lg font-jost font-bold uppercase text-[#006944] py-3 px-4 rounded-md my-2 cursor-pointer">
+                        Buy Now
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -142,7 +151,9 @@ const Gift = () => {
         </div>
       </div>
       <div className="w-full h-auto flex justify-center items-center">
+        <Link to={"collections/gift"}>
         <button className="uppercase text-sm font-jost font-semibold mx-auto transition-colors duration-900 w-auto px-12 border border-[#006944] hover:bg-[#006944] text-[#006944] hover:text-white py-3 rounded-xl my-2 cursor-pointer">Shop This</button>
+        </Link>
       </div>
       <p className="text-center text-4xl font-jost text-[#006944] font-medium py-5">Customers Love our products</p>
     </>

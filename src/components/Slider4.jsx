@@ -8,6 +8,18 @@ import { Link } from "react-router-dom";
 const CarouselComponent4 = () => {
     const products = [
         {
+            id: "body-revitlizer-juice",
+            save: 54,
+            PlaceHolder:
+                "https://farmnaturelle.com/cdn/shop/files/2_79cf5e46-0c60-4e75-aace-881115784fd3_800x.png?v=1714052859",
+            ImageUrl:
+                "https://farmnaturelle.com/cdn/shop/files/1_56f02ccc-0613-4129-a1fb-53080772d02f_800x.png?v=1714052859",
+            title: "Body Revitilizer Juice",
+            PreviousPrice: 0,
+            content: 0,
+            hidden: "hidden",
+        },
+        {
             id: "slimfit-juice",
             save: 54,
             PlaceHolder:
@@ -219,7 +231,7 @@ const CarouselComponent4 = () => {
                                 products.map((item, index) => (
                                     <Link
                                         key={index}
-                                        to={`collection/herbal-juice/products/${item.id}`}
+                                        to={`collections/herbal-juice/products/${item.id}`}
                                     >
                                         <CardComponent
                                             save={item.save}
