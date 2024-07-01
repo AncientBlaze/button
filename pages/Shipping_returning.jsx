@@ -11,9 +11,9 @@ export default function RefundReturnPolicy() {
                     <Link to="/" title="Back to Home">
                         Home&nbsp;
                     </Link>
-                    /<span className="text-black">&nbsp;Privacy Policy</span>
+                    /<span className="text-black">&nbsp;Refund & Return Policy</span>
                 </p>
-                <div className="text-5xl font-jost py-5">
+                <div className="text-5xl font-jost py-5 px-10">
                     <p>Refund & Return Policy</p>
                     <p className="text-3xl py-10">Refund and Return Policy for Farm Natural Products</p>
                     <div className="grid text-base gap-10">
@@ -32,88 +32,48 @@ export default function RefundReturnPolicy() {
                     <p className="text-3xl py-10">
                         Returns
                     </p>
-                    <span className="grid text-base gap-10">
+                    <div className="grid text-base gap-10">
                         Due to the unique nature of our natural farm produce, we adhere to a strict no-return or exchange policy. However, we will consider exchanges or returns under the following circumstances:
 
-                        1.The product is damaged, empty, or contains wrong/missing items upon delivery.
-                        2.Customers are required to provide an unboxing video, a packaging defect video, as well as images of the damaged product or any questionable item.
+                        <span className="pl-10">
+                            <p>
+                                1.The product is damaged, empty, or contains wrong/missing items upon delivery.
+                            </p>
+                            <p>
+                                2.Customers are required to provide an unboxing video, a packaging defect video, as well as images of the damaged product or any questionable item.
+                            </p>
+                        </span>
 
                         For damaged, wrong, or missing product-related concerns, customers should promptly contact our customer service at [purefarmnatural@gmail.com] or call us at [98109 88725, 8130531333] within 48 hours of the product delivery. Each return will be handled on an individual and case-by-case basis. Customers are advised not to return the purchase to the farm and must provide the receipt number for expedited damaged product redressal.
-                    </span>
+                    </div>
                     <p className="text-3xl py-10">
-                        Manner of Collection of Information
+                        Refunds
                     </p>
                     <div className="grid text-base gap-10">
                         <p>
-                            We receive and store information whenever you
-                            interact with us through our website or other
-                            sources. Our servers may collect information
-                            regarding your activities through cookies or other
-                            tracking methods.
+                            Upon order cancellation, the refund process will be initiated, and the refunded amount will be reflected in the customer's bank account within 7-10 days. Please note that certain banks may take longer than this period for the amount to reflect in the account. For damaged product returns, once the return is received and inspected, customers will be notified via email regarding the approval or rejection of the refund. If approved, the refund will be processed, and a credit will automatically be applied to the original method of payment within 7-10 days.
                         </p>
                     </div>
-                    <p className="text-3xl py-10">Consent</p>
+                    <p className="text-3xl py-10">Late or Missing Refunds</p>
                     <div className="grid text-base gap-10">
                         <p>
-                            By using our services and providing your personal
-                            information, you consent to the collection and use
-                            of the information you disclose to us in accordance
-                            with this Privacy Policy.
+                            Customers who have not received a refund should first check their bank account and then contact their bank. If there is still no sign of the refund, they should contact us at [farmnaturalproduc@gmail.com] or call us at [98109 88725].
                         </p>
                     </div>
                     <p className="text-3xl py-10">
-                        Disclosure of Personal Information
+                        Shipping
                     </p>
                     <div className="grid text-base gap-10">
                         <p>
-                            We do not sell or share your personal information
-                            for commercial purposes. However, we may share your
-                            personal information with our business associates,
-                            payment gateway partners, and regulatory authorities
-                            when required by law or for legitimate business
-                            reasons.
+                            For product returns, customers should mail the item to: [Farm Natural produce], [plot no 527, sector 8, IMT manesar, Gurgaon - 122050]. If an item is deemed damaged by our customer service team…
                         </p>
                     </div>
                     <p className="text-3xl py-10">
-                        Security and Protection of Personal Information
+
                     </p>
                     <div className="grid text-base gap-10">
                         <p>
-                            We are committed to protecting your personal
-                            information through security measures and
-                            appropriate safeguards to prevent unauthorized
-                            access, alteration, transmission, and deletion. We
-                            retain your personal information for as long as it
-                            is required for the purposes set out in this Privacy
-                            Policy.
-                        </p>
-                    </div>
-                    <p className="text-3xl py-10">Children&apos;s Privacy</p>
-                    <div className="grid text-base gap-10">
-                        <p>
-                            All financial transactions on our website are to be
-                            carried out by adults only. Minors are barred from
-                            making purchases or submitting their personal
-                            information on our website without adult
-                            supervision.
-                        </p>
-                    </div>
-                    <p className="text-3xl py-10">Contact Us</p>
-                    <div className="grid text-base gap-10">
-                        <p>
-                            For any queries related to privacy or to correct any
-                            inaccuracies in your personal information submitted
-                            to us, please contact us at:
-                        </p>
-                        <p className="font-semibold">Contact email address: hello@farmnaturelle.com</p>
-                        <p><span className="font-semibold">Phone:</span> +91 98109 88725</p>
-                        <p><span className="font-semibold">Contact days:</span> Monday to Friday 10:00AM to 6PM</p>
-                        <p>
-                            Notification of Changes in the Privacy Policy We
-                            keep our Privacy Policy under review and reserve the
-                            right to change or update it at any time without
-                            prior intimation. Any changes will be effective
-                            immediately upon posting on our website.
+                            We appreciate your understanding and cooperation with our refund and return policy. Should you have any further inquiries or require assistance, please do not hesitate to contact our customer service team. Thank you for choosing Farm Natural Produce.
                         </p>
                     </div>
                 </div>

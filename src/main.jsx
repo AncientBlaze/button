@@ -106,6 +106,7 @@ import Tea from "../pages/Tea.jsx";
 import TeaPages from "../pages/products/product_data/Tea_data/TeaPages.jsx";
 import { appleCinnamonGreenTea, kashmirTea, lemonGrass, masalaTea, moringaGreenTea, tulsiGreenTea, turmericGreenTea } from "../pages/products/product_data/Tea_data/Tea_data.js";
 import RefundReturnPolicy from "../pages/Shipping_returning.jsx";
+import Terms from "../pages/Terms.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -195,6 +196,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     <Route
                         path="/pages/refund-return-policy"
                         element={<RefundReturnPolicy />}
+                    />
+                    <Route
+                        path="/pages/terms-conditions"
+                        element={<Terms />}
                     />
                     <Route
                         path="/collections/herbal-juice/products/piles-vanish"
