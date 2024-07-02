@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function consult({ para, notKnown,header }) {
     return (
@@ -26,7 +27,9 @@ function consult({ para, notKnown,header }) {
                     Doctor’s Advice
                 </li>
             </ul>
+            <Link to={"pages/consult-an-acharya"}>
             <button className="transition-colors duration-900 w-full border border-white hover:bg-white hover:text-[#006944] text-white text-sm py-3 px-4 rounded-md my-2 cursor-pointer">BOOK Consultation @ RS 99</button>
+            </Link>
         </div>
     )
 }
