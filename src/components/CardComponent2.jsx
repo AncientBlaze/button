@@ -26,7 +26,7 @@ const CardComponent2 = ({
     const handleLike = (e) => {
         e.preventDefault();
         e.stopPropagation();
-        dispatch(addToWishlist({ id, title, ImageUrl, content }));
+        dispatch(addToWishlist({ id, title, ImageUrl, content, PreviousPrice, save }));
         setIsLiked(true);
         localStorage.setItem(`liked-${id}`, "true");
     };
@@ -96,7 +96,7 @@ const CardComponent2 = ({
                         className={buttonClasses}
                         onClick={(e) => {
                             e.preventDefault();
-                            dispatch(add({ id:id ,quantity: count, title, content, PreviousPrice: selectedOption1, ImageUrl }));
+                            dispatch(add({ id: id, quantity: count, title, content, PreviousPrice, ImageUrl }));
                             setCount(count);
                         }
                         }

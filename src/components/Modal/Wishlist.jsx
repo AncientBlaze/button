@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import BackdropHeart from "../Backdrop/BackdropHeart";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { useCallback,useState } from "react";
+import { useCallback, useState } from "react";
+import { add } from "../../store/cartSlice";
 import { remove } from "../../store/wishSlice";
 
 
@@ -13,11 +14,17 @@ const IndexHeart = (({ handleclose }) => {
     const { wishlistItems } = useSelector((state) => state?.wishlists);
     const [searchInput, setSearchInput] = useState("");
 
+    const addToCart = useCallback(
+        (product) => {
+            dispatch(add({ ...product, quantity: 1 }));
+        },
+        [dispatch],
+    );
+
     const handleRemove = useCallback(
         (id) => {
             dispatch(remove(id));
             localStorage.removeItem(`liked-${id}`);
-            window.location.reload();
         },
         [dispatch],
     );
@@ -90,11 +97,12 @@ const IndexHeart = (({ handleclose }) => {
                                         id,
                                         title,
                                         ImageUrl,
-                                        previousPrice,
+                                        PreviousPrice,
                                         content,
+                                        save
                                     }) => (
-                                        <div key={id} className="my-2 mx-2">
-                                            <div className="w-full flex justify-center items-center flex-col py-2 relative">
+                                        <div key={id} className="w-full">
+                                            <div className="w-60 flex justify-center items-center flex-col relative border">
                                                 <img
                                                     className="h-60"
                                                     src={ImageUrl}
@@ -104,14 +112,46 @@ const IndexHeart = (({ handleclose }) => {
                                                     <h3 className="text-2xl font-bold">
                                                         {title}
                                                     </h3>
-                                                    <p>Rs. {previousPrice}</p>
-                                                    <p className="py-2">
-                                                        Rs. {content}
-                                                    </p>
+                                                    <div className="py-2 font-semibold flex space-x-2">
+                                                        <p className="line-through text-red-700">Rs. {PreviousPrice}</p>
+                                                        <p>Rs. {content}</p>
+                                                        <p className="hidden">{save}</p>
+                                                    </div>
+                                                    <center>
+                                                        <div
+                                                            className="py-2"
+                                                            onClick={() =>
+                                                                setTimeout(() => {
+                                                                    handleRemove(id);
+                                                                    window.location.reload();
+                                                                }, 2000)
+                                                            }
+                                                        >
+
+                                                            <button
+                                                                onClick={() =>
+                                                                    addToCart({
+                                                                        id: id,
+                                                                        title: title,
+                                                                        ImageUrl: ImageUrl,
+                                                                        PreviousPrice: PreviousPrice,
+                                                                        content: content,
+                                                                        quantity: 1,
+                                                                        save: save
+                                                                    })
+                                                                }
+                                                                className="bg-[#333333] text-white px-3 py-2 rounded">Move to cart</button>
+                                                        </div
+                                                        >
+                                                    </center>
                                                     <p
-                                                        className="absolute top-1 right-8 text-2xl cursor-pointer"
-                                                        onClick={() =>
-                                                            handleRemove(id)
+                                                        className="absolute top-0 right-0 text-2xl cursor-pointer"
+                                                        onClick={() => {
+                                                            if (localStorage.getItem(`liked-${id}`)) {
+                                                                handleRemove(id)
+                                                                window.location.reload()
+                                                            }
+                                                        }
                                                         }
                                                     >
                                                         X

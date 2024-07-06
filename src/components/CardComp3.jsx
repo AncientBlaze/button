@@ -26,7 +26,7 @@ const CardComponent2 = ({ id, ImageUrl, title, PreviousPrice, content, save, hid
 
         } else {
             e.stopPropagation();
-            addToWish({ id, title, ImageUrl, content });
+            addToWish({ id, title, ImageUrl, content,PreviousPrice,save });
             setIsLiked((prev) => !prev);
         }
     };
