@@ -44,6 +44,7 @@ function Nav() {
         setOpenModal(false);
     };
 
+
     return (
         <>
             <Sticky top={0} innerZ={20}>
@@ -406,11 +407,10 @@ function Nav() {
                                     )}
                                 </AnimatePresence>
                             </li>
-
                             <li className="cursor-pointer">
                                 <div
                                     id="search"
-                                    className="hidden bg-white border w-full h-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-5"
+                                    className="hidden bg-white w-full z-40 h-full absolute top-1/2 left-0 transform -translate-y-1/2 px-5"
                                 >
                                     <div className="flex justify-around items-center h-full w-full gap-5">
                                         <div className="w-full h-1/2 flex border justify-around items-center rounded-lg">
