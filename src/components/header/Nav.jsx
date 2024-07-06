@@ -62,7 +62,7 @@ function Nav() {
                                 const copyText = "NFARM100";
                                 try {
                                     await navigator.clipboard.writeText(copyText);
-                                    toast(`Copied ${copyText}`);
+                                    toast.success(`Copied ${copyText}`);
                                 } catch (error) {
                                     console.error("Error copying text: ", error);
                                 }
